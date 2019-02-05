@@ -6,7 +6,7 @@ class PageScraper:
     '''
 
     @staticmethod
-    def get_html_content_from_url(url: str) -> str:
+    def get_content_from_url(url: str) -> str:
         '''Retrieves the html content of a URL.
 
         @param url: URL of the content
@@ -15,19 +15,16 @@ class PageScraper:
         '''
         import urllib.request
 
-
         request = urllib.request.urlopen(url)
         bytes = request.read()
 
         html_content = bytes.decode("utf8")
         request.close()
 
-        print(html_content)
-
         return html_content
 
     @staticmethod
-    def get_content_from_url_and_save(url: str):
+    def get_content_from_url_and_save(url: str, path: str, filename: str):
         '''Retrieves the html content of a URL and saves it in the "retrieved text" subfolder.
 
         @param url: URL of the content
@@ -35,14 +32,33 @@ class PageScraper:
         @returns: HTML content
         '''
 
-        html_content = PageScraper.get_html_content_from_url(url)
+        html_content = PageScraper.get_content_from_url(url)
+
+        import os
+
+        with open(os.path.join(path,filename),"w+") as f:
+            f.write(html_content)
+
+        return
 
 
+    @staticmethod
+    def get_mud_urls():
+        import ssl
+        import os
+        ssl._create_default_https_context = ssl._create_unverified_context
+
+        if not os.path.exists(os.path.join(os.getcwd(),"MUD")):
+            os.mkdir(os.path.join(os.getcwd(),"MUD"))
 
 
-        pass
+        with open("mud_file_urls.csv","r") as f:
+            for line in f.readlines():
+                items = line.split(",")
+                url = items[0]
+                device = items[1].rstrip()
 
-
+                PageScraper.get_content_from_url_and_save(url,os.path.join(os.getcwd(),"MUD"),device+".json")
 
 if __name__ == "__main__":
-    PageScraper.get_html_content_from_url("https://stackoverflow.com/questions/24153519/how-to-read-html-from-a-url-in-python-3")
+    PageScraper.get_mud_urls()
