@@ -13,16 +13,35 @@ class WebScraper():
         :return: Cleaned text of the response.
         """
 
-        return WebScraper.__clean_html(WebScraper.__http_get(url))
+        try:
+            html = WebScraper.__http_get(url)
+        except Exception as e:
+            raise e
+
+        if html:
+            return WebScraper.__clean_html(html)
+        else:
+            raise TypeError("No HTML retrieved, no content retrieved from URL.")
 
     @staticmethod
     def extract_links_from_url(url: str) -> list:
+        """
+        Performs HTTP GET on the url and extracts links from the content of the response.
+        :param url: Url of content.
+        :return: List of links.
+        """
         from bs4 import BeautifulSoup
 
-        content = WebScraper.__http_get(url)
+        try:
+            content = WebScraper.__http_get(url)
+        except Exception as e:
+            raise e
+
         bs = BeautifulSoup(content, 'html.parser')
 
-        all_links = [link.attrs['href'] for link in bs.find_all('a')]
+        anchors = bs.find_all('a')
+
+        all_links = [link.attrs['href'] for link in anchors if 'href' in link.attrs.keys()]
 
         cleaned_links = list()
 
@@ -30,7 +49,7 @@ class WebScraper():
             if "http" in link:
                 cleaned_links.append(link)
             else:
-                cleaned_links.append(url+link)
+                cleaned_links.append(url + link)
 
         return cleaned_links
 
@@ -63,20 +82,24 @@ class WebScraper():
         :return: THe content of the reply.
         """
 
-        from requests import get
+        from requests import get, ConnectTimeout
         from requests.exceptions import RequestException
         from contextlib import closing
 
         try:
-            with closing(get(url, stream=True)) as resp:
+            with closing(get(url, stream=True, timeout=2)) as resp:
                 if WebScraper.__resp_is_valid(resp):
                     return resp.content
                 else:
-                    return None
+                    raise TypeError("Response not valid.")
 
+        except ConnectTimeout as e:
+            print('Timeout for request to {0} : {1}'.format(url, str(e)))
+            raise e
         except RequestException as e:
             print('Error during requests to {0} : {1}'.format(url, str(e)))
-            return None
+            raise e
+
 
     @staticmethod
     def __resp_is_valid(resp: Response) -> bool:
@@ -85,14 +108,16 @@ class WebScraper():
         :return: Whether or nor the response is valid.
         """
 
-        content_type = resp.headers['Content-Type'].lower()
+        try:
+            content_type = resp.headers['Content-Type'].lower()
+        except KeyError:
+            return False
+
         return (resp.status_code == 200
                 and content_type is not None
                 and content_type.find('html') > -1)
 
 
-
-
 if __name__ == "__main__":
-    #print(WebScraper.extract_text_from_url("https://ipc.tplinkcloud.com/download.php"))
-    print(WebScraper.extract_links_from_url("http://ipc.tplinkcloud.com"))
+    # print(WebScraper.extract_text_from_url("https://ipc.tplinkcloud.com/download.php"))
+    print(WebScraper.extract_links_from_url("http://www.meethue.com"))
