@@ -1,6 +1,11 @@
 class MUDUtilities():
     @staticmethod
     def get_all_urls_from_mud(filename: str) -> list:
+        """
+        Retrieves all URLs contained in the ACLs of the given mud file.
+        :param filename: File name of the mud file.
+        :return: List of URLs.
+        """
         import os
         import json
 
@@ -18,7 +23,6 @@ class MUDUtilities():
 
 
         return urls
-
 
 if __name__=="__main__":
     print(MUDUtilities.get_all_urls_from_mud("Amazon Echo.json"))

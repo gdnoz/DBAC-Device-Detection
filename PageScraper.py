@@ -1,18 +1,18 @@
 
 
 class PageScraper:
-    '''
+    """
     A utility class for scraping html from a url and also cleaning the text.
-    '''
+    """
 
     @staticmethod
     def get_content_from_url(url: str) -> str:
-        '''Retrieves the html content of a URL.
+        """Retrieves the html content of a URL.
 
         @param url: URL of the content
 
         @returns: HTML content
-        '''
+        """
         import urllib.request
 
         request = urllib.request.urlopen(url)
@@ -25,12 +25,12 @@ class PageScraper:
 
     @staticmethod
     def get_content_from_url_and_save(url: str, path: str, filename: str):
-        '''Retrieves the html content of a URL and saves it in the "retrieved text" subfolder.
+        """Retrieves the html content of a URL and saves it in the "retrieved text" subfolder.
 
         @param url: URL of the content
 
         @returns: HTML content
-        '''
+        """
 
         html_content = PageScraper.get_content_from_url(url)
 
@@ -43,7 +43,9 @@ class PageScraper:
 
 
     @staticmethod
-    def get_mud_urls():
+    def get_mud_files():
+        """Retrieves the mud files, given by the URLs in the 'mud_file_urls.csv* file.
+        """
         import ssl
         import os
         ssl._create_default_https_context = ssl._create_unverified_context
@@ -61,4 +63,4 @@ class PageScraper:
                 PageScraper.get_content_from_url_and_save(url,os.path.join(os.getcwd(),"MUD"),device+".json")
 
 if __name__ == "__main__":
-    PageScraper.get_mud_urls()
+    PageScraper.get_mud_files()
