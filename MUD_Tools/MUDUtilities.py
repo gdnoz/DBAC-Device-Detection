@@ -15,7 +15,7 @@ class MUDUtilities:
         import os
         import json
 
-        with open(os.path.join(os.path.join(os.getcwd(),"MUD"),filename)) as f:
+        with open(os.path.join(os.path.join(os.getcwd(),"MUD_Files"),filename)) as f:
             mud_contents = json.load(f)
             urls = list()
 
@@ -35,12 +35,12 @@ class MUDUtilities:
         """
         import ssl
         import os
-        from WebScraper import WebScraper
-        
+        from Scraping.WebScraper import WebScraper
+
         ssl._create_default_https_context = ssl._create_unverified_context
 
-        if not os.path.exists(os.path.join(os.getcwd(),"MUD")):
-            os.mkdir(os.path.join(os.getcwd(),"MUD"))
+        if not os.path.exists(os.path.join(os.getcwd(),"MUD_Files")):
+            os.mkdir(os.path.join(os.getcwd(),"MUD_Files"))
 
 
         with open("mud_file_urls.csv","r") as f:
@@ -49,7 +49,7 @@ class MUDUtilities:
                 url = items[0]
                 device = items[1].rstrip()
 
-                WebScraper.get_content_from_url_and_save(url, os.path.join(os.getcwd(), "MUD"), device + ".json")
+                WebScraper.get_content_from_url_and_save(url, os.path.join(os.getcwd(), "MUD_Files"), device + ".json")
 
 if __name__ == "__main__":
     MUDUtilities.get_mud_files()

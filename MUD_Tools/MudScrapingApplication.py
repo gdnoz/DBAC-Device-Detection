@@ -1,10 +1,10 @@
 import os
-from WebScraper import WebScraper
-from MUDUtilities import MUDUtilities
 import re
 
+from MUD_Tools.MUDUtilities import MUDUtilities
+from Scraping.WebScraper import WebScraper
 
-path = os.path.join(os.getcwd(), "MUD")
+path = os.path.join(os.getcwd(), "MUD_Files")
 textfolder = "MUDTexts"
 
 if not os.path.exists(textfolder):
