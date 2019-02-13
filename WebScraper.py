@@ -6,6 +6,39 @@ class WebScraper():
     from requests import Response
 
     @staticmethod
+    def get_content_from_url(url: str) -> str:
+        """Retrieves the html content of a URL.
+
+        @param url: URL of the content
+
+        @returns: HTML content
+        """
+        import urllib.request
+
+        request = urllib.request.urlopen(url)
+        bytes = request.read()
+
+        html_content = bytes.decode("utf8")
+        request.close()
+
+        return html_content
+
+    @staticmethod
+    def get_content_from_url_and_save(url: str, path: str, filename: str):
+        """Retrieves the html content of a URL and saves it in the "retrieved text" subfolder.
+
+        @param url: URL of the content
+
+        @returns: HTML content
+        """
+        html_content = WebScraper.get_content_from_url(url)
+
+        import os
+
+        with open(os.path.join(path,filename),"w+") as f:
+            f.write(html_content)
+
+    @staticmethod
     def extract_text_from_url(url: str) -> str:
         """
         Performs HTTP GET on the url. If the response is valid, the response is cleaned up to reomve any HTML syntax.

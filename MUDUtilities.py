@@ -1,4 +1,10 @@
-class MUDUtilities():
+
+
+class MUDUtilities:
+    """
+    A utility class for scraping html from a url and also cleaning the text.
+    """
+
     @staticmethod
     def get_all_urls_from_mud(filename: str) -> list:
         """
@@ -21,8 +27,29 @@ class MUDUtilities():
                     except KeyError:
                         continue
 
-
         return urls
 
-if __name__=="__main__":
-    print(MUDUtilities.get_all_urls_from_mud("Amazon Echo.json"))
+    @staticmethod
+    def get_mud_files():
+        """Retrieves the mud files, given by the URLs in the 'mud_file_urls.csv* file.
+        """
+        import ssl
+        import os
+        from WebScraper import WebScraper
+        
+        ssl._create_default_https_context = ssl._create_unverified_context
+
+        if not os.path.exists(os.path.join(os.getcwd(),"MUD")):
+            os.mkdir(os.path.join(os.getcwd(),"MUD"))
+
+
+        with open("mud_file_urls.csv","r") as f:
+            for line in f.readlines():
+                items = line.split(",")
+                url = items[0]
+                device = items[1].rstrip()
+
+                WebScraper.get_content_from_url_and_save(url, os.path.join(os.getcwd(), "MUD"), device + ".json")
+
+if __name__ == "__main__":
+    MUDUtilities.get_mud_files()
