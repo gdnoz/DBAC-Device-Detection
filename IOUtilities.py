@@ -7,7 +7,8 @@ def write_content_to_file(content: str, path: str):
 
 def create_path(path: str):
     import os
-    os.mkdir(path)
+    if not os.path.exists(path):
+        os.makedirs(path)
 
 def create_file(path: str):
     f = open(path, "w+")
