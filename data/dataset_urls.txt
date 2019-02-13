@@ -1,18 +1,26 @@
 Speaker:
 AmazonEcho,https://www.amazon.com/all-new-amazon-echo-speaker-with-wifi-alexa-dark-charcoal/dp/B06XCM9LJ4
+AmazonEchoDot,https://www.amazon.com/All-new-Echo-Dot-3rd-Gen/dp/B0792KTHKJ
 GoogleHome,https://store.google.com/us/product/google_home?hl=en-US
+GoogleHomeMini,https://store.google.com/us/product/google_home_mini?hl=en-US
 SonosOne,https://www.sonos.com/en/shop/one.html
+SonosBeam,https://www.sonos.com/en/shop/beam.html
 GalaxyHome,https://www.samsung.com/us/explore/galaxy-home/
 InvoxiaTriby,https://www.invoxia.com/intl/smart-speaker/triby
 AppleHomepod,https://www.apple.com/homepod/
+JblLink,https://www.jbl.com/voice-activated-speaker/JBL+LINK+20.html
 
 Doorbell:
 AugustDoorbell,https://august.com/products/august-doorbell-cam-pro
-RingDoorbell,https://shop.ring.com/pages/doorbells
+RingVideoDoorbell,https://shop.ring.com/collections/video-doorbells//products/video-doorbell
+RingVideoDoorbellPro,https://shop.ring.com/collections/video-doorbells//products/video-doorbell-pro
+RingDoorViewCam,https://shop.ring.com/pages/door-view-cam
 SkyBellWi-FiVideoDoorbell,http://www.skybell.com/product/skybell-video-doorbell-hd/
 VivintDoorbellCamera,https://www.vivint.com/products/doorbell-camera
 VTechIS741,https://www.vtechphones.com/products/video-doorbell-system
 ZmodoGreet,https://www.zmodo.com/greet-720p-wifi-doorbell
+iSeeBellDoorbell,https://www.iseebell.com/video-doorbell
+RemoBell,https://remoplus.co/products/remobell_wireless_wifi_video_doorbell
 
 Camera:
 BelkinCamera,https://www.belkin.com/us/p/P-F7D7606/
@@ -21,6 +29,11 @@ NestCam,https://nest.com/cameras/nest-cam-indoor/overview/
 NetatmoCamera,https://www.netatmo.com/en-eu/security/cam-indoor
 SamsungSmartCamera,https://www.samsung.com/us/smart-home/home-monitoring/cameras/smartcam-hd-pro-1080p-full-hd-wifi-camera-snh-p6410bn/
 TplinkCamera,https://www.tp-link.com/au/products/details/cat-19_NC450.html
+ZmodoSnapPro,https://www.zmodo.com/snap-pro-security-camera/
+ZmodoPivot,https://www.zmodo.com/pivot-cloud-wireless-indoor-security-camera/
+MaximusSmartSecurityLight,https://getkuna.com/pages/smart-security-light
+MaximusCameraFloodLight,https://getkuna.com/pages/camera-floodlight
+ArloUltra,https://arlo.com/nz/?cid=eml_000135
 
 HouseEnvironmentMonitor:
 AwairAirQuality,https://getawair.com/
@@ -29,6 +42,10 @@ NetatmoWeatherStation,https://www.netatmo.com/en-eu/weather/weatherstation
 uHoo,https://uhooair.com/product/uhoo/
 airthinxIAQ,https://airthinx.io/solution/
 Foobot,https://foobot.io/features/
+NestThermostat,https://nest.com/ca/thermostats/nest-learning-thermostat/overview/
+AcerAirMonitor,http://home.cloud.acer.com/airmonitor/
+EcoBee4,https://www.ecobee.com/ecobee4/
+LyricT5,https://www.honeywellhome.com/statichtml/lyric-t5-wi-fi.html
 
 HealthMonitor:
 BlipcareBPMeter,http://www.blipcare.com/blip-bp.html
@@ -37,6 +54,10 @@ WithingsSleepSensor,https://www.withings.com/mx/en/sleep
 CueHealthMonitoringSystem,https://www.cuehealth.com/#product
 MobiUSSP1System,https://www.frontierhealth.co/products/mobius-sp1-system
 Activ5,https://www.activ5.com/mobile-device-demo/
+BodyGuardianHeart,https://www.preventicesolutions.com/technologies/body-guardian-heart.html
+
+
+
 
 MediaPlayer:
 ChromecastUltra,https://store.google.com/product/chromecast_ultra
@@ -45,6 +66,10 @@ RokuStreamingStick,https://www.roku.com/en-gb/products/streaming-stick-plus
 AppleTV4K,https://www.apple.com/lae/apple-tv-4k/
 NvidiaShieldTV,https://www.nvidia.com/en-us/shield/
 SamsungAllshareCast,https://www.samsung.com/us/2012-allshare-play/
+H3Espresso,https://uk.humaxdigital.com/product/h3/
+
+
+
 
 Light:
 PhillipsHue,https://www2.meethue.com/en-us/p/hue-white-and-color-ambiance-single-bulb-par16/046677456672
