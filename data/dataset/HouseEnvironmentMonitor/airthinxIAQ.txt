@@ -1,0 +1,61 @@
+Continuous Indoor Air Quality Monitoring | Airthinx
+Toggle navigation
+indoor air quality
+The US EPA identified indoor pollutants as carcinogens that trigger asthma, allergies and respiratory diseases. To meet the growing demand for Indoor Air Quality (IAQ) management, airthinx delivers the first of its kind IAQ monitoring solution, financially feasible at room level, in any infrastructure.
+In comparison to static monitoring, continuous monitoring enhances high temporal-spatial resolution and variability of air pollution. Powered by a leading IoT platform, airthinx, ensures scalability, reliability and security of the monitoring solution and allows access to data anytime, anywhere.
+why airthinx?
+Airthinx is an award-winning air quality monitoring solution designed to improve occupant health and create safe & energy-efficient indoor spaces, everywhere in the world. Developed by industrial hygienists and engineers, airthinx is a professional instrument designed for everyone. By utilizing cutting edge technology sensors and artificial intelligence, it delivers continuous and accurate measurements of 9 air quality parameters.
+Temperature
+CO2
+CH2O
+PM 1
+PM 2.5
+PM 10
+Humidity
+VOC
+Pressure
+Optimal temperature conditions range between 68 and 74 degrees Fahrenheit. Anything over can result in mental fatigue causing diminished reaction times and delayed information processing.
+As more people occupy a space, carbon dioxide levels spike, increasing the likelihood of sleepiness, distraction, lethargy and affecting productivity, concentration, and work performance.
+Formaldehyde is a naturally occurring organic compound with the formula CH2O (H-CHO).
+The dangerous gas is commonly emitted by wooden painted surfaces, fabrics, carpets, adhesives & glues in furniture, and building materials like pressed wood & particle board.
+Dust, fungi, bacteria, pollen, & diesel exhaust are common examples of Particulate Matter. The smaller these particles are, the worse they are for your health, especially because they are invisible. The smallest of the Particulates, linger in the atmosphere for weeks at a time, are freely transported by air currents, and are most likely to cause infection by bacteria released by just a single cough or sneeze.
+Exposure to hazardous conditions resulting from building decay, water damage, poor plumbing, and legacy pollutants are exacerbated by high levels of humidity. Spikes in humidity may result in mold growth on any substance which can happen within 48 hours of contact with a surface, triggering asthma, respiratory symptoms, irritation of the eyes, nose & mouth.
+VOCs, volatile organic compounds, are cancer-causing chemicals released by cleaning agents.
+Differences in barometric pressure can increase the flow of infectious particles.
+Certain rooms within a healthcare building or industrial space should be positively or negatively pressurized with respect to surrounding areas. Positively pressurized rooms are usually designed to protect a patient, clean supplies, or equipment within the room. Negative pressure is used to contain airborne contaminants within a room.
+why is it different?
+an award winning solution
+Accuracy. Airthinx is the only device on the market that measures 9 air quality parameters with the accuracy & precision similar to industry reference instruments.
+Connectivity.
+Airthinx is the only device on the market that offers true mobility. With a built-in 3G/4G cell modem, it’s not dependent on WiFi access for connectivity.
+Developer Tools.
+Airthinx is designed with integration and interoperability in mind. Its developer tools enable data management and device management in addition to direct integration to systems such as SAP, Nest and IFTTT.
+Professional Device.
+Airthinx is developed with the professional in mind. With a plethora of tools, it is the most comprehensive solution for indoor air quality monitoring.
+Conventional Devices: High accuracy with limited connectivity, tools, & scalability.
+Gadgets: Low accuracy and limited tools & scalability.
+How does it work?
+Airthinx IAQ utilizes smart sensor technology to continuously capture data processed locally and then pushed to the cloud via a secure & reliable connection.
+The cloud is the mastermind of the whole operation. The hub enables monitoring of all the devices on the field and manages all the connections to applications and 3rd party solutions such as, SAP, Nest, IFTTT and more.
+Providing tools for access to data for professionals and everyone else via the web or app.
+...and it works with others too!
+all your data in one place
+In a professional setting different systems have to operate within the same platform. Airthinx, is developed on , the most recognized platform in the environmental monitoring space. As a result, in
+you can easily view data not only from Airthinx IAQ but also from other prominent professional instruments such as, TSI, Thermo Scientific, Quest and other.
+Airthinx IAQ
+Cloud
+Thiamis 1000
+DustTrak
+Partisol
+Gill Weather Station
+Dataram
+PDR-1500
+QuestTemp
+Soundpro
+Developers & API
+made for professionals by professionals
+airthinx is also designed with the developer in mind, having inherited all of the tools from the . The suite of developer tools include APIs and SDKs to create applications, hardware, world class IoT solutions and services, while reducing concept to market time.
+Products
+Company
+Subscribe and stay updated
+Copyright © 2019 Airthinx. All rights reserved.

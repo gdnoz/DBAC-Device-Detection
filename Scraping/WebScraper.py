@@ -98,8 +98,11 @@ class WebScraper():
         from bs4 import BeautifulSoup
         bs = BeautifulSoup(html, 'html.parser')
 
-        for script in bs(["script", "style"]):
+        for script in bs(["script", "style"]): #Remove scripts
             script.decompose()
+
+        for a in bs.find_all('a'): #Remove links
+            a.decompose()
 
         text = bs.get_text()
         lines = (line.strip() for line in text.splitlines())
@@ -120,7 +123,7 @@ class WebScraper():
         from contextlib import closing
 
         try:
-            with closing(get(url, stream=True, timeout=2)) as resp:
+            with closing(get(url, stream=True, timeout=10)) as resp:
                 if WebScraper.__resp_is_valid(resp):
                     return resp.content
                 else:
@@ -153,4 +156,4 @@ class WebScraper():
 
 if __name__ == "__main__":
     # print(WebScraper.extract_text_from_url("https://ipc.tplinkcloud.com/download.php"))
-    print(WebScraper.extract_links_from_url("http://www.meethue.com"))
+    print(WebScraper.extract_links_from_url("https://store.google.com/us/product/google_home?hl=en-US"))

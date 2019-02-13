@@ -1,0 +1,42 @@
+Motion Sensor - Z-Wave and HomeKit motion detector | FIBARO
+Get to know the possibilities of a complete smart home system.
+Get to know FIBARO smart devices working with SmartThings.
+Get to know FIBARO smart devices working with Apple HomeKit.
+Motion Sensor Motion, light and temperature sensor
+See it in action
+Small is beautiful Just under 2 inch diameter, featuring an immaculate, sleek, and modern white casing, you’ll fall in love with this motion sensor at first sight.
+Inspired by nature
+Full mobility Battery-powered and completely wireless, the FIBARO Motion Sensor features a smart bracket with grip that allows it to be affixed almost anywhere – even on a wall or ceiling. The sensor’s location can be changed at any time for ultimate comfort and convenience.
+Technologically advanced FIBARO engineers created one of the world's most advanced technologies and placed in a miniature case.
+Compatible with other devices Its true potential shines when the FIBARO Motion Sensor is paired with other smart home devices. The sensor is capable of activating even the most complex sequences which are only limited by human imagination.
+Motion       Lights: ON
+Multisensor Apart from sensing motion, the device also measures temperature and light levels, offering you a more complete motion detection solution. The accelerometer detects change in location or any attempt at opening its casing.
+Motion sensor Light sensor Temperature sensor Accelerometer
+Also available for Apple HomeKit We've created two lines of the FIBARO Motion Sensor - one for the FIBARO system or other compatible Z-Wave controllers, and one for Apple HomeKit. Whichever platform you choose, our products are designed to work seamlessly with either technology.
+Hey Siri, has any motion been detected in the entrance?
+Available with
+Colors indicate temperature change After detecting movement, the motion detector will use a different color to inform you about the current temperature in the room.
+Guarding your safety The FIBARO Motion Sensor is your home's ultimate guardian, watching over you and your family 24/7.
+Alarm panel The Fibaro Home Center panel displays more than just the current status. It also contains the history of events crucial to your safety.
+Immediate notifications The device will immediately inform you about any motion by sending a notification to your smart phone...
+for your convenience …or, by choosing appropriate settings, it won't bother you at all.
+Light intensity measurement A sensor hidden in the FIBARO Motion Sensor will allow you to dynamically adjust the lamps to the amount of natural light. The system will set the optimal lighting levels for everyone in the house, and illuminate the space around the building, all while conserving energy and saving money.
+LIGHT SENSOR 128 LUX
+A home that wakes up with you The FIBARO Motion Sensor makes each morning unique. As soon as you wake up, the sensor will activate a scene that wakes up the entire house along with you.
+Always perfect lighting By measuring light intensity, the FIBARO Motion Sensor will adjust lighting to your needs. The sensor’s movement monitoring feature can wait until your little one is sound asleep before turning off the light. With FIBARO, you don’t need to worry abour your child when they sleep, or about wasting unnecessary energy.
+LIGHT SENSOR 128 LUX
+Adjustable sensitivity levels The sensitivity setting of the FIBARO Motion Sensor can be changed to meet your needs. For example, adjust it to exclude the detection of small animals, like your cat or dog.
+*for devices working with Apple HomeKit this functionality requires support from mobile app
+Full control via the mobile app Our mobile app allows you to control and check status of the motion detector right from your phone. It is the most convenient and the easiest way to control your home from wherever you are.
+Available on:
+Watch the video
+Choose your platform We've created two versions of the FIBARO Motion Sensor - one for the FIBARO system or other compatible Z-Wave controllers, and one for Apple HomeKit. Select the one compatable with your system. with either technology.
+Bluetooth communication 2 years of battery life Activating simple scenes Voice control through Apple Siri® Works with Apple devices with iOS 9 and newer. Sharing home function
+Wireless communication 2 years of battery life Activating complex scenes Smart notifications Compatible with Android and iOS devices A wide range of operation
+Where to buy
+SUPPORT
+CUSTOMER
+B2B
+ABOUT
+© 2019. FIBAR GROUP S.A. All rights reserved.
+We use cookies to personalize content, customize and analyze advertising and ensure the safe use of the site. By clicking or navigating this site, you consent to the collection of information at www.fibaro.com and beyond using cookies. More information are available in the document:

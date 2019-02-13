@@ -1,0 +1,207 @@
+Wemo Mini WiFi Smart Plug
+SALE
+NEW
+Wemo Mini Smart Plug
+F7C063
+/ {{blVariant}}
+Wemo Mini Smart Plug is rated
+4.1 out of
+5 by
+619.
+y_2019, m_2, d_12, h_2
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
+cp_1, bvpage1
+co_hasreviews, tv_0, tr_619
+loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
+clientName_belkin
+bvseo_sdk, java_sdk, bvseo-2.3.0.0
+CLOUD, getAggregateRating, 31ms
+REVIEWS, PRODUCT
+Write a review
+Ask a question
+SALE
+NEW
+Wemo Mini Smart Plug
+F7C063
+/ {{blVariant}}
+Wemo Mini Smart Plug is rated
+4.1 out of
+5 by
+619.
+y_2019, m_2, d_12, h_2
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
+cp_1, bvpage1
+co_hasreviews, tv_0, tr_619
+loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
+clientName_belkin
+bvseo_sdk, java_sdk, bvseo-2.3.0.0
+CLOUD, getAggregateRating, 31ms
+REVIEWS, PRODUCT
+Belkin Employee Discount PIP [EMF]
+$29.99
+Buy Now
+This item is added to your
+CONTROL YOUR HOME FROM ANYWHERE
+The Wemo Mini Smart Plug lets you control your electronic devices right from your phone or tablet. The Smart Plug uses your existing home WiFi network to provide wireless control of lamps, heaters, fans, and more--with no subscription or hub required. Simply plug the Wemo Mini Smart Plug into an electrical outlet, plug a device into the Smart Plug, and control your device using the free Wemo app. Whether you’re unwinding on the couch or vacationing in the Caribbean, you’ll be able to remotely control your lights and appliances from anywhere in the world.
+CONVENIENT, COMPACT DESIGN
+With its sleek, compact form factor, Wemo Mini fits into any electrical outlet without obstructing other sockets. This allows you to stack an additional Wemo Mini or plug in another device in the same outlet.
+SCHEDULE YOUR LIGHTS AND APPLIANCES
+Wemo Mini lets you easily set automatic schedules for any device that’s plugged in--from lamps to fans to space heaters. Using the free Wemo mobile app, you can schedule a fan to turn on at noon, or synchronize a lamp with the sunset so you never come home to a dark house.
+PROTECT YOUR HOME WITH RANDOMIZED LIGHTS
+With the ability to randomize your lights, Wemo Mini protects your home better than a mechanical timer. When set to “Away Mode,” the smart plug will turn plugged-in lights on and off randomly to make it appear like you’re home--even when you’re not.
+WORKS WITH AMAZON ALEXA
+Wemo works seamlessly with Alexa to give you hands-free voice control over your lights and devices. Enable the Wemo skill and pair Wemo Mini with Alexa to turn any plugged-in device on or off with just the power of your voice.
+WORKS WITH THE GOOGLE ASSISTANT
+Wemo works with the Google Assistant, allowing you to control your lights using your Google Home devices, your Android or iPhone, or any other device with built-in Google Assistant support. You’ll enjoy seamless, intuitive voice control over any device that’s connected to Wemo Mini.
+WORKS WITH APPLE HOMEKIT
+Wemo is compatible with Apple HomeKit, meaning you can control your Wemo Mini with the Apple Home app and Siri from your iPhone, iPad, Apple Watch, or HomePod. Now you can ask Siri to turn on the lights and brew your coffee when you wake up.
+PAIRS WITH NEST FOR AUTOMATIC HOME-AWAY CONTROL
+When paired with Nest's Thermostat, Nest's "home" and "away" modes can sync with your Wemo Mini for automatic control. Nest can tell Wemo when you're home or away, so your fan can turn off to save energy when the house is empty. Or your lights can turn on automatically when you walk in the door.
+WORKS WITH IFTTT FOR AUTOMATED RECIPES
+"If This, Then That" is a free web-based service that opens up an amazing array of possibilities for your Wemo Mini. Visit IFTTT.com to find "recipes" for making Wemo Mini turn lights on and off based on real-world events, send you push notifications about device activity, and much more.
+PEACE OF MIND WITH REMOTE CONTROL
+When a light or appliance is plugged into a Wemo Mini Smart Plug, you can turn it off from your phone no matter where you are. You’ll never have to worry that you accidentally left the iron or Christmas lights on again.
+PRODUCT DIMENSIONS
+3.8" L x 1.4" H x 2.4" D
+WEIGHT
+3.2 ounces
+SYSTEM REQUIREMENTS
+WiFi router
+Android 4.4 or higher
+iOS 10 or higher
+GENERAL SPECIFICATIONS
+Electrical Ration: 120V~/15A/60Hz/1800W
+WiFi: 2.4GHz 801.11n
+Free Wemo App:
+Package Includes:
+Wemo Mini Smart Plug
+Quick Start Guide
+Indoor Use:
+Designed for residential indoor dry location use only.
+Turn lights and appliances on or off — from anywhere Space-saving design won't cover the whole outlet Put your lights and appliances on a schedule or sync them to Sunset and Sunrise Works with Amazon Alexa and Google Voice for hands-free voice control Works with Nest Thermostat for automatic home and away modes Works with your existing home Wi-Fi network and mobile Internet (3G/4G), no hub or subscription required Modular system. You can add additional Wemo Mini smart plugs easily, any time Intuitive, easy set up and easy to use Works with the entire family of Wemo products Works with IFTTT, connecting you to a whole world of Web apps Free Wemo App for Android and iOS operating systems Three-year limited warranty
+Wi-Fi Technology
+2.4GHz 801.11n
+Minimum System Requirements
+Wi-Fi routerAndroid 4.1 or higheriOS 9 or higher
+Dimensions (LxWxH)
+3.8" L x 1.4" H x 2.4" D
+Weight
+3.2 ounces
+Additional Information
+Electrical Rating: 120V~/15A/60Hz/1800W;
+Indoor Use: Designed for residential indoor dry location use only.
+Rated 4 out of
+5
+by
+Tom Slick from
+Setting up the second one was not easy
+I purchased two of the WEMO Mini Smart plugs.
+I loved the fact that it had an on/off button right on the device.
+I could use it immediately on a lamp.
+I set it up with the WEMO app and had no problems.
+I attached it to my Google Home App.
+Then I went to set up the second one and I could not get past the screen where it wanted me to set it up with the "HOME" app. I also power cycled my iPhone to try to get rid of the second one.
+Nothing seemed to work.
+I ended up
+deleting WEMO from the Google Home app and resetting both Smart plugs.
+I went through the set up again and was able to get them to work.
+Spending over an hour on this was not what I had planned for that time.
+Now that they are set up I am happy with the performance.
+I can use voice commands to turn them on and off through my Google Home mini's.
+I can also assign them to a room and they will be controlled when I say to turn off or on that room lights.
+Date published: 2019-02-06
+Rated 1 out of
+5
+by
+disappointed frustrated from
+Terrible! Does not work
+WiFi signal strong and brand new iPhone XR sitting right next to device and it cannot find accessory
+Date published: 2019-02-05
+Rated 1 out of
+5
+by
+Seriously from
+Frustrating
+I purchased two of these plugs. I was able to set up one thru trial and error but then it disconnected the next day and I cannot reconnect. I plugged in the other one to try that-followed directions, downloaded app, tried to scan the code from box with my smartphone and it responds with incompatible network. I’m not a “tech” person but would like to think I’m smarter than a plug. Apparently not. Huge waste of money.
+Date published: 2019-02-05
+Rated 5 out of
+5
+by
+KLH1 from
+Easy to use
+Easy set up. Works great with my Fios connection and my Google Home Mini.
+Date published: 2019-02-04
+Rated 1 out of
+5
+by
+MScotty from
+Stopped Working
+Purchased at Costco for a family stocking stuffer for Christmas.
+My daughter surprisingly was the one who took most interest in them, she uses one in her room and the other she set up(timer mode)in our family room to turn a light on for when my wife gets home from work.
+Well that one was working great until one night the light wasn't coming on, it won't even work using the manual button on the switch.
+The blue light just blinks.
+Don't know if there is a way to reset it, but I would think it should still work manually?
+Date published: 2019-01-29
+Rated 4 out of
+5
+by
+nanny789 from
+good product
+I just bought it today and now it works great with my Alexa. no I can tell her to turn it on and off and it works. I think it was totally worth the price at Best Buy.
+Date published: 2019-01-26
+Rated 5 out of
+5
+by
+Bi56 from
+Fantastic w/ HomeKit
+Setup & integration with HomeKit was much easier than I expected. I use it to control a hot water recirculator. Off when we’re away, On when we’re home, and scheduled off at night.
+Date published: 2019-01-25
+Rated 5 out of
+5
+by
+skelsey1 from
+Awesome for the money!!
+This is such a great product, I had to go buy another.
+This works so well using the app.
+Now, Belkin has made it possible for the WEMO app to work with the Apple Home app, and that enables use of Siri.
+The Mini is very conveniently shaped so that the unit does not cover the 2nd plug in an outlet.
+I would recommend this product to anyone and everyone!!!! [This review was collected as part of a promotion.]
+Date published: 2019-01-17
+y_2019, m_2, d_12, h_2
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
+cp_1, bvpage1
+co_hasreviews, tv_0, tr_619
+loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
+clientName_belkin
+bvseo_sdk, java_sdk, bvseo-2.3.0.0
+CLOUD, getReviews, 32ms
+REVIEWS, PRODUCT
+Related Products
+Select Options
+linksys_hybris5
+CONNECT WITH US
+This is a required field.
+Email id is invalid.
+SIGN UP
+×
+Email Sign-Up
+Sign up today for the latest news and product updates from Belkin.
+Send me emails on the following topics:
+Error please try again.
+Stay in the know- send me news, updates and special promotions (Select All)
+Apple Device Accessories
+Samsung and Android Device Accessories
+Home Automation
+Networking
+Active and Fitness
+Exclusive Offers
+Small Business
+New Products, Updates and Tips
+SUBMIT
+Submitting...
+Belkin will not sell or rent your email address. Check out our
+if you&aposd like to learn more.
+Products
+Support
+About Belkin
+© 2019 Belkin International, Inc.
