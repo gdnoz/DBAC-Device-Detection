@@ -8,14 +8,14 @@ Wemo Mini Smart Plug is rated
 4.1 out of
 5 by
 619.
-y_2019, m_2, d_12, h_2
+y_2019, m_2, d_13, h_2
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
 cp_1, bvpage1
 co_hasreviews, tv_0, tr_619
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 31ms
+CLOUD, getAggregateRating, 16ms
 REVIEWS, PRODUCT
 Write a review
 Ask a question
@@ -28,14 +28,14 @@ Wemo Mini Smart Plug is rated
 4.1 out of
 5 by
 619.
-y_2019, m_2, d_12, h_2
+y_2019, m_2, d_13, h_2
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
 cp_1, bvpage1
 co_hasreviews, tv_0, tr_619
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 31ms
+CLOUD, getAggregateRating, 16ms
 REVIEWS, PRODUCT
 Belkin Employee Discount PIP [EMF]
 $29.99
@@ -167,14 +167,14 @@ Now, Belkin has made it possible for the WEMO app to work with the Apple Home ap
 The Mini is very conveniently shaped so that the unit does not cover the 2nd plug in an outlet.
 I would recommend this product to anyone and everyone!!!! [This review was collected as part of a promotion.]
 Date published: 2019-01-17
-y_2019, m_2, d_12, h_2
+y_2019, m_2, d_13, h_2
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
 cp_1, bvpage1
 co_hasreviews, tv_0, tr_619
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getReviews, 32ms
+CLOUD, getReviews, 16ms
 REVIEWS, PRODUCT
 Related Products
 Select Options

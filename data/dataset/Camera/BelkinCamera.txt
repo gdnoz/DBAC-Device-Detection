@@ -8,14 +8,14 @@ NetCam HD+ Wi-Fi Camera with Glass Lens and Night Vision is rated
 2.7 out of
 5 by
 52.
-y_2019, m_2, d_12, h_2
-bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
+y_2019, m_2, d_13, h_20
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
 cp_1, bvpage1
 co_hasreviews, tv_0, tr_52
 loc_en_US, sid_P-F7D7606, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 16ms
+CLOUD, getAggregateRating, 15ms
 REVIEWS, PRODUCT
 Write a review
 Ask a question
@@ -28,14 +28,14 @@ NetCam HD+ Wi-Fi Camera with Glass Lens and Night Vision is rated
 2.7 out of
 5 by
 52.
-y_2019, m_2, d_12, h_2
-bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
+y_2019, m_2, d_13, h_20
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
 cp_1, bvpage1
 co_hasreviews, tv_0, tr_52
 loc_en_US, sid_P-F7D7606, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 16ms
+CLOUD, getAggregateRating, 15ms
 REVIEWS, PRODUCT
 Belkin Employee Discount PIP [EMF]
 $129.99
@@ -171,8 +171,8 @@ Briharm84 from
 This shouldn’t say night vision at all
 Camera works great when it’s light out like vision all my work for couple feet out not much good at all
 Date published: 2018-04-16
-y_2019, m_2, d_12, h_2
-bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
+y_2019, m_2, d_13, h_20
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
 cp_1, bvpage1
 co_hasreviews, tv_0, tr_52
 loc_en_US, sid_P-F7D7606, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]

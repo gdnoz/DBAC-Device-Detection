@@ -55,21 +55,21 @@ CueHealthMonitoringSystem,https://www.cuehealth.com/#product
 MobiUSSP1System,https://www.frontierhealth.co/products/mobius-sp1-system
 Activ5,https://www.activ5.com/mobile-device-demo/
 BodyGuardianHeart,https://www.preventicesolutions.com/technologies/body-guardian-heart.html
-
-
-
+FitbitAriaScale,https://www.fitbit.com/dk/aria2
+GarminIndexScale,https://buy.garmin.com/en-US/US/p/530464
+OmronEvolv,https://www.omron-healthcare.com/en/evolv#tracking
 
 MediaPlayer:
 ChromecastUltra,https://store.google.com/product/chromecast_ultra
+Chromecast,https://store.google.com/us/product/chromecast?hl=en-US
 AmazonFireTV4K,https://www.amazon.com/Introducing-Fire-TV-Stick-4K-with-All-New-Alexa-Voice-Remote/dp/B079QHML21
+AmazonFireTVCube,https://www.amazon.com/Fire-TV-Cube-hands-free-with-Alexa-and-4K-Ultra-HD-and-All-New-Alexa-Voice-Remote/dp/B0791T9CV7
 RokuStreamingStick,https://www.roku.com/en-gb/products/streaming-stick-plus
+RokuExpress,https://www.roku.com/en-gb/products/roku-express
 AppleTV4K,https://www.apple.com/lae/apple-tv-4k/
 NvidiaShieldTV,https://www.nvidia.com/en-us/shield/
 SamsungAllshareCast,https://www.samsung.com/us/2012-allshare-play/
 H3Espresso,https://uk.humaxdigital.com/product/h3/
-
-
-
 
 Light:
 PhillipsHue,https://www2.meethue.com/en-us/p/hue-white-and-color-ambiance-single-bulb-par16/046677456672
@@ -78,12 +78,22 @@ NanoleafAuroraLighting,https://nanoleaf.me/en/consumer-led-lighting/products/sma
 HiveActiveLightStarterKit,https://www.hivehome.com/products/hive-active-light-dimmable-warm-white
 TP-LinkLB130,https://www.tp-link.com/uk/products/details/LB130.html
 Eveflare,https://www.evehome.com/en/eve-flare
+SengLed,https://us.sengled.com/pages/smart-led
+IkeaTradfri,https://www.ikea.com/gb/en/products/lighting/smart-lighting/tr%C3%A5dfri-dimming-kit-white-spectrum-grey-white-art-70338932/
+CbyGELife,https://www.cbyge.com/pages/pdp-life
+LumosSmartBulb,https://www.eufylife.com/uk/products/variant/lumos-smart-bulb-white/T1011321
 
 Alarm:
 SmartThingsADTsecurityhub,https://www.smartthings.com/products/smartthings-adt-security-hub
 iSmartAlarm,https://www.ismartalarm.com/devices/cubeone/isa00011.html
 FortressSmartAlarm,https://www.fortresssecuritystore.com/wireless-alarm-system-bundles/s03-wifi-alarm-system-kits/s03-starter-kit.html
 SimplisafeSecuritysystem,https://simplisafe.com/wireless-home-security-feature-overview
+YaleAlarmSync,https://www.yale.co.uk/en/yale/couk/products/smart-living/smart-home-alarms/sync-smart-alarm/
+KeruiWifiGSMAlarm,http://www.keruistore.com/KERUI-W18-WIFI-GSM-SMS-APP-Control-Alarm-System-720P-WIFI-Outdoor-IP-Camera.html
+Thustar HomeAlarm,https://home-security-alarm.systemalarm.net/thustar-wireless-home-office-security-system.html?product_id=xDXawnMbz-dIVg
+KeruiHomeIntruder,http://www.keruistore.com/KERUI-W193-2G-3G-WiFi-PSTN-Wireless-Home-Intruder-Alarm-System-APP-Control-alarm.php
+Smanos X500,https://www.smanos.com/X500
+BlaupunktQ3200,https://www.blaupunkt.com/en/nc/products/home-security/products/single/15137/
 
 MotionSensor:
 SmartThingsMotionSensor,https://www.smartthings.com/products/smartthings-motion-sensor
@@ -92,10 +102,19 @@ HiveWindowSensor,https://www.hivehome.com/products/hive-window-door-sensor
 HiveMotionSensor,https://www.hivehome.com/products/hive-motion-sensor
 EveMotionSensor,https://www.evehome.com/en/eve-motion
 FibaroMotionSensor,https://www.fibaro.com/en/products/motion-sensor/
+DLinkWifiMotionSensor,http://us.dlink.com/products/connected-home/wi-fi-motion-sensor/
+YaleMotionSensor
+Honeywell5800PIR,https://www.security.honeywell.com/product-repository/5800pir-series
+Honeywell5800PIROD,https://www.security.honeywell.com/product-repository/5800pir-od
 
 ElectricControl:
 SmartThingsOutlet,https://www.smartthings.com/products/smartthings-outlet
 WemoMini,https://www.belkin.com/us/p/P-F7C063/
 WemoInsightSmartPlug,https://www.belkin.com/us/p/P-F7C029/
 CurrantSmartPlug,https://www.currant.com/smart-outlet
-kasaWifiPowerStrip,https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-wi-fi-power-strip-hs300
+TPLinkHS300,https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-wi-fi-power-strip-hs300
+iHomeISP6X,https://www.smartthings.com/products/ihome-isp6x-smartplug
+AukeyDualPlug,https://www.aukey.com/products/dual-outlet-smart-plug-sh-pa3
+iDevicesSwitch,https://store.idevicesinc.com/idevices-switch/
+AmazonSmartPlug,https://www.amazon.com/Amazon-Smart-Plug-works-Alexa/dp/B01MZEEFNX
+TPLinkHS100,https://www.tp-link.com/uk/products/details/cat-5258_HS100.html
