@@ -1,0 +1,10 @@
+Alarm
+Camera
+Doorbell
+ElectricControl
+HealthMonitor
+HouseEnvironmentMonitor
+Light
+MediaPlayer
+MotionSensor
+Speaker
