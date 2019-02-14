@@ -15,7 +15,7 @@ class MUDUtilities:
         import os
         import json
 
-        with open(os.path.join(os.path.join(os.getcwd(),os.path.join("data","MUD_Files")),filename)) as f:
+        with open(os.path.join("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/data/MUD_Files",filename)) as f:
             mud_contents = json.load(f)
             urls = list()
 
@@ -35,7 +35,7 @@ class MUDUtilities:
         """
         import ssl
         import os
-        from Scraping.WebScraper import WebScraper
+        from Scraping.WebScrapingUtilities import WebScrapingUtilities
 
         ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -49,7 +49,7 @@ class MUDUtilities:
                 url = items[0]
                 device = items[1].rstrip()
 
-                WebScraper.get_content_from_url_and_save(url, os.path.join(os.getcwd(), os.path.join("data","MUD_Files")), device + ".json")
+                WebScrapingUtilities.get_content_from_url_and_save(url, os.path.join(os.getcwd(), os.path.join("data", "MUD_Files")), device + ".json")
 
 if __name__ == "__main__":
     MUDUtilities.get_mud_files()

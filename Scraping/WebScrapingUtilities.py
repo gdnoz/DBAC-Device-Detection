@@ -1,4 +1,4 @@
-class WebScraper():
+class WebScrapingUtilities():
     """
     This class contains methods for performing web scraping.
     """
@@ -31,7 +31,7 @@ class WebScraper():
 
         @returns: HTML content
         """
-        html_content = WebScraper.get_content_from_url(url)
+        html_content = WebScrapingUtilities.get_content_from_url(url)
 
         import os
 
@@ -39,7 +39,7 @@ class WebScraper():
             f.write(html_content)
 
     @staticmethod
-    def extract_text_from_url(url: str) -> str:
+    def extract_text_from_url(url: str, **kwargs) -> str:
         """
         Performs HTTP GET on the url. If the response is valid, the response is cleaned up to reomve any HTML syntax.
         :param url: Url of content.
@@ -47,12 +47,12 @@ class WebScraper():
         """
 
         try:
-            html = WebScraper.__http_get(url)
+            html = WebScrapingUtilities.__http_get(url, timeout=kwargs.get("timeout",None))
         except Exception as e:
             raise e
 
         if html:
-            return WebScraper.__clean_html(html)
+            return WebScrapingUtilities.__clean_html(html)
         else:
             raise TypeError("No HTML retrieved, no content retrieved from URL.")
 
@@ -66,7 +66,7 @@ class WebScraper():
         from bs4 import BeautifulSoup
 
         try:
-            content = WebScraper.__http_get(url)
+            content = WebScrapingUtilities.__http_get(url)
         except Exception as e:
             raise e
 
@@ -111,20 +111,30 @@ class WebScraper():
 
 
     @staticmethod
-    def __http_get(url: str) -> Optional[Response]:
+    def __http_get(url: str, **kwargs) -> Optional[Response]:
         """
         Tries to perform HTTP GET against the given url.
         :param url: Url as string.
         :return: THe content of the reply.
         """
+        timeout = kwargs.get("timeout", None)
+
+        if not timeout:
+            timeout = 10
+
 
         from requests import get, ConnectTimeout
         from requests.exceptions import RequestException
         from contextlib import closing
 
+        fixed_url = ""
+
+        if "http" not in url:
+            fixed_url = "http://" + url
+
         try:
-            with closing(get(url, stream=True, timeout=10)) as resp:
-                if WebScraper.__resp_is_valid(resp):
+            with closing(get(fixed_url, stream=True, timeout=timeout)) as resp:
+                if WebScrapingUtilities.__resp_is_valid(resp):
                     return resp.content
                 else:
                     raise TypeError("Response not valid.")
@@ -156,4 +166,4 @@ class WebScraper():
 
 if __name__ == "__main__":
     # print(WebScraper.extract_text_from_url("https://ipc.tplinkcloud.com/download.php"))
-    print(WebScraper.extract_links_from_url("https://store.google.com/us/product/google_home?hl=en-US"))
+    print(WebScrapingUtilities.extract_links_from_url("https://store.google.com/us/product/google_home?hl=en-US"))

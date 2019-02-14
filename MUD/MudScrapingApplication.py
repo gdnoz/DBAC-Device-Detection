@@ -1,8 +1,8 @@
 import os
 import re
 
-from MUD_Tools.MUDUtilities import MUDUtilities
-from Scraping.WebScraper import WebScraper
+from MUD.MUDUtilities import MUDUtilities
+from Scraping.WebScrapingUtilities import WebScrapingUtilities
 
 path = os.path.join(os.getcwd(), "MUD_Files")
 textfolder = "MUDTexts"
@@ -31,12 +31,12 @@ for filename in os.listdir(path):
                     url = "http://"+url
 
                 text += "MAIN SITE: " + url +" \n\n"
-                text += WebScraper.extract_text_from_url(url)
-                urls = WebScraper.extract_links_from_url(url)
+                text += WebScrapingUtilities.extract_text_from_url(url)
+                urls = WebScrapingUtilities.extract_links_from_url(url)
 
                 for url1 in urls:
                     text += "\n\nDERIVED SITE: " + url1 +" \n\n"
-                    text += WebScraper.extract_text_from_url(url1)
+                    text += WebScrapingUtilities.extract_text_from_url(url1)
 
             except Exception as e:
                 print(e)

@@ -39,10 +39,10 @@ class DataSetCreator:
                     url = line_tokens[1]
                     document_path = os.path.join(category_path,document_name)
 
-                    from Scraping.WebScraper import WebScraper
+                    from Scraping.WebScrapingUtilities import WebScrapingUtilities
 
                     try:
-                        text = WebScraper.extract_text_from_url(url)
+                        text = WebScrapingUtilities.extract_text_from_url(url)
                         IOUtilities.create_file(document_path+".txt")
                         IOUtilities.write_content_to_file(text, document_path+".txt")
                     except TypeError as e:
