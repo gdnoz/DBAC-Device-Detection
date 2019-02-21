@@ -5,14 +5,16 @@ class MudClassification:
 
     def __init__(self):
         from Text_Classification.DeviceClassifier import DeviceClassifier
-        self.classifier = DeviceClassifier(threshold=0.2)
+        self.classifier = DeviceClassifier(threshold=0.4)
 
     def classify_mud(self, filename: str) -> str:
         """
-        Classifies device type that the specified mud file descirbes.
+        Classifies device type that the specified mud file describes.
         :param filename: Filename of the mud file.
         :return: Classified class.
         """
+
+        print("Classifying " + filename + "...")
         from MUD.MUDUtilities import MUDUtilities
         from MUD.URLRelevantTextScraper import URLRelevantTextScraper
         return self.classifier.predict_text(URLRelevantTextScraper(MUDUtilities.get_all_urls_from_mud(filename)).extract_text_from_urls())

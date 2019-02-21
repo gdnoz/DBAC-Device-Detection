@@ -30,6 +30,18 @@ class MUDUtilities:
         return urls
 
     @staticmethod
+    def get_systeminfo_from_mud_file(filename: str) -> str:
+        import os
+        import json
+
+        with open(os.path.join("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/data/MUD_Files",filename)) as f:
+            mud_contents = json.load(f)
+            systeminfo = mud_contents['ietf-mud:mud']['systeminfo']
+
+        return systeminfo
+
+
+    @staticmethod
     def get_mud_files():
         """Retrieves the mud files, given by the URLs in the 'mud_file_urls.csv* file.
         """

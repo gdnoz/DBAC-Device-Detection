@@ -129,7 +129,7 @@ class WebScrapingUtilities():
 
         fixed_url = ""
 
-        if "http" not in url:
+        if "//" not in url:
             fixed_url = "http://" + url
         else:
             fixed_url = url

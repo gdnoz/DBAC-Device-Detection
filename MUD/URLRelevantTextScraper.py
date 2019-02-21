@@ -9,7 +9,7 @@ class URLRelevantTextScraper:
     def __init__(self, urls: set):
         from Text_Classification.DeviceClassifier import DeviceClassifier
         self.urls = urls
-        self.classifier = DeviceClassifier(threshold= 0.2)
+        self.classifier = DeviceClassifier(threshold= 0.4)
 
     def extract_text_from_urls(self) -> str:
         """
@@ -52,10 +52,10 @@ class URLRelevantTextScraper:
                 continue
 
 
-        if (relevant_text != ""):
-            print()
-            print(relevant_text)
-            print()
+        #if (relevant_text != ""):
+            #print()
+            #print(relevant_text)
+            #print()
         return relevant_text
 
     def _is_url_sub_domain_of_element_in_blacklist(self, url: str) -> bool:
