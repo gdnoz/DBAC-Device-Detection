@@ -7,23 +7,14 @@ class MudClassification:
         from Text_Classification.DeviceClassifier import DeviceClassifier
         self.classifier = DeviceClassifier()
 
-    def classify_mud(self, filename):
-        from MUD.MUDUtilities import MUDUtilities
-        from Scraping.WebScrapingUtilities import WebScrapingUtilities
-
-        print("Classifying " + filename + "...")
-        urls = MUDUtilities.get_all_urls_from_mud(filename)
-        text = ""
-
-        for url in urls:
-            #print("Getting text from " + url + "...")
-            try:
-                text += WebScrapingUtilities.extract_text_from_url(url,timeout=2)
-            except Exception as e:
-                #print(e)
-                #print("Skiping...")
-
-        return self.classifier.predict_text(text)
+    def classify_mud(self, filename: str) -> str:
+        """
+        Classifies device type that the specified mud file descirbes.
+        :param filename: Filename of the mud file.
+        :return: Classified class.
+        """
+        from MUD.URLTextScraper import URLTextScraper
+        return self.classifier.predict_text(URLTextScraper(filename).extract_text_from_urls())
 
 
 if __name__ == "__main__":
@@ -32,4 +23,6 @@ if __name__ == "__main__":
     mud_classifier = MudClassification()
 
     for filename in os.listdir("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/data/MUD_Files"):
+        print()
         print(mud_classifier.classify_mud(filename))
+        print()

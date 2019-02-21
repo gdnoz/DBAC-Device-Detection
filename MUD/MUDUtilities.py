@@ -6,7 +6,7 @@ class MUDUtilities:
     """
 
     @staticmethod
-    def get_all_urls_from_mud(filename: str) -> list:
+    def get_all_urls_from_mud(filename: str) -> set:
         """
         Retrieves all URLs contained in the ACLs of the given mud file.
         :param filename: File name of the mud file.
@@ -17,13 +17,13 @@ class MUDUtilities:
 
         with open(os.path.join("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/data/MUD_Files",filename)) as f:
             mud_contents = json.load(f)
-            urls = list()
+            urls = set()
 
             for k in mud_contents["ietf-access-control-list:access-lists"]["acl"]:
 
                 for ace in k["aces"]["ace"]:
                     try:
-                        urls.append(ace["matches"]["ipv4"]["ietf-acldns:dst-dnsname"])
+                        urls.add(ace["matches"]["ipv4"]["ietf-acldns:dst-dnsname"])
                     except KeyError:
                         continue
 

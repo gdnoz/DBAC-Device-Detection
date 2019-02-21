@@ -16,10 +16,20 @@ class DeviceClassifier:
             ('clf', joblib.load("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/Text_Classification/pmml/classifier.pkl"))
         ])
 
-    def predict_text(self, text: str):
-        return self.labels[self.pipeline.predict([text])[0]]
+    def predict_text(self, text: str) -> (str,float):
+        """
+        Returns the predicted class of the text and the distance of the hyperplane of that class.
+        :param text: Text to be classified.
+        :return: (Class of text, hyperplane distance)
+        """
+        class_index = self.pipeline.predict([text])[0]
+        dec_func = self.pipeline.decision_function([text])
+        print(dec_func[0])
+        
+        return (self.labels[class_index],dec_func[0][class_index])
 
 if __name__ == "__main__":
+    import Scraping.WebScrapingUtilities
     dc = DeviceClassifier()
-    k = dc.predict_text("Chromecast device used for video and audio streaming")
+    k = dc.predict_text(Scraping.WebScrapingUtilities.WebScrapingUtilities.extract_text_from_url("https://www.ezviz.eu/wifi-cameras/c6b/",timeout=10))
     print(k)

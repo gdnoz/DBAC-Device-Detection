@@ -131,19 +131,23 @@ class WebScrapingUtilities():
 
         if "http" not in url:
             fixed_url = "http://" + url
+        else:
+            fixed_url = url
+
+        headers = {"Accept-Language": "en"}
 
         try:
-            with closing(get(fixed_url, stream=True, timeout=timeout)) as resp:
+            with closing(get(fixed_url, stream=True, timeout=timeout, verify=False, headers = headers)) as resp:
                 if WebScrapingUtilities.__resp_is_valid(resp):
                     return resp.content
                 else:
                     raise TypeError("Response not valid.")
 
         except ConnectTimeout as e:
-            print('Timeout for request to {0} : {1}'.format(url, str(e)))
+            #print('Timeout for request to {0} : {1}'.format(url, str(e)))
             raise e
         except RequestException as e:
-            print('Error during requests to {0} : {1}'.format(url, str(e)))
+            #print('Error during requests to {0} : {1}'.format(url, str(e)))
             raise e
 
 
@@ -166,4 +170,4 @@ class WebScrapingUtilities():
 
 if __name__ == "__main__":
     # print(WebScraper.extract_text_from_url("https://ipc.tplinkcloud.com/download.php"))
-    print(WebScrapingUtilities.extract_links_from_url("https://store.google.com/us/product/google_home?hl=en-US"))
+    print(WebScrapingUtilities.extract_text_from_url("www2.meethue.com"))
