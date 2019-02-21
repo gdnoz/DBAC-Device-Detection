@@ -1,26 +1,38 @@
-class URLTextScraper:
+class URLRelevantTextScraper:
+    """
+    Through a list of urls, text is scraped from the urls only if the text is relevant enough for the classification problem at hand.
+    """
     blacklist = {"ntp","time","www.example.com"}
     visited_urls = set()
     expansion_urls = set()
 
-    def __init__(self, filename: str):
-        self.filename = filename
+    def __init__(self, urls: set):
+        from Text_Classification.DeviceClassifier import DeviceClassifier
+        self.urls = urls
+        self.classifier = DeviceClassifier(threshold= 0.2)
 
     def extract_text_from_urls(self) -> str:
+        """
+        Extracts text from the urls. Text is discarded if it is irrelevant.
+        :return: All relevant texts combined into a string.
+        """
         import tldextract
-        from MUD.MUDUtilities import MUDUtilities
         from Scraping.WebScrapingUtilities import WebScrapingUtilities
 
-        print("Classifying " + self.filename + "...")
-        urls = MUDUtilities.get_all_urls_from_mud(self.filename)
-        text = ""
+        relevant_text = ""
 
-        for url in urls:
+        for url in self.urls:
             if not (any(element in url for element in self.blacklist) or self._is_url_sub_domain_of_element_in_blacklist(url) or url in self.visited_urls):
                 #print(url + " is not blacklisted")
                 try:
                     self.visited_urls.add(url)
-                    text += WebScrapingUtilities.extract_text_from_url(url,timeout=2)
+
+                    scraped_text = WebScrapingUtilities.extract_text_from_url(url,timeout=2)
+
+                    classification = self.classifier.predict_text(scraped_text)
+                    if classification[0] != "":
+                        relevant_text += scraped_text
+
                 except Exception as e:
                     extract_result = tldextract.extract(url)
 
@@ -40,11 +52,11 @@ class URLTextScraper:
                 continue
 
 
-        if (text != ""):
+        if (relevant_text != ""):
             print()
-            print(text)
+            print(relevant_text)
             print()
-        return text
+        return relevant_text
 
     def _is_url_sub_domain_of_element_in_blacklist(self, url: str) -> bool:
         """

@@ -5,7 +5,7 @@ class MudClassification:
 
     def __init__(self):
         from Text_Classification.DeviceClassifier import DeviceClassifier
-        self.classifier = DeviceClassifier()
+        self.classifier = DeviceClassifier(threshold=0.2)
 
     def classify_mud(self, filename: str) -> str:
         """
@@ -13,8 +13,9 @@ class MudClassification:
         :param filename: Filename of the mud file.
         :return: Classified class.
         """
-        from MUD.URLTextScraper import URLTextScraper
-        return self.classifier.predict_text(URLTextScraper(filename).extract_text_from_urls())
+        from MUD.MUDUtilities import MUDUtilities
+        from MUD.URLRelevantTextScraper import URLRelevantTextScraper
+        return self.classifier.predict_text(URLRelevantTextScraper(MUDUtilities.get_all_urls_from_mud(filename)).extract_text_from_urls())
 
 
 if __name__ == "__main__":
