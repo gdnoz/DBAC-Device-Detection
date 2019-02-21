@@ -23,10 +23,10 @@ class DeviceClassifier:
         :return: (Class of text, hyperplane distance)
         """
         class_index = self.pipeline.predict([text])[0]
-        dec_func = self.pipeline.decision_function([text])
-        print(dec_func[0])
-        
-        return (self.labels[class_index],dec_func[0][class_index])
+        prob = self.pipeline.predict_proba([text])
+        print(prob[0])
+
+        return (self.labels[class_index],prob[0][class_index])
 
 if __name__ == "__main__":
     import Scraping.WebScrapingUtilities
