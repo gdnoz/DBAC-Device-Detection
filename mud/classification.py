@@ -1,10 +1,10 @@
 class MudClassification:
     """
-    Given a MUD file as input, the file will be used to classify the type of the device.
+    Given a mud file as input, the file will be used to classify the type of the device.
     """
 
     def __init__(self, threshold):
-        from Text_Classification.DeviceClassifier import DeviceClassifier
+        from classification.text_classification import DeviceClassifier
         self.threshold = threshold
         self.classifier = DeviceClassifier(threshold=threshold)
 
@@ -16,13 +16,13 @@ class MudClassification:
         """
 
         print("Classifying " + filename + "...")
-        from MUD.MUDUtilities import MUDUtilities
-        from MUD.URLRelevantTextScraper import URLRelevantTextScraper
-        from Scraping.BingSearchAPI import BingSearchAPI
+        from mud.utilities import MUDUtilities
+        from mud.scraping import URLRelevantTextScraper
+        from scraping.bing import BingSearchAPI
 
         text_from_mud_urls = URLRelevantTextScraper(MUDUtilities.get_all_urls_from_mud(filename)).extract_text_from_urls()
 
-        print("Classifying based on MUD URLs")
+        print("Classifying based on mud URLs")
         possible_result = self.classifier.predict_text(text_from_mud_urls)
 
         if possible_result.prediction_probability > self.threshold and possible_result.predicted_class is not "":

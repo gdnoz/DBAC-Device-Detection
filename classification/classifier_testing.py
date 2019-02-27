@@ -91,7 +91,7 @@ def test_logistic_regression(docs_to_train):
     print("***********************************************************************")
 
 if __name__ == "__main__":
-    dataset_path = os.path.join(os.path.join(os.path.pardir,"data"),"dataset")
+    dataset_path = os.path.join(os.path.join(os.path.pardir,"data"),"dataset_utilities")
 
     categories = [x[1] for x in os.walk(dataset_path)][0]
 

@@ -47,7 +47,7 @@ class MUDUtilities:
         """
         import ssl
         import os
-        from Scraping.WebScrapingUtilities import WebScrapingUtilities
+        from scraping.utilities import WebScrapingUtilities
 
         ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -62,6 +62,3 @@ class MUDUtilities:
                 device = items[1].rstrip()
 
                 WebScrapingUtilities.get_content_from_url_and_save(url, os.path.join(os.getcwd(), os.path.join("data", "MUD_Files")), device + ".json")
-
-if __name__ == "__main__":
-    MUDUtilities.get_mud_files()

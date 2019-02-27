@@ -24,18 +24,3 @@ class BingSearchAPI:
         search_results = [result_dict['url'] for result_dict in response.json()['webPages']['value']]
 
         return search_results
-
-if __name__ == "__main__":
-    import os
-    from MUD.URLRelevantTextScraper import URLRelevantTextScraper
-    from Text_Classification.DeviceClassifier import DeviceClassifier
-    from MUD.MUDUtilities import MUDUtilities
-
-    for filename in os.listdir("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/data/MUD_Files"):
-        systeminfo = MUDUtilities.get_systeminfo_from_mud_file(filename)
-        print("Classifying based on: " + systeminfo)
-
-        urls = BingSearchAPI.first_ten_results(systeminfo)
-
-        text = URLRelevantTextScraper(set(urls)).extract_text_from_urls()
-        print(DeviceClassifier(0.4).predict_text(text))

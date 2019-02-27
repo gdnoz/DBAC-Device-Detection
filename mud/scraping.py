@@ -7,7 +7,7 @@ class URLRelevantTextScraper:
     expansion_urls = set()
 
     def __init__(self, urls: set):
-        from Text_Classification.DeviceClassifier import DeviceClassifier
+        from classification.text_classification import DeviceClassifier
         self.urls = urls
         self.classifier = DeviceClassifier(threshold= 0.4)
 
@@ -17,7 +17,7 @@ class URLRelevantTextScraper:
         :return: All relevant texts combined into a string.
         """
         import tldextract
-        from Scraping.WebScrapingUtilities import WebScrapingUtilities
+        from scraping.utilities import WebScrapingUtilities
 
         relevant_text = ""
 
@@ -30,10 +30,10 @@ class URLRelevantTextScraper:
                     scraped_text = WebScrapingUtilities.extract_text_from_url(url,timeout=2)
 
                     classification = self.classifier.predict_text(scraped_text)
-                    if classification[0] != "":
+                    if classification.predicted_class != "":
                         relevant_text += scraped_text
 
-                except Exception as e:
+                except Exception:
                     extract_result = tldextract.extract(url)
 
                     is_top_level_domain = extract_result.suffix and extract_result.domain and not extract_result.subdomain

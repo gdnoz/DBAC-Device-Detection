@@ -1,6 +1,6 @@
 class FingerbankApi:
     """
-    Wrapper for for the Fingerbank API used for device detection based on on DHCP fingerprinting.
+    Wrapper for for the Fingerbank API used for device detection based on on dhcp fingerprinting.
     """
 
     interrogate_endpoint = "https://api.fingerbank.org/api/v2/combinations/interrogate"

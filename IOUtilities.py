@@ -17,4 +17,3 @@ def create_file(path: str):
 def file_exists(path: str):
     import os
     return os.path.exists(path)
-

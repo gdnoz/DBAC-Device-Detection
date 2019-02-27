@@ -1,6 +1,6 @@
 class DataSetCreator:
     """
-    Can be used to create a dataset for text classification.
+    Can be used to create a dataset_utilities for text classification.
     This is done by downloading texts in a specified file and
     placing them in folders corresponding to their text classification category.
     """
@@ -17,8 +17,8 @@ class DataSetCreator:
 
     def create_local_data_set(self, dataset_path: str):
         """
-        From the given dataset url file, reach document is retrieved from the url and placed in its corresponding category folder.
-        :param dataset_path: Path for where the dataset is stored.
+        From the given dataset_utilities url file, reach document is retrieved from the url and placed in its corresponding category folder.
+        :param dataset_path: Path for where the dataset_utilities is stored.
         :return:
         """
         import IOUtilities,os
@@ -39,7 +39,7 @@ class DataSetCreator:
                     url = line_tokens[1]
                     document_path = os.path.join(category_path,document_name)
 
-                    from Scraping.WebScrapingUtilities import WebScrapingUtilities
+                    from scraping.utilities import WebScrapingUtilities
 
                     try:
                         text = WebScrapingUtilities.extract_text_from_url(url)
