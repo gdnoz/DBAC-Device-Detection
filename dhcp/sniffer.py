@@ -59,7 +59,3 @@ class DiscoveryPacketSniffer:
         """
 
         return DHCP in packet and packet[DHCP].options[0][1] == 1
-
-
-if __name__ == "__main__":
-    DiscoveryPacketSniffer.sniff()
