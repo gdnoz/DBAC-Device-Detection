@@ -9,7 +9,8 @@ class FingerbankApi:
 
     @staticmethod
     def interrogate(dhcp_fingerprint: list, dhcp_vendor = "", mac = ""):
-        return FingerbankApi._get(endpoint=FingerbankApi.interrogate_endpoint, dhcp_fingerprint=",".join(list(map(str,dhcp_fingerprint))), dhcp_vendor= dhcp_vendor, mac=mac)['device']['name']
+        result = FingerbankApi._get(endpoint=FingerbankApi.interrogate_endpoint, dhcp_fingerprint=",".join(list(map(str,dhcp_fingerprint))), dhcp_vendor= dhcp_vendor, mac=mac)
+        return result['device']['name']
 
     @staticmethod
     def get_device_from_id(id: int):
@@ -26,3 +27,16 @@ class FingerbankApi:
         response.raise_for_status()
 
         return response.json()
+
+
+class FingerbankApiResult:
+    """
+    Wrapper for the result retrieved from the fingerbank api iterrogation.
+    """
+
+    device_name = ""
+    score = 0
+
+    def __init__(self, device_name: str, score: int):
+        self.device_name = device_name
+        self.score = score
