@@ -28,9 +28,22 @@ class DeviceClassifier:
         prob = self.pipeline.predict_proba([text])[0][class_index]
 
         if prob < self.threshold:
-            return ("",0.0)
+            return DeviceClassifier.DeviceClassificationResult("",0.0)
         else:
-            return (self.labels[class_index],prob)
+            return DeviceClassifier.DeviceClassificationResult(self.labels[class_index],prob)
+
+    class DeviceClassificationResult:
+        """
+        Represents a classification result, containing the predicted class and a score of the prediction (accuracy).
+        """
+
+        predicted_class = ""
+        prediction_probability = 0.0
+
+        def __init__(self, predicted_class: str, prediction_probability: float):
+            self.predicted_class = predicted_class
+            self.prediction_probability = prediction_probability
+
 
 if __name__ == "__main__":
     import Scraping.WebScrapingUtilities

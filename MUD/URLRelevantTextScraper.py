@@ -80,7 +80,3 @@ class URLRelevantTextScraper:
                 return True
 
         return False
-
-
-
-
