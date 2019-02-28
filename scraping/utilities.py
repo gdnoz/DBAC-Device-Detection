@@ -137,7 +137,7 @@ class WebScrapingUtilities():
         headers = {"Accept-Language": "en"}
 
         try:
-            with closing(get(fixed_url, stream=True, timeout=timeout, verify=False, headers = headers)) as resp:
+            with closing(get(fixed_url, stream=True, timeout=timeout, verify=True, headers = headers)) as resp:
                 if WebScrapingUtilities.__resp_is_valid(resp):
                     return resp.content
                 else:
