@@ -37,5 +37,4 @@ class DHCPSpoofing:
         sendp(dhcp_discover_packet)
 
 if __name__ == "__main__":
-
-    DHCPSpoofing.send_dhcp_discover("testurl.com","00:A0:C9:14:C8",[1,2,3,4,5],"test_vendor")
+    DHCPSpoofing.send_dhcp_discover("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/data/MUD_Files/Chromecast Ultra.json","00:A0:C9:14:C8",[1,33,3,6,15,28,51,58,59],"dhcpcd-5.2.10:Linux-3.8.13+:armv7l:Marvell Berlin SoC (Flattened Device Tree)")

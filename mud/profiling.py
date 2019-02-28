@@ -20,9 +20,9 @@ class MUDProfiler:
         sniff_result = DiscoveryPacketSniffer.sniff()
 
         print("****************** Packet obtained! **************************")
+        print("******************** MUD Profiling Result ********************")
 
         mud_classification = MudClassification(0.6)
-        classification_result = MudClassificationResult("",0.0)
 
         if self.use_mud_manager:
             #Implement mud manager usage.
@@ -30,14 +30,13 @@ class MUDProfiler:
             return
         else:
             classification_result = mud_classification.classify_mud(sniff_result.mud_url)
+            print("Device type:             " + classification_result.predicted_class)
+            print("Classification score:    " + classification_result.score)
 
         fingerprint_result = FingerbankApi.interrogate(sniff_result.dhcp_fingerprint,sniff_result.dhcp_vendor,sniff_result.mac)
 
-        print("******************** MUD Profiling Result ********************")
         print("Name:                    " + fingerprint_result.device_name)
         print("Fingerprint score:       " + fingerprint_result.score)
-        print("Device type:             " + classification_result.predicted_class)
-        print("Classification score:    " + classification_result.score)
 
 if __name__ == "__main__":
     mud_profiler = MUDProfiler(use_mud_manager=False)
