@@ -16,19 +16,26 @@ class DHCPSpoofing:
         from scapy.layers.inet import IP, UDP
         from scapy.volatile import RandInt
         from scapy.config import conf
-        from scapy.arch import get_if_hwaddr
+        from scapy.sendrecv import sendp
+        from scapy.arch import get_if_raw_hwaddr
+        import socket
 
-        localmac = get_if_hwaddr(conf.iface)
-        localmacraw = localmac.replace(':', '').decode('hex')
+        _,localmacraw = get_if_raw_hwaddr(conf.iface)
 
+        #conf.iface = "lo0"
 
-        dhcp_discover = Ether(src=mac, dst='ff:ff:ff:ff:ff:ff')\
-                        /IP(src='0.0.0.0', dst='255.255.255.255')\
+        own_ip_address = socket.gethostbyname(socket.getfqdn())
+
+        dhcp_discover_packet = Ether(src=mac, dst='ff:ff:ff:ff:ff:ff', type=0x800)\
+                        /IP(src='0.0.0.0', dst=own_ip_address)\
                         /UDP(dport=67, sport=68)\
-                        /BOOTP(chaddr=localmacraw,xid=RandInt())\
-                        /DHCP(options=[('message-type', 'discover'),('param_req_list',)+tuple([chr(x) for x in dhcp_fingerprint]),('vendor_class_id',dhcp_vendor), (161,mud_url), 'end'])
+                        /BOOTP(chaddr=localmacraw, ciaddr = '0.0.0.0',xid=RandInt(), flags = 1) \
+                        /DHCP(options=[('message-type', 'discover'), ('param_req_list',) + tuple([x for x in dhcp_fingerprint]),('vendor_class_id', dhcp_vendor), 'end'])
+        #, (161, mud_url)
 
-        #https://programtalk.com/python-examples/scapy.all.DHCPRevOptions/
+        print("Sending DHCP Discover packet to interface " + str(conf.iface) + "...")
+        sendp(dhcp_discover_packet)
 
 if __name__ == "__main__":
-    print(('param_req_list',) + tuple([chr(x) for x in [1,2,3,6,7]]))
+
+    DHCPSpoofing.send_dhcp_discover("testurl.com","00:A0:C9:14:C8",[1,2,3,4,5],"test_vendor")
