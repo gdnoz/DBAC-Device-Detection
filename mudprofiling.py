@@ -10,8 +10,8 @@ class MUDProfiler:
 
     def run(self):
         from dhcp.sniffer import DiscoveryPacketSniffer
-        from mud.classification import MudClassification,MudClassificationResult
         from dhcp.fingerprinting import FingerbankApi
+        from mud.classification import MudClassification,MudClassificationResult
 
         print("****************** Performing MUD Profiling ******************")
 
@@ -39,5 +39,7 @@ class MUDProfiler:
         print("Fingerprint score:       " + fingerprint_result.score)
 
 if __name__ == "__main__":
+    import sys
+    print(sys.path)
     mud_profiler = MUDProfiler(use_mud_manager=False)
     mud_profiler.run()
