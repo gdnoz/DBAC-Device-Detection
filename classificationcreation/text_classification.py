@@ -7,13 +7,13 @@ class DeviceClassifier:
     def __init__(self, threshold: float):
         from sklearn.externals import joblib
         from sklearn.pipeline import Pipeline
-        with open("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/classification/pmml/labels.txt","r") as f:
+        with open("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/classificationcreation/pmml/labels.txt","r") as f:
             self.labels = [x.rstrip() for x in f.readlines()]
         self.pipeline = Pipeline\
         ([
-            ('vect', joblib.load("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/classification/pmml/vectorizer.pkl")),
-            ('tfidf', joblib.load("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/classification/pmml/transformer.pkl")),
-            ('clf', joblib.load("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/classification/pmml/classifier.pkl"))
+            ('vect', joblib.load("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/classificationcreation/pmml/vectorizer.pkl")),
+            ('tfidf', joblib.load("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/classificationcreation/pmml/transformer.pkl")),
+            ('clf', joblib.load("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/classificationcreation/pmml/classifier.pkl"))
         ])
 
         self.threshold = threshold
@@ -34,7 +34,7 @@ class DeviceClassifier:
 
     class DeviceClassificationResult:
         """
-        Represents a classification result, containing the predicted class and a score of the prediction (accuracy).
+        Represents a classificationcreation result, containing the predicted class and a score of the prediction (accuracy).
         """
 
         predicted_class = ""

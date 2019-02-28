@@ -4,7 +4,7 @@ class MudClassification:
     """
 
     def __init__(self, threshold):
-        from classification.text_classification import DeviceClassifier
+        from classificationcreation.text_classification import DeviceClassifier
         self.threshold = threshold
         self.classifier = DeviceClassifier(threshold=threshold)
 
@@ -41,3 +41,11 @@ class MudClassification:
             return possible_result.predicted_class
 
         return "No_classification"
+
+class MudClassificationResult:
+    predicted_class = ""
+    score = 0.0
+
+    def __init__(self, predicted_class: str, score: float):
+        self.predicted_class = predicted_class
+        self.score = score

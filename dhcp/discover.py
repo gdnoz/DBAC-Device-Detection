@@ -30,7 +30,7 @@ class DHCPSpoofing:
                         /IP(src='0.0.0.0', dst=own_ip_address)\
                         /UDP(dport=67, sport=68)\
                         /BOOTP(chaddr=localmacraw, ciaddr = '0.0.0.0',xid=RandInt(), flags = 1) \
-                        /DHCP(options=[('message-type', 'discover'), ('param_req_list',) + tuple([x for x in dhcp_fingerprint]),('vendor_class_id', dhcp_vendor), 'end'])
+                        /DHCP(options=[('message-type', 'discover'), ('param_req_list',) + tuple([x for x in dhcp_fingerprint]),('vendor_class_id', dhcp_vendor), (161, bytes(mud_url,encoding='utf8')), 'end'])
         #, (161, mud_url)
 
         print("Sending DHCP Discover packet to interface " + str(conf.iface) + "...")

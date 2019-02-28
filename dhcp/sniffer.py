@@ -35,12 +35,12 @@ class DiscoveryPacketSniffer:
         dhcp_options_dictionary = dict([opt for opt in sniffed_packet[0][DHCP].options
                           if isinstance(opt, tuple) and len(opt) == 2])
 
-        mud_url = None#dhcp_options_dictionary[161]
+        mud_url = dhcp_options_dictionary[161].decode("utf8")
         dhcp_fingerprint = dhcp_options_dictionary['param_req_list']
-        dhcp_vendor = dhcp_options_dictionary.get('vendor_class_id')
+        dhcp_vendor = dhcp_options_dictionary.get('vendor_class_id').decode("utf8")
         mac = sniffed_packet[0][Ether].src
 
-        return (mud_url, dhcp_fingerprint, dhcp_vendor, mac)
+        return SniffResult(mud_url, dhcp_fingerprint, dhcp_vendor, mac)
 
     @staticmethod
     def is_discovery_packet(packet):
@@ -63,6 +63,19 @@ class DiscoveryPacketSniffer:
         Source: https://tools.ietf.org/html/rfc2132, Section 9.6
         """
         return DHCP in packet and packet[DHCP].options[0][1] == 1
+
+class SniffResult:
+    mud_url = ""
+    dhcp_fingerprint = []
+    dhcp_vendor = ""
+    mac = ""
+
+    def __init__(self, mud_url: str, dhcp_fingerprint: list, dhcp_vendor: str, mac: str):
+        SniffResult.mud_url = mud_url
+        SniffResult.dhcp_fingerprint = dhcp_fingerprint
+        SniffResult.dhcp_vendor = dhcp_vendor
+        SniffResult.mac = mac
+
 
 if __name__ == "__main__":
     res = DiscoveryPacketSniffer.sniff()
