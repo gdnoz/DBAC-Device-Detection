@@ -7,7 +7,7 @@ class DataSetCreator:
 
     def __init__(self, dataset_urls_file_path: str, ):
         """
-        :param dataset_urls_file_path: Filename for a .csv file which consists of category name,text names and urls.
+        :param dataset_urls_file_path: Filename for a .txt file which consists of category name,text names and urls.
         """
         import re
 
@@ -18,7 +18,7 @@ class DataSetCreator:
     def create_local_data_set(self, dataset_path: str):
         """
         From the given dataset_utilities url file, reach document is retrieved from the url and placed in its corresponding category folder.
-        :param dataset_path: Path for where the dataset_utilities is stored.
+        :param dataset_path: Path for where the dataset is stored.
         :return:
         """
         import IOUtilities,os

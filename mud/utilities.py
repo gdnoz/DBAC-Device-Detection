@@ -76,7 +76,6 @@ class MUDUtilities:
         if not os.path.exists(constants.MUDFILES_DIR):
             os.mkdir(constants.MUDFILES_DIR)
 
-
         with open(constants.MUD_FILE_URLS_FILE_PATH,"r") as f:
             for line in f.readlines():
                 items = line.split(",")

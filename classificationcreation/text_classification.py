@@ -5,15 +5,21 @@ class DeviceClassifier:
     """
 
     def __init__(self, threshold: float):
+        import constants,os
         from sklearn.externals import joblib
         from sklearn.pipeline import Pipeline
-        with open("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/classificationcreation/pmml/labels.txt","r") as f:
+
+        with open(os.path.join(constants.PMML_DIR,"labels.txt"),"r") as f:
             self.labels = [x.rstrip() for x in f.readlines()]
-        self.pipeline = Pipeline\
-        ([
-            ('vect', joblib.load("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/classificationcreation/pmml/vectorizer.pkl")),
-            ('tfidf', joblib.load("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/classificationcreation/pmml/transformer.pkl")),
-            ('clf', joblib.load("/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/classificationcreation/pmml/classifier.pkl"))
+
+        count_vectorizer_path = os.path.join(constants.PMML_DIR, "vectorizer.pkl")
+        tfidf_transformer_path = os.path.join(constants.PMML_DIR, "transformer.pkl")
+        svc_classifier_path = os.path.join(constants.PMML_DIR, "classifier.pkl")
+
+        self.pipeline = Pipeline([
+            ('vect', joblib.load(count_vectorizer_path)),
+            ('tfidf', joblib.load(tfidf_transformer_path)),
+            ('clf', joblib.load(svc_classifier_path))
         ])
 
         self.threshold = threshold

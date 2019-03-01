@@ -99,20 +99,20 @@ text_clf.fit(X_train,y_train)
 
 
 #plot_decision_plane(docs_to_train, sgd_classifier)
-
+import constants
 from sklearn.externals import joblib
 
-joblib.dump(count_vectorizer, "pmml/vectorizer.pkl")
-joblib.dump(tfidf_transformer, "pmml/transformer.pkl")
-joblib.dump(svc_classifier, "pmml/classifier.pkl")
+joblib.dump(count_vectorizer, os.path.join(constants.PMML_DIR,"vectorizer.pkl"))
+joblib.dump(tfidf_transformer,os.path.join(constants.PMML_DIR,"transformer.pkl"))
+joblib.dump(svc_classifier, os.path.join(constants.PMML_DIR,"classifier.pkl"))
 
-with open("pmml/labels.txt","w+") as f:
+with open(os.path.join(constants.PMML_DIR,"labels.txt"),"w+") as f:
     f.write('\n'.join(docs_to_train.target_names))
 
 
-loaded_count_vectorizer = joblib.load("pmml/vectorizer.pkl")
-loaded_tfidf_transformer = joblib.load("pmml/transformer.pkl")
-loaded_svc_classifier = joblib.load("pmml/classifier.pkl")
+loaded_count_vectorizer = joblib.load(os.path.join(constants.PMML_DIR,"vectorizer.pkl"))
+loaded_tfidf_transformer = joblib.load(os.path.join(constants.PMML_DIR,"transformer.pkl"))
+loaded_svc_classifier = joblib.load(os.path.join(constants.PMML_DIR,"classifier.pkl"))
 
 pmml_pipeline = PMMLPipeline([
         ('vect', loaded_count_vectorizer),
