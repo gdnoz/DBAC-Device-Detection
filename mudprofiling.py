@@ -12,6 +12,7 @@ class MUDProfiler:
         from dhcp.sniffer import DiscoveryPacketSniffer
         from dhcp.fingerprinting import FingerbankApi
         from mud.classification import MudClassification,MudClassificationResult
+        from mud.utilities import MUDUtilities
 
         print("****************** Performing MUD Profiling ******************")
 
@@ -19,7 +20,7 @@ class MUDProfiler:
 
         sniff_result = DiscoveryPacketSniffer.sniff()
 
-        print("****************** Packet obtained! **************************")
+        print("****************** Packet obtained! **************************\n\n")
         print("******************** MUD Profiling Result ********************")
 
         mud_classification = MudClassification(0.6)
@@ -38,8 +39,10 @@ class MUDProfiler:
         print("Name:                    " + fingerprint_result.device_name)
         print("Fingerprint score:       " + str(fingerprint_result.score))
 
+        print("Mud file ACLs:")
+        print(MUDUtilities.extract_acls_from_mud(sniff_result.mud_url))
+
+
 if __name__ == "__main__":
-    import sys
-    print(sys.path)
     mud_profiler = MUDProfiler(use_mud_manager=False)
     mud_profiler.run()
