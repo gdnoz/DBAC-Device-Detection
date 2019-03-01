@@ -137,7 +137,7 @@ class WebScrapingUtilities():
         else:
             fixed_url = url
 
-        headers = {"Accept-Language": "en"}
+        headers = {"Accept-Language": "en-US,en;q=0.5"}
 
         try:
             with closing(get(fixed_url, stream=True, timeout=timeout, verify=True, headers = headers)) as resp:
@@ -170,7 +170,5 @@ class WebScrapingUtilities():
                 and content_type is not None
                 and content_type.find('html') > -1)
 
-
 if __name__ == "__main__":
-    # print(WebScraper.extract_text_from_url("https://ipc.tplinkcloud.com/download.php"))
-    print(WebScrapingUtilities.get_content_from_url("https://iotanalytics.unsw.edu.au/mud/chromecastUltraMud.json"))
+    print(WebScrapingUtilities.extract_text_from_url("www.meethue.com"))
