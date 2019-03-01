@@ -13,9 +13,12 @@ class WebScrapingUtilities():
 
         @returns: HTML content
         """
-        import urllib.request
+        import urllib.request,ssl
 
-        request = urllib.request.urlopen(url)
+        #Cert's are not veried. Temporary work around.
+        gcontext = ssl.SSLContext()
+
+        request = urllib.request.urlopen(url,context=gcontext)
         bytes = request.read()
 
         html_content = bytes.decode("utf8")
@@ -170,4 +173,4 @@ class WebScrapingUtilities():
 
 if __name__ == "__main__":
     # print(WebScraper.extract_text_from_url("https://ipc.tplinkcloud.com/download.php"))
-    print(WebScrapingUtilities.extract_text_from_url("www2.meethue.com"))
+    print(WebScrapingUtilities.get_content_from_url("https://iotanalytics.unsw.edu.au/mud/chromecastUltraMud.json"))

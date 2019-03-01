@@ -5,8 +5,8 @@ class MUDProfiler:
     Furthermore, DHCP fingerprinting also occurs.
     """
 
-    def __init__(self, use_mud_manager: bool):
-        self.use_mud_manager = use_mud_manager
+    def __init__(self, test=False):
+        self.test = test
 
     def run(self):
         from dhcp.sniffer import DiscoveryPacketSniffer
@@ -25,12 +25,12 @@ class MUDProfiler:
 
         mud_classification = MudClassification(0.6)
 
-        if self.use_mud_manager:
-            #Implement mud manager usage.
-            print("*************** MUD Manager not implemented! ***********************")
-            return
+        if not self.test:
+            classification_result = mud_classification.classify_mud_contents(MUDUtilities.get_mud_file(sniff_result.mud_url))
+            print("Device type:             " + classification_result.predicted_class)
+            print("Classification score:    " + str(classification_result.score))
         else:
-            classification_result = mud_classification.classify_mud(sniff_result.mud_url)
+            classification_result = mud_classification.classify_mud_file(sniff_result.mud_url)
             print("Device type:             " + classification_result.predicted_class)
             print("Classification score:    " + str(classification_result.score))
 
@@ -40,9 +40,9 @@ class MUDProfiler:
         print("Fingerprint score:       " + str(fingerprint_result.score))
 
         print("Mud file ACLs:")
-        print(MUDUtilities.extract_acls_from_mud(sniff_result.mud_url))
+        print(MUDUtilities.extract_acls_from_mud_contents(MUDUtilities.get_mud_file(sniff_result.mud_url)))
 
 
 if __name__ == "__main__":
-    mud_profiler = MUDProfiler(use_mud_manager=False)
+    mud_profiler = MUDProfiler(test=False)
     mud_profiler.run()

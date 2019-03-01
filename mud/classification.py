@@ -18,7 +18,7 @@ class MudClassification:
         self.threshold = threshold
         self.classifier = DeviceClassifier(threshold=threshold)
 
-    def classify_mud(self, filename: str) -> MudClassificationResult:
+    def classify_mud_file(self, filename: str) -> MudClassificationResult:
         """
         Classifies device type that the specified mud file describes.
         :param filename: Filename of the mud file.
@@ -27,10 +27,17 @@ class MudClassification:
 
         print("Classifying " + filename + "...")
         from mud.utilities import MUDUtilities
+
+        return self.classify_mud_contents(MUDUtilities.get_mud_file_contents(filename))
+
+    def classify_mud_contents(self, mud_file_contents: str) -> MudClassificationResult:
         from mud.scraping import URLRelevantTextScraper
+        from mud.utilities import MUDUtilities
         from scraping.bing import BingSearchAPI
 
-        text_from_mud_urls = URLRelevantTextScraper(MUDUtilities.get_all_urls_from_mud(filename)).extract_text_from_urls()
+        print("Classifying mud file...")
+
+        text_from_mud_urls = URLRelevantTextScraper(MUDUtilities.get_all_urls_from_mud(mud_file_contents)).extract_text_from_urls()
 
         print("Classifying based on mud URLs")
         possible_result = self.classifier.predict_text(text_from_mud_urls)
@@ -38,7 +45,7 @@ class MudClassification:
         if possible_result.prediction_probability > self.threshold and possible_result.predicted_class is not "":
             return MudClassificationResult(possible_result.predicted_class, possible_result.prediction_probability)
 
-        systeminfo = MUDUtilities.get_systeminfo_from_mud_file(filename)
+        systeminfo = MUDUtilities.get_systeminfo_from_mud_file(mud_file_contents)
         print("Classifying based on: " + systeminfo)
 
         urls = BingSearchAPI.first_ten_results(systeminfo)
