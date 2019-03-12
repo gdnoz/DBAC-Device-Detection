@@ -31,30 +31,31 @@ class MudClassification:
         return self.classify_mud_contents(MUDUtilities.get_mud_file_contents(filename))
 
     def classify_mud_contents(self, mud_file_contents: str) -> MudClassificationResult:
-        from mud.scraping import URLRelevantTextScraper
+        from mud.scraping import RelevantTextScraper
         from mud.utilities import MUDUtilities
         from scraping.bing import BingSearchAPI
 
         print("Classifying mud file...")
 
-        text_from_mud_urls = URLRelevantTextScraper(MUDUtilities.get_all_urls_from_mud(mud_file_contents)).extract_text_from_urls()
+        mud_file_urls = MUDUtilities.get_all_urls_from_mud(mud_file_contents)
+        text_from_mud_urls = RelevantTextScraper(mud_file_urls).extract_text_from_urls()
 
         print("Classifying based on mud URLs")
-        possible_result = self.classifier.predict_text(text_from_mud_urls)
+        classification_result = self.classifier.predict_text(text_from_mud_urls)
 
-        if possible_result.prediction_probability > self.threshold and possible_result.predicted_class is not "":
-            return MudClassificationResult(possible_result.predicted_class, possible_result.prediction_probability)
+        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
+            return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)
 
         systeminfo = MUDUtilities.get_systeminfo_from_mud_file(mud_file_contents)
         print("Classifying based on: " + systeminfo)
 
         urls = BingSearchAPI.first_ten_results(systeminfo)
 
-        text_from_urls = URLRelevantTextScraper(set(urls)).extract_text_from_urls()
+        text_from_urls = RelevantTextScraper(set(urls)).extract_text_from_urls()
 
-        possible_result = self.classifier.predict_text(text_from_urls)
+        classification_result = self.classifier.predict_text(text_from_urls)
 
-        if possible_result.prediction_probability > self.threshold and possible_result.predicted_class is not "":
-            return MudClassificationResult(possible_result.predicted_class,possible_result.prediction_probability)
+        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
+            return MudClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
 
         return MudClassificationResult("No_classification",0.0)

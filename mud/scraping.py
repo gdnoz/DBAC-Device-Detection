@@ -1,4 +1,4 @@
-class URLRelevantTextScraper:
+class RelevantTextScraper:
     """
     Through a list of urls, text is scraped from the urls only if the text is relevant enough for the classificationcreation problem at hand.
     """

@@ -20,16 +20,18 @@ class MUDProfiler:
 
         sniff_result = DiscoveryPacketSniffer.sniff()
 
-        print("****************** Packet obtained! **************************\n\n")
+        print("*********************** Packet obtained! *********************\n\n")
+
         print("******************** MUD Profiling Result ********************")
 
         mud_classification = MudClassification(0.6)
 
         if not self.test:
-            classification_result = mud_classification.classify_mud_contents(MUDUtilities.get_mud_file(sniff_result.mud_url))
+            mud_file_from_web = MUDUtilities.get_mud_file(sniff_result.mud_url)
+            classification_result = mud_classification.classify_mud_contents(mud_file_from_web)
             print("Device type:             " + classification_result.predicted_class)
             print("Classification score:    " + str(classification_result.score))
-        else:
+        else: #In the the case of testing, the url is just a file path to a mud file on the machine.
             classification_result = mud_classification.classify_mud_file(sniff_result.mud_url)
             print("Device type:             " + classification_result.predicted_class)
             print("Classification score:    " + str(classification_result.score))

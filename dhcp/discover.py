@@ -37,4 +37,5 @@ class DHCPSpoofing:
         sendp(dhcp_discover_packet)
 
 if __name__ == "__main__":
-    DHCPSpoofing.send_dhcp_discover("https://iotanalytics.unsw.edu.au/mud/chromecastUltraMud.json","00:A0:C9:14:C8",[1,33,3,6,15,28,51,58,59],"dhcpcd-5.2.10:Linux-3.8.13+:armv7l:Marvell Berlin SoC (Flattened Device Tree)")
+    DHCPSpoofing.send_dhcp_discover("https://iotanalytics.unsw.edu.au/mud/samsungsmartcamMud.json", "00:A0:C9:14:C8",[1,33,3,6,15,28,51,58,59],"dhcpcd-5.2.10:Linux-3.8.13+:armv7l:Marvell Berlin SoC (Flattened Device Tree)")
+    #DHCPSpoofing.send_dhcp_discover("https://iotanalytics.unsw.edu.au/mud/chromecastUltraMud.json","00:A0:C9:14:C8",[1,33,3,6,15,28,51,58,59],"dhcpcd-5.2.10:Linux-3.8.13+:armv7l:Marvell Berlin SoC (Flattened Device Tree)")
