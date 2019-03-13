@@ -40,7 +40,7 @@ class DeviceClassifier:
 
     class DeviceClassificationResult:
         """
-        Represents a classificationcreation result, containing the predicted class and a score of the prediction (accuracy).
+        Represents a classification result, containing the predicted class and a score of the prediction (accuracy).
         """
 
         predicted_class = ""

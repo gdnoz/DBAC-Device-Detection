@@ -14,7 +14,7 @@ class MudClassification:
     from typing import Type
 
     def __init__(self, threshold):
-        from classificationcreation.text_classification import DeviceClassifier
+        from classification.text_classification import DeviceClassifier
         self.threshold = threshold
         self.classifier = DeviceClassifier(threshold=threshold)
 
@@ -57,5 +57,5 @@ class MudClassification:
 
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return MudClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
-
-        return MudClassificationResult("No_classification",0.0)
+        else:
+            return MudClassificationResult("No_classification",0.0)

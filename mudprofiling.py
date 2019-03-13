@@ -1,12 +1,12 @@
 class MUDProfiler:
     """
     Intercepts DHCP packets and performs profiling.
-    Is used for profiling files by scraping the SystemInfo and MUD URLs to perform web scraping and classificationcreation of the device.
+    Is used for profiling files by scraping the SystemInfo and MUD URLs to perform web scraping and classification of the device.
     Furthermore, DHCP fingerprinting also occurs.
     """
 
-    def __init__(self, test=False):
-        self.test = test
+    def __init__(self, local_mud_file=False):
+        self.local_mud_file = local_mud_file
 
     def run(self):
         from dhcp.sniffer import DiscoveryPacketSniffer
@@ -26,12 +26,13 @@ class MUDProfiler:
 
         mud_classification = MudClassification(0.6)
 
-        if not self.test:
-            mud_file_from_web = MUDUtilities.get_mud_file(sniff_result.mud_url)
+        mud_file_from_web = MUDUtilities.get_mud_file(sniff_result.mud_url)
+
+        if not self.local_mud_file:
             classification_result = mud_classification.classify_mud_contents(mud_file_from_web)
             print("Device type:             " + classification_result.predicted_class)
             print("Classification score:    " + str(classification_result.score))
-        else: #In the the case of testing, the url is just a file path to a mud file on the machine.
+        else: #In this case, the url is just a file path to a mud file on the machine.
             classification_result = mud_classification.classify_mud_file(sniff_result.mud_url)
             print("Device type:             " + classification_result.predicted_class)
             print("Classification score:    " + str(classification_result.score))
@@ -42,9 +43,9 @@ class MUDProfiler:
         print("Fingerprint score:       " + str(fingerprint_result.score))
 
         print("Mud file ACLs:")
-        print(MUDUtilities.extract_acls_from_mud_contents(MUDUtilities.get_mud_file(sniff_result.mud_url)))
+        print(MUDUtilities.extract_acls_from_mud_contents(mud_file_from_web))
 
-
+f
 if __name__ == "__main__":
-    mud_profiler = MUDProfiler(test=False)
+    mud_profiler = MUDProfiler(local_mud_file=False)
     mud_profiler.run()

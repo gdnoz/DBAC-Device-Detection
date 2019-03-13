@@ -1,13 +1,13 @@
 class RelevantTextScraper:
     """
-    Through a list of urls, text is scraped from the urls only if the text is relevant enough for the classificationcreation problem at hand.
+    Through a list of urls, text is scraped from the urls only if the text is relevant enough for the classification problem at hand.
     """
     blacklist = {"ntp","time","www.example.com"}
     visited_urls = set()
     expansion_urls = set()
 
     def __init__(self, urls: set):
-        from classificationcreation.text_classification import DeviceClassifier
+        from classification.text_classification import DeviceClassifier
         self.urls = urls
         self.classifier = DeviceClassifier(threshold= 0.4)
 
