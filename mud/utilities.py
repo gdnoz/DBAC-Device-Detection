@@ -52,7 +52,7 @@ class MUDUtilities:
 
     @staticmethod
     def get_mud_file_contents(filename: str) -> str:
-        import constants
+        import constants,os
 
         mud_file_contents = ""
 

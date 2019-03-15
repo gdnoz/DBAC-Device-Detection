@@ -9,7 +9,7 @@ class RelevantTextScraper:
     def __init__(self, urls: set):
         from classification.text_classification import DeviceClassifier
         self.urls = urls
-        self.classifier = DeviceClassifier(threshold= 0.4)
+        self.classifier = DeviceClassifier(threshold=0.4)
 
     def extract_text_from_urls(self) -> str:
         """
@@ -30,6 +30,7 @@ class RelevantTextScraper:
                     scraped_text = WebScrapingUtilities.extract_text_from_url(url,timeout=2)
 
                     classification = self.classifier.predict_text(scraped_text)
+                    print(str(classification.prediction_probability))
                     if classification.predicted_class != "":
                         relevant_text += scraped_text
 

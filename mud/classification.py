@@ -43,6 +43,8 @@ class MudClassification:
         print("Classifying based on mud URLs")
         classification_result = self.classifier.predict_text(text_from_mud_urls)
 
+        print("MUD Url classification score: " + str(classification_result.prediction_probability))
+
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)
 
@@ -54,6 +56,8 @@ class MudClassification:
         text_from_urls = RelevantTextScraper(set(urls)).extract_text_from_urls()
 
         classification_result = self.classifier.predict_text(text_from_urls)
+
+        print("Bing Classification Score: " + str(classification_result.prediction_probability))
 
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return MudClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
