@@ -30,11 +30,16 @@ class RelevantTextScraper:
                     scraped_text = WebScrapingUtilities.extract_text_from_url(url,timeout=2)
 
                     classification = self.classifier.predict_text(scraped_text)
-                    print(str(classification.prediction_probability))
-                    if classification.predicted_class != "":
-                        relevant_text += scraped_text
 
-                except Exception:
+                    if classification.predicted_class != "":
+                        print("Sucessful scrape: " + url + " | " +str(classification.prediction_probability))
+                        relevant_text += scraped_text
+                    else:
+                        print("Failed scrape: " + url + " | " +str(classification.prediction_probability))
+
+                except Exception as ex:
+
+                    print(url + " caused an Exception.")
                     extract_result = tldextract.extract(url)
 
                     is_top_level_domain = extract_result.suffix and extract_result.domain and not extract_result.subdomain
