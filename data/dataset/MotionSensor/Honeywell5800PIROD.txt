@@ -15,7 +15,6 @@ Country
 Language
 Toggle navigation
 5800PIR-OD
-5800PIR-OD
 Full Description
 The 5800PIR-OD is a AA lithium battery powered wireless outdoor motion
 detector intended for use with Honeywell alarm systems that support 5800 Series

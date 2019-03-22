@@ -16,33 +16,23 @@ X
 {}
 Add to Cart
 View Details
-com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO@6f1696bb(com.demandware.beehive.orm.internal.state2.RelationalObjectInstanceState@58123f49[com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO) [d0523091338d7bf9d51a415b3f]])
+com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO@6f1696bb(com.demandware.beehive.orm.internal.state2.RelationalObjectInstanceState@6d99ffef[com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO) [d0523091338d7bf9d51a415b3f]])
 JBL Link 20
 Alternate Views
 Images
 JBL
-{"timerYear":2019,"timerMonth":1,"timerDate":17,"timerHour":8,"timerMin":0,"timerSec":0}
-sale ends soon
-0
-Days
-0
-Hours
-0
-Minutes
-0
-Seconds
 JBL Link 20
 Details
 https://www.jbl.com/voice-activated-speaker/JBL+LINK+20.html?dwvar_JBL%20LINK%2020_color=Black-USA-Current
 Voice-activated portable speaker
 Variations
 Voice-activated portable speaker
-$149.95149.95
+$99.9599.95
 each
 $199.95
-Save $50
+Save $100
 Promotions
-Free 2nd Day Air On This Item
+Free 2nd Day Air on This Item
 Product Actions
 Add to cart options
 Add to Cart
@@ -225,7 +215,21 @@ Parts and accessories
 JBL Link 20 is rated
 3.7 out of
 5 by
-122.
+124.
+Rated 5 out of
+5
+by
+Murf from
+Fantastic
+Great product, particularly like it's portability I can take my music anywhere in or around the house. Probably useful in the campervan too linked to mobile phone. Battery life pretty good too.
+Date published: 2019-03-18
+Rated 5 out of
+5
+by
+DaveC from
+Great Sound, Convenient Portability
+Sound is great and Google Assistant functionality works well. It's attractive and solidly built, but not too heavy/bulky to carry around.
+Date published: 2019-02-21
 Rated 5 out of
 5
 by
@@ -248,26 +252,10 @@ Foretraveler from
 OMG! This speaker is insane!! (good thing)
 So, I'd been contemplating for a while now on getting a new Bluetooth speaker to use in my 33ft non-slide motorhome. My phone allows me to Bluetooth to two speakers at the same time so I keep a 5 point Bluetooth Surround system upfront (Big Lots) and a smaller one in the rear of the coach to give me 'wireless' surround sound. I got this speaker, the Link 20, for Christmas as a gift and have been BLOWN away ever since. I find myself no longer using the 5 point front surround sound because it's just overkill. This one speaker alone provides MORE than enough sound. It can be very, very loud and plays quietly just as flawlessly and because the speakers wrap around the device, it fills the entire motorhome front to back with ease. I'm a House Music addict and House music requires substantial bass. No issue at all with this speaker. Somehow, from somewhere this speakers' bass is insane. Its rich, deep and full. I'm guessing there are adjustments someome who doesn't like this much bass can make to the speaker (I have yet to experiment with it other than to connect to Bluetooth/Wifi - both of which it did exceptionally well and with ease). All that and I haven't even tapped into the personal assistant feature yet!! Ugh. My point, if you are looking and looking and can't decide which Bluetooth speaker to get, stop looking. You have just found it! I totally promise you that, and I am not one to leave reviews for anything.
 Date published: 2018-12-28
-Rated 5 out of
-5
-by
-donfoolio from
-Amazing!
-Amazing sound with all the smart features I want. Looks really cool and works perfectly with Google assistant.
-Before long my whole house hold, wife and kids, found the speaker indispensable.
-Especially love how responsive the mic is from other rooms
-Date published: 2018-12-28
-Rated 5 out of
-5
-by
-Rafa24 from
-Perfect
-Very good quality. Highly recommended. Google assistant working perfect.
-Date published: 2018-12-25
-y_2019, m_2, d_13, h_21
+y_2019, m_3, d_21, h_18
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
 cp_1, bvpage1
-co_hasreviews, tv_0, tr_122
+co_hasreviews, tv_0, tr_124
 loc_en_US, sid_jbllink20, prod, sort_[SortEntry(order=RATING, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_jbl
 I've had my jbl link 20 for 2 weeks and it just stopped working right in the middle of playing music now the 4 lights at the top keep flashing and it won't connect, please help!
@@ -280,17 +268,17 @@ UNABLE TO CALL THRU SPEAKER.
 Asked by: CR787
 Are there any hopes or glimpses this could be available with a software update or should we just forget about it?
 Answered by: Fearz
-Date published: 2018-12-07
+Date published: 2019-01-28
 How do you avoid the (any) speaker from being voice activated when you say &quot;ok google&quot; to your phone?
 Asked by: ElliotS
 There's a little microphone button on the speaker next to the power button. Just press it and i'll stop responding to &quot;Hey / OK Google&quot;
 Answered by: cstrike8392
-Date published: 2018-12-10
+Date published: 2018-12-30
 Hi ! I just bought link 20 and it works fine as google home speaker, but when i connected it to my phone via BT and tried to watch a youtube video , the was a noticeable lag in audio, is it fixable?
 Asked by: AlekseyS
 This is absolutely common behavior of bluetooth audio devices and is normal.. bluetooth device have to support some low latency codec like aptx low latency... if not - audio during videos is just not synced properly
 Answered by: Lightbrigner
-Date published: 2018-12-03
+Date published: 2018-12-30
 How is this integrated with smart hubs? Smartthings maybe?
 Asked by: Fearz
 Not sure what you mean by integration but I setup my SmartThings hub in the google home app. So now all of my devices connected to the hub can be controlled with google assistant.&nbsp;
@@ -301,7 +289,7 @@ wired auxilliary input?
 Asked by: bj michael
 The JBL Link 20 can only be linked to an audio source via WiFi or Bluetooth. It has no provision for a wired auxiliary input.
 Answered by: Steven M
-Date published: 2018-12-04
+Date published: 2019-01-20
 how is the bass? Is it better than the Flip 3?
 Asked by: NOLO1
 Yes, The JBL Link 20 has more bass with it's frequency response of 65Hz&ndash;20kHz which makes listening to music more enjoyable.
@@ -313,11 +301,11 @@ This is the wrong thing to get if you want to add better audio to a TV.
 You're going to want either a sound bar, or sound base, or a powered pair of speakers to go on either side.
 The JBL Link series don't have any way to receive the TV's audio.
 Answered by: nopenope
-Date published: 2018-11-21
-y_2019, m_2, d_13, h_21CST
+Date published: 2019-02-07
+y_2019, m_3, d_21, h_18CST
 bvseo_bulk, prod_bvqa, vn_bulk_2.0.11
 cp_1, bvpage1
-co_hasquestionsanswers, tq_200
+co_hasquestionsanswers, tq_203
 loc_en_US, sid_jbllink20, prod, sort_[SortEntry(order=NUM_ANSWERS, direction=DESCENDING)]
 clientName_jbl
 Sharing

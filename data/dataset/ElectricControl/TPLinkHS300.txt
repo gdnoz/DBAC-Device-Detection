@@ -13,7 +13,7 @@ ETL certified surge protection shields sensitive electronics and appliances from
 Energy Monitoring
 Monitor how much energy devices connected to the power strip consume. Check on each one from your Kasa Smart app and turn off ones that are using too much.
 Voice Control
-Remotely control your smart plug and use voice commands with Alexa, Google Assistant, or Microsoft Cortana.
+Control your smart power strip using simple voice commands with Alexa, Google Assistant, or Microsoft Cortana.
 Grouping
 Use Grouping to combine all six of your smart plugs on the power strip with other Kasa Smart devices for seamless control with one single tap on your smartphone.
 Control From Anywhere

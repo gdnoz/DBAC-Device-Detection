@@ -6,10 +6,10 @@ class RelevantTextScraper:
     visited_urls = set()
     expansion_urls = set()
 
-    def __init__(self, urls: set):
+    def __init__(self, urls: set, noise_threshold: float):
         from classification.text_classification import DeviceClassifier
         self.urls = urls
-        self.classifier = DeviceClassifier(threshold=0.4)
+        self.classifier = DeviceClassifier(threshold=noise_threshold)
 
     def extract_text_from_urls(self) -> str:
         """
@@ -32,14 +32,13 @@ class RelevantTextScraper:
                     classification = self.classifier.predict_text(scraped_text)
 
                     if classification.predicted_class != "":
-                        print("Sucessful scrape: " + url + " | " +str(classification.prediction_probability))
+                        #print("Sucessful scrape: " + url + " | " +str(classification.prediction_probability))
                         relevant_text += scraped_text
-                    else:
-                        print("Failed scrape: " + url + " | " +str(classification.prediction_probability))
+                    #else:
+                    #    print("Failed scrape: " + url + " | " +str(classification.prediction_probability))
 
                 except Exception as ex:
-
-                    print(url + " caused an Exception.")
+                    #print(url + " caused an Exception.")
                     extract_result = tldextract.extract(url)
 
                     is_top_level_domain = extract_result.suffix and extract_result.domain and not extract_result.subdomain

@@ -9,7 +9,6 @@ Sales Support
 One
 Buy
 Your browser's Javascript functionality is turned off. Please turn it on so that you can experience the full capabilities of this site.
-To optimise your experience on our website we use cookies.
 One
 The smart speaker for music lovers
 Roll over image to zoom in
@@ -18,15 +17,16 @@ The smart speaker for music lovers
 Plays music, radio, podcasts, and more
 Powerful four-core processor for efficiency
 Apple AirPlay compatible with iOS devices
-Stereo pairing
-Pay now
+Second generation Sonos One with increased memory and updated processor
+Out of stock
 €229
 €229
 Select colour
 Black
 White
 Notify me
-Buy
+Backorder now
+Ships on March 25, 2019
 Free shipping, and 100-day returns policy.
 We’re sure that your Sonos experience will have you listening better. If for whatever reason, you’re not happy, let us know within 100 days. We will send you a shipping label and refund you in full for your purchase.
 For additional details, please review our .
@@ -55,6 +55,17 @@ Ultimate flexibility
 Use Sonos One on its own, pair two together for instant stereo sound, add a Sub for deep bass, or pair with your Beam, Playbar, or Playbase for epic wireless home theatre surround sound.
 The wireless home sound system that gets better over time.
 Easily connect Sonos speakers in different rooms over WiFi to create a home sound system that brings every room and everyone together. Regular software updates means your product is constantly improving.
+Frequently Asked Questions
+How is Sonos One Gen 2 different from the original version?
+Gen 2 has an updated processor, Bluetooth Low Energy (BLE), and increased memory.
+How does Sonos One Gen 2 use Bluetooth Low Energy?
+Bluetooth Low Energy (BLE) was first introduced with Sonos Beam, and now we are bringing it to Sonos One Gen 2. Just like with Beam, BLE can be used to communicate temporarily with your phone/tablet to simplify the first-time setup process. BLE does not support audio streaming. Once setup is done, Sonos One Gen 2 streams and updates via your WiFi just like the original Sonos One.
+How do the new processor and increased memory affect the product experience?
+Currently there are no feature differences between Sonos One Gen 2 and the original version. The original Sonos One will continue to support all its current features, and more, in the future. Over time, however, the increased memory, Bluetooth Low Energy, and processing power may allow us to bring new product experiences to the Gen 2 version that the original will not be able to support. That said, we have no specific Gen 2-only features planned at this time.
+Will Sonos One Gen 2 work in stereo pair and as surrounds with the original Sonos One?
+Yes, the Gen 2 works seamlessly with the original Sonos One as a stereo pair or home cinema surrounds.
+How can I tell which version I have?
+Sonos One Gen 2 is marked as “Gen 2” on the product label underneath the speaker. The original Sonos One only has “One” on the product label.
 Two Class-D digital amplifiers perfectly tuned to match the speaker drivers and acoustic architecture.
 One tweeter creates a crisp and clear high-frequency response.
 One mid-woofer ensures you’ll hear the faithful playback of mid-range vocal frequencies plus deep, rich bass.
@@ -76,7 +87,7 @@ WiFi, not Bluetooth
 Connects to your home WiFi network with any 802.11b/g, 2.4 GHz broadcast-capable router for uninterrupted wireless streaming.
 Ethernet port
 One 10/100 Mbps Ethernet port. Wire directly to your router to operate your Sonos if WiFi is unstable.
-Sonos One, power cord, flat Ethernet cable, Sonos One QuickStart Guide, and Legal/Warranty information.
+Sonos One, power cord, Sonos One QuickStart Guide, and Legal/Warranty information.
 Audio
 Two Class-D digital amplifiers perfectly tuned to match the speaker drivers and acoustic architecture.
 One tweeter creates a crisp and clear high-frequency response.
@@ -102,7 +113,7 @@ Connects to your home WiFi network with any 802.11b/g, 2.4 GHz broadcast-capable
 Ethernet port
 One 10/100 Mbps Ethernet port. Wire directly to your router to operate your Sonos if WiFi is unstable.
 Contents
-Sonos One, power cord, flat Ethernet cable, Sonos One QuickStart Guide, and Legal/Warranty information.
+Sonos One, power cord, Sonos One QuickStart Guide, and Legal/Warranty information.
 Exclusive events and announcements.
 Enter email address
 Go
@@ -113,7 +124,7 @@ Responsibility
 News
 Legal
 Investors
-© 2004 - 2019 by Sonos. Inc. All rights reserved. Sonos and Sonos product names are trademarks or registered trademarks of Sonos, Inc. All other product names and services may be trademarks or service marks of their respective owners. Sonos, Inc.
+© 2004 - 2019 by Sonos, Inc. All rights reserved. Sonos and Sonos product names are trademarks or registered trademarks of Sonos, Inc. All other product names and services may be trademarks or service marks of their respective owners.
 Free shipping, free 45-day returns
 This offer applies to orders shipped within the continental United States and Canada on all sonos.com purchases. Request a return or exchange within 45-days and a free return label will be emailed to you. Contact our expert support team to answer all of your product and order questions.
 Choose your country

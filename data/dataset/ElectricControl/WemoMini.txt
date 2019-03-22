@@ -7,15 +7,15 @@ F7C063
 Wemo Mini Smart Plug is rated
 4.1 out of
 5 by
-619.
-y_2019, m_2, d_13, h_2
-bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
+631.
+y_2019, m_3, d_21, h_19
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
 cp_1, bvpage1
-co_hasreviews, tv_0, tr_619
+co_hasreviews, tv_0, tr_631
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 16ms
+CLOUD, getAggregateRating, 78ms
 REVIEWS, PRODUCT
 Write a review
 Ask a question
@@ -27,17 +27,17 @@ F7C063
 Wemo Mini Smart Plug is rated
 4.1 out of
 5 by
-619.
-y_2019, m_2, d_13, h_2
-bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
+631.
+y_2019, m_3, d_21, h_19
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
 cp_1, bvpage1
-co_hasreviews, tv_0, tr_619
+co_hasreviews, tv_0, tr_631
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 16ms
+CLOUD, getAggregateRating, 78ms
 REVIEWS, PRODUCT
-Belkin Employee Discount PIP [EMF]
+Belkin: Apple Employee Discount
 $29.99
 Buy Now
 This item is added to your
@@ -90,91 +90,78 @@ Weight
 Additional Information
 Electrical Rating: 120V~/15A/60Hz/1800W;
 Indoor Use: Designed for residential indoor dry location use only.
+Rated 1 out of
+5
+by
+FFFF from
+Hard to set up with my WiFi network
+Started working with the Wemo Mini Smart Plug and get tired of trying to get the device to work, put the device up and try again later
+Date published: 2019-03-04
 Rated 4 out of
 5
 by
-Tom Slick from
-Setting up the second one was not easy
-I purchased two of the WEMO Mini Smart plugs.
-I loved the fact that it had an on/off button right on the device.
-I could use it immediately on a lamp.
-I set it up with the WEMO app and had no problems.
-I attached it to my Google Home App.
-Then I went to set up the second one and I could not get past the screen where it wanted me to set it up with the "HOME" app. I also power cycled my iPhone to try to get rid of the second one.
-Nothing seemed to work.
-I ended up
-deleting WEMO from the Google Home app and resetting both Smart plugs.
-I went through the set up again and was able to get them to work.
-Spending over an hour on this was not what I had planned for that time.
-Now that they are set up I am happy with the performance.
-I can use voice commands to turn them on and off through my Google Home mini's.
-I can also assign them to a room and they will be controlled when I say to turn off or on that room lights.
-Date published: 2019-02-06
-Rated 1 out of
+Dan_C from
+Easy to use smart switch
+Easy to set up once you realize the setup code is also on the box.
+Date published: 2019-03-03
+Rated 3 out of
 5
 by
-disappointed frustrated from
-Terrible! Does not work
-WiFi signal strong and brand new iPhone XR sitting right next to device and it cannot find accessory
-Date published: 2019-02-05
-Rated 1 out of
-5
-by
-Seriously from
-Frustrating
-I purchased two of these plugs. I was able to set up one thru trial and error but then it disconnected the next day and I cannot reconnect. I plugged in the other one to try that-followed directions, downloaded app, tried to scan the code from box with my smartphone and it responds with incompatible network. I’m not a “tech” person but would like to think I’m smarter than a plug. Apparently not. Huge waste of money.
-Date published: 2019-02-05
+Bstar75 from
+Good ifnon sameNetwork only
+I had two of these Wemo switches and loved them, so I decided to order two more for my second home. After spending the money and receiving them, I attempted to set them up at my second house only to learn that I could not hane them and the ones I already have on the same app and control remotely since they were on totally different WiFi networks. This was so disappointing and aggregating and not to mention the time lost attempting this. To be able to do what I wanted I would have to purchase a hub at an additional cost. This caused me to purchase a competitors switch that looks identical to wemos and at a 3rd of the cost and the competitors could do what wemos couldn’t! If your intentions is to use on only one WiFi network your golden if not then stay away!
+Date published: 2019-02-27
 Rated 5 out of
 5
 by
-KLH1 from
-Easy to use
-Easy set up. Works great with my Fios connection and my Google Home Mini.
-Date published: 2019-02-04
-Rated 1 out of
-5
-by
-MScotty from
-Stopped Working
-Purchased at Costco for a family stocking stuffer for Christmas.
-My daughter surprisingly was the one who took most interest in them, she uses one in her room and the other she set up(timer mode)in our family room to turn a light on for when my wife gets home from work.
-Well that one was working great until one night the light wasn't coming on, it won't even work using the manual button on the switch.
-The blue light just blinks.
-Don't know if there is a way to reset it, but I would think it should still work manually?
-Date published: 2019-01-29
+RonF from
+Easy to Use
+I had four wemo switches that I've had for years.
+I wanted two more and I purchased the minis.
+They work well and I like that I can use the app to control them.
+Date published: 2019-02-20
 Rated 4 out of
 5
 by
-nanny789 from
-good product
-I just bought it today and now it works great with my Alexa. no I can tell her to turn it on and off and it works. I think it was totally worth the price at Best Buy.
-Date published: 2019-01-26
+Ed77077 from
+Running 5 WEMO smart plugs and a wall switch!
+These are great devices once you get them connected.
+Aside from the wall switch, I’ve had issues getting these plugs set up.
+Rarely, after connecting the WEMO to the WiFi does the software complete the setup. Also, the setup “forces” a connect to Apple Home. That should be an option as I control through Alexa.
+Finally, setting up timers can be confusing.
+I just don’t think the software is thought out very well.
+Once it’s connected it works well. But the struggle is real.
+Date published: 2019-02-19
+Rated 1 out of
+5
+by
+A1234 from
+Did not work
+Purchased this about a week ago, just does not work.
+Date published: 2019-02-16
 Rated 5 out of
 5
 by
-Bi56 from
-Fantastic w/ HomeKit
-Setup & integration with HomeKit was much easier than I expected. I use it to control a hot water recirculator. Off when we’re away, On when we’re home, and scheduled off at night.
-Date published: 2019-01-25
+Prsal from
+Great Product
+Arrived on time. I have 7 wemo mini plugs. They control my outside and inside
+Lights and heaters. It is so easy to set up and set timers. I love them.
+Date published: 2019-02-16
 Rated 5 out of
 5
 by
-skelsey1 from
-Awesome for the money!!
-This is such a great product, I had to go buy another.
-This works so well using the app.
-Now, Belkin has made it possible for the WEMO app to work with the Apple Home app, and that enables use of Siri.
-The Mini is very conveniently shaped so that the unit does not cover the 2nd plug in an outlet.
-I would recommend this product to anyone and everyone!!!! [This review was collected as part of a promotion.]
-Date published: 2019-01-17
-y_2019, m_2, d_13, h_2
-bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
+jules1220 from
+Love it
+I bought this about 3 months ago. Super easy to set up and I haven't had any problems.
+Date published: 2019-02-13
+y_2019, m_3, d_21, h_19
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
 cp_1, bvpage1
-co_hasreviews, tv_0, tr_619
+co_hasreviews, tv_0, tr_631
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getReviews, 16ms
+CLOUD, getReviews, 187ms
 REVIEWS, PRODUCT
 Related Products
 Select Options

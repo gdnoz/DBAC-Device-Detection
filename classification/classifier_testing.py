@@ -51,6 +51,35 @@ def test_libsvm_svc(docs_to_train):
                                         target_names=docs_to_train.target_names, labels=np.unique(predicted)))
     print("***********************************************************************")
 
+class LemmaTokenizer(object):
+    def __init__(self):
+        from nltk.stem import WordNetLemmatizer
+        self.wnl = WordNetLemmatizer()
+
+    def __call__(self, articles):
+        from nltk import word_tokenize
+        return [self.wnl.lemmatize(t) for t in word_tokenize(articles)]
+
+def test_libsvm_svc_2(docs_to_train):
+    count_vectorizer = CountVectorizer(tokenizer=LemmaTokenizer(), stop_words='english', strip_accents='unicode', lowercase=True)
+    tfidf_transformer = TfidfTransformer(use_idf=True)
+    svc_classifier = SVC(kernel='linear')
+
+    text_clf = Pipeline([
+        ('vect', count_vectorizer),
+        ('tfidf', tfidf_transformer),
+        ('clf', svc_classifier)
+    ])
+
+    text_clf.fit(X_train, y_train)
+
+    predicted = text_clf.predict(X_test)
+    print("******************************TESTING SVC 2******************************")
+    print(metrics.classification_report(y_test, predicted,
+                                        target_names=docs_to_train.target_names, labels=np.unique(predicted)))
+    print("***********************************************************************")
+
+
 def test_sgd_classifier(docs_to_train):
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
@@ -90,6 +119,26 @@ def test_logistic_regression(docs_to_train):
                                         target_names=docs_to_train.target_names, labels=np.unique(predicted)))
     print("***********************************************************************")
 
+def test_random_forrest(docs_to_train):
+    from sklearn.ensemble import RandomForestClassifier
+
+    count_vectorizer = CountVectorizer(stop_words='english')
+    tfidf_transformer = TfidfTransformer(use_idf=True)
+    rf_classifier = RandomForestClassifier(n_estimators=100, max_depth=10, random_state=0)
+
+    text_clf = Pipeline([
+        ('vect', count_vectorizer),
+        ('tfidf', tfidf_transformer),
+        ('clf', rf_classifier)
+    ])
+
+    text_clf.fit(X_train, y_train)
+
+    predicted = text_clf.predict(X_test)
+    print("************************TESTING Random Forrest****************************")
+    print(metrics.classification_report(y_test, predicted,
+                                        target_names=docs_to_train.target_names, labels=np.unique(predicted)))
+
 if __name__ == "__main__":
     import constants
     dataset_path = constants.DATA_SET_PATH
@@ -101,9 +150,11 @@ if __name__ == "__main__":
         load_content=True, encoding='utf-8', shuffle=True, random_state=42)
 
     X_train, X_test, y_train, y_test = train_test_split(docs_to_train.data,
-        docs_to_train.target, test_size=0.2)
+        docs_to_train.target, test_size=0.15)
 
     test_libsvm_svc(docs_to_train)
+    test_libsvm_svc_2(docs_to_train)
     test_logistic_regression(docs_to_train)
     test_naive_bayes(docs_to_train)
     test_sgd_classifier(docs_to_train)
+    test_random_forrest(docs_to_train)

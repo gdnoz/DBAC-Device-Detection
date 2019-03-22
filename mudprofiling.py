@@ -24,7 +24,7 @@ class MUDProfiler:
 
         print("******************** MUD Profiling Result ********************")
 
-        mud_classification = MudClassification(0.6)
+        mud_classification = MudClassification(0.6, 0.4)
 
         mud_file_from_web = MUDUtilities.get_mud_file(sniff_result.mud_url)
 
@@ -45,7 +45,7 @@ class MUDProfiler:
         print("Mud file ACLs:")
         print(MUDUtilities.extract_acls_from_mud_contents(mud_file_from_web))
 
-f
+
 if __name__ == "__main__":
     mud_profiler = MUDProfiler(local_mud_file=False)
     mud_profiler.run()

@@ -65,7 +65,7 @@ from sklearn2pmml import sklearn2pmml
 
 import os
 
-dataset_path = os.path.join(os.path.join(os.path.pardir,"data"),"dataset_utilities")
+dataset_path = os.path.join(os.path.join(os.path.pardir,"data"),"dataset")
 
 categories = [x[1] for x in os.walk(dataset_path)][0]
 

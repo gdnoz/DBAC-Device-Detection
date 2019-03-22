@@ -1,10 +1,10 @@
-SmartThings - undefined Outlet
+SmartThings - SmartThings Outlet
 Menu
 Close
 More
 Type to search
-Outlet
-Outlet
+SmartThings Outlet
+SmartThings Outlet
 Add a little smartness to your things.
 A door that knows when to lock itself
 "I put a SmartThings Multipurpose Sensor on my front door that activates the lock when it's been closed for a few minutes." —Jessica A, Tuscon
@@ -24,18 +24,18 @@ Product Features
 Control lights, electronics, and small appliances.
 Requires a SmartThings Hub or a compatible device with SmartThings Hub functionality.
 Benefits with SmartThings
-Control your Power Outlet and other connected devices with the SmartThings app for iPhone or Android.
-Automate your Power Outlet and set it to turn on or off when doors are opened, when there’s activity in your home, and much more.
-Manage your Power Outlet and other connected devices with SmartThings Routines for Good Morning, Goodbye, Good Night, and more.
-Control your Power Outlet with voice commands using SmartThings and Amazon Alexa.
+Control your SmartThings Outlet and other connected devices with the SmartThings app for iPhone or Android.
+Automate your SmartThings Outlet and set it to turn on or off when doors are opened, when there’s activity in your home, and much more.
+Manage your SmartThings Outlet and other connected devices with SmartThings Routines for Good Morning, Goodbye, Good Night, and more.
+Control your SmartThings Outlet with voice commands using SmartThings and the Google Assistant or Amazon Alexa.
 Notes
-Device is also a wireless repeater.
+This device is compatible with the ADT Security Hub, but is not compatible with ADT professional monitoring services.
 Technical Information
-Model Number: HAG000011304, HAG000011265, HAG000011190, F-APP-UK-V2
+Model Number: IM6001-OTP01, GP-U999SJVLDAA
 Color: White
-Dimensions: 5.4 x 5.4 x 6.3 cm
-Weight: 94 g
-Protocol: ZigBee
+Dimensions: 1.93" x 1.93" x 2.85"
+Weight: 3.68 oz
+Protocol: ZigBee3
 Power Source: Wall-Powered
 Looking for more information?
 Visit our support pages or read more on the manufacturer’s website.

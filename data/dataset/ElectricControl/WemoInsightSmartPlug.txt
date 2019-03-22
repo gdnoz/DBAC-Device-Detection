@@ -8,14 +8,14 @@ Wemo® Insight Smart Plug is rated
 3.8 out of
 5 by
 118.
-y_2019, m_2, d_13, h_2
-bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
+y_2019, m_3, d_20, h_1
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
 cp_1, bvpage1
 co_hasreviews, tv_1, tr_117
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 31ms
+CLOUD, getAggregateRating, 78ms
 REVIEWS, PRODUCT
 Write a review
 Ask a question
@@ -29,16 +29,16 @@ Wemo® Insight Smart Plug is rated
 3.8 out of
 5 by
 118.
-y_2019, m_2, d_13, h_2
-bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
+y_2019, m_3, d_20, h_1
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
 cp_1, bvpage1
 co_hasreviews, tv_1, tr_117
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 31ms
+CLOUD, getAggregateRating, 78ms
 REVIEWS, PRODUCT
-Belkin Employee Discount PIP [EMF]
+Belkin: Apple Employee Discount
 $49.99
 Buy Now
 This item is added to your
@@ -158,18 +158,18 @@ mavak24 from
 Great product, no hub required!!
 Great product, good quality and connection stability. Integrates seamlessly with Google Home. App is easy to use. Just wish they did it a little bit smaller...!
 Date published: 2018-07-09
-y_2019, m_2, d_13, h_2
-bvseo_bulk, prod_bvrr, vn_bulk_2.0.10
+y_2019, m_3, d_20, h_1
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
 cp_1, bvpage1
 co_hasreviews, tv_1, tr_117
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getReviews, 15ms
+CLOUD, getReviews, 94ms
 REVIEWS, PRODUCT
 Related Products
 Select Options
-linksys_hybris4
+linksys_hybris5
 CONNECT WITH US
 This is a required field.
 Email id is invalid.

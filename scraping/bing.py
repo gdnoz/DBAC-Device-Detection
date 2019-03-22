@@ -1,6 +1,6 @@
 class BingSearchAPI:
     endpoint = "https://api.cognitive.microsoft.com/bing/v7.0/search"
-    api_key = "2be2931b0cfe482b83e1ed8d879f520f"
+    api_key = "0beeb7a3dedf4028bdbb3f8377b5cb5c"
 
     @staticmethod
     def first_ten_results(search_terms: str) -> list:

@@ -58,10 +58,11 @@ AB tests
 AB.ctaChooseAndCustomiseText
 AB.floatingBasket
 AB.supportPages
+AB.trustpilotPopup
+AB.newExistingCustomerLandingPage
+AB.usHomepageRedesign
 Environments
 Close
-British Gas customers can get
-exclusive discounts on Hive products
 British Gas customers can get
 exclusive discounts on Hive products
 Visit British Gas to find out more.

@@ -13,10 +13,11 @@ class MudClassification:
 
     from typing import Type
 
-    def __init__(self, threshold):
+    def __init__(self, classification_threshold: float, scraping_threshold: float):
         from classification.text_classification import DeviceClassifier
-        self.threshold = threshold
-        self.classifier = DeviceClassifier(threshold=threshold)
+        self.threshold = classification_threshold
+        self.scraping_threshold = scraping_threshold
+        self.classifier = DeviceClassifier(threshold=classification_threshold)
 
     def classify_mud_file(self, filename: str) -> MudClassificationResult:
         """
@@ -35,29 +36,29 @@ class MudClassification:
         from mud.utilities import MUDUtilities
         from scraping.bing import BingSearchAPI
 
-        print("Classifying mud file...")
+        #print("Classifying mud file...")
 
         mud_file_urls = MUDUtilities.get_all_urls_from_mud(mud_file_contents)
-        text_from_mud_urls = RelevantTextScraper(mud_file_urls).extract_text_from_urls()
+        text_from_mud_urls = RelevantTextScraper(mud_file_urls, self.scraping_threshold).extract_text_from_urls()
 
-        print("Classifying based on mud URLs")
+        #print("Classifying based on mud URLs")
         classification_result = self.classifier.predict_text(text_from_mud_urls)
 
-        print("MUD Url classification score: " + str(classification_result.prediction_probability))
+        #print("MUD Url classification score: " + str(classification_result.prediction_probability))
 
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)
 
         systeminfo = MUDUtilities.get_systeminfo_from_mud_file(mud_file_contents)
-        print("Classifying based on: " + systeminfo)
+        #print("Classifying based on: " + systeminfo)
 
         urls = BingSearchAPI.first_ten_results(systeminfo)
 
-        text_from_urls = RelevantTextScraper(set(urls)).extract_text_from_urls()
+        text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls()
 
         classification_result = self.classifier.predict_text(text_from_urls)
 
-        print("Bing Classification Score: " + str(classification_result.prediction_probability))
+        #print("Bing Classification Score: " + str(classification_result.prediction_probability))
 
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return MudClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)

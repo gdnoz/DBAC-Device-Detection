@@ -23,7 +23,6 @@ Buy from Eve
 Your Choice
 incl. VAT, plus shipping
 plus shipping
-Currently out of stock at the Eve Store
 Buy from our partners
 Only available at the Eve Store
 Not available in your country.
@@ -50,6 +49,9 @@ Motion detected:
 After sunset
 Power-on ceiling fan
 Power-on ambient lights
+"...a highly versatile and weatherproof sensor that you can use just about anywhere inside or outside your home”
+“...a handy addition to help your other accessories do more"
+"If you live in a predominately Apple household and are fairly committed to the HomeKit smart home platform, the Eve Motion is an undeniably useful addition"
 Command on demand.
 Set scenes in a flash via Siri, your Control Center, or Apple Watch. Easily engage accessories using the Home app on your iPhone, iPad, or iPod touch. And to see concise records, gain insights, and enjoy full control of your connected home, look no further than the Eve app.
 Safe as houses.
@@ -58,7 +60,6 @@ Truly smart.
 Equipped with Bluetooth low energy technology, Eve accessories ensure reliable operation independently of bridges. Setup is quick and easy. Energy consumption is minimal. And accessory response time is snappy.
 Compatible with your ecosystem.
 Straight out of the box, Eve accessories work with your iPhone, iPad, iPod touch, and Apple Watch. Your HomePod, Apple TV or iPad will serve as a home hub, seamlessly automating your accessories and keeping you connected while out and about.
-Connect with us
 Technical Details
 Requirements
 Specifications
@@ -82,3 +83,15 @@ B2B
 Shop
 Connect
 Languages
+Wechsle zur deutschen Seite, um Inhalte für deine Region zu sehen und online einzukaufen.
+Wechseln
+Wechseln
+Change to the international website to see content specific to your location and shop online.
+Continue
+Continue
+Change to the North American website to see content specific to your location and shop online.
+Continue
+Continue
+Choisissez la page en français pour afficher le contenu correspondant à votre région et acheter en ligne.
+Continuer
+Continuer
