@@ -41,7 +41,7 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
             elif classification == "No_classification":
                 noClassifications += 1
 
-                print(mud_url + ": " + "fail" + " (" + classification + ")")
+            print(mud_url + ": " + "fail" + " (" + classification + ", " + str(score) + ")")
 
     print("****************** TEST COMPLETE: c_tresh: " + str(threshold) + " s_thresh: " + str(scraping_threshold) + " ******************")
     print("Accuracy:            " + str(float(correctClassifications/numberOfTests)))
@@ -50,8 +50,8 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
 if __name__ == "__main__":
     #best so far:
 
-    #synthetic_test_set_test(0.2,0.1)
-    local_test(0.2,0.1)
+    synthetic_test_set_test(0.2,0.1)
+    #local_test(0.2,0.1)
 
     #for c_thresh in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]:
     #    for s_thresh in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]:

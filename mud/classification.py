@@ -35,22 +35,25 @@ class MudClassification:
         from mud.scraping import RelevantTextScraper
         from mud.utilities import MUDUtilities
         from scraping.bing import BingSearchAPI
+        from scraping.google import GoogleCustomSearchAPI
 
-        #print("Classifying mud file...")
+        '''
+        Classification MUD Urls
+        '''
 
         mud_file_urls = MUDUtilities.get_all_urls_from_mud(mud_file_contents)
         text_from_mud_urls = RelevantTextScraper(mud_file_urls, self.scraping_threshold).extract_text_from_urls()
 
-        #print("Classifying based on mud URLs")
         classification_result = self.classifier.predict_text(text_from_mud_urls)
-
-        #print("MUD Url classification score: " + str(classification_result.prediction_probability))
 
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)
 
         systeminfo = MUDUtilities.get_systeminfo_from_mud_file(mud_file_contents)
-        #print("Classifying based on: " + systeminfo)
+
+        '''
+        Classification based on Bing
+        '''
 
         urls = BingSearchAPI.first_ten_results(systeminfo)
 
@@ -58,7 +61,18 @@ class MudClassification:
 
         classification_result = self.classifier.predict_text(text_from_urls)
 
-        #print("Bing Classification Score: " + str(classification_result.prediction_probability))
+
+        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
+            return MudClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
+
+        '''
+        Classification based on Google
+        '''
+        urls = GoogleCustomSearchAPI.search(systeminfo)
+
+        text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls()
+
+        classification_result = self.classifier.predict_text(text_from_urls)
 
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return MudClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)

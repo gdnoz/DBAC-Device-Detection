@@ -17,4 +17,11 @@ class GoogleCustomSearchAPI:
 
         response = requests.get(GoogleCustomSearchAPI.endpoint, params=params)
         response.raise_for_status()
-        return [result_dict['link'] for result_dict in response.json()['items']]
+
+        try:
+            return [result_dict['link'] for result_dict in response.json()['items']]
+        except KeyError:
+            return []
+
+if __name__ == "__main__":
+    print(GoogleCustomSearchAPI.search("blipcareBPmeter"))

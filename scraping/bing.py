@@ -21,4 +21,8 @@ class BingSearchAPI:
 
         response = requests.get(BingSearchAPI.endpoint, headers=headers, params=params)
         response.raise_for_status()
-        return [result_dict['url'] for result_dict in response.json()['webPages']['value']]
+
+        try:
+            return [result_dict['url'] for result_dict in response.json()['webPages']['value']]
+        except KeyError:
+            return []
