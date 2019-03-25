@@ -21,6 +21,4 @@ class BingSearchAPI:
 
         response = requests.get(BingSearchAPI.endpoint, headers=headers, params=params)
         response.raise_for_status()
-        search_results = [result_dict['url'] for result_dict in response.json()['webPages']['value']]
-
-        return search_results
+        return [result_dict['url'] for result_dict in response.json()['webPages']['value']]

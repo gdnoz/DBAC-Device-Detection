@@ -5,7 +5,7 @@ class GoogleCustomSearchAPI:
 
     @staticmethod
     def search(search_terms: str) -> list:
-        import requests
+        import requests,json
 
         headers = {}
         params = \
@@ -17,10 +17,4 @@ class GoogleCustomSearchAPI:
 
         response = requests.get(GoogleCustomSearchAPI.endpoint, params=params)
         response.raise_for_status()
-        search_results = [result_dict['url'] for result_dict in response.json()['webPages']['value']]
-
-        return search_results
-
-
-if __name__ == "__main__":
-    GoogleCustomSearchAPI.search("test search")
+        return [result_dict['link'] for result_dict in response.json()['items']]
