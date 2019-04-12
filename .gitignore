@@ -1,3 +1,17 @@
 **/__pycache__
 .idea/**
 **/.idea
+classification/d2v.model
+classification/weights\weights_CNN_0.hdf5
+classification/weights\weights_CNN_1.hdf5
+classification/weights\weights_DNN_0.hdf5
+classification/weights\weights_DNN_1.hdf5
+classification/weights\weights_DNN_2.hdf5
+classification/weights\weights_RNN_0.hdf5
+classification/weights\weights_RNN_1.hdf5
+classification/weights\weights_RNN_2.hdf5
+classification/.\Glove/glove.6B.100d.txt
+classification/.\Glove/glove.6B.200d.txt
+classification/.\Glove/glove.6B.300d.txt
+classification/.\Glove/glove.6B.50d.txt
+classification/.\Glove/glove.6B.zip
