@@ -2,7 +2,7 @@ def run_tests_in_module(module_name: str):
     import constants,sys,os
     import numpy as np
     from inspect import getmembers, isfunction
-    from sklearn.model_selection import train_test_split
+    from sklearn.model_selection import train_test_split, cross_val_score
     from sklearn.datasets import load_files
 
 
