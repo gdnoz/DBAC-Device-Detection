@@ -3,7 +3,6 @@
 """
 File from: https://github.com/JoelBender/bacpypes/blob/master/samples/ReadObjectList.py
 
-
 This application is given the device instance number of a device and its
 address read the object list, then for each object, read the object name.
 """

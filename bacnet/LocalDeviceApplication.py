@@ -7,12 +7,12 @@ under MIT license.
 
 from bacpypes.debugging import bacpypes_debugging, ModuleLogger
 from bacpypes.consolelogging import ConfigArgumentParser
-from bacpypes.consolecmd import ConsoleCmd
 
 from bacpypes.core import run, enable_sleeping
 
 from bacpypes.app import BIPSimpleApplication
 from bacpypes.local.device import LocalDeviceObject
+from bacpypes.object import Object, ObjectIdentifierProperty,AnalogInputObject,ObjectIdentifier
 
 # some debugging
 _debug = 0
@@ -42,15 +42,6 @@ class DebugApplication(BIPSimpleApplication):
         if _debug: DebugApplication._debug("confirmation %r", apdu)
         BIPSimpleApplication.confirmation(self, apdu)
 
-'''
-@bacpypes_debugging
-class SampleConsoleCmd(ConsoleCmd):
-    def do_nothing(self, args):
-        """nothing can be done"""
-        args = args.split()
-        if _debug: SampleConsoleCmd._debug("do_nothing %r", args)
-'''
-
 def main():
     # parse the command line arguments
     args = ConfigArgumentParser(description=__doc__).parse_args()
@@ -64,11 +55,25 @@ def main():
         objectIdentifier=int(args.ini.objectidentifier),
         maxApduLengthAccepted=int(args.ini.maxapdulengthaccepted),
         segmentationSupported=args.ini.segmentationsupported,
-        vendorIdentifier=int(args.ini.vendoridentifier),
+        vendorIdentifier=int(args.ini.vendoridentifier)
     )
 
     # make a sample application
     this_application = DebugApplication(this_device, args.ini.address)
+
+    analog_input_object = AnalogInputObject(
+        objectName='Temperature Sensor',
+        objectIdentifier=('analogInput',0),
+        objectType='analogInput',
+        presentValue=21,
+        statusFlags='inAlarm',
+        eventState='normal',
+        outOfService=False,
+        units='degreesCelsius'
+    )
+
+    this_application.add_object(analog_input_object)
+
 
     '''
     # make a console
