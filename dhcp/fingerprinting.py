@@ -16,7 +16,7 @@ class FingerbankApi:
     """
 
     interrogate_endpoint = "https://api.fingerbank.org/api/v2/combinations/interrogate"
-    device_endpoint = "https://api.fingerbank.org/api/v2/local_device_applications"
+    device_endpoint = "https://api.fingerbank.org/api/v2/devices"
     api_key = "173eaf0e9527bbd5f55e717a5e6b4cfe6bde02a7"
 
     @staticmethod
