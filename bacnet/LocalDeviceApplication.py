@@ -13,6 +13,7 @@ from bacpypes.core import run, enable_sleeping
 from bacpypes.app import BIPSimpleApplication
 from bacpypes.local.device import LocalDeviceObject
 from bacpypes.object import Object, ObjectIdentifierProperty,AnalogInputObject,ObjectIdentifier
+import bacpypes.basetypes
 
 # some debugging
 _debug = 0
@@ -66,8 +67,8 @@ def main():
         objectIdentifier=('analogInput',0),
         objectType='analogInput',
         presentValue=21,
-        statusFlags='inAlarm',
-        eventState='normal',
+        statusFlags=bacpypes.basetypes.StatusFlags.bitNames['inAlarm'],
+        eventState=bacpypes.basetypes.EventState.enumerations['normal'],
         outOfService=False,
         units='degreesCelsius'
     )

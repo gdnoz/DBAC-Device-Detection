@@ -23,8 +23,11 @@ from bacpypes.apdu import ReadPropertyRequest, ReadPropertyACK
 
 from bacpypes.app import BIPSimpleApplication
 from bacpypes.local.device import LocalDeviceObject
+from bacpypes.object import Object
 
 from bacpypes.object import get_object_class
+
+import json
 
 # some debugging
 _debug = 0
@@ -61,8 +64,7 @@ class ObjectListContext:
         if had_error:
             print("had error: %r" % (had_error,))
         else:
-            for objid, objname in zip(self.object_list, self.object_names):
-                print("%s: %s" % (objid, objname))
+            print(json.dumps(self.property_result_dict, indent=4))
 
         stop()
 
@@ -131,7 +133,7 @@ class ReadObjectListApplication(BIPSimpleApplication):
 
         #Get the object classes for each object in the object list and get all possible properties that can be queried for each device.
         object_classes = [get_object_class(obj[0]) for obj in object_list]
-        context.properties_dict_queue = {object_class.objectType:deque([(prop.identifier,prop.datatype) for prop in object_class.properties]) for object_class in object_classes}
+        context.properties_dict_queue = {object_class.objectType:deque([(prop.identifier,prop.datatype) for prop in Object.properties+object_class.properties]) for object_class in object_classes}
         context.property_result_dict = dict()
 
         # make a queue of the identifiers to read, start reading them
@@ -189,9 +191,10 @@ class ReadObjectListApplication(BIPSimpleApplication):
         if iocb.ioError and iocb.ioError.errorCode == 'unknownProperty':
             deferred(self.read_next_object_properties, context)
             return
-
-        # do something for error/reject/abort
-        if iocb.ioError:
+        elif iocb.ioError and iocb.ioError.errorCode == 'operationalProblem':
+            deferred(self.read_next_object_properties, context)
+            return
+        elif iocb.ioError:  # do something for error/reject/abort
             context.completed(iocb.ioError)
             return
 
