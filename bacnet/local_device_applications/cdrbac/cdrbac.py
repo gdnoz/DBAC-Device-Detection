@@ -8,10 +8,6 @@ def main():
     from bacpypes.object import AnalogInputObject
     import bacpypes.basetypes
 
-    from bacpypes.consolelogging import ConfigArgumentParser
-
-    args = ConfigArgumentParser(description=__doc__).parse_args()
-
     analog_input_object = AnalogInputObject(
         objectName='Temperature Sensor',
         objectIdentifier=('analogInput', 0),
@@ -25,7 +21,9 @@ def main():
 
     objects = [analog_input_object]
 
-    LocalDeviceApplication.run_application(args.ini, objects)
+
+    LocalDeviceApplication.run_application(objectname="cdrbac", objectidentifier=599, maxapdulength= 1024,
+                                           segmentationsupported="segmentedBoth", vendoridentifier=15, objects=objects)
 
 if __name__ == "__main__":
     main()

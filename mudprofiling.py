@@ -24,7 +24,7 @@ class MUDProfiler:
 
         print("******************** MUD Profiling Result ********************")
 
-        mud_classification = MudClassification(0.6, 0.4)
+        mud_classification = MudClassification(0.2, 0.1)
 
         mud_file_from_web = MUDUtilities.get_mud_file(sniff_result.mud_url)
 
