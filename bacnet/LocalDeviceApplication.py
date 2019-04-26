@@ -3,23 +3,24 @@
 """
 Modified version of https://github.com/JoelBender/bacpypes/blob/master/samples/Tutorial/SampleConsoleCmd.py
 under MIT license.
+
+Base application for spoofing a bacnet device on the local network.
+To use the ini arguments of the starting script must be passed and all objects
+that are going to be associated with the spoofed device must be passed.
 """
 
 from bacpypes.debugging import bacpypes_debugging, ModuleLogger
-from bacpypes.consolelogging import ConfigArgumentParser
 
 from bacpypes.core import run, enable_sleeping
 
 from bacpypes.app import BIPSimpleApplication
 from bacpypes.local.device import LocalDeviceObject
-from bacpypes.object import Object, ObjectIdentifierProperty,AnalogInputObject,ObjectIdentifier
-import bacpypes.basetypes
+from bacpypes.object import Object
 
-# some debugging
+from typing import List
+
 _debug = 0
 _log = ModuleLogger(globals())
-
-
 
 @bacpypes_debugging
 class DebugApplication(BIPSimpleApplication):
@@ -43,53 +44,26 @@ class DebugApplication(BIPSimpleApplication):
         if _debug: DebugApplication._debug("confirmation %r", apdu)
         BIPSimpleApplication.confirmation(self, apdu)
 
-def main():
-    # parse the command line arguments
-    args = ConfigArgumentParser(description=__doc__).parse_args()
-
-    if _debug: _log.debug("initialization")
-    if _debug: _log.debug("    - args: %r", args)
-
-    # make a device object
+def run_application(ini, objects: List[Object]):
+    '''
+    Running the base application for spoofing bacnet devices on the local network.
+    :param ini: Ini parameters
+    :param objects: Objects to be attached to the device
+    :return:
+    '''
     this_device = LocalDeviceObject(
-        objectName=args.ini.objectname,
-        objectIdentifier=int(args.ini.objectidentifier),
-        maxApduLengthAccepted=int(args.ini.maxapdulengthaccepted),
-        segmentationSupported=args.ini.segmentationsupported,
-        vendorIdentifier=int(args.ini.vendoridentifier)
+        objectName=ini.objectname,
+        objectIdentifier=int(ini.objectidentifier),
+        maxApduLengthAccepted=int(ini.maxapdulengthaccepted),
+        segmentationSupported=ini.segmentationsupported,
+        vendorIdentifier=int(ini.vendoridentifier)
     )
 
-    # make a sample application
-    this_application = DebugApplication(this_device, args.ini.address)
+    this_application = DebugApplication(this_device, ini.address)
 
-    analog_input_object = AnalogInputObject(
-        objectName='Temperature Sensor',
-        objectIdentifier=('analogInput',0),
-        objectType='analogInput',
-        presentValue=21,
-        statusFlags=bacpypes.basetypes.StatusFlags.bitNames['inAlarm'],
-        eventState=bacpypes.basetypes.EventState.enumerations['normal'],
-        outOfService=False,
-        units='degreesCelsius'
-    )
+    for object in objects:
+        this_application.add_object(object)
 
-    this_application.add_object(analog_input_object)
-
-
-    '''
-    # make a console
-    this_console = SampleConsoleCmd()
-    if _debug: _log.debug("    - this_console: %r", this_console)
-    '''
-
-    # enable sleeping will help with threads
     enable_sleeping()
 
-    _log.debug("running")
-
     run()
-
-    _log.debug("fini")
-
-if __name__ == "__main__":
-    main()

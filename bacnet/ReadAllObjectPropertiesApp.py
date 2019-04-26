@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
 """
-File from: https://github.com/JoelBender/bacpypes/blob/master/samples/ReadObjectList.py
+File from: https://github.com/JoelBender/bacpypes/blob/master/samples/ReadAllObjectPropertiesApp.py
 
 This application is given the device instance number of a device and its
-address read the object list, then for each object, read the object name.
+address read the object list, then for each object, all properties are read and output.
 """
 
 from collections import deque
@@ -29,22 +29,15 @@ from bacpypes.object import get_object_class
 
 import json
 
-# some debugging
 _debug = 0
 _log = ModuleLogger(globals())
 
-# globals
 this_device = None
 this_application = None
 
-# convenience definition
 ArrayOfObjectIdentifier = ArrayOf(ObjectIdentifier)
 
-#
-#   ObjectListContext
-#
-
-class ObjectListContext:
+class ObjectPropertyContext:
 
     def __init__(self, device_id, device_addr):
         self.device_id = device_id
@@ -68,22 +61,18 @@ class ObjectListContext:
 
         stop()
 
-#
-#   ReadObjectListApplication
-#
-
 @bacpypes_debugging
-class ReadObjectListApplication(BIPSimpleApplication):
+class ReadAllObjectPropertiesApplication(BIPSimpleApplication):
 
     def __init__(self, *args):
-        if _debug: ReadObjectListApplication._debug("__init__ %r", args)
+        if _debug: ReadAllObjectPropertiesApplication._debug("__init__ %r", args)
         BIPSimpleApplication.__init__(self, *args)
 
     def read_object_list(self, device_id, device_addr):
-        if _debug: ReadObjectListApplication._debug("read_object_list %r %r", device_id, device_addr)
+        if _debug: ReadAllObjectPropertiesApplication._debug("read_object_list %r %r", device_id, device_addr)
 
         # create a context to hold the results
-        context = ObjectListContext(device_id, device_addr)
+        context = ObjectPropertyContext(device_id, device_addr)
 
         # build a request for the object name
         request = ReadPropertyRequest(
@@ -91,12 +80,12 @@ class ReadObjectListApplication(BIPSimpleApplication):
             objectIdentifier=context.device_id,
             propertyIdentifier='objectList',
             )
-        if _debug: ReadObjectListApplication._debug("    - request: %r", request)
+        if _debug: ReadAllObjectPropertiesApplication._debug("    - request: %r", request)
 
         # make an IOCB, reference the context
         iocb = IOCB(request)
         iocb.context = context
-        if _debug: ReadObjectListApplication._debug("    - iocb: %r", iocb)
+        if _debug: ReadAllObjectPropertiesApplication._debug("    - iocb: %r", iocb)
 
         # let us know when its complete
         iocb.add_callback(self.object_list_results)
@@ -105,7 +94,7 @@ class ReadObjectListApplication(BIPSimpleApplication):
         self.request_io(iocb)
 
     def object_list_results(self, iocb):
-        if _debug: ReadObjectListApplication._debug("object_list_results %r", iocb)
+        if _debug: ReadAllObjectPropertiesApplication._debug("object_list_results %r", iocb)
 
         # extract the context
         context = iocb.context
@@ -120,13 +109,13 @@ class ReadObjectListApplication(BIPSimpleApplication):
 
         # should be an ack
         if not isinstance(apdu, ReadPropertyACK):
-            if _debug: ReadObjectListApplication._debug("    - not an ack")
+            if _debug: ReadAllObjectPropertiesApplication._debug("    - not an ack")
             context.completed(RuntimeError("read property ack expected"))
             return
 
         # pull out the content
         object_list = apdu.propertyValue.cast_out(ArrayOfObjectIdentifier)
-        if _debug: ReadObjectListApplication._debug("    - object_list: %r", object_list)
+        if _debug: ReadAllObjectPropertiesApplication._debug("    - object_list: %r", object_list)
 
         # store it in the context
         context.object_list = object_list
@@ -141,7 +130,7 @@ class ReadObjectListApplication(BIPSimpleApplication):
         deferred(self.read_next_object_properties, context)
 
     def read_next_object_properties(self, context):
-        if _debug: ReadObjectListApplication._debug("read_next_object %r", context)
+        if _debug: ReadAllObjectPropertiesApplication._debug("read_next_object %r", context)
 
         # if there's nothing more to do, we're done
 
@@ -149,7 +138,7 @@ class ReadObjectListApplication(BIPSimpleApplication):
         test2 = [len(context.properties_dict_queue[element]) for element in context.properties_dict_queue]
 
         if all([len(context.properties_dict_queue[element]) == 0 for element in context.properties_dict_queue]):
-            if _debug: ReadObjectListApplication._debug("    - all done")
+            if _debug: ReadAllObjectPropertiesApplication._debug("    - all done")
             context.completed()
             return
 
@@ -160,7 +149,7 @@ class ReadObjectListApplication(BIPSimpleApplication):
 
         context.current_property = context.properties_dict_queue[context.current_object_id[0]].popleft()
 
-        if _debug: ReadObjectListApplication._debug("    - object_id: %r", context.current_object_id)
+        if _debug: ReadAllObjectPropertiesApplication._debug("    - object_id: %r", context.current_object_id)
 
         # build a request for the object name
         request = ReadPropertyRequest(
@@ -168,12 +157,12 @@ class ReadObjectListApplication(BIPSimpleApplication):
             objectIdentifier=context.current_object_id,
             propertyIdentifier=context.current_property[0],
             )
-        if _debug: ReadObjectListApplication._debug("    - request: %r", request)
+        if _debug: ReadAllObjectPropertiesApplication._debug("    - request: %r", request)
 
         # make an IOCB, reference the context
         iocb = IOCB(request)
         iocb.context = context
-        if _debug: ReadObjectListApplication._debug("    - iocb: %r", iocb)
+        if _debug: ReadAllObjectPropertiesApplication._debug("    - iocb: %r", iocb)
 
         # let us know when its complete
         iocb.add_callback(self.object_properties_results)
@@ -182,7 +171,7 @@ class ReadObjectListApplication(BIPSimpleApplication):
         self.request_io(iocb)
 
     def object_properties_results(self, iocb):
-        if _debug: ReadObjectListApplication._debug("object_name_results %r", iocb)
+        if _debug: ReadAllObjectPropertiesApplication._debug("object_name_results %r", iocb)
 
         # extract the context
         context = iocb.context
@@ -203,7 +192,7 @@ class ReadObjectListApplication(BIPSimpleApplication):
 
         # should be an ack
         if not isinstance(apdu, ReadPropertyACK):
-            if _debug: ReadObjectListApplication._debug("    - not an ack")
+            if _debug: ReadAllObjectPropertiesApplication._debug("    - not an ack")
             context.completed(RuntimeError("read property ack expected"))
             return
 
@@ -215,10 +204,6 @@ class ReadObjectListApplication(BIPSimpleApplication):
 
         # read the next one
         deferred(self.read_next_object_properties, context)
-
-#
-#   __main__
-#
 
 def main():
     global this_device
@@ -253,7 +238,7 @@ def main():
         )
 
     # make a simple application
-    this_application = ReadObjectListApplication(this_device, args.ini.address)
+    this_application = ReadAllObjectPropertiesApplication(this_device, args.ini.address)
 
     # build a device object identifier
     device_id = ('device', args.device_id)
