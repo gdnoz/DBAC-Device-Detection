@@ -222,29 +222,30 @@ def main():
           help='device address',
           )
 
-    # parse the args
-    args = parser.parse_args()
-
-    if _debug: _log.debug("initialization")
-    if _debug: _log.debug("    - args: %r", args)
-
     # make a device object
     this_device = LocalDeviceObject(
-        objectName=args.ini.objectname,
-        objectIdentifier=int(args.ini.objectidentifier),
-        maxApduLengthAccepted=int(args.ini.maxapdulengthaccepted),
-        segmentationSupported=args.ini.segmentationsupported,
-        vendorIdentifier=int(args.ini.vendoridentifier),
-        )
+        objectName="objectpropertyreader",
+        objectIdentifier=599,
+        maxApduLengthAccepted=1024,
+        segmentationSupported="segmentedBoth",
+        vendorIdentifier=15,
+    )
+
+    import netifaces
+    from ipaddress import IPv4Network
+
+    wifi_ip = netifaces.ifaddresses('en0')[netifaces.AF_INET][0]
+    #Addres of this device which will perform the querying.
+    address = wifi_ip['addr'] + "/" + str(IPv4Network("0.0.0.0/" + wifi_ip['netmask']).prefixlen) + ":47809"
 
     # make a simple application
-    this_application = ReadAllObjectPropertiesApplication(this_device, args.ini.address)
+    this_application = ReadAllObjectPropertiesApplication(this_device, address)
 
     # build a device object identifier
-    device_id = ('device', args.device_id)
+    device_id = ('device', 599)
 
-    # translate the address
-    device_addr = Address(args.device_addr)
+    # Address of device being queried.
+    device_addr = Address(wifi_ip['addr'] + "/" + str(IPv4Network("0.0.0.0/" + wifi_ip['netmask']).prefixlen) + ":47808")
 
     # kick off the process after the core is up and running
     deferred(this_application.read_object_list, device_id, device_addr)
