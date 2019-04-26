@@ -81,6 +81,4 @@ def run_application(objectname: str, objectidentifier: int, maxapdulength: int, 
 
     run()
 
-    import os
 
-    #os.system('python3 ReadAllObjectPropertiesApp.py ' + str(objectidentifier) + ' ' + wifi_ip['addr'] + "/" + str(IPv4Network("0.0.0.0/" + wifi_ip['netmask']).prefixlen) + ":47809")
