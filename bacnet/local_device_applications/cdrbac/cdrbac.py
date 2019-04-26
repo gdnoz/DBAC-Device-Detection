@@ -5,7 +5,7 @@ Based on: http://ctsteknik.dk/upload_dir/shop/SN1.405-CDR-BAC.pdf
 def main():
     import bacnet.LocalDeviceApplication as LocalDeviceApplication
 
-    from bacpypes.object import Object, ObjectIdentifierProperty, AnalogInputObject, ObjectIdentifier
+    from bacpypes.object import AnalogInputObject
     import bacpypes.basetypes
 
     from bacpypes.consolelogging import ConfigArgumentParser
