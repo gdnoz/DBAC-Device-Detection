@@ -1,11 +1,16 @@
 '''
 Based on: http://ctsteknik.dk/upload_dir/shop/SN1.405-CDR-BAC.pdf
+
+Simulates and queries device based on the above data sheet.
 '''
 
-def main():
-    import bacnet.LocalDeviceApplication as LocalDeviceApplication
-
+def run_application() -> str:
+    '''
+    Simulate and query the device.
+    :return: Object query result.
+    '''
     from bacpypes.object import AnalogInputObject
+    from bacnet import SimulateAndQueryDeviceApplication
     import bacpypes.basetypes
 
     analog_input_object = AnalogInputObject(
@@ -21,8 +26,8 @@ def main():
 
     objects = [analog_input_object]
 
-    LocalDeviceApplication.run_application(objectname="cdrbac", objectidentifier=599, maxapdulength= 1024,
-                                           segmentationsupported="segmentedBoth", vendoridentifier=15, objects=objects)
+    return SimulateAndQueryDeviceApplication.run_application(objectname="cdrbac", objectidentifier=599, maxapdulength= 1024,
+                                                      segmentationsupported="segmentedBoth", vendoridentifier=15, objects=objects)
 
 if __name__ == "__main__":
-    main()
+    print(run_application())

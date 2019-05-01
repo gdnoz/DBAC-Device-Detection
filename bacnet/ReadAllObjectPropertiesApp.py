@@ -27,6 +27,8 @@ from bacpypes.object import Object
 
 from bacpypes.object import get_object_class
 
+import asyncio
+
 import json
 
 _debug = 0
@@ -34,6 +36,7 @@ _log = ModuleLogger(globals())
 
 this_device = None
 this_application = None
+query_output = asyncio.Future()
 
 ArrayOfObjectIdentifier = ArrayOf(ObjectIdentifier)
 
@@ -57,7 +60,7 @@ class ObjectPropertyContext:
         if had_error:
             print("had error: %r" % (had_error,))
         else:
-            print(json.dumps(self.property_result_dict, indent=4))
+            query_output.set_result(json.dumps(self.property_result_dict, indent=4))
 
         stop()
 
@@ -134,9 +137,6 @@ class ReadAllObjectPropertiesApplication(BIPSimpleApplication):
 
         # if there's nothing more to do, we're done
 
-        test = [len(context.properties_dict_queue[element]) == 0 for element in context.properties_dict_queue]
-        test2 = [len(context.properties_dict_queue[element]) for element in context.properties_dict_queue]
-
         if all([len(context.properties_dict_queue[element]) == 0 for element in context.properties_dict_queue]):
             if _debug: ReadAllObjectPropertiesApplication._debug("    - all done")
             context.completed()
@@ -205,7 +205,7 @@ class ReadAllObjectPropertiesApplication(BIPSimpleApplication):
         # read the next one
         deferred(self.read_next_object_properties, context)
 
-def main():
+def run_application():
     global this_device
     global this_application
 
@@ -255,6 +255,3 @@ def main():
     run()
 
     _log.debug("fini")
-
-if __name__ == "__main__":
-    main()

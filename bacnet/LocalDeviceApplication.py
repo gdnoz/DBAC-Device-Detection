@@ -4,7 +4,7 @@
 Modified version of https://github.com/JoelBender/bacpypes/blob/master/samples/Tutorial/SampleConsoleCmd.py
 under MIT license.
 
-Base application for spoofing a bacnet device on the local network.
+Base application for simulating a bacnet device on the local network.
 To use the ini arguments of the starting script must be passed and all objects
 that are going to be associated with the spoofed device must be passed.
 """
@@ -15,8 +15,8 @@ from bacpypes.core import run, enable_sleeping
 
 from bacpypes.app import BIPSimpleApplication
 from bacpypes.local.device import LocalDeviceObject
-from bacpypes.object import Object
 
+from bacpypes.object import Object
 from typing import List
 
 _debug = 0
@@ -80,5 +80,3 @@ def run_application(objectname: str, objectidentifier: int, maxapdulength: int, 
     enable_sleeping()
 
     run()
-
-
