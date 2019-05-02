@@ -44,8 +44,7 @@ class DebugApplication(BIPSimpleApplication):
         if _debug: DebugApplication._debug("confirmation %r", apdu)
         BIPSimpleApplication.confirmation(self, apdu)
 
-def run_application(objectname: str, objectidentifier: int, maxapdulength: int, segmentationsupported: str,
-                    vendoridentifier: int, objects: List[Object]):
+def run_application(**kwargs):
     '''
     Running the base application for spoofing bacnet devices on the local network.
     :param vendoridentifier:
@@ -64,17 +63,11 @@ def run_application(objectname: str, objectidentifier: int, maxapdulength: int, 
     wifi_ip = netifaces.ifaddresses('en0')[netifaces.AF_INET][0]
     address = wifi_ip['addr'] + "/" + str(IPv4Network("0.0.0.0/" + wifi_ip['netmask']).prefixlen) + ":47808"
 
-    this_device = LocalDeviceObject(
-        objectName=objectname,
-        objectIdentifier=objectidentifier,
-        maxApduLengthAccepted=maxapdulength,
-        segmentationSupported=segmentationsupported,
-        vendorIdentifier=vendoridentifier
-    )
+    this_device = LocalDeviceObject(**kwargs)
 
     this_application = DebugApplication(this_device, address)
 
-    for object in objects:
+    for object in kwargs["objects"]:
         this_application.add_object(object)
 
     enable_sleeping()

@@ -10,8 +10,7 @@ from bacnet.local_device_applications import LocalDeviceApplication, ReadAllObje
 Class for simulating a BACnet device and then querying it of it's objects.
 '''
 
-def run_application(objectname: str, objectidentifier: int, maxapdulength: int, segmentationsupported: str,
-                    vendoridentifier: int, objects: List[Object]) -> str:
+def run_application(**kwargs) -> str:
     '''
     Simulates the device given the specified arguments and returns the query of it's objects.
     :param objectname:
@@ -23,11 +22,12 @@ def run_application(objectname: str, objectidentifier: int, maxapdulength: int, 
     :return:
     '''
 
-    thread = threading.Thread(target=LocalDeviceApplication.run_application, args=(objectname, objectidentifier, maxapdulength,
-                                                                                   segmentationsupported, vendoridentifier, objects))
+    thread = threading.Thread(target=LocalDeviceApplication.run_application, kwargs=kwargs)
     thread.start()
-    ReadAllObjectPropertiesApp.run_application(objectidentifier)
+
+    #Give object identifier of the device object that will be queried.
+    ReadAllObjectPropertiesApp.run_application(kwargs["objectIdentifier"])
 
     asyncio.get_event_loop().run_until_complete(asyncio.wait_for(ReadAllObjectPropertiesApp.query_output, timeout=30))
-    print("result gotten")
+
     return ReadAllObjectPropertiesApp.query_output.result()
