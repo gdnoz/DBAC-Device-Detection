@@ -1,8 +1,8 @@
 class DataSetCreator:
     """
-    Can be used to create a dataset_utilities for text classification.
+    Can be used to create a dataset_utilities for text device_classification.
     This is done by downloading texts in a specified file and
-    placing them in folders corresponding to their text classification category.
+    placing them in folders corresponding to their text device_classification category.
     """
 
     def __init__(self, dataset_urls_file_path: str, ):
@@ -39,7 +39,7 @@ class DataSetCreator:
                     url = line_tokens[1]
                     document_path = os.path.join(category_path,document_name)
 
-                    from scraping.utilities import WebScrapingUtilities
+                    from web_scraping.utilities import WebScrapingUtilities
 
                     try:
                         text = WebScrapingUtilities.extract_text_from_url(url)

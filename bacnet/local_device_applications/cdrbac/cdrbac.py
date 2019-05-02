@@ -10,24 +10,85 @@ def run_application() -> str:
     :return: Object query result.
     '''
     from bacpypes.object import AnalogInputObject
-    from bacnet import SimulateAndQueryDeviceApplication
+    from bacnet.local_device_applications import SimulateAndQueryDeviceApplication
     import bacpypes.basetypes
 
-    analog_input_object = AnalogInputObject(
+    objects =\
+        [
+        AnalogInputObject(
         objectName='Temperature Sensor',
         objectIdentifier=('analogInput', 0),
         objectType='analogInput',
         presentValue=21,
-        statusFlags=bacpypes.basetypes.StatusFlags.bitNames['inAlarm'],
-        eventState=bacpypes.basetypes.EventState.enumerations['normal'],
+        #statusFlags='inAlarm',
+        eventState='normal',
         outOfService=False,
         units='degreesCelsius'
-    )
+    ), AnalogInputObject(
+        objectName='Setpoint Adjust',
+        objectIdentifier=('analogInput', 1),
+        objectType='analogInput',
+        presentValue=259,
+        #statusFlags='inAlarm',
+        eventState='normal',
+        outOfService=False,
+        units='degreesCelsius'
+    ), AnalogInputObject(
+        objectName='Humidity Sensor',
+        objectIdentifier=('analogInput', 2),
+        objectType='analogInput',
+        presentValue=27,
+        #statusFlags='inAlarm',
+        eventState='normal',
+        outOfService=False,
+        units='percent'
+    ), AnalogInputObject(
+        objectName='RI1',
+        objectIdentifier=('analogInput', 3),
+        objectType='analogInput',
+        presentValue=20981,
+        #statusFlags='inAlarm',
+        eventState='normal',
+        outOfService=False,
+        units='ohms'
+    ), AnalogInputObject(
+        objectName='RI2',
+        objectIdentifier=('analogInput', 4),
+        objectType='analogInput',
+        presentValue=12841,
+        #statusFlags='inAlarm',
+        eventState='normal',
+        outOfService=False,
+        units='ohms'
+    ), AnalogInputObject(
+        objectName='CO2 Sensor',
+        objectIdentifier=('analogInput', 5),
+        objectType='analogInput',
+        presentValue=738,
+        #statusFlags='inAlarm',
+        eventState='normal',
+        outOfService=False,
+        units='partsPerMillion'
+    ), AnalogInputObject(
+        objectName='LUX Sensor',
+        objectIdentifier=('analogInput', 6),
+        objectType='analogInput',
+        presentValue=1974,
+        #statusFlags='inAlarm',
+        eventState='normal',
+        outOfService=False,
+        units='luxes'
+    )]
 
-    objects = [analog_input_object]
+    '''
+    Also add the proper device object properties. All naming is found under DeviceObject.py in object.py
+    '''
 
-    return SimulateAndQueryDeviceApplication.run_application(objectname="cdrbac", objectidentifier=599, maxapdulength= 1024,
-                                                      segmentationsupported="segmentedBoth", vendoridentifier=15, objects=objects)
+
+
+
+    return SimulateAndQueryDeviceApplication.run_application(objectname="CDR_001", objectidentifier=651000, maxapdulength=480,
+                                                             segmentationsupported="noSegmentation", vendoridentifier=651, objects=objects)
 
 if __name__ == "__main__":
     print(run_application())

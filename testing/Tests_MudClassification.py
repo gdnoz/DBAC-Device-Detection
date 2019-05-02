@@ -45,7 +45,7 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
 
     print("****************** TEST COMPLETE: c_tresh: " + str(threshold) + " s_thresh: " + str(scraping_threshold) + " ******************")
     print("Accuracy:            " + str(float(correctClassifications/numberOfTests)))
-    print("No classification:   " + str(float(noClassifications/numberOfTests)))
+    print("No device_classification:   " + str(float(noClassifications/numberOfTests)))
 
 if __name__ == "__main__":
     #best so far:

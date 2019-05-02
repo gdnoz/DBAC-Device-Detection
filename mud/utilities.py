@@ -1,6 +1,6 @@
 class MUDUtilities:
     """
-    A utility class for scraping html from a url and also cleaning the text.
+    A utility class for web_scraping html from a url and also cleaning the text.
     """
 
     @staticmethod
@@ -98,7 +98,7 @@ class MUDUtilities:
 
     @staticmethod
     def get_mud_file(mud_url: str) -> str:
-        from scraping.utilities import WebScrapingUtilities
+        from web_scraping.utilities import WebScrapingUtilities
         return WebScrapingUtilities.get_content_from_url(mud_url)
 
 
@@ -108,7 +108,7 @@ class MUDUtilities:
         Retrieves the mud files, given by the URLs in the 'mud_file_urls.csv' file and saves them.
         """
         import ssl, os, constants
-        from scraping.utilities import WebScrapingUtilities
+        from web_scraping.utilities import WebScrapingUtilities
 
         ssl._create_default_https_context = ssl._create_unverified_context
 

@@ -14,7 +14,7 @@ class MudClassification:
     from typing import Type
 
     def __init__(self, classification_threshold: float, scraping_threshold: float):
-        from classification.text_classification import DeviceClassifier
+        from device_classification.text_classification import DeviceClassifier
         self.threshold = classification_threshold
         self.scraping_threshold = scraping_threshold
         self.classifier = DeviceClassifier(threshold=classification_threshold)
@@ -34,8 +34,8 @@ class MudClassification:
     def classify_mud_contents(self, mud_file_contents: str) -> MudClassificationResult:
         from mud.scraping import RelevantTextScraper
         from mud.utilities import MUDUtilities
-        from scraping.bing import BingSearchAPI
-        from scraping.google import GoogleCustomSearchAPI
+        from web_scraping.bing import BingSearchAPI
+        from web_scraping.google import GoogleCustomSearchAPI
 
         '''
         Classification MUD Urls

@@ -1,13 +1,13 @@
 class RelevantTextScraper:
     """
-    Through a list of urls, text is scraped from the urls only if the text is relevant enough for the classification problem at hand.
+    Through a list of urls, text is scraped from the urls only if the text is relevant enough for the device_classification problem at hand.
     """
     blacklist = {"ntp","time","www.example.com"}
     visited_urls = set()
     expansion_urls = set()
 
     def __init__(self, urls: set, noise_threshold: float):
-        from classification.text_classification import DeviceClassifier
+        from device_classification.text_classification import DeviceClassifier
         self.urls = urls
         self.classifier = DeviceClassifier(threshold=noise_threshold)
 
@@ -17,7 +17,7 @@ class RelevantTextScraper:
         :return: All relevant texts combined into a string.
         """
         import tldextract
-        from scraping.utilities import WebScrapingUtilities
+        from web_scraping.utilities import WebScrapingUtilities
 
         relevant_text = ""
 
@@ -32,10 +32,10 @@ class RelevantTextScraper:
                     classification = self.classifier.predict_text(scraped_text)
 
                     if classification.predicted_class != "":
-                        #print("Sucessful scrape: " + url + " | " +str(classification.prediction_probability))
+                        #print("Sucessful scrape: " + url + " | " +str(device_classification.prediction_probability))
                         relevant_text += scraped_text
                     #else:
-                    #    print("Failed scrape: " + url + " | " +str(classification.prediction_probability))
+                    #    print("Failed scrape: " + url + " | " +str(device_classification.prediction_probability))
 
                 except Exception as ex:
                     #print(url + " caused an Exception.")
