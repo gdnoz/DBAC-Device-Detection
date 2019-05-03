@@ -23,7 +23,7 @@ class MudClassification:
         """
         Classifies device type that the specified mud file describes.
         :param filename: Filename of the mud file.
-        :return: Classified class.
+        :return: Classified class and score
         """
 
         print("Classifying " + filename + "...")
@@ -32,6 +32,13 @@ class MudClassification:
         return self.classify_mud_contents(MUDUtilities.get_mud_file_contents(filename))
 
     def classify_mud_contents(self, mud_file_contents: str) -> MudClassificationResult:
+        '''
+        Classifies device based on the contents of a mud file.
+        :param mud_file_contents:
+        :return: Classified class and score
+        '''
+
+
         from mud.scraping import RelevantTextScraper
         from mud.utilities import MUDUtilities
         from web_scraping.bing import BingSearchAPI
@@ -48,6 +55,10 @@ class MudClassification:
 
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)
+
+        '''
+        Preparing classification based on search engines.
+        '''
 
         systeminfo = MUDUtilities.get_systeminfo_from_mud_file(mud_file_contents)
 
@@ -68,6 +79,7 @@ class MudClassification:
         '''
         Classification based on Google
         '''
+
         urls = GoogleCustomSearchAPI.search(systeminfo)
 
         text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls()

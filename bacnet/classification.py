@@ -14,9 +14,10 @@ class BacnetClassification:
     Performs device_classification on bacnet devices based on text retrieved from object queries, which is provided as input.
     '''
 
-    def __init__(self, classification_threshold: float):
+    def __init__(self, classification_threshold: float, scraping_threshold: float):
         from device_classification.text_classification import DeviceClassifier
         self.threshold = classification_threshold
+        self.scraping_threshold = scraping_threshold
         self.classifier = DeviceClassifier(threshold=classification_threshold)
 
     def classify_bacnet_objects(self, queried_objects: str) -> BacnetClassificationResult:
@@ -25,27 +26,68 @@ class BacnetClassification:
         :param queried_objects: The queried objects of the device in json format
         :return: BacnetClassificationResult containing predicted class and score.
         '''
+        from web_scraping.bing import BingSearchAPI
+        from web_scraping.google import GoogleCustomSearchAPI
+        from bacnet.utilities import BacnetUtilities
+
+        '''
+        Classification based bacnet objects query
+        '''
 
         classification_result = self.classifier.predict_text(queried_objects)
 
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
 
-        return BacnetClassificationResult("",0.0)
+        '''
+        Preparing classification based on search engines.
+        '''
+
+        vendor_name = BacnetUtilities.get_vendor_name_from_query(queried_objects)
+        model_name = BacnetUtilities.get_model_name_from_query(queried_objects)
+        device_object_name = BacnetUtilities.get_device_object_name_from_query(queried_objects) #Not useful?
+
+        search_terms = vendor_name + " " + model_name
+
+
+        '''
+        Classification based on Bing
+        '''
+
+        urls = BingSearchAPI.first_ten_results(search_terms)
+
+        text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls()
+
+        classification_result = self.classifier.predict_text(text_from_urls)
+
+        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
+            return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
+
+        '''
+        Classification based on Google
+        '''
+
+        urls = GoogleCustomSearchAPI.search(search_terms)
+
+        text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls()
+
+        classification_result = self.classifier.predict_text(text_from_urls)
+
+        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
+            return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
+        else:
+            return BacnetClassificationResult("No_classification",0.0)
+
 
 if __name__ == "__main__":
     from bacnet.local_device_applications.cdrbac import cdrbac
     from mud.scraping import RelevantTextScraper
-    from web_scraping.bing import BingSearchAPI
-
-    bc = BacnetClassification(0.0)
+    from bacnet.utilities import BacnetUtilities
 
     text = cdrbac.run_application()
 
+    bc = BacnetClassification(0.2,0.1)
+
     print(bc.classify_bacnet_objects(text))
 
-    urls = BingSearchAPI.first_ten_results(text)
 
-    text_from_urls = RelevantTextScraper(set(urls), 0.1).extract_text_from_urls()
-
-    print(bc.classify_bacnet_objects(text_from_urls))

@@ -22,11 +22,11 @@ class MUDProfiler:
 
         print("*********************** Packet obtained! *********************\n\n")
 
-        print("******************** MUD Profiling Result ********************")
-
         mud_classification = MudClassification(0.2, 0.1)
 
         mud_file_from_web = MUDUtilities.get_mud_file(sniff_result.mud_url)
+
+        print("******************** MUD profiling result ********************")
 
         if not self.local_mud_file:
             classification_result = mud_classification.classify_mud_contents(mud_file_from_web)
@@ -45,6 +45,7 @@ class MUDProfiler:
         print("Mud file ACLs:")
         print(MUDUtilities.extract_acls_from_mud_contents(mud_file_from_web))
 
+        print("******************** MUD profiling completed *****************")
 
 if __name__ == "__main__":
     mud_profiler = MUDProfiler(local_mud_file=False)
