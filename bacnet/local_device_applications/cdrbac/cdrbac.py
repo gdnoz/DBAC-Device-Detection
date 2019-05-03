@@ -9,7 +9,7 @@ def run_application() -> str:
     Simulate and query the device.
     :return: Object query result.
     '''
-    from bacpypes.object import AnalogInputObject,AnalogOutputObject,AnalogValueObject
+    from bacpypes.object import AnalogInputObject,AnalogOutputObject,AnalogValueObject,BinaryInputObject,BinaryOutputObject,MultiStateInputObject
     from bacnet.local_device_applications import SimulateAndQueryDeviceApplication
     import bacpypes.basetypes
 
@@ -106,20 +106,171 @@ def run_application() -> str:
             units='percent'
     )]
 
-    analog_value_objects = [AnalogValueObject(
-        objectIdentifier=('analogValue',0),
-        objectName='Temperature Setpoint',
-        objectType='analogValue',
-        presentValue=27,
-        eventState='normal',
-        outOfService=False,
-        #relinquishDefault='Nonvol Temperature Setpoint'
+    analog_value_objects = [
+        AnalogValueObject(
+            objectIdentifier=('analogValue',0),
+            objectName='Temperature Setpoint',
+            objectType='analogValue',
+            presentValue=27,
+            eventState='normal',
+            outOfService=False,
+            units='degreesCelsius',
+            relinquishDefault=20
+    ), AnalogValueObject(
+            objectIdentifier=('analogValue',1),
+            objectName='Humidity Setpoint',
+            objectType='analogValue',
+            presentValue=12,
+            eventState='normal',
+            outOfService=False,
+            units='percent',
+            relinquishDefault=50
+    ),  AnalogValueObject(
+            objectIdentifier=('analogValue',2),
+            objectName='CO2 Setpoint',
+            objectType='analogValue',
+            presentValue=502,
+            eventState='normal',
+            outOfService=False,
+            units='partsPerMillion',
+            relinquishDefault=500
+    ), AnalogValueObject(
+            objectIdentifier=('analogValue',3),
+            objectName='LUX Setpoint',
+            objectType='analogValue',
+            presentValue=1129,
+            eventState='normal',
+            outOfService=False,
+            units='luxes',
+            relinquishDefault=1500
+    ), AnalogValueObject(
+            objectIdentifier=('analogValue',4),
+            objectName='DI1 Pulse Count',
+            objectType='analogValue',
+            presentValue=8276491,
+            eventState='normal',
+            outOfService=False,
+            units='noUnits',
+            relinquishDefault=0
+    ), AnalogValueObject(
+            objectIdentifier=('analogValue',5),
+            objectName='DI2 Pulse Count',
+            objectType='analogValue',
+            presentValue=292384,
+            eventState='normal',
+            outOfService=False,
+            units='noUnits',
+            relinquishDefault=0
+    ), AnalogValueObject(
+            objectIdentifier=('analogValue',6),
+            objectName='LCD Backlight Brightness',
+            objectType='analogValue',
+            presentValue=7,
+            eventState='normal',
+            outOfService=False,
+            units='noUnits',
+            relinquishDefault=0
+    ),
+    ]
+
+    binary_input_objects = [BinaryInputObject(
+            objectIdentifier=('binaryInput',0),
+            objectName='DI1',
+            objectType='binaryInput',
+            presentValue=0,
+            eventState='normal',
+            outOfService=False,
+            polarity='normal',
+            activeText='on',
+            inactiveText='off'
+    ), BinaryInputObject(
+            objectIdentifier=('binaryInput',1),
+            objectName='DI2',
+            objectType='binaryInput',
+            presentValue=1,
+            eventState='normal',
+            outOfService=False,
+            polarity='normal',
+            activeText='on',
+            inactiveText='off'
+    ), BinaryInputObject(
+            objectIdentifier=('binaryInput',2),
+            objectName='Occupancy',
+            objectType='binaryInput',
+            presentValue=1,
+            eventState='normal',
+            outOfService=False,
+            polarity='normal',
+            activeText='on',
+            inactiveText='off'
+    ), BinaryInputObject(
+            objectIdentifier=('binaryInput',3),
+            objectName='Push Button 1',
+            objectType='binaryInput',
+            presentValue=0,
+            eventState='normal',
+            outOfService=False,
+            polarity='normal',
+            activeText='on',
+            inactiveText='off'
+    ), BinaryInputObject(
+            objectIdentifier=('binaryInput',4),
+            objectName='Push Button 2',
+            objectType='binaryInput',
+            presentValue=0,
+            eventState='normal',
+            outOfService=False,
+            polarity='normal',
+            activeText='on',
+            inactiveText='off'
     )]
 
-    objects = analog_output_objets+analog_input_objects+analog_value_objects
+    binary_output_objects = [BinaryOutputObject(
+            objectIdentifier=('binaryOutput',0),
+            objectName='DO1',
+            objectType='binaryOutput',
+            presentValue=0,
+            eventState='normal',
+            outOfService=False,
+            polarity='normal',
+            relinquishDefault=0,
+            activeText='on',
+            inactiveText='off'
+    ), BinaryOutputObject(
+            objectIdentifier=('binaryOutput',1),
+            objectName='DO2',
+            objectType='binaryOutput',
+            presentValue=0,
+            eventState='normal',
+            outOfService=False,
+            polarity='normal',
+            relinquishDefault=0,
+            activeText='on',
+            inactiveText='off'
+    ), BinaryOutputObject(
+            objectIdentifier=('binaryOutput',2),
+            objectName='SPA Reset',
+            objectType='binaryOutput',
+            presentValue=0,
+            eventState='normal',
+            outOfService=False,
+            polarity='normal',
+            relinquishDefault=0,
+            activeText='on',
+            inactiveText='off'
+    )]
 
+    multistate_input_objects = [MultiStateInputObject(
+            objectIdentifier=('multiStateInput',0),
+            objectName='Alarm Level',
+            objectType='multiStateInput',
+            presentValue=1,
+            eventState='normal',
+            outOfService=False,
+            numberOfStates=3
+    )]
 
-
+    objects = analog_output_objets+analog_input_objects+analog_value_objects+binary_input_objects+binary_output_objects+multistate_input_objects
 
     return SimulateAndQueryDeviceApplication.run_application(objectIdentifier=651000, objectName="CDR_001", objectType=8, systemStatus='operational', vendorName='SyxthSense',
                                                              vendorIdentifier=651, modelName='URD', protocolVersion=1, protocolRevision=10, maxapdulength=480,
