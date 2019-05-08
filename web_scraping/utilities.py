@@ -6,12 +6,12 @@ class WebScrapingUtilities():
     from requests import Response
 
     @staticmethod
-    def get_content_from_url(url: str) -> str:
-        """Retrieves the html content of a URL.
+    def get_content_from_url(url: str) -> bytes:
+        """Retrieves the byte content of a URL.
 
         @param url: URL of the content
 
-        @returns: HTML content
+        @returns: Byte content
         """
         import urllib.request,ssl
 
@@ -20,26 +20,48 @@ class WebScrapingUtilities():
 
         request = urllib.request.urlopen(url,context=gcontext)
         bytes = request.read()
-
-        html_content = bytes.decode("utf8")
         request.close()
 
+        return bytes
+
+    @staticmethod
+    def get_http_content_from_url(url: str) -> str:
+        '''
+        Retrives the byte content from the url and decodes to utf-8 format.
+        :param url: URL of the content
+        :return: HTTP content
+        '''
+        bytes = WebScrapingUtilities.get_content_from_url(url)
+
+        html_content = bytes.decode("utf8")
         return html_content
 
     @staticmethod
-    def get_content_from_url_and_save(url: str, path: str, filename: str):
+    def get_http_content_from_url_and_save(url: str, path: str, filename: str):
         """Retrieves the html content of a URL and saves it in the "retrieved text" subfolder.
 
         @param url: URL of the content
 
         @returns: HTML content
         """
-        html_content = WebScrapingUtilities.get_content_from_url(url)
+        html_content = WebScrapingUtilities.get_http_content_from_url(url)
 
         import os
 
         with open(os.path.join(path,filename),"w+") as f:
             f.write(html_content)
+
+    @staticmethod
+    def get_pdf_content_from_url(url: str) -> str:
+        '''
+        Retrives the byte content of a pdf file specified by the url.
+        :param url:  URL of pdf content
+        :return: PDF content
+        '''
+
+        byte_content = WebScrapingUtilities.get_content_from_url(url)
+
+        return PdfToTextConverter.pdf_to_text(byte_content)
 
     @staticmethod
     def extract_text_from_url(url: str, **kwargs) -> str:
@@ -48,6 +70,8 @@ class WebScrapingUtilities():
         :param url: Url of content.
         :return: Cleaned text of the response.
         """
+
+        html = None
 
         try:
             html = WebScrapingUtilities.__http_get(url, timeout=kwargs.get("timeout",None))
@@ -173,5 +197,37 @@ class WebScrapingUtilities():
                 and content_type is not None
                 and content_type.find('html') > -1)
 
+class PdfToTextConverter:
+    @staticmethod
+    def pdf_to_text(byte_content: bytes) -> str:
+        import web_scraping.pdf2txt
+        import os,constants
+
+        temp_pdf_file_path = os.path.join(constants.TEMP_FOLDER,"temp.pdf")
+        temp_output_file_path = os.path.join(constants.TEMP_FOLDER,"temp.txt")
+        output = ""
+
+        if not os.path.exists(constants.TEMP_FOLDER):
+            os.makedirs(constants.TEMP_FOLDER)
+
+
+        with open(temp_pdf_file_path, 'wb') as fp:
+            fp.write(byte_content)
+
+        web_scraping.pdf2txt.extract_text([temp_pdf_file_path],temp_output_file_path)
+
+        with open(temp_output_file_path, 'r+') as f:
+            for line in f.readlines():
+                output += line
+
+        for root, dirs, files in os.walk(constants.TEMP_FOLDER, topdown=False):
+            for name in files:
+                os.remove(os.path.join(root, name))
+            for name in dirs:
+                os.rmdir(os.path.join(root, name))
+
+        return output
+
 if __name__ == "__main__":
-    print(WebScrapingUtilities.extract_text_from_url("www.meethue.com"))
+    test = WebScrapingUtilities.get_content_from_url("http://f.licitationen.dk/2ans3fldwwje02ca.pdf")
+    PdfToTextConverter.pdf_to_text(test)

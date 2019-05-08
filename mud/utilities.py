@@ -99,7 +99,7 @@ class MUDUtilities:
     @staticmethod
     def get_mud_file(mud_url: str) -> str:
         from web_scraping.utilities import WebScrapingUtilities
-        return WebScrapingUtilities.get_content_from_url(mud_url)
+        return WebScrapingUtilities.get_http_content_from_url(mud_url)
 
 
     @staticmethod
@@ -121,4 +121,4 @@ class MUDUtilities:
                 url = items[0]
                 device = items[1].rstrip()
 
-                WebScrapingUtilities.get_content_from_url_and_save(url, constants.MUDFILES_DIR, device + ".json")
+                WebScrapingUtilities.get_http_content_from_url_and_save(url, constants.MUDFILES_DIR, device + ".json")

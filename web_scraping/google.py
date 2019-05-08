@@ -11,7 +11,7 @@ class GoogleCustomSearchAPI:
 
         headers = {}
         params = \
-            {"q": search_terms+GoogleCustomSearchAPI.exclude_pdf,
+            {"q": search_terms,#+GoogleCustomSearchAPI.exclude_pdf,
              "cx": GoogleCustomSearchAPI.custom_search_engine_id,
              "key": GoogleCustomSearchAPI.api_key,
              "lr": "lang_en",

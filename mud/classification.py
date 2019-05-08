@@ -11,8 +11,6 @@ class MudClassification:
     Given a mud file as input, the file will be used to classify the type of the device.
     """
 
-    from typing import Type
-
     def __init__(self, classification_threshold: float, scraping_threshold: float):
         from device_classification.text_classification import DeviceClassifier
         self.threshold = classification_threshold
@@ -39,7 +37,7 @@ class MudClassification:
         '''
 
 
-        from mud.scraping import RelevantTextScraper
+        from web_scraping.scraping import RelevantTextScraper
         from mud.utilities import MUDUtilities
         from web_scraping.bing import BingSearchAPI
         from web_scraping.google import GoogleCustomSearchAPI

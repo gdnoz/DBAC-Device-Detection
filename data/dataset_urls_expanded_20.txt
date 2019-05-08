@@ -178,3 +178,5 @@ KasaSmartOutdoor,https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-wi
 WifiPlug,https://wifiplug.co.uk/product/wifiplug-home-ios-android-compatible-fully-loaded-smart-plug/
 Aneken,https://www.amazon.com/Aneken-Function-Electrical-Compatible-Assistant/dp/B07BDDKPB7
 TeckinPlug,https://www.amazon.co.uk/TECKIN-Outlet-Wireless-Control-Required/dp/B07D7C74RQ
+
+Industry_ElectricControl:

@@ -26,7 +26,7 @@ class BacnetClassification:
         :param queried_objects: The queried objects of the device in json format
         :return: BacnetClassificationResult containing predicted class and score.
         '''
-        from mud.scraping import RelevantTextScraper
+        from web_scraping.scraping import RelevantTextScraper
         from web_scraping.bing import BingSearchAPI
         from web_scraping.google import GoogleCustomSearchAPI
         from bacnet.utilities import BacnetUtilities
@@ -35,10 +35,14 @@ class BacnetClassification:
         Classification based bacnet objects query
         '''
 
+        print("Classifying based on objects query...")
+
         classification_result = self.classifier.predict_text(queried_objects)
 
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
-            return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
+           return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
+
+        print("Failed...")
 
         '''
         Preparing classification based on search engines.
@@ -48,12 +52,15 @@ class BacnetClassification:
         model_name = BacnetUtilities.get_model_name_from_query(queried_objects)
         device_object_name = BacnetUtilities.get_device_object_name_from_query(queried_objects) #Not useful?
 
-        search_terms = vendor_name + " " + model_name
+        search_terms = vendor_name + " " + model_name# + " " + device_object_name
+        print("Search terms: " + search_terms)
 
 
         '''
         Classification based on Bing
         '''
+
+        print("Classifying using Bing...")
 
         urls = BingSearchAPI.first_ten_results(search_terms)
 
@@ -64,9 +71,13 @@ class BacnetClassification:
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
 
+        print("Failed...")
+
         '''
         Classification based on Google
         '''
+
+        print("Classifying using Google...")
 
         urls = GoogleCustomSearchAPI.search(search_terms)
 
@@ -77,12 +88,13 @@ class BacnetClassification:
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
         else:
+            print("Failed...")
             return BacnetClassificationResult("No_classification",0.0)
 
 
 if __name__ == "__main__":
     from bacnet.local_device_applications.cdrbac import cdrbac
-    from mud.scraping import RelevantTextScraper
+    from web_scraping.scraping import RelevantTextScraper
     from bacnet.utilities import BacnetUtilities
 
     text = cdrbac.run_application()

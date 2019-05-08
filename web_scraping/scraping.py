@@ -38,6 +38,15 @@ class RelevantTextScraper:
                     #    print("Failed scrape: " + url + " | " +str(device_classification.prediction_probability))
 
                 except Exception as ex:
+                    print("Fetching .pdf")
+                    if ".pdf" in url: #Failed because url linked to a pdf file. Try again, but handle the pdf case specifically.
+                        scraped_text = WebScrapingUtilities.get_pdf_content_from_url(url)
+
+                        classification = self.classifier.predict_text(scraped_text)
+
+                        if classification.predicted_class != "":
+                            relevant_text += scraped_text
+
                     #print(url + " caused an Exception.")
                     extract_result = tldextract.extract(url)
 

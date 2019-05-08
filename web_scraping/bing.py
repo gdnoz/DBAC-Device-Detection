@@ -15,7 +15,7 @@ class BingSearchAPI:
             {"q": search_terms,
              "count": limit,
              "textDecorations": True,
-             "textFormat": "HTML",
+             #"textFormat": "HTML",
              "setLang" : "en"
              }
 
