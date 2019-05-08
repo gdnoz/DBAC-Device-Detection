@@ -26,6 +26,7 @@ class BacnetClassification:
         :param queried_objects: The queried objects of the device in json format
         :return: BacnetClassificationResult containing predicted class and score.
         '''
+        from mud.scraping import RelevantTextScraper
         from web_scraping.bing import BingSearchAPI
         from web_scraping.google import GoogleCustomSearchAPI
         from bacnet.utilities import BacnetUtilities
