@@ -1,0 +1,93 @@
+CLC DIM4: Dimmable Switches
+North America
+Italiano
+Português (Brazil)
+Pусский
+Polski
+Deutsch
+>
+>
+>
+CLC DIM4: Dimmable Switches
+CLC DIM4
+CLC DIM4: Dimmable Switches The CLCDIM4 Dimming Module controls four dimming channels. Through the color-coded spring clip terminals, the device provides 0-10V dimming, controlled by a photocell for daylighting operations, as well as advanced scene control via devices in the CLC network. The module can be powered via the CLC network or can double as a power injector distributing power to the panel's relay modules and the lighting network, providing status indication for network power monitoring.
+Application The CLCDIM4 provides daylighting and analog scene control to the CLC system. The channels daylighting setpoint, or analog outputs can be controlled using switches in the CLC system so that operation is coordinated with On/Off relay control of the circuits. Photocell control provides closed loop control for indoor type sensors, and open loop control for outdoor, atrium or skylight sensors. Closed loop will allow setpoint control to a given foot-candle value, while open loop control will linearly vary the output based on a specified range of the photocell. Features
+Connects up to 4 photocell inputs Connects up to 4 0-10V dimming outputs Closed-loop Daylighting control build into channel Color-coded spring-type terminals for photocell and ballast wiring LED output indication of level Jumper selectable for network or transformer power Communicating on CAN lighting network
+Inputs 4 photocell inputs Outputs 4 0-10v outputs Technology 32-bit ARM Processor with internal A/D, Flash and RAM Communications Port CAN Network @40k bps Device Address Set via rotary dials Address range: 1 to 99 Connectors Power In: 5-pin MTA Inputs: spring-clip terminal connectors Network/Power: (2) 4-pin MTA (2) RJ45 Wiring Class Class 2 Power 24 VAC 13 VA Ambient 32° to 131°F (0° to 55°C), with enclosure 10-90% RH (non-condensing) Dimensions 5 1/2 x 4 3/4 x 1 1/8 in. (14 x 12.1 x 2.9 cm) with housing 0.34 lb. (155g) with housing Compliance CE FCC Approvals/Standards UL 916 Pending
+Tags:
+{{Title}}
+or,
+Opening existing...
+Click to select:
+Opening all...
+({{ItemsCount}})
+Categories:
+GE Lightsweep
+{{Title}}
+Vertical Markets
+Leisure
+Polish
+Commercial
+Usługi
+Россия
+Sustainability
+Polish
+Healthcare
+Polish
+Hospitality
+Polish
+Education
+Education
+Manufacturing & Industrial
+Polish
+Products
+Access Control
+User Interfaces
+Small Sites
+Large Scale Applications
+Lighting
+Centralized Lighting Control
+DLS Relay Panels
+Distributed Lighting Control
+GE Lightsweep
+Network Switches
+Energy Management
+Energy Management Software
+Energy Awareness
+Facilities Management
+Supervisory Software
+Mobile User Interface
+Infrastructure
+Local User Interfaces
+Integration
+Gateways
+HVAC
+General Purpose Programmable I/O Controllers
+System Controllers (DSC) - Gen. Purpose
+Ethernet Application Controllers (DAC-E) - Gen. Purpose
+MS/TP Application Controllers (DAC)
+Central Plant Controllers
+enteliBUS
+Expanders & IO Modules
+System Controllers (DSC) - Cntrl. Plant
+Network Sensors & IO Expansion Modules
+Delta Network Sensors (DNS)
+Wireless Sensors
+enOcean Temperature Sensors
+IO Expansion Modules (DFMs)
+Individual Zone Controllers
+Configurable
+VAV/VVT Network Thermostats (DZNT)
+Network Thermostats (DNT)
+Programmable
+Fan Coil Controllers (DFC)
+VAV Controllers (DVC)
+Wall Thermostats
+Ethernet & PoE
+Ethernet System Controllers (DSC-E)
+Ethernet Application Controllers (DAC-E)
+Power over Ethernet Controllers (DxC-PoE)
+Ethernet VAV Controllers (DVC-E)
+Delta Difference
+Related Products
+© 2019 Delta Controls

@@ -124,3 +124,7 @@ Support
 |
 |
 |
+Zmodo uses cookies and other similar technologies to improve your experience on our site, to measure site performance,
+and to display offers and ads. By continuing to use our site, or by clicking Accept, you consent to the practices
+described in our
+and .

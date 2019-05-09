@@ -147,12 +147,13 @@ Depth: 1.65" (42mm)
 Width: 2.71" (69mm)
 Height: 1.57" (40mm)
 Weight: 3.3 oz
-Power
+Tech Specs
 Power Input: 120 VAC, 60Hz
 Number of Power Outlets: 1
 Resistive: 1800W
 Tungsten: 600W
 Motor: 1/2 HP
+cULus listed
 Warranty
 One Year Limited Product Warranty
 Connect Your Home With iDevices

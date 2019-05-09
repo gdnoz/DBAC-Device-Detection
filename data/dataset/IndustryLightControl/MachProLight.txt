@@ -1,0 +1,170 @@
+Reliable Controls | MACH-ProLight BACnet Controller
+MENU
+Toggle navigation
+MACH-ProLight™
+BACnet® Controller
+Empower your facility managers to save energy by integrating lighting controls into your building automation system with the Reliable Controls MACH-ProLight advanced lighting controller – the world's first BTL Listed product to meet or exceed the BACnet Lighting Device (B-LD) profile.
+The MACH-ProLight is a freely programmable and scalable BACnet Building Controller (B-BC), providing 0-10 V continuous dimming and BACnet BLO object support. This allows you to implement advanced control strategies such as daylight harvesting, dim-to-off control, vacancy control, plug-load control, and scene/theme control - key strategies for achieving OpenADR and Title 24 compliance.
+Compatible with standard lighting-control relays, low-voltage peripherals, EnOcean™ wireless products, and the Reliable Controls SPACE-Sensor™ and SMART-Net™ products, the MACH-ProLight conveniently ships in pre-assembled, UL 508A listed control panels, or as individual components.
+Catalog SheetEnglishEnglish - A4
+×
+MACH-ProLight™ Gallery
+Features
+Dynamic Database
+Allows a maximum of 160 objects to be created of any supported type in any model of controller.
+Typical object configuration table (below) shows the usage of expanded memory.
+Protocol
+BACnet® - MS/TP (EIA-485).
+Control-BASIC™ Programs
+16000 bytes of programmable control strategy in a readable,
+BASIC-like language.
+3200 bytes per program.
+Inputs
+Universal ranges.
+Soft selectable 0–10 VDC, 4–20 mA, thermistor/dry contact.
+Outputs
+Universal ranges.
+Jumper selectable 0–12 VDC, sink or source, or relay driver.
+EnOcean Port
+Supports one EnOcean Transceiver (ET).
+EIA-232, 30 m (100 ft.) maximum distance, 57.6 kbps.
+Values
+Selectable standard and custom ranges, as well as fixed or program-driven values.
+PID Loops
+Standard P, PI, or PID controllers for closed loop control.
+Single-Point Trend Logs
+Stores 128 samples at programmable time intervals.
+Multipoint Trend Logs
+Each Trend Log stores 128 samples of 8 points at programmable time intervals.
+Runtime Report
+Records the total ON time and the total number of transitions, as well as daily transitions for every binary point.
+A 50 sample runtime log is optional for each binary point.
+System Groups
+Allows related points to be grouped onto one display.
+80 points/group.
+Schedules
+7 On/Off times for each weekday or exception.
+Calendars
+Days of the year designated as holidays.
+Arrays
+Up to 128 elements in a one-dimensional array.
+Tables
+For creating custom input ranges and Control-BASIC lookup tables.
+Custom Units
+8 analog engineering units.
+8 binary engineering units.
+8 multistate units with 8 states, 32-characters each.
+SMART-Net Port
+Networks up to 4 SMART-Sensors™.
+64 Network In Points
+32 Network Out Points
+The total maximum number of writes and shares to other devices.
+Warranty
+5 years.
+Certification
+CE.
+CFR47 Part 15/B.
+Title 24 compliant.
+Ashrae 90.1 compliant.
+Typical Object Configuration There are physical limitations to the number of inputs, outputs, and SMART-Sensors that can be connected to a MACH-ProLight controller. For other object types, a maximum number of 128 objects of a single type can be created. The total number of objects (including inputs, outputs, and SMART-Sensors) is limited to 160, and is also limited by the onboard memory.
+The table below details typical databases that fit in all models.
+Values
+Loops
+Schedules
+Calendars
+Tables
+Groups
+MultipointTrend**
+Runtime*
+Arrays
+Program
+EnOcean
+SMART-Sensor
+64
+8
+4
+2
+4
+4
+10
+128
+4
+16
+16
+4
+* Runtime Logs & EnOcean values are not counted in the 160 object limit while EnOcean device objects do count. Inputs and outputs are counted in the 160 object limit.
+** Trends are configured to store 128 samples.
+Tech Specs
+Processor
+66 MHz, high-performance, 32-bit embedded microcontroller with onboard Flash memory.
+Controller database, values and configuration held in robust nonvolatile memory.
+Operating system firmware easily updated at any time over the network.
+Supply Voltages
+Isolated 24 VAC ±10% 20 VA max. 50/60 Hz.
+Communications
+EIA-485 @ 76.8 kbps max.
+SMART-Net™ port @ 4 sensors max.
+Auto-baud detection.
+EnOcean® port
+EIA-232, 4 wire @ 57.6 kbps max
+Universal Inputs
+12-bit A/D converter.
+Soft selectable: 0–10 VDC, 4–20 mA, thermistor/dry contact.
+Impedance: 3M? on 0–10 VDC range. 250 ? on 4–20 mA range.
+Pulse counting up to 40 Hz (supports flow meters).
+24 VAC over-voltage protection.
+Universal Outputs
+12-bit D/A converter.
+Analog: 0–12 VDC.
+Binary: 0/12 VDC.
+Output power: ±75 mA @ 12 VDC, sink or source.
+24 VAC over-voltage and short protection.
+Jumper selectable relay driver outputs.
+Relay Driver Outputs
+Up to 16 outputs.
+24 VAC momentary pulse to latch relay.
+Single wire connection, connects through to 24 VAC supply to drive the relay.
+Up to 4 WR-6161 series relays can be connected to one output.
+Relay status is sensed on the same wire that drives the relay when using WR-6161 series relays.
+2 wires are required to drive each GE series relay.
+SETUP-Tool™
+SETUP-Tool™ optional for configuration.
+Real-time Clock (optional)
+±5 seconds per month.
+Memory/RTC Backup (-C models)
+Clock operation is maintained for 72 hours with capacitor backup power.
+Ten years for database.
+Mounting
+DIN rail, or
+#8 clearance holes on 17.8 cm W (7" W) centerline
+Terminal Blocks
+16 to 28 AWG.
+Stranded or solid core.
+Copper conductors only.
+Spring loaded, screwless termination.
+Dimensions
+10.9 cm L x 19.1 cm W x 4.6 cm H (4 5/16" L x 7 1/2" W x 1 13/16" H).
+Mounting
+DIN rail, or
+#8 clearance holes on 17.8 cm W (7" W) centerline.
+Weight
+0.3 kg (0.7 lb.).
+Ambient Limits
+Operating: -20 °C to 55 °C (-4 °F to 131 °F).
+Shipping: -40 °C to 60 °C (-40 °F to 140 °F).Humidity: 10% to 90% RH non-condensing.
+Application Diagram
+Accessories
+The MACH-ProLight™ Lighting Control Panel is a complete assembly of controls and switching relays pre-wired ready for installation into the electrical system. Panels are built to order as per customers specific requirements allowing a mix of dimming, and switching circuits to be configured specific to the lighting control strategy.
+The MACH-ProLight™ Lighting Control Panel is a complete assembly of controls and switching relays pre-wired ready for installation into the electrical system. Panels are built to order as per customers specific requirements allowing a mix of dimming, and switching circuits to be configured specific to the lighting control strategy.
+The MACH-ProLight™ Lighting Control Panel is a complete assembly of controls and switching relays pre-wired ready for installation into the electrical system. Panels are built to order as per customers specific requirements allowing a mix of dimming, and switching circuits to be configured specific to the lighting control strategy.
+×
+Connect with us
+© 2019 Reliable Controls Corporation. All rights reserved.
+Purchase products
+•
+•
+•
+•
+Subscribe to
+newsletter
+Read our latest

@@ -3,7 +3,6 @@ SHIELD TV | NVIDIA
 Cart
 PLATFORMS
 other links
-Technologies
 ic_arrow-back-to-top
 This site requires Javascript in order to view all its content. Please enable Javascript in order to access all the functionality of this web site. Here are the
 Time To level Up
@@ -88,6 +87,7 @@ May 22, 2018
 The Ultimate Cord Cutting Guide
 You can save money by customizing your content and only paying for what you want, without annoying cable box rental fees. Get access to features like unlimited cloud storage, 4K HDR content, and the ability to stream across multiple devices.
 * Google ecosystem includes the Google Assistant, Google Play Movies and TV app, Google Music app, Google photos, and access to Google calendar. Amazon ecosystem includes Alexa voice assistant with Amazon Echo device linked to SHIELD, Prime Video app, and Amazon Music app. † Requires SHIELD Controller or Google Home Mini or Amazon Echo ‡ Not available for all apps § Requires SmartThings Link accessory
+SHIELD TV
 More
 Support
 SIGN UP FOR SHIELD NEWS

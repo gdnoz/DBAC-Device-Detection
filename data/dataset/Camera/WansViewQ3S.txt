@@ -8,14 +8,10 @@ Shenzhen Wansview Technology CO., Ltd
 Color：
 $45.99
 Highlights
-With 1080p HD resolution, f/2.8 aperture and 65 degree viewing angle, the camera provides complete coverage in full high definition.
-Download the Wansview App, PC/Mac client and view more camera feeds on one screen, it will keep track of what's going on in every room.
-Never worry about the connection, which is simpler.
-This camera not only supports wifi, but also the network cable (included), which supplies a more stable and faster transmission.
-This security camera supports max 128GB micro SD card(Not included).
-All the important video or image can be saved in the SD card; Capture special moments, and share with friends and family.
-Excellent quality of two way audio,
-you can talk with your lovers via Wansview App or our Wansview PC client software.
+With 1080p HD resolution, f/2.8 aperture and 65-degree viewing angle, the camera provides complete coverage in full high definition. Download the Wansview App, PC/Mac client and view more camera feeds on one screen, it will keep track of what's going on in every room.
+Never worry about the connection, which is simpler. This camera not only supports wifi, but also the network cable (included), which supplies a more stable and faster transmission.
+This security camera supports max 128GB micro SD card(Not included). All the important video or image can be saved in the SD card; Capture special moments, and share with friends and family.
+Excellent quality of two way audio, you can talk with your lovers via Wansview App or our Wansview PC client software.
 Product Description
 1080P Security Camera Wireless IP Surveillance Indoor Camera Q3S :
 Vivid 1080P full HD video:
@@ -43,14 +39,14 @@ Package List
 1 x English Quick Installation Guide
 Mounting bracket and accessories
 Specs
-Onvif
 Clear 1080p HD
 Pan and Tilt and Digital Zoom
 Night Vision
 Two Way Audio
 Multiple Device View
 Perfect compatibility
-Storage
+SD Card Storage
+Onvif
 Related
 Download
 FAQ

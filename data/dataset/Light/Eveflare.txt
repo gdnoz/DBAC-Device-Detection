@@ -1,14 +1,14 @@
 Eve Flare | evehome.com
-wellbeing
-wellbeing
+outdoor
+outdoor
 control
 control
+wellbeing
+wellbeing
 lighting
 lighting
 security
 security
-outdoor
-outdoor
 About Eve
 About Eve
 This website uses cookies to enable certain functions and to improve your user experience. By continuing to browse the site you are agreeing to our use of cookies.
@@ -22,7 +22,8 @@ Shop now
 Buy from Eve
 Your Choice
 incl. VAT, plus shipping
-plus shipping
+Free FedEx Ground shipping within the US
+Free shipping in Germany, incl. VAT
 Buy from our partners
 Only available at the Eve Store
 Not available in your country.
@@ -52,8 +53,7 @@ Technical Details
 Requirements
 Specifications
 In the Box
-Eve requires an iPhone, iPad, or iPod touch with iOS 11.4 or later.
-To control this HomeKit-enabled accessory, iOS 11.4 or later is recommended. To automate and control this accessory while away from home, you need a HomePod, an Apple TV with tvOS 11 or later, or an iPad with iOS 11 or later set up as a home hub.
+To control this HomeKit-enabled accessory, iOS 12.1 or later is recommended. To automate and control this accessory while away from home, you need either a HomePod, an Apple TV with tvOS 11 or later, or an iPad with iOS 11 or later set up as a home hub.
 Light
 Built-in 90 lm LED
 Operating Range

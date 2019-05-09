@@ -61,9 +61,9 @@ Include tracking scripts
 AB tests
 AB.ctaChooseAndCustomiseText
 AB.floatingBasket
-AB.supportPages
 AB.trustpilotPopup
 AB.newExistingCustomerLandingPage
+AB.seasonalOfferNewCustomerLandingPage
 AB.usHomepageRedesign
 Environments
 Close

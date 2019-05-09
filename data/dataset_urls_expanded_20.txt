@@ -179,7 +179,7 @@ WifiPlug,https://wifiplug.co.uk/product/wifiplug-home-ios-android-compatible-ful
 Aneken,https://www.amazon.com/Aneken-Function-Electrical-Compatible-Assistant/dp/B07BDDKPB7
 TeckinPlug,https://www.amazon.co.uk/TECKIN-Outlet-Wireless-Control-Required/dp/B07D7C74RQ
 
-Industry_LightControl:
+IndustryLightControl:
 GentecK6,http://www.gentec.ca/eng/products/lighting-control-panel-k6-series-bacnet-ip-or-mstp-0-10v-dimming.asp
 CLCDIM4,https://www.deltacontrols.com/products/lighting-control/distributed-lighting-control/clc-dim4-dimmable-switches
 MachProLight,https://www.reliablecontrols.com/products/controllers/MPL/
@@ -191,13 +191,20 @@ LDALIPLC,https://www.loytec.com/products/dali/ldali-plc4
 ILCApprentice,http://www.ilc-usa.com/product_detail.php?pid=9
 Eaton2000E,https://www.eaton.com/us/en-us/catalog/low-voltage-power-distribution-controls-systems/pow-r-command-2000e-controller.html
 
-Industry_RoomController
+IndustryRoomController:
 MerlinNX,https://www.centraline.com/enGB/products-docu/special/merlin-nx.html
 T305,https://www.deltacontrols.com/products/facilities-management/local-user-interface/dnt-t305
 ExcelWebII,https://productcatalog.honeywellhome.com/europe/ecatdata/pg_gr-excelwebii.html
+HeatingRoomController,http://www.syxthsense.com/controllers/src-100-bac/bacnet-heating-and-cooling-room-controller,-htg-and-clg-leds/
+T3SeriesController,https://bravocontrols.com/shop/bacnet-programmable-controller/
+BoilerRoomController,https://bravocontrols.com/shop/bacnet-boiler-controller/
+GeneralPurposeController,https://www.carrier.com/commercial/en/us/products/controls/bacnet-hvac-controllers/legacy-controllers/opn-ucxp/
+RoomController,https://www.titanproducts.com/bacnet-rtc2-room-controller.html
+SauterRoomController,https://www.sauter-controls.com/en/product/programmable-controller-ecos311/
+SedonaRoomController,https://www.ontrol.com/rion
+AirController,https://www.distech-controls.com/en/us/products/eclypse/connected-controller-series/related-products/connected-vav-controller/
 
-
-Industry_EnvironmentSensor
+IndustryEnvironmentSensor:
 ThermokonCO2,https://www.thermokon.de/en/products/air-quality/duct-sensors/lk+-co2+voc/
 VaisalaHMW90,https://www.vaisala.com/en/products/instruments-sensors-and-other-measurement-devices/instruments-industrial-measurements/hmw90
 VaisalaGMW95R,https://store.vaisala.com/eu/gmw95r-bacnet-modbus-co2-temperature-and-humidity-sensor-for-demanding-hvac-with-certificate/GMW95R/dp

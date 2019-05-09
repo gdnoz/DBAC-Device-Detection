@@ -51,4 +51,7 @@ class DataSetCreator:
                     except TimeoutError as e:
                         print(e)
                         print("Skipping " + document_name + "...")
+                    except Exception as e:
+                        print(e)
+                        print("Skipping " + document_name + "...")
 

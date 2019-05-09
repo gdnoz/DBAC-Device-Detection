@@ -44,32 +44,37 @@ Direct guest access2
 Bluetooth 5.0
 Multiroom speaker support with AirPlay 23
 Languages
-English (Australia, Canada, UK, U.S.), Mandarin (Mainland China), Cantonese (Mainland China, Hong Kong), French (Canada, France), German, Spanish (Mexico, Spain, U.S.)
+English (Australia, Canada, UK, U.S.), Mandarin (China mainland), Cantonese (China mainland, Hong Kong), French (Canada, France), German, Spanish (Mexico, Spain, U.S.)
 Answers from the Community
-Asked by Russell G from West Midlands
-on Oct 6, 2018
-Asked by Chris A from golden valley
-on Nov 9, 2018
-Asked by SUSAN G from Litchfield Park
-on Sep 20, 2018
+Asked by Naif A from Riyadh
+on Apr 30, 2019
+Asked by Vladimir H from yerevan
+on Apr 30, 2019
 Answer
-No. There are no USB outlets.
-In fact, there are no outlets at all. You could plug it in to a power
-No. There are no USB outlets.
-In fact, there are no outlets at all. You could plug it in to a power strip and charge your phone right next to it, though.
+yes you can use the Home pod with Apple TV to stream the sound to the home pod. But the volume is no
+yes you can use the Home pod with Apple TV to stream the sound to the home pod. But the volume is not very loud. At full volume it's the ok. However the sound quality is very good. I wish there was a way to make it louder...
 More(Read full answer)
-Answered by Michael M from Atlanta
-on Sep 20, 2018
-Asked by Philip R from Crestwood
-on Mar 17, 2019
-Asked by WMM R from Windermere
-on Sep 14, 2018
-Asked by D H from HIGHBRIDGE
-on Feb 14, 2018
+Answered by Michael S from Bacchus Marsh
+on May 4, 2019
+Asked by Maddison B from Benllech
+on May 4, 2019
+Asked by edward C from liverpool
+on Apr 5, 2019
 Answer
-Yeah, just have you notes turned on for iCloud backup and ask siri to create/edit a list in notes
-Answered by Dave M from Dunfermline
-on Feb 18, 2018
+Yes - via air play on one of your Mac devices
+Answered by Dean G from Brenchley
+on May 1, 2019
+Asked by Daniel N from Leek
+on Apr 8, 2019
+Asked by Paul B from Woodbury
+on Apr 5, 2019
+Answer
+Yes, it can, but you must complete “iTunes Match” first, so that your music is available in the clou
+Yes, it can, but you must complete “iTunes Match” first, so that your music is available in the cloud.
+Once you have done that, and the HomePod(s) are linked to the same Apple account as the iTunes Match, Siri can access your entire library and you can ask Siri to play certain songs, certain albums, to shuffle all songs, or songs of a specific genre, or a specific artist as well as any of your playlists. It’s really great!
+More(Read full answer)
+Answered by Kenneth E from Gloucester
+on Apr 6, 2019
 Siri works with Apple Music. Subscription required for Apple Music.
 Peer-to-peer AirPlay requires a Mac (2012 or later) with OS X Yosemite or later, or an iOS device (late 2012 or later) with iOS 8 or later.
 Requires multiple HomePod devices or AirPlay 2–compatible speakers.

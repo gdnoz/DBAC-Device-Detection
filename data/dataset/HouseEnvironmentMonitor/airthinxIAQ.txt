@@ -46,8 +46,8 @@ QuestTemp
 Soundpro
 developers & API
 made for professionals by professionals
-airthinx is also designed with the developer in mind, having inherited all of the tools from the . The suite of developer tools include APIs and SDKs to create applications, hardware, world class IoT solutions and services, while reducing concept to market time.
+airthinx is also designed with the developer in mind, having inherited all of the tools from the . The suite of developer tools include APIs and SDKs to create new applications & services.
 Products
 Company
-Subscribe and stay updated
+Subscribe and stay updated!
 Copyright © 2019 Airthinx. All rights reserved.

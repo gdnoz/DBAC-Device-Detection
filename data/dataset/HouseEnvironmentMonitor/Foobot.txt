@@ -52,7 +52,7 @@ No need to have a PhD to understand your air. Foobot compiles the data collected
 Accurate Measurements
 Before the first generation of Foobot was launched in 2014, you would have had to pay thousands of dollars for a lab-grade air monitor. However, such devices are not suitable for homes.
 Families need answers for questions like, “Is my detergent making my air less healthy?” or “Do I need to open the window right now?” This is why we created Foobot. Our sensor has been designed to detect the trends of air quality, and it lets you know whether things are getting better or worse.
-In 2018, the Berkeley National Laboratory concluded that Foobot was at the top of the consumer monitors they tested regarding its accuracy for PM, when Awair was not.
+In 2018, the Berkeley National Laboratory concluded that Foobot was highly correlated with quantitative responses for most of the large cooking and combustion sources, when Awair was not.
 Want to get rid of pollutants without lifting a finger?
 Use Nest together with Foobot to get fresh air
 24/7

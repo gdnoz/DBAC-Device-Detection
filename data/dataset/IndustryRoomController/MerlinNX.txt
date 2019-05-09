@@ -1,0 +1,48 @@
+MERLIN NX - Integrated Room Management with Niagara eXtended
+© 2019 HONEYWELL GMBH
+MERLIN NX
+Integrated Room Management with Niagara eXtended
+MERLIN NX
+Integrated Room Management
+MERLIN NX is a new innovative room management system that offers:
+Enhanced energy efficiency
+As a freely programmable controller, MERLIN NX supports any application requirement across heating, ventilation, air conditioning (HVAC) as well as lighting and shading controls for higher energy efficiency.
+Performance-based engineering
+When using MERLIN NX with Niagara eXtended (NX), it allows Single-Tool-Engineering throughout the Building Management System as well as consistent and flexible handling options for the building operator.
+Cost-effective installation and commissioning
+The BACnet MS/TP based MERLIN NX ensures an economically feasible installation and commissioning for both new construction and refurbishments.
+Future-proof investment
+Free programmability, open Niagara and cloud-based services leave all options open for the future.
+Enhanced energy efficiency
+MERLIN NX provides common control strategies across HVAC, lighting and shading while also communicating energy demands to the plant control level for optimised cooling/heating generation. It thereby ensures the highest possible classification 'A' according to EN 15232.
+The freely programmable MERLIN NX supports any room application requirement. Its state-of-the-art function blocks ensure efficient engineering and the highest energy savings.
+Performance-based engineering and flexibility
+Niagara eXtended offers a unique set of advantages to both system partners as well as for their customers
+Freely programmable
+The universal NX allows seamless application coverage and common control strategies across HVAC and non-HVAC systems.
+Single-Tool-Engineering
+Applied across the whole building management system, NX provides consistent engineering and an operational platform for room, plant & supervisor programming as well as application testing. No integration effort needed.
+Offline Engineering
+Minimize engineering efforts on site through offline back-office preparation.
+Live Engineering
+Perform easy application optimizations on-the-fly without download anything. Also gain instant access to live values from controllers on a function block level.
+Docu Generator
+Automatically create customer-specific application documentation, including wiring information, project specific graphics, function block parameters and wire-sheet printouts.
+Cost-effective installation and commissioning
+Thanks to its BACnet MS/TP design, MERLIN NX allows simple 2-wire installation. Thus, significantly reducing costs not only in new construction but also in refurbishments, where existing 2-wire cabling can be reused.
+Flexible mounting
+The universally mountable controller can be installed on DIN rails, small installation housings, and walls (including optional terminal covers) to meet a wide variety of installation requirements.
+Installation savings
+The 24 VAC auxiliary output voltage on the controller allows direct connection and powering of field devices as well as line voltage supply and switching of line voltage for reduced installation costs.
+Master-Follower-Concept
+The fully automated rollout of application changes from a master controller to all other networked controllers allows for quick adaptations whenever needed.
+Differential download
+This function supports a fast and system-wide application optimization.
+Future-proof investment
+The freely programmable MERLIN NX easily adapts to any applications. Its vendor-independent offering (Niagara, BACnet) keeps all options open for the future as well.
+New Connected Building Management services can easily be utilized via the integrated cloud connector on both plant control and supervisory levels.
+Info Material
+Contact
+© 2019 HONEYWELL GMBH
+This page is blocked by your browser. Please click on the icon in the address bar of your browser to accept this page.
+Thank you. Check your email for details on your request.

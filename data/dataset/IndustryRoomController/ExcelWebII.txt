@@ -1,0 +1,109 @@
+Programmable universal BACnet Building Controller, Excel Web II
+Product Search
+#HELP#
+Programmable universal BACnet Building Controller, Excel Web II
+BACnet DDC controller for all HVAC control applications, and building automation functionalities. The controller is BTL and AMEV AS-A certified, and can be applied for stand-alone operation, and in networked systems.
+For all buildings.
+Control software
+•
+free programmable with Honeywell CARE software
+•
+programmable with standard software modules
+Hardware inputs
+Onboard inputs and external input modules available for:
+•
+measurement of temperature, relative humidity, pressure etc.
+•
+contact status from relays, thermostats etc.
+Hardware outputs
+Onboard outputs or external output modules available for:
+•
+control devices like servomotors
+•
+switching devices like pumps, ventilators
+Operator panels
+•
+Optional onboard or external HMI, with local language operation and plant-specific operation via configurable fast-access-lists
+•
+Standard notebook, laptop, touch-panel, PC for full functional operation via Internet Browser. These panels can be used for adjustment of set-points, alarm limits, fixing in/outputs, override functions, trending, plant graphics, etc. Access options are USB port or Ethernet.
+Management applications
+EBI and SymmetrE(R)
+Stand-alone operation
+yes
+Bus system description
+•
+Standard BACnet/IP communication with other BACnet controllers and BACnet Front-Ends
+•
+Standard BACnet MS/TP communication with other BACnet MS/TP devices via one or both onboard RS485 interfaces.
+•
+Panel bus for communication to Panel I/O modules via one or both onboard RS485 interfaces.
+•
+LonWorks(R) bus with the external USB-LON interface adapter IF-LON2. LonWorks(R) transceiver type FTT10A
+•
+M-Bus(R) via the onboard RS232 interface plus external M-Bus power supply adaptor (e.g. PW3, PW20, PW60)
+•
+Modbus(R) RTU Master via one onboard RS485 interface
+•
+http and https (secure http) communication with web-browsers
+Mounting
+•
+in cabinets
+•
+in fuse boxes conforming with standard DIN43880, and having a slot height of max. 45 mm
+•
+in cabinet front doors (using accessory MVC-80-AC2)
+•
+on walls (using accessory MVC-80-AC1)
+Protection class
+IP20
+Power supply
+19..29 Vac or 20..30 Vdc ; 9 VA
+Additional description
+•
+Real-time clock back-up with goldcap capacitor for 72 hours buffer
+•
+Use PW3, PW20 or PW60 from Relay, for M-Bus interface
+DOCUMENTS FOR EXCEL WEB II
+XL2026B2A
+Product descriptionType
+Specifications_ExcelWebII-SPECS  Certificates_ExcelWebII-CERT
+BACnet IP and
+MS /TP controller
+XL2026B2A
+Product descriptionType
+no onboard IOs, 600 IOs, with built in HMIXL2000B2A  no onboard IOs, 600 IOs, with RJ45 socket for external HMIXL2000B3A  14 onboard IOs, 52 IOs, with built in HMIXL2014B2B  14 onboard IOs, 52 IOs, with RJ45 socket for external HMIXL2014B3B  26 onboard IOs, 600 IOs, with built in HMIXL2026B2A  26 onboard IOs, 600 IOs, with RJ45 socket for external HMIXL2026B3A  USB interface to connect controller with LONWORKS(R) networks. Service LED, pin button, RX/TX LEDs and USB cable included. Powered via controller USB-A-port.IF-LON2
+External HMI. Mounting in cabinet front door, or with XL2000-BASE: on wall/metal surface or used as handheld. Connection with Ethernet cable, max. 5m
+XL2000HMI
+Product descriptionType
+Optional external HMI, with local language operation and plant-specific operation via configurable fast-access-listsXL2000HMI-A  Wall-mounting subbase for external HMI; including magnets for magnet mounting and including back cover for handheldXL2000HMI-BASE
+PANEL I/O modules, -configurable LED functions, - safety positions, - short circuit protection
+DescriptionAdditional Product Type
+8 analog input module NTC10k, NTC20k, Ni1000TK5000, Pt1000, Pt3000, Balco500, contact  8 analog output module 0..10Vdc, 3-pt, binary 0/10V  8 analog output module 0..10Vdc, 3-pt, binary 0/10V; with override potentiometer  12 binary input module for contact or totalizer contact 20 Hz  6 relay output module SPDT 250V, 2(1) A, feedback  6 relay output module SPDT 250V, 2(1) A, feedback; with override switch  3-point control output module, with override switch; for 1 actuator
+LON I/O modules, -configurable LED functions, - safety positions, - short circuit protection
+DescriptionAdditional Product Type
+8 analog input module NTC10k, NTC20k, Ni1000TK5000, Pt1000, Pt3000, Balco500, contact  8 analog output module 0..10Vdc, 3-pt, binary 0/10V  8 analog output module 0..10Vdc, 3-pt, binary 0/10V; with override potentiometer  12 binary input module for contact or totalizer contact 20 Hz  6 relay output module SPDT 250V, 2(1) A, feedback  6 relay output module SPDT 250V, 2(1) A, feedback; with override switch
+Sockets (push-in) for modules (supplied with bridge connector and swivel label)XS824-25
+DescriptionAdditional Product Type
+Socket for 1 analog input or output module  Socket for 1 binary input module  Socket for 1 relay or 3-pt output module (supplied with additional cross connector)
+Sockets (screw- type) for modules (supplied with bridge connector and swivel label)
+DescriptionAdditional Product Type
+Socket for 1 analog input or output module  Socket for 1 binary input module  Socket for 1 relay or 3-pt output module (supplied with additional cross connector)
+Panel Mixed I/O modules, 8 AI NTC20k, 8 AO 0..10Vdc, 12 binary 15Hz, 6 relays 24V 0,5AXF830A
+DescriptionAdditional Product Type
+Mixed I/O module with push-in terminals  Mixed I/O module with screw terminals
+Cables connecting controller with:
+DescriptionAdditional Product Type
+Laptops; 3 m, shielded, RJ45 plug with clipXW885
+Accessories for I/O modules
+DescriptionAdditional Product Type
+10 auxiliary terminal blocksXS814  20 cross connectors for connection of 6 relay commonsXS815  10 connector bridgesXS816  10 swivel labelsXAL10
+Extra parts for Excel Web II
+DescriptionAdditional Product Type
+Removable terminal plugs, push-in type; complete set of 9 plugs (for
+terminals 1 - 47); for XL2026BxxTPU-45-01  Removable terminal plugs, push-in type; complete set of 3 plugs (for
+terminals 1 - 47); for XL2000BxxTPU-11-01  Terminal cover (color: RAL9011); package of 10MVC-80-AC1  Front door mounting accessory (color: RAL9011); package of 10MVC-80-AC2  Strain relief; package of 10MVC-40-AC3
+Accessories for Mixed I/O modules and Excel Web II
+DescriptionAdditional Product Type
+10 auxiliary terminal blocksXS830  10 auxiliary terminal blocks with 500 ohm resistors for current inputsXS831  10 connector bridgesXS816
+|
+Copyright Honeywell Inc. 2018

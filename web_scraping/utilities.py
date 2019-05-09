@@ -214,7 +214,11 @@ class PdfToTextConverter:
         with open(temp_pdf_file_path, 'wb') as fp:
             fp.write(byte_content)
 
-        web_scraping.pdf2txt.extract_text([temp_pdf_file_path],temp_output_file_path)
+        try:
+            web_scraping.pdf2txt.extract_text([temp_pdf_file_path],temp_output_file_path)
+        except Exception as e:
+            print(e)
+            print("Skipping pdt2text...")
 
         with open(temp_output_file_path, 'r+') as f:
             for line in f.readlines():

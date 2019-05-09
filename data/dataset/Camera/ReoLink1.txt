@@ -9,11 +9,8 @@ RLC-422W
 Dual-Band WiFi
 IK10 Vandal Proof
 IP66 Waterproof
-Sale ends on
---DAYS
---HRS
---MINS
---SECS
+--
+-- : -- : --
 Add to Cart
 Thanks for your interest. Follow us on Facebook and Twitter @ReolinkTech for more updates.
 Please enter a valid email address.
@@ -125,50 +122,75 @@ x1
 Pack of Screws
 x1
 Wrench
-Specification
-Model RLC-422W
-Video Image Sensor 1/2.7" CMOS
+Gallery & Specs
+Specifications
+Camera
+Image Sensor
+1/2.7" CMOS
 Sensor
-Effective Pixels 2560x1920 (5.0 Megapixels)
-Lens f=2.7-12mm Auto-focus, F=1.6
-Angle of View Horizontal: 90° ~ 31°; Vertical: 67° ~ 24°
-Day/Night Mode Auto Switchover
-Min. Illumination 0 Lux (With IR Illuminator)
-IR Distance 30 Meters (LED: 24pcs/14mil/850nm)
-Backlight Compensation Support
-Noise Reduction 3D DNR
-Compression H.264
-Resolution Main Stream: 2560x1920, 2560x1440, 2048x1536, 2304x1296; Sub Stream: 640x480
-Bitrate Main Stream: 1024Kbps ~ 8192Kbps; Sub Stream: 64Kbps ~ 512Kbps
-Frame Rate Main Stream@15fps, Sub Stream@6fps
-Network Interface One 10M/100Mbps RJ45
-Network Protocol HTTPS, SSL, TCP/IP, UDP, UPNP, RTSP, SMTP, NTP, DHCP, DNS, DDNS, FTP, P2P
+Effective Pixels
+2560x1920 (5.0 Megapixels)
+Lens
+f=2.7-12mm Auto-focus, F=1.6
+Angle of View
+Horizontal: 90° ~ 31°; Vertical: 67° ~ 24°
+Day/Night Mode
+Auto Switchover
+Min. Illumination
+0 Lux (With IR Illuminator)
+IR Distance
+30 Meters (LED: 24pcs/14mil/850nm)
+Backlight Compensation
+Support
+Noise Reduction
+3D DNR
+Video
+Compression
+H.264
+Resolution
+Main Stream: 2560x1920, 2560x1440, 2048x1536, 2304x1296; Sub Stream: 640x480
+Bitrate
+Main Stream: 1024Kbps ~ 8192Kbps; Sub Stream: 64Kbps ~ 512Kbps
+Frame Rate
+Main Stream@15fps, Sub Stream@6fps
+Network
+Interface
+One 10M/100Mbps RJ45
+Network Protocol
+HTTPS, SSL, TCP/IP, UDP, UPNP, RTSP, SMTP, NTP, DHCP, DNS, DDNS, FTP, P2P
 Browser Supported
 IE, Edge, Chrome, Firefox, Safari
-OS Supported PC: Windows, Mac OS; Smartphone: iOS, Android
-Max. User Access 20 Users (1 admin account & 19 user accounts); Support up to 12 simultaneous video streams (10 substreams & 2 mainstreams)
-Storage Micro SD socket; Support motion detection recording
-WiFi Wireless Standard IEEE 802.11a/b/g/n
-Operating Frequency 2.4GHz/5GHz
-Wireless Security WPA-PSK/WPA2-PSK
-General Power Supply DC12V
-Power Consumption <10W
+OS Supported
+PC: Windows, Mac OS; Smartphone: iOS, Android
+Max. User Access
+20 Users (1 admin account & 19 user accounts); Support up to 12 simultaneous video streams (10 substreams & 2 mainstreams)
+Storage
+Micro SD socket; Support motion detection recording
+WiFi
+Wireless Standard
+IEEE 802.11a/b/g/n
+Operating Frequency
+2.4GHz/5GHz
+Wireless Security
+WPA-PSK/WPA2-PSK
+General
+Power Supply
+DC12V
+Power Consumption
+<10W
 Working Environment
 -10℃~+55℃(14°F~131°F), Humidity: 10%~90%
-Ingress Protection IP66
-Dimensions Φ133x100mm
-Weight 720g
-Diagram
-Connections and Expansion
-Size
-Direction Adjustment
-Only Manual Rotation
+Ingress Protection
+IP66
+Dimensions
+Φ133x100mm
+Weight
+720g
 #ReolinkCaptures in 5MP Shared by Reolink Users
 Customer Reviews
 ( out of 5 stars)
-Got an idea to help improve Reolink products? You're in the right place. We would award you, when your suggestion is well taken by Reolink, with a newly released product, or a 15% off coupon for future orders on Reolink website. (Do
-or
-to get real-time updates of Reolink.)
+Want to share your experience with us and other users? Or get an idea to help improve our products? You're in the right place. Have your say and make a difference!
+to get real-time updates of Reolink.
 My Rating
 5 out of 5
 4 out of 5
@@ -214,5 +236,5 @@ Company
 Programs
 Be Prepared, Be Reolink
 |
-Copyright 2019 © Reolink Digital Technology Co., Ltd.
+Copyright 2019 © Reolink Innovation Limited
 Work Time: Monday - Friday UTC+8 08am to 06pm

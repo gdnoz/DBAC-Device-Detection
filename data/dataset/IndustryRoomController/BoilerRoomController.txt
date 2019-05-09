@@ -1,0 +1,88 @@
+Fully Programmable Bacnet Boiler Room Controller - Bravo Controls
+Currency:
+USD
+CAD
+CNY
+WOOCS 2.2.7.1
+Language:
+All Categories
+Controllers
+Bacnet Controllers
+Expansion I/O
+PC
+PWM
+Converters
+Power Meter
+CTs
+Single Phase Meter
+Wattnode meter
+Sensors
+Flow
+Fluid Level Switch
+Occupancy
+Pressure
+Temperature Sensors
+Current Sensors
+C02, Hum, AQ
+Thermostats
+Communicating Stats
+Stand Alone Thermostats
+Thermostat covers
+Weather Station
+OEM
+Relays
+Valves
+Electrical
+Damper Motors
+Categories
+All Categories
+Fully Programmable Bacnet Boiler Room Controller
+Fully Programmable Bacnet Boiler Room Controller$135.00
+Part number : BC
+Stock :
+1 in stock
+Qty
+-
++
+Add to cart
+The CM5 Boiler Room Controller is a fully programmable Bacnet controller for radiant heating and more.
+Product Highlights:
+Easy installation, panel mounts on the wall with no external enclosure required
+Screwless terminals for low voltage i/o
+High voltage pumps connect directly no external relays to install & wire
+Transformer, fuse & termination all in one box
+Baseplate is passive, all electronics are in the removable lid
+No messy connections, 94 terminals total
+10 pluggable relays for low or line voltage switching
+16 universal inputs, 0-5V, 0-10V, thermister software configured.
+8 digital inputs(24V AC) or 8 RS485 stats which can be adjusted by jumper
+8 thermostats direct connect over RS485, more via subnet or by adding more boiler controllers.
+Fully programmable, do your own sequence and logic.
+Open source front end software, free download and no licensing fees
+Supports Bacnet over ethernet TCP and RS485 MSTP
+Modbus over IP and RS485 RTU
+This Boiler Room Controller is fully programmable and can manage any arbitrary collection of boilers and pumps in a typical hydronic application. It is well suited to radiant heating of up to eight zones in a simple stand alone application or can be networked into much larger systems. It sets a new benchmark in the price/performance category, bringing full-fledged building automation features to a whole new class of smaller buildings. Access homes & buildings from a PC or over the net to monitor performance, increase comfort all while saving energy. Integrate into Tridium/Niagara and other existing Bacnet systems for full enterprise management.
+Add your own programming in the easy to use ‘Control Basic’ language, here’s a couple simple lines which turn on a pump when the outside temp gets cold. Programs read almost like a sequence of operations and can be managed by the building operator without calling in expensive support:
+10 IF OUTSIDE TEMP < 50F THEN START CICRPMP
+20 IF OUTSIDE TEMP > 52F THEN STOP CIRCPMP
+Each controller supports up to 8 thermostats, either over the RS485 network or for legacy mechnaical stats, using a dry contact 24vac input. Each controller also supports up to 16 universal input sensors such as 10k thermistors, (Type 2 and 3) , dry contacts, analog signals and 4-20ma transducers.  The CM5 supports BOTH the Modbus and Bacnet protocols on BOTH the RS485 twisted pair and the Ethernet LAN port.
+Typical Wiring:
+System Structure:
+Weight
+3.5 kg
+Related Products
+Product added!
+The product is already in the wishlist!
+$125.00 – $266.00
+Availability: In stockOut of stock
+The T3 series Bacnet programmable controller is a low cost performer with big system features. There are three versions with various I/O configurations and can be expanded with external i/o modules to form a complete building automation solution.
+Address:
+4416 South Parkside Court Spokane, WA, Washington, US 99223
+Phone:
+(509) 204-7060
+Email:
+My Account
+Newsletter
+OK
+Leave this field empty if you're human:
+Copyright © 2019 BravoControls, All Rights Reserved.

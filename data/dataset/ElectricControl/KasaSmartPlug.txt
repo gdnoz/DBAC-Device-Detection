@@ -5,8 +5,6 @@ Kasa Smart Wi-Fi Power Outlet, 2-Sockets
 Kasa Smart Wi-Fi Power Outlet, 2-Sockets
 Smarter In-Wall Outlet
 Everything you enjoy about smart plugs, now in a discreet in-wall outlet.
-Sign Up for Updates
-This email is invalid
 Features
 Smart In-wall Outlets
 Kasa Smart’s in-wall outlet lets you control 2 plugged in devices from anywhere at the same time or individually. All the features and benefits of a Kasa Smart plug multiplied.
@@ -42,9 +40,9 @@ Secured 2.4GHz home Wi-Fi network
 Kasa Smart App System Requirement
 iOS 10 or Android 4.4 or higher
 Hardware
-Product Dimensions (w X D X H)
+Product Dimensions (w x D x H)
 1.73 x 3.33 x 5.11 in (43.9 x 84.7 x 129.7 mm)
-Packaging Dimensions (w X D X H)
+Packaging Dimensions (w x D x H)
 4.65 x 2.56 x 6.73 in (118 x 65 x 171 mm)
 Product Weight
 0.399 lb (0.181 kg)

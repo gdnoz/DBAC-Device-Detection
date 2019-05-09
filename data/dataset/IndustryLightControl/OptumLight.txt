@@ -1,0 +1,42 @@
+Controls (0-10 VDC, DMX, BACnet, KNX, etc.) - Optum Lighting
+TECHNOLOGY
+Controls
+Today’s lighting systems must provide energy efficient, cost-effective control. Dedicated microprocessors in Optum’s Digital Light Modules provide the ultimate in ease of commissioning and user-friendly control, while effortlessly integrating with DMX, 0-10 VDC, BACnet, KNX, and other Building Automation and control Systems. 5 Button
+TunableWhite
+Programmable Dimmer
+8 Button
+SceneControl
+Programmable Dimmer
+7 Button
+ZoneControl
+Programmable Dimmer
+6 Button
+ZoneControl
+Programmable Dimmer
+5 Button
+ZoneControl
+Programmable Dimmer
+4 Button
+ZoneControl
+Programmable Dimmer
+Remote Pods
+6 Input
+0-10 VDC
+Control Pod
+12 Input
+DMX-Merge
+Interface Pod
+THE ILLUMINATION SYSTEM OF THE FUTURECOST REDUCTIONInstalling fixtures using Class-2 DC power over Category-5 cable eliminates metal conduit, heavy gauge copper wire and j-boxes, significantly reducing installation costs and reduces heat-load on HVAC.
+SINGLE POINT OF CONTROLOptum's Digital Light Module creates a hub for centralized control of lighting by DMX, 0-10 VDC, BACnet, or KNX.
+NO FIRE OR ELECTROCUTIONPer NEC, Class-2 Power eliminates the possibility of electrocution or fire from the lighting system.
+DIGITAL LIGHT MODULEA single DLM can power and control up to 192 - 2’ X 2’ Diffused Fixtures or 620 - 6” Round Down Lights with single-color, Tunable-White or RGBW illumination.
+CAT-5 CABLECarries 200 watts of Class-2 DC power to fixtures, with dimming, color changing and data gathering provided remotely by the DLM (Digital Light Module).
+SUSTAINABILITY85% reduction in lighting’s carbon footprint with Optum’s technology, sustainable production methods, 99% recyclable at end-of-life, no RF or EM radiation, environmentally friendly lighting that adds LEED Points.
+THE FUTURE IS HERE
+THE REVOLUTION IS HERE. TO STAY UPDATED, FOLLOW US
+THE DIGITALLY PROCESSED LIGHTING
+SEAL OF AUTHENTICITY
+Contact us at:
+(888) 890-0094
+Social:
+© 2019 Optum Lighting. All Rights Reserved.

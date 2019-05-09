@@ -43,9 +43,9 @@ network
 Kasa Smart App System Requirement
 iOS 10 or Android 4.4 or higher
 Hardware
-Product Dimensions (w X D X H)
+Product Dimensions (w x D x H)
 4.9 x 2.38 x 2.29 in (124.6 x 60.5 x 58.2 mm)
-Packaging Dimensions (w X D X H)
+Packaging Dimensions (w x D x H)
 6.36 x 3.76 x 6.75 in (161 x 95.5 x 171.5 mm)
 Product Weight
 0.64 lb (0.29 kg)

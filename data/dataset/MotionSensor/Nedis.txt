@@ -27,12 +27,6 @@ Features
 Tamper Detection
 Colour
 White
-Battery type
-2x CR123A
-Detector angle
-120 °
-Operating Temperature
--10 - 45 °C
 Input Voltage
 5 VDC
 Antenna gain
@@ -45,6 +39,12 @@ Max. radio transmit power
 17 dBm
 App available for
 Android™ & iOS
+Battery type
+2x CR123A
+Detector angle
+120 °
+Operating Temperature
+-10 - 45 °C
 Package contents
 Motion sensor
 Wall mount

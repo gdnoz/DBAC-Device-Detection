@@ -1,0 +1,465 @@
+LPT-B BACnet® Transmitter
+Site Search
+Hello, Guest!
+Site Search
+Hello, Guest!
+Gas Detectors
+LPT-B BACnet® Transmitter
+For monitoring: Ammonia, Carbon monoxide, Chlorine dioxide, Chlorine, Ethylene, Ethylene oxide, Fluorine, Formaldehyde, Hydrogen, Hydrogen sulphide, Hydrogen chloride, Hydrogen cyanide, Hydrogen fluoride, Nitric oxide, Nitrogen dioxide, Oxygen, Ozone, Phosphine, Silane, Sulfur dioxide, Methane, Propane, Hydrogen, TVOCs
+A full featured, 3 channel, digital (BACnet®) gas detector with many gas sensor choices, intended to be used alone or integrated into an existing BACnet® network
+Applications
+Parking Facilities
+Arenas and Pools
+Chiller Rooms
+Manufacturing Plants
+Maintenance Facilities
+Food Processing Plants
+Ice Cleaning Machine Rooms
+and many more...
+Ask for a Quote!
+Ask us for a quote on this product
+Your name *
+This field is required
+Your email address *
+This field is required
+Canada
+United States
+Afghanistan
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegowina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+Brunei Darussalam
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canary Islands
+Cape Verde
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Cook Islands
+Costa Rica
+Cote D'Ivoire
+Country *
+Croatia
+Cuba
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Falkland Islands (Malvinas)
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern Territories
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guinea
+Guinea-bissau
+Guyana
+Haiti
+Heard and Mc Donald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran (Islamic Republic of)
+Iraq
+Ireland
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Korea, Democratic People's Republic of
+Korea, Republic of
+Kuwait
+Kyrgyzstan
+Lao People's Democratic Republic
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia, The Former Yugoslav Republic of
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia, Federated States of
+Moldova, Republic of
+Monaco
+Mongolia
+Montserrat
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestinian Territory, occupied
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn
+Poland
+Portugal
+Puerto Rico
+Qatar
+Reunion
+Romania
+Russian Federation
+Rwanda
+Saint Kitts and Nevis
+Saint Lucia
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten (French Antilles)
+Sint Maarten (Netherlands Antilles)
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+Spain
+Sri Lanka
+St. Barthelemy
+St. Eustatius
+St. Helena
+St. Pierre and Miquelon
+Sudan
+Suriname
+Svalbard and Jan Mayen Islands
+Swaziland
+Sweden
+Switzerland
+Syrian Arab Republic
+Taiwan
+Tajikistan
+Tanzania, United Republic of
+Thailand
+The Democratic Republic of Congo
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City State (Holy See)
+Venezuela
+Viet Nam
+Virgin Islands (British)
+Virgin Islands (U.S.)
+Wallis and Futuna Islands
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+Country *
+This field is required
+Province *
+This field is required
+Loading...
+City *
+This field is required
+Message *
+This field is required
+Send
+Key Features
+1, 2 or 3 channel operation with internal and/or remote sensor configurations
+BACnet® MS/TP communication
+LCD display
+One 2A SPDT dry contact relay
+Internal audible alarm
+24 VAC/VDC power
+4-conductor daisy chain network wiring
+Unobtrusive calibration and menu navigation using a magnetic wand
+Standard water / dust tight, corrosion resistant enclosure (drip proof)
+IP54 rated with optional splash guard installed.
+Description
+The LPT-B is a full featured, 3 channel, BACnet® transmitter for use in non-hazardous, non-explosion rated, commercial and light industrial applications. It is available with a wide range of internal and/or external sensors and sensor types including electrochemical, catalytic and PID TVOCs.
+The LPT-B may be configured to operate as a standalone fixed system or be part of a digital network. It offers a BACnet® MS/TP output signal for communicating with a Controller or Building Automation System, an audible internal alarm, one SPDT dry contact relay, LCD display with user selectable functions, temperature compensation and thermal resetting fuses all in a RoHS compliant package.
+The LPT-B comes in a standard water / dust tight, corrosion resistant ABS / polycarbonate enclosure with a hinged, secured door. It is IP54 rated with the optional splash guard installed which provides protection in water spray or wash down applications.
+The LPT-B is not compatible with CETCI’s Controllers. It is intended to be used alone or integrated into an existing BACnet® network.
+Specifications
+Target Gas
+Electrochemical Sensors (internal)
+Ammonia (NH3), Carbon monoxide, Chlorine (Cl2), Chlorine dioxide (ClO2), Ethylene (C2H4), Ethylene oxide (C2H4O), Fluorine (F2), Formaldehyde (CH2O), Hydrogen (H2), Hydrogen chloride (HCl), Hydrogen cyanide (HCN), Hydrogen fluoride (HF), Hydrogen sulphide (H2S), Nitric oxide (NO), Nitrogen dioxide (NO2), Oxygen (O2), Ozone (O3), Phosphine (PH3), Silane (SiH4), Sulphur dioxide (SO2), TVOCs (Isobutylene)
+Catalytic Sensors (remote)
+Hydrogen (H2), Methane (CH4), Propane (C3H8)
+PID Sensors (remote)
+TVOCs
+Infrared Sensors (remote)
+Propane (C3H8)
+Mechanical
+Enclosure
+ABS / Polycarbonate, corrosion resistant
+Copper coated interior to reduce RF interference
+IP54 rated with optional splash guard installed
+Weight
+363 g
+/ 0.80 lbs
+Size
+127 x 127 x 71 mm / 5.0 x 5.0 x 2.8 inches
+User Interface
+Display
+Graphic LCD, yellow border
+Magnetic switches to initiate calibration without opening the enclosure
+Input/Output
+Output
+BACnet® MS/TP communications
+Relay
+One SPDT dry contact, rated at 30 volts, 2 amps max
+Audible Alarm
+Standard internal buzzer
+Electrical
+Power Requirement
+16-30 VDC, 3 W, Class 2
+12-27 VAC, 50-60 Hz, 3 VA, Class 2
+Current Draw
+55 mA (buzzer & relay energized, 2 sensors)
+Wiring
+4-conductor, 16 AWG stranded, shielded network wiring (daisy-chain)
+Fuses
+Thermal, resetting
+Environmental
+Operating Temperature
+-20°C to 40°C (-4°F to 104°F)
+Operating Humidity
+15 - 90% RH non-condensing
+Certifications
+Conforms to
+CSA-C22.2 No. 205-12 / UL508 (Edition 17):2007
+EMC Directive 2004/108/EC, EN 50270:2006, Type 1, EN61010
+FCC. This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation.
+Listed by BTL
+RoHS compliant circuit boards
+Product Codes
+Product Codes
+LPT-B-NH3
+Single channel, electrochemical ammonia (NH3) sensor (0 - 500 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-TCO
+Single channel, internal electrochemical 6-year carbon monoxide (CO) sensor (0 - 200 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-CL2
+Single channel, electrochemical chlorine (Cl2) sensor (0 - 5 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-CLO2
+Single channel, electrochemical chlorine dioxide (ClO2) sensor (0 - 1.0 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-C2H4
+Single channel, electrochemical ethylene (C2H4) sensor (0 - 200 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-EETO
+Single channel, electrochemical ethylene oxide (C2H4O) sensor (0 - 20 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-F2
+Single channel, electrochemical fluorine (F2) sensor (0 - 1 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-CH2O
+Single channel, electrochemical formaldehyde (HCHO / CH2O) sensor (0 - 5 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-EH2
+Single channel, electrochemical hydrogen sulphide (H2S) sensor (0 - 50 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-O2
+Single channel, electrochemical oxygen (O2) sensor (0 - 25% volume range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-H2SB
+Single channel, electrochemical hydrogen sulphide (H2S) sensor (0 - 50 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-HCL
+Single channel, electrochemical hydrogen chloride (HCL) sensor (0 - 20 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-HCN
+Single channel, electrochemical hydrogen cyanide (HCN) sensor (0 - 100 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-HF
+Single channel, electrochemical hydrogen fluoride (HF) sensor (0 – 10.0 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-NO
+Single channel, electrochemical nitric oxide (NO) sensor (0 - 100 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-NO2A
+Single channel, internal electrochemical 3-year nitrogen dioxide (NO2) sensor (0 - 10 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-NO2B
+Single channel, internal electrochemical 6-year nitrogen dioxide (NO2) sensor (0 - 10 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-O3
+Single channel, electrochemical ozone (O3) sensor (0 - 2 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-PH3
+Single channel, electrochemical phosphine (PH3) sensor (0 - 5 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-SIH4
+Single channel, electrochemical silane (SiH4) sensor (0 - 20 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-SO2
+Single channel, electrochemical sulphur dioxide (SO2) sensor (0 - 20 ppm range), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-TCO-NO2B
+Dual channel, internal electrochemical 6-year carbon monoxide (CO) sensor (0 - 200 ppm range) and internal electrochemical 6-year nitrogen dioxide (NO2) sensor (0 - 10 ppm), LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-R
+Single channel, no internal sensor (set up to accept an ESH-A remote sensor), LCD display LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-TCO-R
+Dual channel, internal electrochemical 6-year carbon monoxide (CO) sensor (0 - 200 ppm range), must add ESH-A remote sensor, LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-NO2B-R
+Dual channel, internal electrochemical 6-year nitrogen dioxide (NO2) sensor (0 - 10 ppm), must add ESH-A remote sensor, LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-H2SB-R
+Dual channel, internal electrochemical hydrogen sulphide (H2S) sensor (0 - 50 ppm range), must add ESH-A remote sensor, LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+LPT-B-TCO-NO2B-R
+Three channel, internal electrochemical 6-year carbon monoxide (CO) sensor (0 - 200 ppm range) and internal electrochemical 6-year nitrogen dioxide (NO2) sensor (0 - 10 ppm), must add ESH-A remote sensor, LCD display, BACnet® MS/TP communication, 2 A @ 30 VAC / VDC SPDT relay, audible alarm, water / dust tight enclosure
+Factory Options
+-S
+Splash Guard for non sticky gas sensors, factory installed, IP54 rating
+-SN
+Splash Guard for sticky gas sensors (Cl2, ClO2, HCl, HCN, NO2, O3, PH3), factory installed, includes Calibration Adapter Slide Cap
+Remote Sensors
+ESH-A-CH2-100
+Catalytic Hydrogen (H2) ESH-A Remote Sensor (0 - 100% LEL), water / dust tight enclosure
+ESH-A-CCH4-100
+Catalytic Methane (CH4) ESH-A Remote Sensor (0 - 100% LEL), water / dust tight enclosure
+ESH-A-CC3H8-100
+Catalytic Propane (C3H8) ESH-A Remote Sensor (0 - 100% LEL), water / dust tight enclosure
+ESH-A-SPL
+TVOC PID ESH-A Remote Sensor (0 - 30 ppm range), water / dust tight enclosure
+ESH-A-SPH
+TVOC PID ESH-A Remote Sensor (0 - 300 ppm range), water / dust tight enclosure
+ESH-A-JET
+Infrared Propane (C3H8) ESH-A Remote Sensor (0 - 100% LEL) range), water / dust tight enclosure
+Technical Library
+Video Library
+Options, Accessories and More...
+Helps protect the gas detection equipment against abrasive damage, theft and vandalism
+A remote LED strobe light with multiple user selectable flash patterns, comes with wall mounting bracket for easy installation
+Comes mounted on a water / dust tight enclosure for easy installation, offers a visual and an audible alarm feature in one compact, low profile device.
+Combines a visual and an audible alarm feature into one device that has a manual shutoff switch to silence the alarm for a programmed period of time
+Comes in a durable, hard plastic carrying case for easy access and transport of tools required for calibration
+Recommended for gas detectors installed in wash down or wet environments
+Useful for quick access and in wet or dirty environments
+Uses a pump to pull sample air through a length of tube into the gas detector, across the sensor and exhaust it from the outlet port
+Allows for the continuous monitoring of the quality of the air being circulated around the building
+Available in 3 different lens colours, combines a visual and an audible alarm feature into one compact, low profile device
+Rated for use in hazardous areas
+Bump tests provide an easy and quick way of checking the performance of gas detectors
+Provides a stable, safe and reliable delivery method allowing ease of shipment, storage and use
+Provides a quick and easy way of doing a bump test
+User adjustable gas concentration outputs
+Generates Ozone in user adjustable quantities using an ultraviolet lamp
+Generates Ammonia in user adjustable quantities
+A removable adapter that allows the use of both hands during calibration
+Single analog remote sensor for flexible location monitoring
+Recommended for gas detectors with sticky gas sensors (Cl2, O3, HCl) installed in wash down or wet environments
+A Certificate of Sensor Calibration is available for customers who require detailed calibration information
+Show all related products
+Solution Finder
+Search by product, application, gas type, etc.
+Search
+Use keywords such as:
+"no2 gas detector" or "parking" or "wiring" or "carbon dioxide"
+Subscribe
+to the CETCI Newsletter!
+Your email *
+This field is required
+Become a Dealer
+©
+2019
+Critical Environment Technologies Canada Inc.
+Site by
+©
+2019
+Critical Environment Technologies Canada Inc.

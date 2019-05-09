@@ -37,9 +37,9 @@ iOS 10 or Android 4.4 or higher
 Wi-fi Requirements
 Secured home Wi-Fi connection required
 Hardware
-Product Dimensions (w X D X H)
+Product Dimensions (w x D x H)
 14.17 x 2.49 x 1.48 in (360 x 63.3 x 37.5 mm)
-Packaging Dimensions (w X D X H)
+Packaging Dimensions (w x D x H)
 16.93 x 5.04 x 2.28 in (430 x 128 x 58 mm)
 Product Weight
 1.55 lb (0.702 kg)

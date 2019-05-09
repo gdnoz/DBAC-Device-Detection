@@ -7,15 +7,15 @@ F7C029fc
 Wemo® Insight Smart Plug is rated
 3.8 out of
 5 by
-118.
-y_2019, m_3, d_20, h_1
-bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
+121.
+y_2019, m_5, d_7, h_23
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
-co_hasreviews, tv_1, tr_117
+co_hasreviews, tv_1, tr_120
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 78ms
+CLOUD, getAggregateRating, 94ms
 REVIEWS, PRODUCT
 Write a review
 Ask a question
@@ -28,17 +28,16 @@ F7C029fc
 Wemo® Insight Smart Plug is rated
 3.8 out of
 5 by
-118.
-y_2019, m_3, d_20, h_1
-bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
+121.
+y_2019, m_5, d_7, h_23
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
-co_hasreviews, tv_1, tr_117
+co_hasreviews, tv_1, tr_120
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 78ms
+CLOUD, getAggregateRating, 94ms
 REVIEWS, PRODUCT
-Belkin: Apple Employee Discount
 $49.99
 Buy Now
 This item is added to your
@@ -86,6 +85,32 @@ Weight
 2.84 ounces
 Additional Information
 Electrical Ration: 120V/15A/60Hz/1800W
+Rated 5 out of
+5
+by
+Sharker from
+Great product!
+Highly recomended.
+Could be a little easier to use but all around great.
+Date published: 2019-04-26
+Rated 1 out of
+5
+by
+PMGC from
+power outage, kiss your wemo goodbye
+Been using these for a while and they have their issues.
+Every time the power flicks on and off the wemo is still connected to the router/switch but no longer can be found by the app.
+Have to reset to factory setting and start over from the beginning.
+A royal pain and takes about 3 hours for three of them.
+Not worth the aggravation.
+Date published: 2019-04-08
+Rated 5 out of
+5
+by
+John P Boston from
+Extremely easy - it just worked!
+I had another product that I couldn't get connected to my home wifi but Wemo worked in under 30 seconds.
+Date published: 2019-04-03
 Rated 2 out of
 5
 by
@@ -125,51 +150,18 @@ malex from
 Does not work
 I followed the instructions to the letter but the Wemo will not shut off.
 Date published: 2018-11-07
-Rated 1 out of
-5
-by
-johndoejohn from
-Can't get device to connect!
-I can't get it to setup and I can't find any support on the item.
-I'm sending it back and I'm totally disappointed.
-Date published: 2018-11-07
-Rated 2 out of
-5
-by
-Xrayman1961 from
-After a year and a half of use.....disappointed!
-I’ve been using these WEMO switches for a year and a half.
-I was originally put off by the price, but I was using a version 1 Wink hub to control all of my inside lights but I needed some units to control some of the things that were on the outside property.
-I thought these would do the trick. They worked great until my cable modem died a glorious death and I had to change the network over to a new set of IP addresses to accommodate the new modem.
-It took me several Google searches and numbers of tried to get all of my WEMO switches back to working again.
-I did and thought all was cool!
-Well, I went through a hurricane and took a direct lightning strike - the kind your surge suppressors cannot live through, and all of the routers and the modem FRIED!!
-Replaced all and got all of the computers back on the network from the house all the way to the workshop and still couldn’t find any of the WEMO switches.
-Worked late into the evening resetting and restarting the switches, removing and reinstalling the app and getting mixed or delayed results and I still haven’t hooked it up properly with Alexa.
-That’ll be tomorrow.
-I’m thinking of charging WEMO for my time....
-Please, work on your stuff to make it easier for the consumer or charge less for your product.
-It’s tedious and there’s much better solutions now.
-Date published: 2018-09-24
-Rated 4 out of
-5
-by
-mavak24 from
-Great product, no hub required!!
-Great product, good quality and connection stability. Integrates seamlessly with Google Home. App is easy to use. Just wish they did it a little bit smaller...!
-Date published: 2018-07-09
-y_2019, m_3, d_20, h_1
-bvseo_bulk, prod_bvrr, vn_bulk_2.0.11
+y_2019, m_5, d_7, h_23
+bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
-co_hasreviews, tv_1, tr_117
+co_hasreviews, tv_1, tr_120
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getReviews, 94ms
+CLOUD, getReviews, 93ms
 REVIEWS, PRODUCT
 Related Products
 Select Options
-linksys_hybris5
+linksys_hybris4
 CONNECT WITH US
 This is a required field.
 Email id is invalid.
