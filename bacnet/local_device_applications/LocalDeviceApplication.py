@@ -67,8 +67,9 @@ def run_application(**kwargs):
 
     this_application = DebugApplication(this_device, address)
 
-    for object in kwargs["objects"]:
-        this_application.add_object(object)
+    if "objects" in kwargs.keys():
+        for object in kwargs["objects"]:
+            this_application.add_object(object)
 
     enable_sleeping()
 

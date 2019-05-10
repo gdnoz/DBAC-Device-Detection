@@ -18,9 +18,14 @@ class WebScrapingUtilities():
         #Cert's are not veried. Temporary work around.
         gcontext = ssl.SSLContext()
 
-        request = urllib.request.urlopen(url,context=gcontext)
-        bytes = request.read()
-        request.close()
+        bytes = None
+
+        try:
+            request = urllib.request.urlopen(url,context=gcontext)
+            bytes = request.read()
+            request.close()
+        except Exception as e:
+            print(e)
 
         return bytes
 

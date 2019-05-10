@@ -47,12 +47,19 @@ class BacnetClassification:
         '''
         Preparing classification based on search engines.
         '''
+        search_terms = ""
 
-        vendor_name = BacnetUtilities.get_vendor_name_from_query(queried_objects)
-        model_name = BacnetUtilities.get_model_name_from_query(queried_objects)
-        device_object_name = BacnetUtilities.get_device_object_name_from_query(queried_objects) #Not useful?
+        description = BacnetUtilities.get_description_from_query(queried_objects)
 
-        search_terms = vendor_name + " " + model_name# + " " + device_object_name
+        if description != "":
+            search_terms = description
+        else:
+            vendor_name = BacnetUtilities.get_vendor_name_from_query(queried_objects)
+            model_name = BacnetUtilities.get_model_name_from_query(queried_objects)
+            device_object_name = BacnetUtilities.get_device_object_name_from_query(queried_objects) #Not useful?
+
+            search_terms = vendor_name + " " + model_name# + " " + device_object_name
+
         print("Search terms: " + search_terms)
 
 

@@ -4,6 +4,23 @@ class BacnetUtilities:
     '''
 
     @staticmethod
+    def get_description_from_query(query_as_json: str) -> str:
+        '''
+        Retrieves the dscription field from the result of a bacnet object query.
+        :param query_as_json: Bacnet object query in json format.
+        :return: Description field.
+        '''
+
+        import json
+        query = json.loads(query_as_json)
+
+        for key in query:
+            if BacnetUtilities.is_dict_device_object(query[key]):
+                return query[key]['description']
+
+        return ""
+
+    @staticmethod
     def get_vendor_name_from_query(query_as_json: str) -> str:
         '''
         Retrieves the vendorName field from the result of a bacnet object query.

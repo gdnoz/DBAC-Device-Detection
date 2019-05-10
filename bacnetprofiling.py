@@ -30,6 +30,12 @@ class BacnetProfiler:
 if __name__ == "__main__":
     from bacnet.local_device_applications.cdrbac import cdrbac
     from bacnet.local_device_applications.touchplateultra import touchplateultra
-    mud_profiler = BacnetProfiler(cdrbac.run_application)
+    from bacnet.local_device_applications.arob import arob
+    from bacnet.local_device_applications.src100 import src100
+
+    #mud_profiler = BacnetProfiler(cdrbac.run_application)
     #mud_profiler = BacnetProfiler(touchplateultra.run_application)
+    #mud_profiler = BacnetProfiler(arob.run_application)
+    mud_profiler = BacnetProfiler(src100.run_application)
+
     mud_profiler.run()
