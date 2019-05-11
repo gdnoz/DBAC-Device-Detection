@@ -66,6 +66,9 @@ class WebScrapingUtilities():
 
         byte_content = WebScrapingUtilities.get_content_from_url(url)
 
+        if byte_content is None:
+            print(".pdf not retrieved...")
+            return ""
         return PdfToTextConverter.pdf_to_text(byte_content)
 
     @staticmethod

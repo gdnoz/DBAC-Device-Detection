@@ -1,6 +1,8 @@
 '''
 Based on: http://www.syxthsense.com/product/product_pdf/CT2.141-SRC-100-BAC.pdf
 
+SRC-100 Series Zone Controllers with BACnet MS/TP
+
 Simulates and queries device based on the above data sheet.
 '''
 

@@ -1,6 +1,8 @@
 '''
 Based on: https://touchplate.com/wp-content/uploads/2013/11/Ultra-BACnet-Manual-Rev2.0a-Digital.pdf
 
+Light Controller
+
 Simulates and queries device based on the above data sheet.
 '''
 

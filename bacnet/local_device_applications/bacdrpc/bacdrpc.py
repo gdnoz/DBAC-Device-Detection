@@ -19,23 +19,23 @@ def run_application() -> str:
         [
         AnalogInputObject(
         objectIdentifier=('analogInput', 1),
-        objectName='CO2_Level',
+        objectName='Temperature',
         objectType='analogInput',
-        presentValue=21,
-        description='CO2 Level',
-        deviceType='0-2000 ppm CO2 Sensor',
+        presentValue=19,
+        description='Temperature',
+        deviceType='Temperature Sensor',
         statusFlags=['inAlarm','inAlarm','inAlarm','inAlarm'],
         eventState='normal',
         reliability='noFaultDetected',
         outOfService=False,
-        units='partsPerMillion'
+        units='degreesCelsius'
     ), AnalogInputObject(
         objectIdentifier=('analogInput', 2),
-        objectName='Relative_Humidity',
+        objectName='Relative Humidity',
         objectType='analogInput',
         presentValue=60,
         description='Relative Humidity',
-        deviceType='0-100 %RH Sensor',
+        deviceType='RH Sensor',
         statusFlags=['inAlarm','inAlarm','inAlarm','inAlarm'],
         eventState='normal',
         reliability='noFaultDetected',
@@ -43,11 +43,11 @@ def run_application() -> str:
         units='percentRelativeHumidity'
     ), AnalogInputObject(
         objectIdentifier=('analogInput', 3),
-        objectName='Temperature',
+        objectName='Dewpoint Temperature',
         objectType='analogInput',
-        presentValue=19,
-        description='Temperature',
-        deviceType='0-35 C Temperature Sensor or 32-95 F Temperature Sensor',
+        presentValue=8,
+        description='Dewpoint Temperature',
+        deviceType='Dewpoint Temperature Sensor',
         statusFlags=['inAlarm','inAlarm','inAlarm','inAlarm'],
         eventState='normal',
         reliability='noFaultDetected',
@@ -55,75 +55,77 @@ def run_application() -> str:
         units='degreesCelsius'
     ), AnalogInputObject(
         objectIdentifier=('analogInput', 4),
-        objectName='Setpoint_Control',
+        objectName='Wet Bulb Temperature',
         objectType='analogInput',
-        presentValue=67,
-        description='Setpoint Value',
-        deviceType='0-100 % Setpoint',
+        presentValue=19,
+        description='Wet Bulb Temperature',
+        deviceType='Wet Bulb Temperature Sensor',
         statusFlags=['inAlarm','inAlarm','inAlarm','inAlarm'],
         eventState='normal',
         reliability='noFaultDetected',
         outOfService=False,
-        units='percent'
+        units='degreesCelsius'
+    ), AnalogInputObject(
+        objectIdentifier=('analogInput', 5),
+        objectName='Enthalpy',
+        objectType='analogInput',
+        presentValue=19,
+        description='Enthalpy',
+        deviceType='Enthalpy Sensor',
+        statusFlags=['inAlarm','inAlarm','inAlarm','inAlarm'],
+        eventState='normal',
+        reliability='noFaultDetected',
+        outOfService=False,
+        units='kilojoulesPerKilogramDryAir'
     )]
 
     analog_value_objects = [
         AnalogValueObject(
             objectIdentifier=('analogValue', 1),
-            objectName='Relay_Setpoint',
+            objectName='Temperature Offset',
             objectType='analogValue',
-            presentValue=1000,
-            description='Relay Setpoint',
-            statusFlags=['inAlarm', 'inAlarm', 'inAlarm', 'inAlarm'],
-            eventState='normal',
-            outOfService=False,
-            units='partsPerMillion'
-    ), AnalogValueObject(
-            objectIdentifier=('analogValue', 2),
-            objectName='Relay_Hysteresis',
-            objectType='analogValue',
-            presentValue=50,
-            description='Relay Hysteresis',
-            statusFlags=['inAlarm', 'inAlarm', 'inAlarm', 'inAlarm'],
-            eventState='normal',
-            outOfService=False,
-            units='partsPerMillion'
-    ), AnalogValueObject(
-            objectIdentifier=('analogValue', 3),
-            objectName='Temperature_Offset',
-            objectType='analogValue',
-            presentValue=50,
-            description='Temperature Offset Calibration',
+            presentValue=0,
+            description='Temperature Offset',
             statusFlags=['inAlarm', 'inAlarm', 'inAlarm', 'inAlarm'],
             eventState='normal',
             outOfService=False,
             units='deltaDegreesFahrenheit'
     ), AnalogValueObject(
-            objectIdentifier=('analogValue', 4),
-            objectName='Relative_Humidity_Offset',
+            objectIdentifier=('analogValue', 2),
+            objectName='RH Offset',
             objectType='analogValue',
             presentValue=0,
-            description='RH Offset Calibration',
+            description='RH Offset',
             statusFlags=['inAlarm', 'inAlarm', 'inAlarm', 'inAlarm'],
             eventState='normal',
             outOfService=False,
             units='percentRelativeHumidity'
     ), AnalogValueObject(
-            objectIdentifier=('analogValue', 5),
-            objectName='Sensor_Altitude',
+            objectIdentifier=('analogValue', 3),
+            objectName='Atmospheric Pressure',
             objectType='analogValue',
-            presentValue=50,
-            description='CO2 Sensor Altitude',
+            presentValue=1013,
+            description='Atmospheric Pressure',
+            statusFlags=['inAlarm', 'inAlarm', 'inAlarm', 'inAlarm'],
+            eventState='normal',
+            outOfService=False,
+            units='hectopascals'
+    ), AnalogValueObject(
+            objectIdentifier=('analogValue', 4),
+            objectName='Altitude',
+            objectType='analogValue',
+            presentValue=0,
+            description='Altitude',
             statusFlags=['inAlarm', 'inAlarm', 'inAlarm', 'inAlarm'],
             eventState='normal',
             outOfService=False,
             units='feet'
     ), AnalogValueObject(
-            objectIdentifier=('analogValue', 6),
-            objectName='Display_Modes',
+            objectIdentifier=('analogValue', 5),
+            objectName='Display Mode',
             objectType='analogValue',
-            presentValue=50,
-            description='CO2 LCD Display Modes',
+            presentValue=0,
+            description='Display Mode',
             statusFlags=['inAlarm', 'inAlarm', 'inAlarm', 'inAlarm'],
             eventState='normal',
             outOfService=False,
@@ -133,57 +135,32 @@ def run_application() -> str:
     binary_value_objects=[
         BinaryValueObject(
             objectIdentifier=('binaryValue', 1),
-            objectName='Override_Switch',
+            objectName='Temperature Units',
             objectType='binaryValue',
             presentValue=0,
-            description='Override Switch',
+            description='Celsius (0) or Fahrenheit (1)',
             statusFlags=['inAlarm', 'inAlarm', 'inAlarm', 'inAlarm'],
             eventState='normal',
             reliability='noFaultDetected',
             outOfService=False
         ), BinaryValueObject(
             objectIdentifier=('binaryValue', 2),
-            objectName='Auto_Cal_Enable',
+            objectName='Enthalpy Units',
             objectType='binaryValue',
-            presentValue=1,
-            description='Auto Calibration Enable',
-            statusFlags=['inAlarm', 'inAlarm', 'inAlarm', 'inAlarm'],
-            eventState='normal',
-            reliability='noFaultDetected',
-            outOfService=False
-        ), BinaryValueObject(
-            objectIdentifier=('binaryValue', 3),
-            objectName='Fahrenheit',
-            objectType='binaryValue',
-            presentValue=1,
-            description='Fahrenheit (1) or Celsius (0)',
+            presentValue=0,
+            description='kJ/kg (0) or BTU/lb (1)',
             statusFlags=['inAlarm', 'inAlarm', 'inAlarm', 'inAlarm'],
             eventState='normal',
             reliability='noFaultDetected',
             outOfService=False
         )]
 
-    binary_input_objects = [BinaryInputObject(
-            objectIdentifier=('binaryInput',1),
-            objectName='Relay_On',
-            objectType='binaryInput',
-            presentValue=0,
-            description='Relay Status',
-            deviceType='Indicates On/Off Status of Relay',
-            statusFlags=['inAlarm', 'inAlarm', 'inAlarm', 'inAlarm'],
-            eventState='normal',
-            reliability='noFaultDetected',
-            outOfService=False,
-            polarity='normal',
-    )]
+    objects = analog_input_objects+analog_value_objects+binary_value_objects
 
-
-    objects = analog_input_objects+analog_value_objects+binary_value_objects+binary_input_objects
-
-    return SimulateAndQueryDeviceApplication.run_application(objectIdentifier=381003, objectName="CDD_CO2_Detector_003", objectType=8, systemStatus='operational', vendorName='Greystone Energy Systems',
-                                                             vendorIdentifier=381, modelName='CDD2A', firmwareRevision='1.4', applicationSoftwareVersion='1.0', description='Greystone CO2 Detector',
-                                                             protocolVersion=1, protocolRevision=7, protocolObjectTypesSupported=['analogInput','analogValue','binaryInput','binaryValue','device'],
-                                                             maxapdulength=128, segmentationSupported="noSegmentation", apduTimeout=10000, numberOfApduRetries=3, maxMaster=127, maxInfoFrames=1,
+    return SimulateAndQueryDeviceApplication.run_application(objectIdentifier=381001, objectName="DP_001", objectType=8, systemStatus='operational', vendorName='Greystone Energy Systems',
+                                                             vendorIdentifier=381, modelName='DP', firmwareRevision='1.2', applicationSoftwareVersion='1.0', description='Greystone Dewpoint Systems',
+                                                             protocolVersion=1, protocolRevision=14, protocolObjectTypesSupported=['analogInput','analogValue','binaryValue','device'],
+                                                             maxapdulength=128, segmentationSupported="noSegmentation", apduTimeout=6000, numberOfApduRetries=3, maxMaster=127, maxInfoFrames=1,
                                                              objects=objects)
 
 if __name__ == "__main__":

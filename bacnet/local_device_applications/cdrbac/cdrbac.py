@@ -1,6 +1,8 @@
 '''
 Based on: http://ctsteknik.dk/upload_dir/shop/SN1.405-CDR-BAC.pdf
 
+CDR-BAC Room CO2 and Temperature Sensors with BACnet
+
 Simulates and queries device based on the above data sheet.
 '''
 
@@ -273,7 +275,7 @@ def run_application() -> str:
     objects = analog_output_objets+analog_input_objects+analog_value_objects+binary_input_objects+binary_output_objects+multistate_input_objects
 
     return SimulateAndQueryDeviceApplication.run_application(objectIdentifier=651000, objectName="CDR_001", objectType=8, systemStatus='operational', vendorName='SyxthSense',
-                                                             vendorIdentifier=651, modelName='URD', protocolVersion=1, protocolRevision=10, maxapdulength=480,
+                                                             vendorIdentifier=651, modelName='CDR', protocolVersion=1, protocolRevision=10, maxapdulength=480,
                                                              segmentationSupported="noSegmentation", apduTimeout=3000, numberOfApduRetries=3, maxMaster=127, maxInfoFrames=1,
                                                              databaseRevision=0, objects=objects)
 
