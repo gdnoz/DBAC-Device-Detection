@@ -11,7 +11,7 @@ class BacnetClassificationResult:
 
 class BacnetClassification:
     '''
-    Performs device_classification on bacnet devices based on text retrieved from object queries, which is provided as input.
+    Performs device_classification on bacnet test_devices based on text retrieved from object queries, which is provided as input.
     '''
 
     def __init__(self, classification_threshold: float, scraping_threshold: float):
@@ -33,8 +33,10 @@ class BacnetClassification:
 
         '''
         Classification based bacnet objects query
+        (OMIT THIS STEP FOR NOW)
         '''
 
+        '''
         print("Classifying based on objects query...")
 
         classification_result = self.classifier.predict_text(queried_objects)
@@ -43,15 +45,19 @@ class BacnetClassification:
            return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
 
         print("Failed...")
+        '''
 
         '''
         Preparing classification based on search engines.
         '''
         search_terms = ""
 
+        deviceType = BacnetUtilities.get_deviceType_from_query(queried_objects)
         description = BacnetUtilities.get_description_from_query(queried_objects)
 
-        if description != "":
+        if deviceType != "":
+            search_terms = deviceType
+        elif description != "":
             search_terms = description
         else:
             vendor_name = BacnetUtilities.get_vendor_name_from_query(queried_objects)
@@ -100,11 +106,11 @@ class BacnetClassification:
 
 
 if __name__ == "__main__":
-    from bacnet.local_device_applications.cdrbac import cdrbac
+    from bacnet.local_device_applications.test_devices import arob,bacdrpc,bacri,bacrpc,bacsri,cdd3,cdrbac,src100,touchplateultra
     from web_scraping.scraping import RelevantTextScraper
     from bacnet.utilities import BacnetUtilities
 
-    text = cdrbac.run_application()
+    text = arob.run_application()
 
     bc = BacnetClassification(0.2,0.1)
 

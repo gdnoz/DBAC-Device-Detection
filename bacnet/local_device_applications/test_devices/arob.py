@@ -6,6 +6,10 @@ Universal Room Controller
 
 Simulates and queries device based on the above data sheet.
 '''
+import queue
+import threading
+from queue import Queue
+
 
 def run_application() -> str:
     '''
@@ -36,5 +40,30 @@ def run_application() -> str:
                                                              protocolObjectTypesSupported=['analogInput','analogOutput','analogValue', 'binaryInput','binaryOutput','binaryValue','device','multiStateValue'],
                                                              maxMaster=127, maxInfoFrames=1, databaseRevision=0, objects=objects)
 
+def run_for_thread(queue: Queue):
+    result = run_application()
+    queue.put(result)
+
 if __name__ == "__main__":
     print(run_application())
+    '''
+    q = queue.Queue()
+
+    thread = threading.Thread(run_for_thread(q))
+    thread.start()
+    thread.join()
+
+    print(q.get())
+
+    import time
+
+    thread = threading.Thread(time.sleep(5))
+    thread.start()
+    thread.join()
+
+    thread = threading.Thread(run_for_thread(q))
+    thread.start()
+    thread.join()
+
+    print(q.get())
+    '''

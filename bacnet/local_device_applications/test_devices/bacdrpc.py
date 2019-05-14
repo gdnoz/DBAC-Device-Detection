@@ -165,3 +165,20 @@ def run_application() -> str:
 
 if __name__ == "__main__":
     print(run_application())
+    '''
+    from multiprocessing.pool import ThreadPool
+    import asyncio
+
+    pool = ThreadPool(1)
+    loop = asyncio.new_event_loop()
+    result = pool.apply(run_application,args=())
+
+    pool.close()
+    pool.join()
+
+    print(result.get())
+    '''
+
+
+
+

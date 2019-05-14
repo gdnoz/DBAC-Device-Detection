@@ -1,0 +1,9 @@
+arob,IndustryEnvironmentSensor,fail
+bacdrpc,IndustryEnvironmentSensor,fail
+bacri,IndustryEnvironmentSensor,fail
+bacrpc,HealthMonitor,fail
+bacsri,IndustryEnvironmentSensor,fail
+cdd3,IndustryEnvironmentSensor,pass
+cdrbac,IndustryEnvironmentSensor,pass
+src100,IndustryEnvironmentSensor,fail
+touchplateultra,IndustryLightControl,pass

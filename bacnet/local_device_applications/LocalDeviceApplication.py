@@ -11,7 +11,7 @@ that are going to be associated with the spoofed device must be passed.
 
 from bacpypes.debugging import bacpypes_debugging, ModuleLogger
 
-from bacpypes.core import run, enable_sleeping
+from bacpypes.core import run, enable_sleeping, stop
 
 from bacpypes.app import BIPSimpleApplication
 from bacpypes.local.device import LocalDeviceObject
@@ -21,6 +21,8 @@ from typing import List
 
 _debug = 0
 _log = ModuleLogger(globals())
+
+this_application = None
 
 @bacpypes_debugging
 class DebugApplication(BIPSimpleApplication):
@@ -44,9 +46,12 @@ class DebugApplication(BIPSimpleApplication):
         if _debug: DebugApplication._debug("confirmation %r", apdu)
         BIPSimpleApplication.confirmation(self, apdu)
 
+def stop_application():
+    stop()
+
 def run_application(**kwargs):
     '''
-    Running the base application for spoofing bacnet devices on the local network.
+    Running the base application for spoofing bacnet test_devices on the local network.
     :param vendoridentifier:
     :param segmentationsupported:
     :param maxapdulength:

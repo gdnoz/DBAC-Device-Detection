@@ -30,4 +30,8 @@ def run_application(**kwargs) -> str:
 
     asyncio.get_event_loop().run_until_complete(asyncio.wait_for(ReadAllObjectPropertiesApp.query_output, timeout=30))
 
+    LocalDeviceApplication.stop_application()
+
+    thread.join()
+
     return ReadAllObjectPropertiesApp.query_output.result()
