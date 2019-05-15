@@ -36,7 +36,6 @@ class MudClassification:
         :return: Classified class and score
         '''
 
-
         from web_scraping.scraping import RelevantTextScraper
         from mud.utilities import MUDUtilities
         from web_scraping.bing import BingSearchAPI

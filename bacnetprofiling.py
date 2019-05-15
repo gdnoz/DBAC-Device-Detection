@@ -38,6 +38,6 @@ if __name__ == "__main__":
     #mud_profiler = BacnetProfiler(cdd3.run_application)
     #mud_profiler = BacnetProfiler(cdrbac.run_application)
     #mud_profiler = BacnetProfiler(src100.run_application)
-    #mud_profiler = BacnetProfiler(touchplateultra.run_application)
+    mud_profiler = BacnetProfiler(touchplateultra.run_application)
 
     mud_profiler.run()

@@ -7,3 +7,5 @@ cdd3,IndustryEnvironmentSensor,pass
 cdrbac,IndustryEnvironmentSensor,pass
 src100,IndustryEnvironmentSensor,fail
 touchplateultra,IndustryLightControl,pass
+
+3/9=0.333 accuracy
