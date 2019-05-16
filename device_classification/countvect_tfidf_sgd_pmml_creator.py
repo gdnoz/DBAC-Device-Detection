@@ -78,14 +78,15 @@ X_train, X_test, y_train, y_test = train_test_split(docs_to_train.data,
 
 count_vectorizer = CountVectorizer(stop_words='english')
 tfidf_transformer = TfidfTransformer(use_idf=True)
-svc_classifier = SVC(kernel = 'linear', probability= True)
+#classifier = SGDClassifier(loss='log', penalty='l2', alpha=1e-3, random_state=42,verbose=1)
+classifier = SVC(kernel = 'linear', probability=True)
 
 
 
 text_clf = Pipeline([
         ('vect', count_vectorizer),
         ('tfidf', tfidf_transformer),
-        ('clf', svc_classifier)
+        ('clf', classifier)
      ])
 
 
@@ -102,9 +103,18 @@ text_clf.fit(X_train,y_train)
 import constants
 from sklearn.externals import joblib
 
+try:
+    os.remove(os.path.join(constants.PMML_DIR,"vectorizer.pkl"))
+    os.remove(os.path.join(constants.PMML_DIR,"transformer.pkl"))
+    os.remove(os.path.join(constants.PMML_DIR,"classifier.pkl"))
+except Exception:
+    pass
+
+
+
 joblib.dump(count_vectorizer, os.path.join(constants.PMML_DIR,"vectorizer.pkl"))
 joblib.dump(tfidf_transformer,os.path.join(constants.PMML_DIR,"transformer.pkl"))
-joblib.dump(svc_classifier, os.path.join(constants.PMML_DIR,"classifier.pkl"))
+joblib.dump(classifier, os.path.join(constants.PMML_DIR,"classifier.pkl"))
 
 with open(os.path.join(constants.PMML_DIR,"labels.txt"),"w+") as f:
     f.write('\n'.join(docs_to_train.target_names))
@@ -112,12 +122,12 @@ with open(os.path.join(constants.PMML_DIR,"labels.txt"),"w+") as f:
 
 loaded_count_vectorizer = joblib.load(os.path.join(constants.PMML_DIR,"vectorizer.pkl"))
 loaded_tfidf_transformer = joblib.load(os.path.join(constants.PMML_DIR,"transformer.pkl"))
-loaded_svc_classifier = joblib.load(os.path.join(constants.PMML_DIR,"classifier.pkl"))
+loaded_classifier = joblib.load(os.path.join(constants.PMML_DIR,"classifier.pkl"))
 
 pmml_pipeline = PMMLPipeline([
         ('vect', loaded_count_vectorizer),
         ('tfidf', loaded_tfidf_transformer),
-        ('clf', loaded_svc_classifier)
+        ('clf', loaded_classifier)
      ])
 
 #print(pmml_pipeline.active_fields)

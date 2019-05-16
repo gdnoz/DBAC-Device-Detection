@@ -14,12 +14,12 @@ class DeviceClassifier:
 
         count_vectorizer_path = os.path.join(constants.PMML_DIR, "vectorizer.pkl")
         tfidf_transformer_path = os.path.join(constants.PMML_DIR, "transformer.pkl")
-        svc_classifier_path = os.path.join(constants.PMML_DIR, "classifier.pkl")
+        classifier_path = os.path.join(constants.PMML_DIR, "classifier.pkl")
 
         self.pipeline = Pipeline([
             ('vect', joblib.load(count_vectorizer_path)),
             ('tfidf', joblib.load(tfidf_transformer_path)),
-            ('clf', joblib.load(svc_classifier_path))
+            ('clf', joblib.load(classifier_path))
         ])
 
         self.threshold = threshold
