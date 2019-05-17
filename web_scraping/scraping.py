@@ -35,6 +35,7 @@ class RelevantTextScraper:
                         scraped_text = WebScrapingUtilities.get_pdf_content_from_url(url)
                         relevant_text += scraped_text
 
+                    #print(url + " caused an Exception.")
                     extract_result = tldextract.extract(url)
 
                     is_top_level_domain = extract_result.suffix and extract_result.domain and not extract_result.subdomain

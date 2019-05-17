@@ -1,16 +1,17 @@
 import numpy as np
-import sklearn
-from sklearn import datasets
+from sklearn.calibration import CalibratedClassifierCV
 from sklearn.linear_model import SGDClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
-from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC, LinearSVC
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 from sklearn import metrics
-import os
+
+'''
+Contains functions that test different classifiers with different configurations and returns reports on accuracy.
+'''
 
 def test_naive_bayes(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
@@ -44,6 +45,21 @@ def test_libsvm_svc(docs_to_train, X_train, X_test, y_train, y_test):
     predicted = text_clf.predict(X_test)
     return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted), output_dict=True)
 
+def test_liblinear_svc(docs_to_train, X_train, X_test, y_train, y_test):
+    count_vectorizer = CountVectorizer(stop_words='english')
+    tfidf_transformer = TfidfTransformer(use_idf=True)
+    svc_classifier = CalibratedClassifierCV(LinearSVC(C=100000,tol=1e-6))
+
+    text_clf = Pipeline([
+        ('vect', count_vectorizer),
+        ('tfidf', tfidf_transformer),
+        ('clf', svc_classifier)
+    ])
+
+    text_clf.fit(X_train, y_train)
+
+    predicted = text_clf.predict(X_test)
+    return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted), output_dict=True)
 '''
 def test_libsvm_svc_nonlinear(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
@@ -60,8 +76,23 @@ def test_libsvm_svc_nonlinear(docs_to_train, X_train, X_test, y_train, y_test):
 
     predicted = text_clf.predict(X_test)
     return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted), output_dict=True)
-'''
 
+def test_libsvm_svc_poly(docs_to_train, X_train, X_test, y_train, y_test):
+    count_vectorizer = CountVectorizer(stop_words='english')
+    tfidf_transformer = TfidfTransformer(use_idf=True)
+    svc_classifier = SVC(kernel='poly')
+
+    text_clf = Pipeline([
+        ('vect', count_vectorizer),
+        ('tfidf', tfidf_transformer),
+        ('clf', svc_classifier)
+    ])
+
+    text_clf.fit(X_train, y_train)
+
+    predicted = text_clf.predict(X_test)
+    return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted), output_dict=True)
+'''
 def test_sgd_classifier(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)

@@ -1,12 +1,49 @@
-from device_classification.classifier_testing import test_mlp_classifier
 import warnings
-import constants, os
+import warnings
+
 import numpy as np
 from sklearn.datasets import load_files
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.pipeline import Pipeline
 from sklearn.model_selection import GridSearchCV
+from sklearn.pipeline import Pipeline
+
+import constants
+import os
+
+'''
+Various tests of parameters for different classifiers using gridsearch.
+'''
+
+def tune_linear_svc():
+    from sklearn.svm import LinearSVC
+
+    warnings.filterwarnings("ignore")
+
+    count_vectorizer = CountVectorizer(stop_words='english')
+    tfidf_transformer = TfidfTransformer(use_idf=True)
+    svc_classifier = LinearSVC(max_iter=5000)
+
+    mlp_pipeline = Pipeline([
+        ('vect', count_vectorizer),
+        ('tfidf', tfidf_transformer),
+        ('clf', svc_classifier)
+    ])
+
+    dataset_path = constants.DATA_SET_PATH
+    categories = [x[1] for x in os.walk(dataset_path)][0]
+
+    docs_to_train = load_files(dataset_path, description=None, categories=categories,
+                               load_content=True, encoding='utf-8', shuffle=True, random_state=42)
+
+    params = {'clf__C': [1.0,10.0,100.0,1000.0,10000.0,100000.0,1000000.0,10000000.0], 'clf__tol': [1e-6,1e-5,1e-4,1e-3,1e-2,1e-1]}
+
+    gs = GridSearchCV(mlp_pipeline, params, cv=8,
+                      n_jobs=-1, scoring='accuracy')
+    gs.fit(docs_to_train.data, docs_to_train.target)
+
+    plot_grid_search(gs.cv_results_, params['clf__C'], params['clf__tol'], 'C',
+                     'Tol', 'linear_svc.png',x_log_scale=True)
 
 def tune_random_forrest():
     from sklearn.ensemble import RandomForestClassifier
@@ -125,9 +162,10 @@ def plot_grid_search(cv_results, grid_param_1, grid_param_2, name_param_1, name_
     ax.legend(loc="best", fontsize=15)
     ax.grid('on')
 
-    plt.savefig(figname)
+    plt.savefig("classifier_pngs/"+figname)
 
 if __name__ == "__main__":
+    tune_linear_svc()
     #tune_mlp()
     #tune_random_forrest()
-    tune_xgboost()
+    #tune_xgboost()

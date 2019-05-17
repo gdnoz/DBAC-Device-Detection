@@ -33,9 +33,6 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
 
             classification_result = bacnet_classification.classify_bacnet_objects(q.get())
 
-            import socket
-
-
             classification = classification_result.predicted_class
             score = classification_result.score
 

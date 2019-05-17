@@ -32,22 +32,6 @@ class BacnetClassification:
         from bacnet.utilities import BacnetUtilities
 
         '''
-        Classification based bacnet objects query
-        (OMIT THIS STEP FOR NOW)
-        '''
-
-        '''
-        print("Classifying based on objects query...")
-
-        classification_result = self.classifier.predict_text(queried_objects)
-
-        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
-           return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
-
-        print("Failed...")
-        '''
-
-        '''
         Preparing classification based on search engines.
         '''
         search_terms = ""
@@ -68,31 +52,13 @@ class BacnetClassification:
 
         print("Search terms: " + search_terms)
 
-
         '''
-        Classification based on Bing
+        Classification based on Bing and Google
         '''
 
         print("Classifying using Bing...")
 
-        urls = BingSearchAPI.first_ten_results(search_terms,only_html=False)
-
-        text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls()
-
-        classification_result = self.classifier.predict_text(text_from_urls)
-
-        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
-            return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
-
-        print("Failed...")
-
-        '''
-        Classification based on Google
-        '''
-
-        print("Classifying using Google...")
-
-        urls = GoogleCustomSearchAPI.search(search_terms,exclude_pdf=False)
+        urls = BingSearchAPI.first_ten_results(search_terms,only_html=False)+GoogleCustomSearchAPI.search(search_terms,exclude_pdf=False)
 
         text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls()
 
