@@ -8,32 +8,32 @@ Language:
 All Categories
 Controllers
 Bacnet Controllers
+Converters
 Expansion I/O
 PC
 PWM
-Converters
+Damper Motors
+Electrical
+OEM
 Power Meter
 CTs
 Single Phase Meter
 Wattnode meter
+Relays
 Sensors
+C02, Hum, AQ
+Current Sensors
 Flow
 Fluid Level Switch
 Occupancy
 Pressure
 Temperature Sensors
-Current Sensors
-C02, Hum, AQ
 Thermostats
 Communicating Stats
 Stand Alone Thermostats
 Thermostat covers
-Weather Station
-OEM
-Relays
 Valves
-Electrical
-Damper Motors
+Weather Station
 Categories
 All Categories
 T3 Series Bacnet Programmable controller
@@ -61,6 +61,7 @@ Using these controllers, the building operator can manage typical HVAC systems i
 *The 2 universal outputs can be selected by jump as either 1-10V analog or relay outputs.
 **Zigbee module.
 Setup and programming are done on a PC, all settings, i/o configuration, programming, floorplans and alarms are set up in the T3000 front-end software. Once the programming is done,you can save the program for backup or load it into another controller. It’s very easy to edit the logic since the T3000 software serves not only as the front-end for the building operator but also as the back-end for the controls technicians.
+Dimensions:
 Part Number Scheme:
 Works with: https://bravocontrols.com/product/bacnet-room-setpoint-temp-display/
 Weight

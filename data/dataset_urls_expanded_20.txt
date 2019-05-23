@@ -32,10 +32,13 @@ RemoBell2,https://www.amazon.com/RemoBell-Wireless-Doorbell-Battery-Powered/dp/B
 NestDoorbell,https://nest.com/dk/doorbell/nest-hello/overview/
 NestDoorbell2,https://store.google.com/gb/product/nest_hello_doorbell
 Gamkov,http://www.gamkovonline.com/products/detail/21584
+SimpliSafe,https://simplisafe.com/simplicam-security-camera
+WiseNet,https://www.amazon.com/Wisenet-Security-Recognition-Hard-Wiring-Required/dp/B0771JVG63
+ADTDoorbell,https://www.adt.com/doorbell-camera
 
 Camera:
 NestCam,https://nest.com/cameras/nest-cam-indoor/overview/
-NestCam2,https://www.amazon.com/Nest-Security-Camera-Matters-Anywhere-x/dp/B00WBJGUA2
+NestCam2,https://www.amazon.com/Nest-Security-Matters-Anywhere-Outdoor/dp/B01I3I9L8M
 ZmodoSnapPro,https://www.zmodo.com/snap-pro-security-camera/
 ZmodoPivot,https://www.zmodo.com/pivot-cloud-wireless-indoor-security-camera/
 MaximusSmartSecurityLight,https://getkuna.com/pages/smart-security-light
@@ -61,7 +64,7 @@ NestLearningThermostat,https://nest.com/ca/thermostats/nest-learning-thermostat/
 NestLearningThermostat2,https://store.nest.com/product/thermostat/T3007ES
 NestThermostatE,https://nest.com/thermostats/nest-thermostat-e/overview/
 NestThermostatE2,https://store.nest.com/product/thermostat-e/T4000ES
-AcerAirMonitor,http://home.cloud.acer.com/airmonitor/
+AcerAirMonitor,https://www.amazon.com/Acer-BYOC-Air-Monitor/dp/B06Y2F9SXK
 iftttAcerAir,https://ifttt.com/Air_Monitor
 EcoBee3,https://www.ecobee.com/ecobee3/
 EcoBee4,https://www.ecobee.com/ecobee4/
@@ -77,8 +80,8 @@ WithingsBPMCore,https://www.withings.com/it/en/bpm-core
 CueHealthMonitoringSystem,https://www.cuehealth.com/#product
 MobiUSSP1System,https://www.frontierhealth.co/products/mobius-sp1-system
 Activ5,https://www.activ5.com/mobile-device-demo/
-BodyGuardianHeart,https://www.preventicesolutions.com/technologies/body-guardian-heart.html
-BodyGuardianVerite,https://www.preventicesolutions.com/services/body-guardian-verite.html
+BodyGuardianHeart,https://preventicesolutions.com/hcp/body-guardian-heart
+BodyGuardianVerite,https://preventicesolutions.com/hcp/body-guardian-verite
 FitbitAriaScale,https://www.fitbit.com/dk/aria2
 GarminIndexScale,https://buy.garmin.com/en-US/US/p/530464
 OmronEvolv,https://www.omron-healthcare.com/en/evolv#evolv
@@ -105,6 +108,8 @@ Acuvar,https://www.amazon.com/Acuvar-Wireless-WiFi-Display-dongle/dp/B078RLGRB6
 ScreenBeam,https://www.screenbeam.com/products/screenbeam-mini2/
 SonySmartTvArticle,https://www.sony.com/electronics/smart-tv-features-apps-and-internet
 Seguro,https://www.amazon.co.uk/SEGURO-S2_Amlogic-S905X-Android-Player/dp/B01N2YN0R3
+SonyBDPs3700,https://www.sony.com/electronics/blu-ray-disc-players/bdp-s3700
+SonySMPN200,https://www.amazon.com/Sony-SMP-N200-Streaming-Media-Player/dp/B005MR6CNK
 
 Light:
 NanoleafAuroraLighting,https://nanoleaf.me/en/consumer-led-lighting/products/smarter-series/nanoleaf-light-panels-smarter-kit/
@@ -159,6 +164,7 @@ Foreet,https://www.foreetshop.com/store/p3/Wifi-Smart-Motion-Sensor.html
 Nedis,https://www.nedis.com/product/wifi-smart-motion-sensor-wired-indoor
 Proteus,https://proteussensor.com/wi-fi-motion-sensor.html
 UbiquitiMotionSensor,https://www.wifi-stock.com/details/ubiquiti-mfi_msw.html
+XfinityMotionSensor,https://www.xfinity.com/learn/home-security/devices/motion-sensor
 
 ElectricControl:
 SmartThingsOutlet,https://www.smartthings.com/products/smartthings-outlet
@@ -186,7 +192,7 @@ DLCG,https://www.deltacontrols.com/products/lighting-control/centralized-lightin
 OptumLight,https://optumlighting.com/controls/
 EclypsenLight,https://www.distech-controls.com/en/us/products/eclypse/eclypse-nlight-solution/related-products/eclypse-nlight-solution/
 LDALIPLC,https://www.loytec.com/products/dali/ldali-plc4
-ILCApprentice,http://www.ilc-usa.com/product_detail.php?pid=9
+ILCApprentice,https://www.ilc-usa.com/apprentice-3-lighting-control-panel
 Eaton2000E,https://www.eaton.com/us/en-us/catalog/low-voltage-power-distribution-controls-systems/pow-r-command-2000e-controller.html
 
 IndustryRoomController:

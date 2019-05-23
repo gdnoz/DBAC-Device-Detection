@@ -100,6 +100,7 @@ Requirements
 Pivot Cloud requires a password-protected 2.4GHz Wi-Fi connection with WPA/WPA2 encryption. It can be set up and controlled through the Zmodo smartphone app (available for iOS 9.0 and up and Android 4.0 and up).
 Security is OurPriority
 Zmodo apps and devices connect to the U.S.-based Zmodo servers using bank-level AES 256-bit encryption and Transport Layer Security (TLS). All video and pictures are secured with AES 256-bit symmetric-key encryption, so nobody but you is able to access your footage.
+Want to connect Zmodo devices to Google Assistant?
 Pivot Cloud
 Camera
 1080p HD Color Sensor

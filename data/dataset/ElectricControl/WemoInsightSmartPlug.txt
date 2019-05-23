@@ -8,14 +8,14 @@ Wemo® Insight Smart Plug is rated
 3.8 out of
 5 by
 121.
-y_2019, m_5, d_7, h_23
+y_2019, m_5, d_21, h_23
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
 co_hasreviews, tv_1, tr_120
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 94ms
+CLOUD, getAggregateRating, 78ms
 REVIEWS, PRODUCT
 Write a review
 Ask a question
@@ -29,14 +29,14 @@ Wemo® Insight Smart Plug is rated
 3.8 out of
 5 by
 121.
-y_2019, m_5, d_7, h_23
+y_2019, m_5, d_21, h_23
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
 co_hasreviews, tv_1, tr_120
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 94ms
+CLOUD, getAggregateRating, 78ms
 REVIEWS, PRODUCT
 $49.99
 Buy Now
@@ -150,18 +150,18 @@ malex from
 Does not work
 I followed the instructions to the letter but the Wemo will not shut off.
 Date published: 2018-11-07
-y_2019, m_5, d_7, h_23
+y_2019, m_5, d_21, h_23
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
 co_hasreviews, tv_1, tr_120
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getReviews, 93ms
+CLOUD, getReviews, 157ms
 REVIEWS, PRODUCT
 Related Products
 Select Options
-linksys_hybris4
+linksys_hybris5
 CONNECT WITH US
 This is a required field.
 Email id is invalid.

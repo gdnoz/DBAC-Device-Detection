@@ -2,6 +2,7 @@ Motion Sensor - Z-Wave and HomeKit motion detector | FIBARO
 Get to know the possibilities of a complete smart home system.
 Get to know FIBARO smart devices working with SmartThings.
 Get to know FIBARO smart devices working with Apple HomeKit.
+Motion Sensor
 Motion Sensor Motion, light and temperature sensor
 See it in action
 Small is beautiful Just under 2 inch diameter, featuring an immaculate, sleek, and modern white casing, you’ll fall in love with this motion sensor at first sight.

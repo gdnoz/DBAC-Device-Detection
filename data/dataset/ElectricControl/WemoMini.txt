@@ -7,15 +7,15 @@ F7C063
 Wemo Mini Smart Plug is rated
 4.1 out of
 5 by
-648.
-y_2019, m_5, d_7, h_23
+657.
+y_2019, m_5, d_21, h_23
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
-co_hasreviews, tv_0, tr_648
+co_hasreviews, tv_0, tr_657
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 78ms
+CLOUD, getAggregateRating, 93ms
 REVIEWS, PRODUCT
 Write a review
 Ask a question
@@ -27,16 +27,17 @@ F7C063
 Wemo Mini Smart Plug is rated
 4.1 out of
 5 by
-648.
-y_2019, m_5, d_7, h_23
+657.
+y_2019, m_5, d_21, h_23
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
-co_hasreviews, tv_0, tr_648
+co_hasreviews, tv_0, tr_657
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 78ms
+CLOUD, getAggregateRating, 93ms
 REVIEWS, PRODUCT
+Belkin: Apple Employee Discount
 $29.99
 Buy Now
 This item is added to your
@@ -92,72 +93,71 @@ Indoor Use: Designed for residential indoor dry location use only.
 Rated 1 out of
 5
 by
-etjmoney from
-Worst things ever!
-I have literally wasted days of my life on a couple of these "smart" plugs.
-Every single time they lose power or wireless (or move them) they have to be factory reset and you need to setup from scratch.
-The iOS app crashes regularly during configuration which helps extend the setup time.
-I have a switch that I never have to reconfigure, but these things are the worst.
-I am a techie and have dozens of other smart devices that once setup, I never have to touch again.
-Date published: 2019-05-02
-Rated 5 out of
-5
-by
-Scrshop from
-Wonderful product
-I have several Wemo products that work great, and this product is no exception. I especially like the new form factor of the smart plug. Very satisfied customer.
-Date published: 2019-04-27
+Wanderluster from
+Horrible home app connectivity.
+The literal worst to set up. Very co fusing and counter intuitive. Save your money and wait a few months for other smart plugs to get in the market.
+Date published: 2019-05-18
 Rated 1 out of
 5
 by
-Noah44 from
-DO NOT BUY
-I bought this a month ago and it has been sitting in my closet because I don’t have time to send it back. It won’t work at all the thing is cracked down the middle when I opens it. IT IS THE WORST
-piece of technology I have bought I’m my 26 years of life.
-Date published: 2019-04-27
-Rated 4 out of
-5
-by
-Gman99 from
-Expensive but solidly built
-Picked up this through a promotion Belkin sent out. Even after the discount it was pretty expensive but i wanted to try it out. It really is a great product.
-Date published: 2019-04-24
-Rated 1 out of
-5
-by
-GLFDEN from
-I’m returning the product to Home Depot
-I’m returning the product and I already bought something else. Set up was easy but then it wouldn’t stay connected to WiFi. Just kept dropping.
-Date published: 2019-04-17
-Rated 1 out of
-5
-by
-Brooks from
-Horrible Product
-If I could give zero stars I would. The android app is absolute garbage and does not even operate. For example, you can set a time to turn on a light but not turn it off. When you search for devices, it just hangs. DO NOT BUY
-Date published: 2019-04-08
+Okguy12 from
+Help
+I got these for Christmas, a risky several sets. I hope they have not had the problem getting work I have. I have spent a tremendous amount of time and ot just won't connect.
+Your app should go thru and hook up. I have excellent internet but it keeps saying no internet. Waste of money at this point.!
+Date published: 2019-05-14
 Rated 5 out of
 5
 by
-MistarDoyle from
-So easy to set up and so responsive!
-I can only thing of one bad thing which is its bulkiness, making it hard to use behind large furniture
-Date published: 2019-04-08
+Doctorpc from
+You Have to Have Patience
+I needed these smart plugs and set about installing them with virtually no documentation from Belkin except install the app and it will guide you. Well, good luck with that. I eventually got them to work with the Google Home Hub but they wouldn’t listen to my wife. I called Google and the tech at Google made matters worse by telling me to tell google to sync all devices. Now two smart plugs became 5 smart plugs. Today, I was determined to get them back up and running. After an hour and a half I fixed the problem. To get your spouse or whomever to be able to control your devices other than you, you need to send them an invitation from the Google Home Hub. Now they work perfectly. Thank you for the education.
+Date published: 2019-05-13
 Rated 5 out of
 5
 by
-KAK19 from
-It works!
-The mini smart plug is simple, activated immediately and works like a charm. I may purchase more of them!
-Date published: 2019-04-03
-y_2019, m_5, d_7, h_23
+Wjc8850 from
+Worked well with Amazon Echo
+I just received these mini plugs and set them all up in a few minutes. I did have to download the Wemo app and name them, but Alexa found them immediately and, so far, they are working well.
+While the software was updating itself on the app, I couldn't use the plugs for a few minutes, but once they were updated, they went back to working fine. Hopefully they will continue to work. At this moment I am very happy with this product.
+Date published: 2019-05-11
+Rated 5 out of
+5
+by
+JRA5587 from
+Great Item
+I got this for a lamp and it works wonderful! I Would definitely recommend to anyone!
+Date published: 2019-05-09
+Rated 5 out of
+5
+by
+tuckern from
+Great automation products
+I've been using Wemo products for nearly 5 years now.
+I love the many options available to automate and integrate with Alexa and IFTTT services.
+Date published: 2019-05-09
+Rated 5 out of
+5
+by
+Manet from
+Easy to install, works great
+I bought combination of smart plug and light switch for $30.00 from home depot as part of their promotion. Cant complain on price, i think i got a very good deal.
+Installation is very simple and instructions straighforward. I was done in 15 mins. Really like the feature that i can control it from phone, user friendly app. WIll recommend. BTW: I bought smart plug and light switch for $30.00 as part of their promotion.
+Date published: 2019-05-08
+Rated 5 out of
+5
+by
+Eric_00 from
+Easy setup, works very well with Google Home!
+This was a impulse buy at Home Depot. Glad that I did.
+Date published: 2019-05-08
+y_2019, m_5, d_21, h_23
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
-co_hasreviews, tv_0, tr_648
+co_hasreviews, tv_0, tr_657
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getReviews, 78ms
+CLOUD, getReviews, 203ms
 REVIEWS, PRODUCT
 Related Products
 Select Options

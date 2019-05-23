@@ -29,9 +29,9 @@ Perform easy application optimizations on-the-fly without download anything. Als
 Docu Generator
 Automatically create customer-specific application documentation, including wiring information, project specific graphics, function block parameters and wire-sheet printouts.
 Cost-effective installation and commissioning
-Thanks to its BACnet MS/TP design, MERLIN NX allows simple 2-wire installation. Thus, significantly reducing costs not only in new construction but also in refurbishments, where existing 2-wire cabling can be reused.
+The MERLIN NX features largely reduce installation and commissioning cost, both for new construction and refurbishments.
 Flexible mounting
-The universally mountable controller can be installed on DIN rails, small installation housings, and walls (including optional terminal covers) to meet a wide variety of installation requirements.
+As MERLIN NX is using BACnet MS/TP, a simple 2-wire installation is possible. This largely reduces cost in refurbishments, where often existing 2-wire cabling can be reused. Furthermore the compatible Sylk-Bus wall modules can re-use existing cabling, as they only need two polarity-independent wires.
 Installation savings
 The 24 VAC auxiliary output voltage on the controller allows direct connection and powering of field devices as well as line voltage supply and switching of line voltage for reduced installation costs.
 Master-Follower-Concept
@@ -40,8 +40,24 @@ Differential download
 This function supports a fast and system-wide application optimization.
 Future-proof investment
 The freely programmable MERLIN NX easily adapts to any applications. Its vendor-independent offering (Niagara, BACnet) keeps all options open for the future as well.
+In case the Niagara project got lost it is possible to recover the complete application program from the controller in original editable wire sheet format.
 New Connected Building Management services can easily be utilized via the integrated cloud connector on both plant control and supervisory levels.
 Info Material
+Expert Advice
+Benefit from the know-how of our experts. Ask for a visit, or just an explanation on the phone, as you like!
+Request more information
+Webinars
+Listen to one of our webinars to benefit from the know-how of our Integrated Room Management experts.
+June 19, 2019
+09.00 o‘clock (CEST)
+July 19, 2019
+09.00 o‘clock (CEST)
+Register to get the log in details and see how the new innovative solutions can improve the performance of your building.
+The webinars will be conducted by our Senior Product Management, held in English and last 60 minutes.
+REGISTER NOW
+Newsletter
+You want to stay informed about latest innovation in Integrated Building Management? Just register for our Expert Newsletter.
+Subscribe now
 Contact
 © 2019 HONEYWELL GMBH
 This page is blocked by your browser. Please click on the icon in the address bar of your browser to accept this page.

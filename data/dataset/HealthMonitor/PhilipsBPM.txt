@@ -39,7 +39,9 @@ Kitchen
 Household products
 Ironing and Garment Care
 Household products
-Home Cleaning
+Air Purifiers
+Household products
+Vacuum Cleaners
 Products
 Lighting
 Lighting
@@ -54,6 +56,8 @@ Health
 Respiratory Care
 Health
 Psoriasis Treatment
+Health
+Hearing solutions
 Products
 Automotive
 Products
@@ -71,7 +75,7 @@ Upper arm blood pressure monitor
 -{discount-percentage}%
 Upper arm blood pressure monitor
 DL8760/15
-Overall rating
+Overall Rating
 / 5
 Connected blood pressure tracking
 The connected upper arm blood pressure monitor allows you to measure your blood pressure and heart rate. Syncs automatically to the free Philips HealthSuite health app so you can conveniently track your measurements over time.
@@ -86,8 +90,12 @@ Images
 Connected blood pressure tracking
 The connected upper arm blood pressure monitor allows you to measure your blood pressure and heart rate. Syncs automatically to the free Philips HealthSuite health app so you can conveniently track your measurements over time.
 DL8760/15
-Overall rating
+Overall Rating
 / 5
+b2c.p17-shop-able-accessories.title
+Upper arm blood pressure monitor
+Total:
+Buy
 Upper arm blood pressure monitor
 Blood pressure measurement, Heart rate measurement, Syncs with Philips health app
 DL8760/15

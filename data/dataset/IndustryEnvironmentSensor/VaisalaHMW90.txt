@@ -48,24 +48,10 @@ Full navigation
 Toggle navigation
 Humidity and Temperature Transmitter Series HMW90
 Humidity and Temperature Transmitter Series HMW90
-Humidity and Temperature Transmitter Series HMW90
 ±1.7%RH Wall Transmitters with a Certificate for Demanding HVAC
 Typical applications are include museums and archives, production and warehouse facilities, data centers, laboratories, and testing environments.
 The HMW90 series measures relative humidity and temperature in indoor environments, where high accuracy, stability, and reliable operation are required. The HMW90 is a flexible product family with a variety of options and features, both analog and digital output models are available. The sensors are exceptionally easy to configuration, install, and adjust in the field. Calculated humidity parameters (Td, x, h, Tw, a, T-Td).
-.
-.
-Watch the video
-View this HMW90 installation and calibration video.
-Key Benefits
-Two output choices
-Both analog and digital output models available.
-Easy to use
-Exceptionally easy configuration, installation, and field adjustment.
-Easy maintenance
-Field exchangeable measurement modules for easy maintenance.
-Read more
-Overview
-Wall-mounted Vaisala HUMICAP® Humidity and Temperature Transmitter Series HMW90  includes the following models:
+The following models are available:
 TMW92 T transmitter, current output
 TMW93 T transmitter, voltage output
 HMW92(D) RH+T transmitter, current output (with display)
@@ -73,7 +59,8 @@ HMW93(D) RH+T transmitter, voltage output (with display)
 HMW95(D) RH+T digital (BACnet, Modbus) transmitter (with display)
 TMW90 T transmitter, configurable analog output model
 HMW90 RH+T transmitter, configurable analog/digital model
-The HMW90 Series was complemented with four new models: TMW92 and TMW93 temperature transmitters for applications where only temperature measurement is needed and the configurable HMW90 and TMW90 for special scalings. The HMW90 and TMW90 transmitters are available in two color options: standard white and black.
+The HMW90 and TMW90 transmitters are available in two color options: standard white and black.
+.
 Features
 Analog and digital outputs
 Easy installation, configuration, and field adjustment
@@ -83,68 +70,22 @@ Accuracy up to ±1.7%RH
 User exchangeable humidity and temperature module
 Traceable calibration, certificate included
 Available in two colors
-Details
-Specifications
-Datasheet
-1.85 MB
-Documents
-Application Note
-102.96 KB
-167.55 KB
-150.27 KB
-189.99 KB
-2.66 MB
-150.27 KB
-1.41 MB
-Brochure
-1.65 MB
-337.02 KB
-Certificate
-120.92 KB
-Datasheet
-1.85 MB
-Manual
-717.45 KB
-2.16 MB
-1.97 MB
-382.29 KB
-304.41 KB
-Order Form
-75.45 KB
-66.44 KB
-Technology Description
-274.38 KB
-Note d'application
-Success Story
-318.78 KB
-Presentation
-2.94 MB
-Magazine Article
-730.81 KB
-Stories
-Blog
-| Feb 6, 2019
-Anything worth measuring is worth measuring right, and to do that periodic calibration is essential. In HVAC, the primary reason to measure CO₂...
-Blog
-| Jan 16, 2019
-All gases in the environment will interact with a humidity sensor and potentially cause drift. Water needs to get in and out of the sensor,...
-Blog
-| Nov 21, 2018
-Most people working in the HVAC field are familiar with using relative humidity (RH) as the default control parameter for humidity measurement....
-Blog
-| Oct 25, 2018
-The basics Put simply, relative humidity (RH) is a measure of the water vapor content of air. More explicitly, it is the amount of water vapor...
++ Show more
+Key Benefits
+Two output choices
+Both analog and digital output models available.
+Easy to use
+Exceptionally easy configuration, installation, and field adjustment.
+Easy maintenance
+Field exchangeable measurement modules for easy maintenance.
+Watch the video
+View this HMW90 installation and calibration video.
+Downloads
+Customer Stories
 Success Story
 Best Quality Indoor Air with Vaisala's HVAC Sensors Infosys is the second largest Indian IT consulting company with 200,000 plus employees and...
 Success Story
 Increasing demand for data processing and storage capacity has led to major companies investing in new facilities that provide web-based...
 Services
-Events
-Webinar
-Learn about field-checking of humidity and CO2 sensors in HVAC applications
-Webinar
-Watch this webinar to get tips on how to avoid the most common problems when installing HVAC sensors.
-Webinar
-In this webinar you will learn about how relative humidity, dew point & wet bulb temperature and enthalpy affect ventilation and which of them...
 Footer Navigation
 Copyright Vaisala 2019

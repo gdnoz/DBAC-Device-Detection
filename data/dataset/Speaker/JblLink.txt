@@ -17,7 +17,7 @@ X
 {}
 Add to Cart
 View Details
-com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO@6f1696bb(com.demandware.beehive.orm.internal.state2.RelationalObjectInstanceState@51f0f3a9[com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO) [d0523091338d7bf9d51a415b3f]])
+com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO@6f1696bb(com.demandware.beehive.orm.internal.state2.RelationalObjectInstanceState@1735273[com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO) [d0523091338d7bf9d51a415b3f]])
 JBL Link 20
 Alternate Views
 Images
@@ -216,7 +216,15 @@ Parts and accessories
 JBL Link 20 is rated
 3.7 out of
 5 by
-139.
+142.
+Rated 5 out of
+5
+by
+BT Express from
+Google Assistant feature is Great!
+I am happy with my product.
+I listen to my music on the JBL Link 20 all the time.
+Date published: 2019-05-07
 Rated 5 out of
 5
 by
@@ -244,26 +252,17 @@ Michael1000 from
 Great features!
 Looking forward to taking with me on my vacation with the family.
 Date published: 2019-03-25
-Rated 5 out of
-5
-by
-Bill Payer from
-Excellent in nearly every department
-What a device! The quality of the sound is first rate, the ease of use is superb and the features are a joy. I listen to BBC Radio 6 music a lot and to be able to ask for it to be streamed rather than messing around getting a Bluetooth connection is what technology to enrich our lives is all about.
-The only slight downside is the reduction in battery life compared to a Bluetooth version and I'm assuming this is due to the Google assistant. But the positives massively outweigh this slightly negative point.
-Overall, it's superb and why did I wait so long to buy one.
-Date published: 2019-03-21
-y_2019, m_5, d_7, h_18
+y_2019, m_5, d_22, h_1
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
-co_hasreviews, tv_0, tr_139
+co_hasreviews, tv_0, tr_142
 loc_en_US, sid_jbllink20, prod, sort_[SortEntry(order=RATING, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_jbl
 I've had my jbl link 20 for 2 weeks and it just stopped working right in the middle of playing music now the 4 lights at the top keep flashing and it won't connect, please help!
 Asked by: Eman1
-We would like to work with you directly to help you with your issue. Please submit a case request at https://www.jbl.com/support-contact.html and the Customer Service Team will be more than happy to assist you.
-Answered by: Mario at Customer service
-Date published: 2018-12-17
+Having the same problem, would love to know a solution... hitting reset button near usb socket does nothing
+Answered by: Dubradio
+Date published: 2019-04-26
 HOW CAN I MAKE CALLS VIA IPHONE / GALAXY?
 UNABLE TO CALL THRU SPEAKER.
 Asked by: CR787
@@ -282,8 +281,8 @@ Answered by: Lightbrigner
 Date published: 2018-12-30
 How is this integrated with smart hubs? Smartthings maybe?
 Asked by: Fearz
-Not sure what you mean by integration but I setup my SmartThings hub in the google home app. So now all of my devices connected to the hub can be controlled with google assistant.&nbsp;
-Answered by: benrudolph
+Unfortunately , there is no integration yet with smart hubs.
+Answered by: Mario at Customer service
 Date published: 2017-12-02
 does the link 20 have a jack for
 wired auxilliary input?
@@ -303,10 +302,10 @@ You're going to want either a sound bar, or sound base, or a powered pair of spe
 The JBL Link series don't have any way to receive the TV's audio.
 Answered by: nopenope
 Date published: 2019-02-07
-y_2019, m_5, d_7, h_18CST
+y_2019, m_5, d_23, h_2CST
 bvseo_bulk, prod_bvqa, vn_bulk_2.0.12
 cp_1, bvpage1
-co_hasquestionsanswers, tq_208
+co_hasquestionsanswers, tq_210
 loc_en_US, sid_jbllink20, prod, sort_[SortEntry(order=NUM_ANSWERS, direction=DESCENDING)]
 clientName_jbl
 Sharing

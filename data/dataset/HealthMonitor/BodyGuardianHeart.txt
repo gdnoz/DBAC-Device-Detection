@@ -1,71 +1,111 @@
-Preventice - BodyGuardian Heart
+BodyGuardian Heart | Preventice Solutions
+×
+ONE REMOTE MONITORING SYSTEM FOR ALL YOUR NEEDS
+With innovative digital technologies and accessories, the smartphone and wearable sensors are going to upend every aspect of healthcare. The end result will be the patient taking center stage for the first time.
+This single system remotely transitions between 24-hour Holter, long-term Holter, cardiac event monitoring and mobile telemetry depending on patient needs and allows simple hook-up between service types without changing the device.
+Caution: U.S. Federal law restricts this device to sale by or on the order of a physician.
+Better compliance and Seamless workflow
+Superior comfort with different adhesive options and form factors to meet study needs and preferences
+Simplified inventory control and hook-up without changing the device
+Covered by 100% of U.S. national payers*
+Data surveillance by trained technicians notifying physicians with actionable events, as per their protocol
+Choose the service type you require, duration you want, data you need and when you want to be notified
+With one click, ECG Insight®, offers you full transparency and allows you to see any and all rhythms a patient has without delays
+* Subject to individual plans and corresponding medical policies
+THE BODYGUARDIAN® REMOTE MONITORING CAPABILITIES
+BodyGuardian® Heart wirelessly provides:
+Rhythm monitoring: ambulatory ECG
+and average heart rate for arrhythmias,
+including atrial fibrillation, tachycardia,
+bradycardia, pause, and others
+Recordings and transmission of
+periodic ECG at specified intervals
+BodyGuardian® Heart has received 51Ok clearance - K1 51188, CE mark, Canada license 93396 and TGA clearance 262577
+REMOTE MONITORING WITHOUT INTERRUPTING DAILY ACTIVITIES
+The patient's data is automatically detected and wirelessly delivered to the Preventice Monitoring Center. Physicians can access their patients’ data and review notifications securely anytime, anywhere via the web. Additionally, they can set thresholds for each patient allowing for individualized monitoring and care plan support. The reports can be integrated with the medical practice EMR system or reviewed on the web, based on the physician’s needs.
+THE BEAT-TO-BEAT STORY AT YOUR FINGERTIPS
+ECG Insight®, Preventice cloud-based system, offers
+full transparency, allowing healthcare providers to see
+any and all rhythms a patient has without delays.
+With one click, a physician can examine the chosen
+event with extended tools to navigate surrounding
+unfiltered ECG, measure ECG using calipers, and
+correlate heart rates to event. ECG Insight® draws on
+the recent convergence of analytics and wireless
+protocols to speed clinical decision making.
+Beyond Remote Cardiac Monitoring
+Additional devices can be used in conjunction to remotely monitor vital signs. Numerous on-body, non-intrusive sensors can collect detailed, physiological data anytime, anywhere, such as: ECG, Heart Rate, Activity Level, Blood Pressure, Weight, Blood Glucose, and Peripheral Capillary Oxygen Saturation (SpO2).
+practical applications of machine learning and artificial intelligence
+Leveraging a Monitoring Algorithm Validated with Clinical Data
+The BodyGuardian® remote monitoring system utilizes proprietary algorithms that are designed to create a constant connection between patients and their healthcare team. Preventice has invested in clinical evidence and real-world validation of the unique algorithms used to detect ventricular ectopic beats (VEBs), which are a sub-category of abnormal heart contractions that originate from the ventricles. For some patients, these beats signify a potential life-threatening and treatable cardiac irregularity. The proprietary algorithm, when used with mobile cardiac telemetry technology, empowers physicians and healthcare providers with valuable information regarding the occurrence and regularity of VEBs.
+Clinical Evidence
+In the study, algorithm validation was performed using the MIT-BIH arrhythmia database and also using real-world data collected from nearly 2,000 BodyGuardian® Heart patients. Results demonstrate that this proprietary classification model has sensitivity and specificity higher than any previously published, fully automated algorithms and demonstrates key short-comings associated with validation performed using only the MIT-BIH arrhythmia database.
+To learn more,
+and check how our
+team is .
+Technical Specifications
+External Dimensions
 |
+Width: 50 mm
 |
-Our Sensors
-Our Platforms
-Our Capabilities
-Our Services
-Preventice
-Technologies
-creating constant connection between
-patients and their care teams
-With innovative digital technologies and accessories, the smartphone and wearable sensors are going to upend every aspect of healthcare. And the end result will be the patient taking center stage for the first time.
-The BodyGuardian® Heart monitoring system is a cutting edge approach allowing healthcare providers to monitor key biometrics outside the clinical setting, while patients go about their daily lives, thus safeguarding the health and safety of individuals every day.  BodyGuardian® Heart is a discreet wireless remote monitor that records important physiological data such as heart rhythm, ECG, respiratory rate and activity.
-Information from the BodyGuardian® Heart remote monitoring system is gathered and funneled into a robust clinical data management system providing interactive access to patient clinical information by the physician and practice personnel. Based on the physicians' needs, a thorough set of reports can be created and reviewed on the PatientCare portal to track the patient’s progress. All reports are made available online or via PDF for inclusion in your patients’ records or possibly the healthcare practice EMR system. For those physicians looking to standardize remote monitoring services across their healthcare organization, Preventice Solutions offers a variety of options through .
-Our Platforms
-Our Services
-Patient
-Friendly
-Secure & Reliable
-Data Transmission
-Quality
-Assurance
-Symptoms
-Notification
-Higher Diagnostic
-Yield
-CLINICAL APPLICATIONS
-The FDA cleared monitor wirelessly records important physiological data such as:
-Rhythm monitoring: Ambulatory ECG for arrhythmias, including Atrial Fibrillation, Tachycardia, Bradycardia, Pause, and others
-Recordings and transmission of periodic ECG at specified intervals
-Calculation of average heart rate data every 10 seconds
-Calculation of average respiration rate* (i.e. breaths per minute)
-Calculation of average activity level via 3-axis accelerometer*
-In conjunction with PatientCare Portal, additional devices can be added to remotely monitor vital signs such as: blood pressure, weight, glucose, and Peripheral capillary oxygen saturation (SpO2).
-BodyGuardian® HeartRemote Monitoring System
-Remote Cardiac Monitoring
-Includes patient triggered and device-detected episodes
-Wirelessly transmits data for further analysis through an Android-based smartphone’s cellular connection
-Jointly developed with Mayo Clinic and ST Microelectronics
-Centralized Cloud Platform
-Provides level services between devices and end-users such as data exchange
-Includes fault tolerant transaction processing
-Highly secure, HIPAA privacy compliant design
-Provider Data Access
-Advanced engaging user interface
-Allows providers to configure thresholds for physiological event
-Enables workflow for efficient review of multiple patients
-PLATFORM SECURITY
-BodyGuardian® Heart Remote Monitoring System complies with HIPAA guidelines and employs many measures to ensure the security and privacy of patient data are maintained at each step. Finally, once the data reaches the Preventice Care Platform for eventual storage or analysis, the following features help ensure optimal data integrity and security. The security measures employed by Preventice can be described across three primary dimensions:
-Device/App PasswordSecurity
-EncryptedCommunication
-Device IdentityVerification
-Permission-basedAccess
-Endpoint IdentityVerification
-Health Data AccessAuditing
-Data Encryption
-Source Traceability
-Separation of Identity
-.
-Preventice Services
-1717 N. Sam Houston Parkway West
-Suite 100
-Houston, TX 77038
-Preventice Technologies
-3605 Hwy 52 N
-Building 003-2
-Rochester, MN 55901
+Height: 59 mm
+|
+Depth: 16.4 mm
+|
+Weight: 35 g
+Battery
+|
+Capacity: 350 mAh minimum / 380 mAh typical
+|
+Battery Type: Rechargeable Li-ion
+|
+Battery Charger Power Requirement: 100-240 VAC / 50-60Hz
+|
+Monitor Battery Charger Output: 6 VDC @ 200mA
+|
+Battery Voltage: 3.7 VDC
+|
+Operating Temperature: +10ºC to +45ºC / +50ºF to +86ºF
+|
+Storage Temperature: -10ºC to +30ºC / +14ºF to +86ºF
+|
+Operating Humidity: 30% to 75%
+|
+Storage Humidity: 30% to 75% (excluding condensation)
+ECG
+|
+Sample Rate: 256 Hz
+|
+Digital Resolution: 12 bit
+|
+Input Dynamic Range: ±10 mV
+|
+Input Offset Dynamic Range: ±300 mV
+Sample Rates
+|
+ECG: 256Hz
+|
+Impedance: 32Hz
+|
+Accelerometer: 10Hz
+Measurement Ranges
+|
+Heart Rate: 25 to 240 bpm (±2 bpm)
+|
+Impedance: 0 to 120 Ohms
+|
+Respiration: 0 to 30 breaths/min (±1 breaths/min)
+|
+Activity: ±2g range in x,y,z directions ( some measurements are not currently included in Preventice Services Reports)
+Data Storage
+|
+Capacity: 24-hour continuous
+|
+Type: Internal NAND Flash
+|
+Communications Type: Bluetooth between monitor and phone
+Company
+Support
+Legal
 Follow Us
-|
-|
-All contents © Copyright Preventice Technologies, Inc. 2018. All Rights Reserved.
+© 2019 Preventice Solutions, Inc. All Rights Reserved.
