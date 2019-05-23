@@ -1,5 +1,9 @@
-import constants,sklearn,os
-from sklearn.svm import SVC
+from sklearn.calibration import CalibratedClassifierCV
+
+import constants,os
+import sklearn
+from sklearn import datasets
+from sklearn.svm import SVC, LinearSVC
 from sklearn.model_selection import train_test_split
 from sklearn.externals import joblib
 from sklearn.feature_extraction.text import CountVectorizer
@@ -24,7 +28,7 @@ X_train, X_test, y_train, y_test = train_test_split(docs_to_train.data,
 
 count_vectorizer = CountVectorizer(stop_words='english')
 tfidf_transformer = TfidfTransformer(use_idf=True)
-classifier = SVC(kernel = 'linear', probability=True)
+classifier = SVC(kernel = 'linear', probability = True)
 
 text_clf = Pipeline([
         ('vect', count_vectorizer),

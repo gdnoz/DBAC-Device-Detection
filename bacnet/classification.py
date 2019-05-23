@@ -17,7 +17,7 @@ class BacnetClassification:
     def __init__(self, classification_threshold: float, scraping_threshold: float):
         from device_classification.text_classification import DeviceClassifier
         self.threshold = classification_threshold
-        self.scraping_threshold = scraping_threshold
+        self.text_scraper = RelevantTextScraper(scraping_threshold)
         self.classifier = DeviceClassifier(threshold=classification_threshold)
 
     def classify_bacnet_objects(self, queried_objects: str) -> BacnetClassificationResult:
@@ -27,9 +27,9 @@ class BacnetClassification:
         :return: BacnetClassificationResult containing predicted class and score.
         '''
         from web_scraping.scraping import RelevantTextScraper
-        from web_scraping.bing import BingSearchAPI
         from web_scraping.google import GoogleCustomSearchAPI
         from bacnet.utilities import BacnetUtilities
+        from web_scraping.bing import BingSearchAPI
 
         '''
         Preparing classification based on search engines.
@@ -56,11 +56,11 @@ class BacnetClassification:
         Classification based on Bing and Google
         '''
 
-        print("Classifying using Bing...")
+        print("Classifying using Bing and Google...")
 
         urls = BingSearchAPI.first_ten_results(search_terms,only_html=False)+GoogleCustomSearchAPI.search(search_terms,exclude_pdf=False)
 
-        text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls()
+        text_from_urls = self.text_scraper.extract_text(set(urls))
 
         classification_result = self.classifier.predict_text(text_from_urls)
 

@@ -48,7 +48,7 @@ def test_libsvm_svc(docs_to_train, X_train, X_test, y_train, y_test):
 def test_liblinear_svc(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
-    svc_classifier = CalibratedClassifierCV(LinearSVC(C=100000,tol=1e-6))
+    svc_classifier = CalibratedClassifierCV(LinearSVC())
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),

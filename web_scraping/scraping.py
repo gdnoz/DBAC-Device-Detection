@@ -6,12 +6,21 @@ class RelevantTextScraper:
     visited_urls = set()
     expansion_urls = set()
 
-    def __init__(self, urls: set, noise_threshold: float):
+    def __init__(self, noise_threshold: float):
         from device_classification.text_classification import DeviceClassifier
-        self.urls = urls
         self.classifier = DeviceClassifier(threshold=noise_threshold)
 
-    def extract_text_from_urls(self) -> str:
+    def extract_text(self, urls: set) -> str:
+        extracted_text = ""
+
+        if self.classifier.threshold > 0.0:
+            extracted_text += self._extract_text_from_urls_with_treshold(urls)
+        else:
+            extracted_text += self._extract_text_from_urls(urls)
+
+        return extracted_text
+
+    def _extract_text_from_urls(self,urls: set) -> str:
         """
         Extracts text from the urls.
         :return: All relevant texts combined into a string.
@@ -21,7 +30,7 @@ class RelevantTextScraper:
 
         relevant_text = ""
 
-        for url in self.urls:
+        for url in urls:
             if not (any(element in url for element in self.blacklist) or self._is_url_sub_domain_of_element_in_blacklist(url) or url in self.visited_urls):
                 try:
                     self.visited_urls.add(url)
@@ -29,7 +38,7 @@ class RelevantTextScraper:
                     scraped_text = WebScrapingUtilities.extract_text_from_url(url,timeout=2)
                     relevant_text += scraped_text
 
-                except Exception as ex:
+                except Exception:
                     if ".pdf" in url: #Failed because url linked to a pdf file. Try again, but handle the pdf case specifically.
                         print("Fetching .pdf")
                         scraped_text = WebScrapingUtilities.get_pdf_content_from_url(url)
@@ -53,7 +62,7 @@ class RelevantTextScraper:
 
         return relevant_text
 
-    def extract_text_from_urls_with_treshold(self) -> str:
+    def _extract_text_from_urls_with_treshold(self, urls: set) -> str:
         """
         Extracts text from the urls. Text is discarded if it is irrelevant.
         :return: All relevant texts combined into a string.
@@ -63,7 +72,7 @@ class RelevantTextScraper:
 
         relevant_text = ""
 
-        for url in self.urls:
+        for url in urls:
             if not (any(element in url for element in self.blacklist) or self._is_url_sub_domain_of_element_in_blacklist(url) or url in self.visited_urls):
                 try:
                     self.visited_urls.add(url)
@@ -75,7 +84,7 @@ class RelevantTextScraper:
                     if classification.predicted_class != "":
                         relevant_text += scraped_text
 
-                except Exception as ex:
+                except Exception:
                     if ".pdf" in url: #Failed because url linked to a pdf file. Try again, but handle the pdf case specifically.
                         print("Fetching .pdf")
                         scraped_text = WebScrapingUtilities.get_pdf_content_from_url(url)
