@@ -2,13 +2,13 @@
 
 Speaker:
 AmazonEchoDot,https://www.amazon.com/All-new-Echo-Dot-3rd-Gen/dp/B0792KTHKJ
-//AmazonEchoDot2,https://www.amazon.co.uk/Amazon-Echo-Dot-2nd-Gen/dp/B01DFKBL68
+AmazonEchoDot2,https://www.amazon.co.uk/Amazon-Echo-Dot-2nd-Gen/dp/B01DFKBL68
 AmazonTap,https://www.amazon.com/dp/B01BH83OOM
 GoogleHome,https://store.google.com/us/product/google_home?hl=en-US
 GoogleHomeMini,https://store.google.com/us/product/google_home_mini?hl=en-US
 Invoke,https://www.harmankardon.com/invoke.html
 SonosOne,https://www.sonos.com/en/shop/one.html
-//SonosOne2,https://www.amazon.com/All-new-Sonos-One-Streaming-Incredible/dp/B074XLMYY5
+SonosOne2,https://www.amazon.com/All-new-Sonos-One-Streaming-Incredible/dp/B074XLMYY5
 SonosPlayOne,https://www.amazon.com/Sonos-PLAY-Wireless-Speakers-Streaming/dp/B00V9Z2VXE?ref_=fsclp_pl_dp_6
 SonosBeam,https://www.sonos.com/en/shop/beam.html
 SonosBeam2,https://www.amazon.com/All-new-Sonos-Beam-built-Streaming/dp/B07D4734HR

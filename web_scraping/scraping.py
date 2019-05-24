@@ -83,6 +83,7 @@ class RelevantTextScraper:
 
                     if classification.predicted_class != "":
                         relevant_text += scraped_text
+                        #print(str(classification.prediction_probability))
 
                 except Exception:
                     if ".pdf" in url: #Failed because url linked to a pdf file. Try again, but handle the pdf case specifically.
