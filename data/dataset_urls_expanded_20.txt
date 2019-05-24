@@ -1,17 +1,11 @@
 //<- This ignores the line
 
 Speaker:
-AmazonEchoDot,https://www.amazon.com/All-new-Echo-Dot-3rd-Gen/dp/B0792KTHKJ
-AmazonEchoDot2,https://www.amazon.co.uk/Amazon-Echo-Dot-2nd-Gen/dp/B01DFKBL68
-AmazonTap,https://www.amazon.com/dp/B01BH83OOM
 GoogleHome,https://store.google.com/us/product/google_home?hl=en-US
 GoogleHomeMini,https://store.google.com/us/product/google_home_mini?hl=en-US
 Invoke,https://www.harmankardon.com/invoke.html
 SonosOne,https://www.sonos.com/en/shop/one.html
-SonosOne2,https://www.amazon.com/All-new-Sonos-One-Streaming-Incredible/dp/B074XLMYY5
-SonosPlayOne,https://www.amazon.com/Sonos-PLAY-Wireless-Speakers-Streaming/dp/B00V9Z2VXE?ref_=fsclp_pl_dp_6
 SonosBeam,https://www.sonos.com/en/shop/beam.html
-SonosBeam2,https://www.amazon.com/All-new-Sonos-Beam-built-Streaming/dp/B07D4734HR
 GalaxyHome,https://www.samsung.com/us/explore/galaxy-home/
 AppleHomepod,https://www.apple.com/homepod/
 AppleHomepod2,https://www.apple.com/shop/buy-homepod/homepod
@@ -19,28 +13,19 @@ JblLink,https://www.jbl.com/voice-activated-speaker/JBL+LINK+20.html
 ZoloMojo,https://zoloaudio.com/pages/mojo
 
 Doorbell:
-RingVideoDoorbell,https://www.amazon.com/Ring-Doorbell-existing-doorbell-required/dp/B01DM6BDA4
 RingDoorViewCam,https://shop.ring.com/pages/door-view-cam
 RingDoorbell2,https://shop.ring.com/products/video-doorbell-2
 SkyBellWi-FiVideoDoorbell,http://www.skybell.com/product/skybell-video-doorbell-hd/
-SkyBell2,https://www.amazon.com/SkyBell-SH02300SL-Silver-Video-Doorbell/dp/B01DLLU13U
 VivintDoorbellCamera,https://www.vivint.com/products/doorbell-camera
 VTechIS741,https://www.vtechphones.com/products/video-doorbell-system
 ZmodoGreet,https://www.zmodo.com/greet-720p-wifi-doorbell
-ZmodoGreet2,https://www.amazon.com/Zmodo-Greet-Smart-Video-Doorbell/dp/B014A6M4ZI
 iSeeBellDoorbell,https://www.iseebell.com/video-doorbell
-iSeeDoorbell2,https://www.amazon.com/iseeBell-Enabled-Doorbell-Two-way-Hardwired/dp/B01MYXF7P3
 RemoBell,https://remoplus.co/products/remobell_wireless_wifi_video_doorbell
-RemoBell2,https://www.amazon.com/RemoBell-Wireless-Doorbell-Battery-Powered/dp/B018IZGXCW
 NestDoorbell,https://nest.com/dk/doorbell/nest-hello/overview/
 NestDoorbell2,https://store.google.com/gb/product/nest_hello_doorbell
 Gamkov,http://www.gamkovonline.com/products/detail/21584
-SimpliSafe,https://simplisafe.com/simplicam-security-camera
-WiseNet,https://www.amazon.com/Wisenet-Security-Recognition-Hard-Wiring-Required/dp/B0771JVG63
 ADTDoorbell,https://www.adt.com/doorbell-camera
 NuToneKnock,http://www.nutone.com/nutoneknock
-iSmart,https://ismartsafe.com/video-doorbell/
-NightOwl,https://www.amazon.com/Night-Owl-Security-Doorbell-WDB2-32SD/dp/B07G1Y256J
 
 Camera:
 NestCam,https://nest.com/cameras/nest-cam-indoor/overview/
@@ -51,7 +36,6 @@ MaximusSmartSecurityLight,https://getkuna.com/pages/smart-security-light
 MaximusCameraFloodLight,https://getkuna.com/pages/camera-floodlight
 ArloUltra,https://arlo.com/nz/?cid=eml_000135
 WansViewQ3S,http://www.wansview.com/cn/proinfo.aspx?proid=11&categoryid=4&aids=2
-WansViewQ3S2,https://www.amazon.com/Wansview-Wireless-Security-Surveillance-Monitor/dp/B075K89NTR/ref=sr_1_1?keywords=wansview&qid=1553159453&s=electronics&sr=1-1
 WansviewK3,https://www.amazon.com/Wansview-Wireless-Security-Surveillance-Audio-K3/dp/B075KGNB58/ref=sr_1_2?keywords=wansview&qid=1553159453&s=electronics&sr=1-2
 ReoLink1,https://reolink.com/product/rlc-422w/
 D-link,http://us.dlink.com/products/connect/full-hd-180-degree-wi-fi-camera/
@@ -61,7 +45,6 @@ SwannCamera,https://www.swann.com/us/swwhd-intcam
 
 HouseEnvironmentMonitor:
 uHoo,https://uhooair.com/product/uhoo/
-uHoo2,https://www.amazon.com/UHOO-Indoor-Air-Quality-Sensor/dp/B076PV9X99
 airthinxIAQ,https://airthinx.io/solution/
 airthinkxIAQ2,https://www.tempcon.co.uk/shop/airthinx-air-quality-monitor
 Foobot,https://foobot.io/features/
@@ -69,12 +52,10 @@ NestLearningThermostat,https://nest.com/ca/thermostats/nest-learning-thermostat/
 NestLearningThermostat2,https://store.nest.com/product/thermostat/T3007ES
 NestThermostatE,https://nest.com/thermostats/nest-thermostat-e/overview/
 NestThermostatE2,https://store.nest.com/product/thermostat-e/T4000ES
-AcerAirMonitor,https://www.amazon.com/Acer-BYOC-Air-Monitor/dp/B06Y2F9SXK
 iftttAcerAir,https://ifttt.com/Air_Monitor
 EcoBee3,https://www.ecobee.com/ecobee3/
 EcoBee4,https://www.ecobee.com/ecobee4/
 LyricT5,https://www.honeywellhome.com/statichtml/lyric-t5-wi-fi.html
-LyricT52,https://www.amazon.com/Honeywell-RCHT8610WF2006-Programmable-Touchscreen-Thermostat/dp/B01LTHM8LG
 SafeSound,https://www.firstalert.com/product/safe-sound/
 
 HealthMonitor:
@@ -98,30 +79,21 @@ EmfitSleep,https://www.emfit.com/active-life-sleep-and-recovery
 
 MediaPlayer:
 Chromecast,https://store.google.com/us/product/chromecast?hl=en-US
-AmazonFireTV4K,https://www.amazon.com/Introducing-Fire-TV-Stick-4K-with-All-New-Alexa-Voice-Remote/dp/B079QHML21
-AmazonFireTVCube,https://www.amazon.com/Fire-TV-Cube-hands-free-with-Alexa-and-4K-Ultra-HD-and-All-New-Alexa-Voice-Remote/dp/B0791T9CV7
 RokuStreamingStick,https://www.roku.com/en-gb/products/streaming-stick-plus
 RokuExpress,https://www.roku.com/en-gb/products/roku-express
-RokuUltra,https://www.amazon.com/dp/B01M05030B/ref=emc_b_5_t
 AppleTV4K,https://www.apple.com/lae/apple-tv-4k/
 NvidiaShieldTV,https://www.nvidia.com/en-us/shield/
-NvidiaShieldTV2,https://www.amazon.com/NVIDIA-SHIELD-Gaming-Streaming-GeForce/dp/B01N1NT9Y6
 SamsungAllshareCast,https://www.samsung.com/us/2012-allshare-play/
 H3Espresso,https://uk.humaxdigital.com/product/h3/
-WDTV,https://www.amazon.com/Media-Player-Wi-fi-1080p-Version/dp/B005KOZNBW/ref=pd_sbs_504_3/138-3231370-4992227?_encoding=UTF8&pd_rd_i=B005KOZNBW&pd_rd_r=befe920a-4be1-11e9-8d39-317dbb9bcff7&pd_rd_w=cyQik&pd_rd_wg=N7J9e&pf_rd_p=588939de-d3f8-42f1-a3d8-d556eae5797d&pf_rd_r=RDS70PK31RM6CMHQ5B5R&psc=1&refRID=RDS70PK31RM6CMHQ5B5R
-Acuvar,https://www.amazon.com/Acuvar-Wireless-WiFi-Display-dongle/dp/B078RLGRB6
 ScreenBeam,https://www.screenbeam.com/products/screenbeam-mini2/
 SonySmartTvArticle,https://www.sony.com/electronics/smart-tv-features-apps-and-internet
-Seguro,https://www.amazon.co.uk/SEGURO-S2_Amlogic-S905X-Android-Player/dp/B01N2YN0R3
 SonyBDPs3700,https://www.sony.com/electronics/blu-ray-disc-players/bdp-s3700
-SonySMPN200,https://www.amazon.com/Sony-SMP-N200-Streaming-Media-Player/dp/B005MR6CNK
 
 Light:
 NanoleafAuroraLighting,https://nanoleaf.me/en/consumer-led-lighting/products/smarter-series/nanoleaf-light-panels-smarter-kit/
 HiveActiveLightStarterKit,https://www.hivehome.com/products/hive-active-light-dimmable-warm-white
 TP-LinkLB130,https://www.tp-link.com/uk/products/details/LB130.html
 Eveflare,https://www.evehome.com/en/eve-flare
-SengLed,https://us.sengled.com/pages/smart-led
 IkeaTradfri,https://www.ikea.com/gb/en/products/lighting/smart-lighting/tr%C3%A5dfri-dimming-kit-white-spectrum-grey-white-art-70338932/
 CbyGELife,https://www.cbyge.com/pages/pdp-life
 LumosSmartBulb,https://www.eufylife.com/uk/products/variant/lumos-smart-bulb-white/T1011321
@@ -129,7 +101,6 @@ Geeni,https://mygeeni.com/collections/lighting/products/lux-800-smart-wi-fi-led-
 CreeConnected,https://creebulb.com/60-watt-replacement-connected-daylight
 KasaSmartBulbs,https://www.kasasmart.com/us/products/smart-lighting
 KasaSmartBulbKL130,https://www.kasasmart.com/us/products/smart-lighting/kasa-smart-wi-fi-light-bulb-multicolor-kl130
-Berennis,https://www.amazon.com/BERENNIS-Dimmable-Multicolored-Required-Compatible/dp/B07GGWNQT7
 SengLedElement,https://eu.sengled.com/en/products/security/element-plus/index.html
 EasybulbOverview,http://easybulb.com/en/
 EasybulbPlus,http://shop.easybulb.com/easybulb-plus-rgbw-9w-home-automation-light-bulb-iphone-and-android-controlled/
@@ -147,8 +118,6 @@ Thustar HomeAlarm,https://home-security-alarm.systemalarm.net/thustar-wireless-h
 KeruiHomeIntruder,http://www.keruistore.com/KERUI-W193-2G-3G-WiFi-PSTN-Wireless-Home-Intruder-Alarm-System-APP-Control-alarm.php
 Smanos X500,https://www.smanos.com/X500
 BlaupunktQ3200,https://www.blaupunkt.com/en/nc/products/home-security/products/single/15137/
-Blink,https://www.amazon.com/Blink-Home-Security-Detection-Included/dp/B0172DDZ5E
-BigEasy,https://www.bigeasysecurity.com/collections/wireless-alarm-system-wireless-home-security-systems/products/smart-wifi-alarm-package
 SkylinkAlarm,http://www.skylinkstore.com/store/us/skylinknet-alarm-system-starter-kit-1.html
 SkylinkOverview,http://www.skylinkhome.com/products/skylinknet-alarm-systems-kits
 GlobalGadgets,https://global-gadgets.co.uk/pd-smart-wifi-house-alarm-46-c.asp
@@ -181,16 +150,12 @@ CurrantSmartPlug,https://www.currant.com/smart-outlet
 TPLinkHS300,https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-wi-fi-power-strip-hs300
 AukeyDualPlug,https://www.aukey.com/products/dual-outlet-smart-plug-sh-pa3
 iDevicesSwitch,https://store.idevicesinc.com/idevices-switch/
-AmazonSmartPlug,https://www.amazon.com/Amazon-Smart-Plug-works-Alexa/dp/B01MZEEFNX
 GeeniSpot,https://mygeeni.com/collections/power/products/spot-wi-fi-smart-plug
 GeeniSurge,https://mygeeni.com/collections/power/products/geeni-gn-sw003-199-surge-smart-protector-white
 KasaSmartPlug,https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-wifi-power-outlet-kp200
 KasaSmartOutdoor,https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-wifi-outdoor-plug-kp400
 WifiPlug,https://wifiplug.co.uk/product/wifiplug-home-ios-android-compatible-fully-loaded-smart-plug/
-Aneken,https://www.amazon.com/Aneken-Function-Electrical-Compatible-Assistant/dp/B07BDDKPB7
-TeckinPlug,https://www.amazon.co.uk/TECKIN-Outlet-Wireless-Control-Required/dp/B07D7C74RQ
 SupernightPlug,https://supernight.cc/products/hom0031
-DilisensSmartPlug,https://www.amazon.com/DILISENS-Smart-Wi-Fi-Sockets-Outlets/dp/B07B4CNJKG
 GoSundSmartPlug,https://www.gosund.store/products/mini-smart-wifi-plug
 
 IndustryController:
