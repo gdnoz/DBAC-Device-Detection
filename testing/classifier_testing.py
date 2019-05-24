@@ -215,6 +215,3 @@ if __name__ == "__main__":
     from device_classification.utilities import run_tests_in_module,run_tests_in_module_with_kfold_cross_validation
 
     run_tests_in_module_with_kfold_cross_validation(__name__)
-
-
-

@@ -1,12 +1,14 @@
+//<- This ignores the line
+
 Speaker:
 AmazonEchoDot,https://www.amazon.com/All-new-Echo-Dot-3rd-Gen/dp/B0792KTHKJ
-AmazonEchoDot2,https://www.amazon.co.uk/Amazon-Echo-Dot-2nd-Gen/dp/B01DFKBL68
+//AmazonEchoDot2,https://www.amazon.co.uk/Amazon-Echo-Dot-2nd-Gen/dp/B01DFKBL68
 AmazonTap,https://www.amazon.com/dp/B01BH83OOM
 GoogleHome,https://store.google.com/us/product/google_home?hl=en-US
 GoogleHomeMini,https://store.google.com/us/product/google_home_mini?hl=en-US
 Invoke,https://www.harmankardon.com/invoke.html
 SonosOne,https://www.sonos.com/en/shop/one.html
-SonosOne2,https://www.amazon.com/All-new-Sonos-One-Streaming-Incredible/dp/B074XLMYY5
+//SonosOne2,https://www.amazon.com/All-new-Sonos-One-Streaming-Incredible/dp/B074XLMYY5
 SonosPlayOne,https://www.amazon.com/Sonos-PLAY-Wireless-Speakers-Streaming/dp/B00V9Z2VXE?ref_=fsclp_pl_dp_6
 SonosBeam,https://www.sonos.com/en/shop/beam.html
 SonosBeam2,https://www.amazon.com/All-new-Sonos-Beam-built-Streaming/dp/B07D4734HR
@@ -17,8 +19,9 @@ JblLink,https://www.jbl.com/voice-activated-speaker/JBL+LINK+20.html
 ZoloMojo,https://zoloaudio.com/pages/mojo
 
 Doorbell:
-Ring-Doorbell-existing-doorbell-required/dp/B01DM6BDA4
+RingVideoDoorbell,https://www.amazon.com/Ring-Doorbell-existing-doorbell-required/dp/B01DM6BDA4
 RingDoorViewCam,https://shop.ring.com/pages/door-view-cam
+RingDoorbell2,https://shop.ring.com/products/video-doorbell-2
 SkyBellWi-FiVideoDoorbell,http://www.skybell.com/product/skybell-video-doorbell-hd/
 SkyBell2,https://www.amazon.com/SkyBell-SH02300SL-Silver-Video-Doorbell/dp/B01DLLU13U
 VivintDoorbellCamera,https://www.vivint.com/products/doorbell-camera
@@ -35,6 +38,9 @@ Gamkov,http://www.gamkovonline.com/products/detail/21584
 SimpliSafe,https://simplisafe.com/simplicam-security-camera
 WiseNet,https://www.amazon.com/Wisenet-Security-Recognition-Hard-Wiring-Required/dp/B0771JVG63
 ADTDoorbell,https://www.adt.com/doorbell-camera
+NuToneKnock,http://www.nutone.com/nutoneknock
+iSmart,https://ismartsafe.com/video-doorbell/
+NightOwl,https://www.amazon.com/Night-Owl-Security-Doorbell-WDB2-32SD/dp/B07G1Y256J
 
 Camera:
 NestCam,https://nest.com/cameras/nest-cam-indoor/overview/
@@ -48,7 +54,6 @@ WansViewQ3S,http://www.wansview.com/cn/proinfo.aspx?proid=11&categoryid=4&aids=2
 WansViewQ3S2,https://www.amazon.com/Wansview-Wireless-Security-Surveillance-Monitor/dp/B075K89NTR/ref=sr_1_1?keywords=wansview&qid=1553159453&s=electronics&sr=1-1
 WansviewK3,https://www.amazon.com/Wansview-Wireless-Security-Surveillance-Audio-K3/dp/B075KGNB58/ref=sr_1_2?keywords=wansview&qid=1553159453&s=electronics&sr=1-2
 ReoLink1,https://reolink.com/product/rlc-422w/
-ReoLink
 D-link,http://us.dlink.com/products/connect/full-hd-180-degree-wi-fi-camera/
 ReoLink,http://us.dlink.com/home-solutions/wifi-camera/
 UbiquitiCamera,https://www.ui.com/unifi-video/unifi-video-camera-g3-micro/
@@ -156,7 +161,6 @@ HiveMotionSensor,https://www.hivehome.com/products/hive-motion-sensor
 EveMotionSensor,https://www.evehome.com/en/eve-motion
 FibaroMotionSensor,https://www.fibaro.com/en/products/motion-sensor/
 DLinkWifiMotionSensor,http://us.dlink.com/products/connected-home/wi-fi-motion-sensor/
-YaleMotionSensor
 Honeywell5800PIR,https://www.security.honeywell.com/product-repository/5800pir-series
 Honeywell5800PIROD,https://www.security.honeywell.com/product-repository/5800pir-od
 GeeniMotionSensor,https://mygeeni.com/collections/smart-sensors/products/geeni-wi-fi-smart-motion-sensor-no-hub-required-white
@@ -165,6 +169,9 @@ Nedis,https://www.nedis.com/product/wifi-smart-motion-sensor-wired-indoor
 Proteus,https://proteussensor.com/wi-fi-motion-sensor.html
 UbiquitiMotionSensor,https://www.wifi-stock.com/details/ubiquiti-mfi_msw.html
 XfinityMotionSensor,https://www.xfinity.com/learn/home-security/devices/motion-sensor
+connectSense,https://www.connectsense.com/wireless-motion-sensor
+HueMotionSensor,https://www2.meethue.com/en-us/p/hue-motion-sensor/046677473389
+FosmonMotionSensor,https://www.fosmon.com/wavelink/wavelink-motion-sensor-for-wireless-motion-sensor-door-chime-white-1-pack
 
 ElectricControl:
 SmartThingsOutlet,https://www.smartthings.com/products/smartthings-outlet
@@ -182,20 +189,15 @@ KasaSmartOutdoor,https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-wi
 WifiPlug,https://wifiplug.co.uk/product/wifiplug-home-ios-android-compatible-fully-loaded-smart-plug/
 Aneken,https://www.amazon.com/Aneken-Function-Electrical-Compatible-Assistant/dp/B07BDDKPB7
 TeckinPlug,https://www.amazon.co.uk/TECKIN-Outlet-Wireless-Control-Required/dp/B07D7C74RQ
+SupernightPlug,https://supernight.cc/products/hom0031
+DilisensSmartPlug,https://www.amazon.com/DILISENS-Smart-Wi-Fi-Sockets-Outlets/dp/B07B4CNJKG
+GoSundSmartPlug,https://www.gosund.store/products/mini-smart-wifi-plug
 
-IndustryLightControl:
-GentecK6,http://www.gentec.ca/eng/products/lighting-control-panel-k6-series-bacnet-ip-or-mstp-0-10v-dimming.asp
-CLCDIM4,https://www.deltacontrols.com/products/lighting-control/distributed-lighting-control/clc-dim4-dimmable-switches
-MachProLight,https://www.reliablecontrols.com/products/controllers/MPL/
-DLCP,https://www.deltacontrols.com/products/lighting-control/centralized-lighting-control/dlc-p
-DLCG,https://www.deltacontrols.com/products/lighting-control/centralized-lighting-control/dlc-g1212
-OptumLight,https://optumlighting.com/controls/
+IndustryController:
 EclypsenLight,https://www.distech-controls.com/en/us/products/eclypse/eclypse-nlight-solution/related-products/eclypse-nlight-solution/
 LDALIPLC,https://www.loytec.com/products/dali/ldali-plc4
 ILCApprentice,https://www.ilc-usa.com/apprentice-3-lighting-control-panel
 Eaton2000E,https://www.eaton.com/us/en-us/catalog/low-voltage-power-distribution-controls-systems/pow-r-command-2000e-controller.html
-
-IndustryRoomController:
 MerlinNX,https://www.centraline.com/enGB/products-docu/special/merlin-nx.html
 T305,https://www.deltacontrols.com/products/facilities-management/local-user-interface/dnt-t305
 ExcelWebII,https://productcatalog.honeywellhome.com/europe/ecatdata/pg_gr-excelwebii.html

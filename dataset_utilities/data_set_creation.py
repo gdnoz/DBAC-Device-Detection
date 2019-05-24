@@ -27,6 +27,10 @@ class DataSetCreator:
             category_path = ""
 
             for line in f:
+                lol = line[:2]
+                if line[:2] == "//": #Ignore Comments
+                    continue
+
                 stripped_line = line.rstrip()
                 if self._category_regex.match(stripped_line):
                     category = stripped_line[:-1] #Remove last element

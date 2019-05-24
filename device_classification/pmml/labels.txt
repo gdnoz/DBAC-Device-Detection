@@ -4,9 +4,8 @@ Doorbell
 ElectricControl
 HealthMonitor
 HouseEnvironmentMonitor
+IndustryController
 IndustryEnvironmentSensor
-IndustryLightControl
-IndustryRoomController
 Light
 MediaPlayer
 MotionSensor

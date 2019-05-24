@@ -30,8 +30,11 @@ class DeviceClassifier:
         :param text: Text to be classified.
         :return: (Class of text, hyperplane distance)
         """
-        class_index = self.pipeline.predict([text])[0]
-        prob = self.pipeline.predict_proba([text])[0][class_index]
+        predict_proba = self.pipeline.predict_proba([text])[0]
+
+        import operator
+        class_index, prob = max(enumerate(predict_proba), key=operator.itemgetter(1))
+
 
         if prob < self.threshold:
             return DeviceClassifier.DeviceClassificationResult("",0.0)

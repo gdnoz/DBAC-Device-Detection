@@ -97,8 +97,8 @@ def tune_xgboost():
     docs_to_train = load_files(dataset_path, description=None, categories=categories,
                                load_content=True, encoding='utf-8', shuffle=True, random_state=42)
 
-    params = {'clf__n_estimators': range(10, 100, 10), 'clf__max_depth':
-        list(range(5, 11, 1))}
+    params = {'clf__n_estimators': range(10, 200, 10), 'clf__max_depth':
+        list(range(1, 11, 1))}
 
     gs = GridSearchCV(mlp_pipeline,params, cv=8,n_jobs=-1, scoring='accuracy')
     gs.fit(docs_to_train.data, docs_to_train.target)
@@ -165,7 +165,7 @@ def plot_grid_search(cv_results, grid_param_1, grid_param_2, name_param_1, name_
     plt.savefig("classifier_pngs/"+figname)
 
 if __name__ == "__main__":
-    tune_linear_svc()
+    #tune_linear_svc()
     #tune_mlp()
     #tune_random_forrest()
-    #tune_xgboost()
+    tune_xgboost()

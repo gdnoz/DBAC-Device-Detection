@@ -17,7 +17,7 @@ X
 {}
 Add to Cart
 View Details
-com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO@6f1696bb(com.demandware.beehive.orm.internal.state2.RelationalObjectInstanceState@1735273[com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO) [d0523091338d7bf9d51a415b3f]])
+com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO@6f1696bb(com.demandware.beehive.orm.internal.state2.RelationalObjectInstanceState@389a587f[com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO) [d0523091338d7bf9d51a415b3f]])
 JBL Link 20
 Alternate Views
 Images
@@ -216,7 +216,7 @@ Parts and accessories
 JBL Link 20 is rated
 3.7 out of
 5 by
-142.
+143.
 Rated 5 out of
 5
 by
@@ -252,10 +252,10 @@ Michael1000 from
 Great features!
 Looking forward to taking with me on my vacation with the family.
 Date published: 2019-03-25
-y_2019, m_5, d_22, h_1
+y_2019, m_5, d_23, h_2
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
-co_hasreviews, tv_0, tr_142
+co_hasreviews, tv_0, tr_143
 loc_en_US, sid_jbllink20, prod, sort_[SortEntry(order=RATING, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_jbl
 I've had my jbl link 20 for 2 weeks and it just stopped working right in the middle of playing music now the 4 lights at the top keep flashing and it won't connect, please help!

@@ -56,12 +56,31 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
     print("No device_classification:    " + str(float(noClassifications/numberOfTests)))
     print("Average score:               " + str(float(scoreSum/numberOfTests)))
 
+def single_test(mud_url: str,threshold: float, scraping_threshold: float, correctClassification: str):
+    mud_classifier = MudClassification(threshold, scraping_threshold)
+
+    mud_file_from_web = MUDUtilities.get_mud_file(mud_url)
+
+    classification_result = mud_classifier.classify_mud_contents(mud_file_from_web)
+
+    classification = classification_result.predicted_class
+    score = classification_result.score
+
+    if classification == correctClassification:
+        print(mud_url + ": " + "pass" + " (" + classification + ", " + str(score) + ")")
+    else:
+        print(mud_url + ": " + "fail" + " (" + classification + ", " + str(score) + ")")
 
 if __name__ == "__main__":
     #best so far:
+    single_test("https://iotanalytics.unsw.edu.au/mud/tribyspeakerMud.json",0.2,0.1,"Speaker")
+    single_test("https://iotanalytics.unsw.edu.au/mud/belkincameraMud.json", 0.2, 0.1, "Speaker")
+    single_test("https://iotanalytics.unsw.edu.au/mud/samsungsmartcamMud.json", 0.2, 0.1, "Speaker")
+    single_test("https://iotanalytics.unsw.edu.au/mud/wemomotionMud.json", 0.2, 0.1, "Speaker")
+    single_test("https://iotanalytics.unsw.edu.au/mud/withingsbabymonitorMud.json", 0.2, 0.1, "Speaker")
 
-    #synthetic_test_set_test(0.2)
-    synthetic_test_set_test(0.2,0.1)
+    #synthetic_test_set_test(0.2,0.0)
+    #synthetic_test_set_test(0.2,0.1)
     #local_test(0.2,0.1)
 
     #for c_thresh in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]:
