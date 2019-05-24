@@ -67,4 +67,3 @@ if __name__ == "__main__":
     ds_creator.create_local_data_set(constants.DATA_SET_PATH)
 
     print(dataset_utilities.data_set_proportionality_check.data_set_proportionality_check())
-

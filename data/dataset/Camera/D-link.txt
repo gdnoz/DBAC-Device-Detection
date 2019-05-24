@@ -1,0 +1,276 @@
+Full HD 180-Degree Wi-Fi Camera DCS-2630L | D-Link
+>
+> Full HD 180-Degree Wi-Fi Camera
+Full HD 180-Degree Wi-Fi Camera
+DCS-2630L
+Share
+View more with less.
+Why limit yourself? See more of your home and never worry about what's happening off-camera.
+Unique de-warping technology.
+Maximizes the video quality with less distortion - letting you see more of your home at a glance.
+Home security in high definition.
+Crisp 1080p HD video lets you see more of your favorite faces and places - it's home security with an eye for detail.
+Round-the-clock peace of mind.
+Peace of mind shouldn't end when the sun goes down. With 16 ft night vision, you'll never miss a thing.
+Be there. Even when you're not.
+Check in on the people and places you love whenever you'd like with our free mydlink app
+Sound & motion detection.
+You'll know as it happens with smart alerts sent to your phone.
+Your browser does not support HTML5 video.
+2-way audio.
+Respond to what you see with a built-in mic and speaker.
+Digital pinch-zoom.
+Take a closer look at your spaces.
+Your browser does not support HTML5 video.
+Responsive recording.
+Your camera begins recording automatically to a microSD card when it senses changes in your home.
+Easy to set up. Even easier to use.
+Get your Wi-Fi Camera set up in minutes, and place it just about anywhere in your home. The free mydlink® app is available for iOS, Android devices, and Windows Phones.
+Free app for iOS, Android and Windows
+Why you want it.
+Built-in microphone
+Picks up on loud noises, like breaking glass, and automatically sends alert notifications.
+Light sensor
+Determines when IR LEDs are needed to see in the dark.
+Full HD sensor
+Features a 1/3", 3-megapixel sensor to deliver images in sharp, rich detail.
+Glass camera lens
+Coupled with de-warping technology, provides a clear, ultra-wide 180º field of view.
+6 Infrared LEDs
+With IR-cut filter provide a bright, clear image even in complete darkness.
+2 PIR sensors
+Detect infrared radiation when a person or animal passes for enhanced motion detection.
+360º camera rotation
+Ensures your video is perfectly level in any position.
+11AC Dual Band Wi-Fi
+Means a reliable Wi-Fi connection for 1080p video streaming and recording.
+Simultaneous H.264/MJPEG compression
+Conserves storage space while limiting impact on your network performance.
+Micro SD/SDXC card slot
+Lets you record a week of continuous clip recordings in 1080p* - up to 128GB
+Metal stand
+Wall mountable with flexible tilt for the perfect angle.
+* Based on 1 camera at H.264 video compression, medium video quality and 5 FPS
+**
+recommended.
+High quality speaker
+Hear what's happening at home and respond to what you see using your mobile device.
+Status LED
+Lets you know what your camera’s doing.
+WPS enabled
+Quick and easy setup with a push of a button.
+Micro USB powered
+Power using a standard electrical outlet or even a portable USB battery.
+How does it compare?
+D-Link
+Google/Nest
+Canary
+Samsung
+Belkin
+Model
+Full HD 180-Degree Wi-Fi Camera
+DCS-2630L
+NestCam
+NC1102ES*
+Smart Home Security System
+CAN100USBK*
+SmartCam
+SNH-P6410BN*
+NetCam HD+
+F7D7606*
+Field of View
+180° (D)
+130° (D)
+147° (D)
+128° (D)
+95° (D)
+Resolution
+1080p
+1080p
+1080p
+1080p
+720p
+Night Vision
+16 ft
+20 ft
+25 ft
+16 ft
+26 ft
+Detection Alerts
+Sound & Motion
+Motion Only
+Motion Only
+Motion Only
+Motion Only
+Audio
+2-Way
+2-Way
+1-Way
+2-Way
+2-Way
+Digital Zoom
+8x
+8x
+3x
+4x
+•
+Wireless Connectivity
+802.11ac (compatible with 802.11n/g)
+802.11n
+802.11n
+802.11ac (compatible with 802.11n/g)
+802.11n
+Local Recording
+YesMicroSD(up to 128GB) or Camera Recorder (DNR-202L) - optional
+•
+•
+YesMicroSD (up to 64GB)
+•
+Cloud Recording
+•
+Yes(up to $300/yr)
+Yes(up to $149.50/yr)
+•
+Yes(up to $119/yr)
+Home Environment Sensors
+•
+•
+Yes
+•
+•
+App Support
+iOS, Android, & Windows Phones
+iOS & Android Only
+iOS & Android Only
+iOS & Android Only
+iOS & Android Only
+*Based on information from
+,
+,
+and
+as of 09.03.15
+D-Link or Nest Cam? Get the facts
+(formerly Dropcam)
+Build your own security system.
+Easily record video footage from the Full HD 180-Degree Wi-Fi camera and up to 3 additional D-Link Wi-Fi Cameras to a USB Hard Drive.
+Features
+1080p Full HD
+180 Wide Eye lens
+2-Way Audio
+Audio Detection Alerting
+Enhanced Motion (PIR)
+Motion Detection Alerting
+Night Vision (IR LEDs)
+On Camera Recording
+Setting
+Indoor
+mydlink
+mydlink +
+mydlink Lite
+Technical Specifications
+Camera Hardware Profile
+1/3" 3-megapixel progressive CMOS sensor
+16 ft night vision with infrared LEDs
+Minimum illumination: 0 lux with IR LEDs on
+Built-in microphone and speaker
+8x digital zoom
+Focal length: 1.72 mm
+Aperture: F2.0
+Angle of view:
+(H) 182°
+(V) 112°
+(D) 182°
+External Device Interfaces
+802.11ac wireless
+Power LED
+Reset button
+WPS button
+microUSB power connector
+microSD card slot
+Image Features
+Adjustable image size, quality, frame rate and bit rate
+Adjustable brightness, saturation, contrast, sharpness and hue
+Configurable motion and sound detection
+Time stamp and text overlays
+Flip & mirror
+Anti-flicker (on/off)
+Video Compression
+Simultaneous H.264/MJPEG format video compression
+JPEG for still images
+Video Resolution
+1920 x 1080 at up to 30 fps
+1280 x 720 at up to 30 fps
+640 x 352 up to 30 fps
+320 x 176 up to 30 fps
+Audio Support
+AAC
+PCM
+ADPCM
+Mobile Support
+mydlink Lite app available for iOS 7 and above, Android devices4.0 and above, and Windows Phones
+mydlink + app available for iOS 7 and above, and Android devices 2.1 and above
+Network
+Network Protocols
+IPv4, ARP, TCP, UDP, ICMP
+DHCP Client
+NTP Client (D-Link)
+DNS Client
+DDNS Client (D-Link)
+SMTP Client
+FTP Client
+HTTP Server
+Samba Client
+PPPoE
+UPnP port forwarding
+LLTD
+HTTPs for configuration
+Bonjour
+Security
+Administrator and user group protection
+Password authentication
+HTTP and RTSP digest encryption
+Physical
+Dimensions (H x W x D)
+3.37 x 3.37 x 5.53 inches
+Weight
+0.76 lbs (camera only)
+Power Input
+5 V DC / 1.5 A, 50/60 Hz through power adapter
+Temperature
+Operating: 0 to 40 °C (32 to 104 °F)
+Storage: -20 to 70 °C (-4 to 158 °F)
+Humidity
+Operating: 20% to 80% non-condensing
+Storage: 5% to 95% non-condensing
+Certifications
+CE
+CE LVD
+FCC Class B
+ICES
+Meet the Full HD Ultra-Wide View Wi-Fi Camera DCS-2630L
+Unboxing & Setup
+Related Products
+180° Field of View – Widest angle lens on a fixed camera
+1080p HD Quality Video – Rich detail and crisp image quality
+Unique De-Warping Technology – Maximizes video quality with less distortion
+802.11AC Wireless – Latest Wi-Fi technology for better bandwidth and improved range
+Sound and Motion Detection – Push alert notifications when loud noises or movement is detected
+Two-Way Audio – Built-in microphone and speaker for two-way communication
+Local Recording – MicroSD/SDXC card slot for local recording based on event triggers
+Night Vision – See up to 16 feet in complete darkness with built-in IR LEDs
+Remote Viewing – View on your iPhone, iPad, Android device or Windows phone with the mydlink Lite app
+Get the
+Full HD 180-Degree Wi-Fi Camera (DCS-2630L)
+Awards & Reviews
+"
+Quick Links
+Quickly access parts of the D-Link site.
+Products
+Support
+D-Link Campaigns
+About D-Link
+Where To Buy
+The D-Link Newsletter
+We won't share your details. Have a look at our
+D-Link around the web
+Copyright © 2019 D-Link Systems, Inc.

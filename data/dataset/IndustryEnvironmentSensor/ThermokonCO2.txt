@@ -1,0 +1,50 @@
+LK+ CO2+VOC • Thermokon
+Home
+Toggle navigation
+Home
+-
+-
+-
+Duct Sensors
+Air Quality
+Search
+LK+ CO2+VOC
+The maintenance-free, multifunctional duct air quality sensor measures CO2 content and mixed gas and additionally temperature and humidity (relative, absolute, enthalpy, dew point). The devices with relay output for a 2-point controller or a 2-stage 2-point controller and color-changing LCD display allow a wide range of applications. Depending on the model, the sensor can be individually configured via Thermokon USEapp. Tool-free opening, closing and wiring as well as removable cable entries ensure quick and easy installation.
+Measuring values CO2, VOC, temperature + humidity (depending on the device), each output can be set to get a variable mix of CO2 and VOC by configuration
+Output voltage 2..4x 0..10 V or 0..5 V (adjustable via jumper; live-zero configuration via Thermokon USEapp), min. load 10 kΩ
+Output ampere AA: 2x 4..20 mA, max. load 500 Ω
+Output switch contact Relay: 2x floating contact NO for 24 V ~ or 24 V = / 3 A, optional
+Network technology RS485 BACnet (MS/TP), LON FT (free topology), RS485 Modbus
+Power supply 15..35 V = or 19..29 V ~ SELV, AA: 15..35 V = SELV
+Power consumption max. 2,5 W (24 V =) | 4,3 VA (24 V ~)
+Measuring range temp. -40..+60 °C | 0..+50 °C | -20..+80 °C | -15..+35 °C, default setting: 0..+50 °C, optionally configurable via Thermokon USEapp
+Measuring range humidity 0..100% rH non-condensing, enthalpy: 0..85 KJ/kg, absolute humidity: 0..50 | 0..80 g/m³, dew point: 0..+50 | -20..+80 °C, optionally configurable via Thermokon USEapp
+Measuring range CO2 0..2000 ppm, BUS: 0..5000 ppm
+Accuracy temperature ±0,5 K (typ. at 21 °C within default measuring range)
+Accuracy humidity ±2% between 10..90% rH (typ. at 21 °C)
+Accuracy CO2 ±50 ppm +3% of measured value (typ. at 21 °C, 50% rH, 1015 hPa)
+Calibration self-calibration, CO2: Dual Channel
+Sensor VOC sensor (heated metal oxide semiconductor), CO2: NDIR (non-dispersive, infrared)
+Display LCD 29x35 mm with RGB backlight, optional, indicating air quality by switching display color (traffic light function ‘TLF’)
+Enclosure enclosure USE-M, PC, pure white, LCD: cover PC, transparent
+Protection IP65 according to EN 60529
+Cable entry Flextherm M16 for wire Ø=3..7 mm, Relay/BUS: M25 with fourfold cable entry for wire with max. Ø=7 mm, 3xV/4xV: M20 for wire max. Ø=10 mm incl. seal insert for double cable entry for wire max Ø=6 mm, removable
+Connection electrical removable plug-in terminal, max. 2,5 mm², BUS terminal: removable plug-in terminal, max. 1,5 mm²
+Pipe PA6, black, Ø=19,5 mm, length 180 mm, type VV|AA: length 150 mm
+Filter stainless steel wire mesh
+Ambient condition 0..+50 °C, max. 85% rH short term condensation
+Mounting installation is also possible using mounting base
+Delivery contents MF20 flange included
+Notes mixed gas sensors detect gases and vapours which can be oxidised (burnt): Body odours, tobacco smoke, exhalations emitted by materials (furniture, carpets, paint, glue ...)
+Newsletter
+Always be up to date with our newsletter!
+Social Media
+Follow us on social media.
+–
+–
+–
+© 2019 – Thermokon Sensortechnik GmbH
+Contact
+Contact us:
+Thermokon Sensortechnik GmbH Platanenweg 1 35756 Mittenaar Tel.:
+View contact

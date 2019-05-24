@@ -82,7 +82,7 @@ if __name__ == "__main__":
     '''
 
     #synthetic_test_set_test(0.2,0.0)
-    synthetic_test_set_test(0.15,0.25)
+    #synthetic_test_set_test(0.15,0.25)
     synthetic_test_set_test(0.2, 0.1)
     #local_test(0.2,0.1)
 

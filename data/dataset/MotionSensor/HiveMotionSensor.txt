@@ -1,0 +1,67 @@
+Hive Motion Sensor - Smart Motion Sensor | Hive Home
+By continuing to use this site you agree to our
+Hive Motion SensorKnow what’s happening at home with notifications sent straight to your smartphone.
+Know what’s happening at home with notifications sent straight to your smartphone.
+Always in the know with notifications
+The Hive Motion sensor detects movement around your home and sends alerts to your smartphone, so you can relax when you’re not there.
+Get in on the action
+Link your Hive Motion Sensor to your Hive products so you can do things like turn on your lights and thermostat by just getting out of bed or walking into a room.
+Set when you want to be notified
+Set up to six notification time slots per day so you’re not disturbed when you don’t want to be. Then when you’re home, turn notifications off with a tap of the Hive app.
+Go back in time
+You can see when the sensor has detected motion over the last seven days.
+Easy to install
+The Hive Motion Sensor is designed to fit perfectly into a corner of your room or on any wall. Pair it with the Hive Hub, add it to the Hive app and you’re all set.
+Kids home early from school?
+The Hive Motion Sensor will notify you so you can check they’re home and starting their homework on time.
+See in the dark
+With Hive Actions, set your Hive Motion Sensor to trigger your Hive Lights and find your way to the bathroom without bumping into the wall.
+Body on the beach, mind on the moments that matter
+Going away? If your Hive Motion Sensor detects movement at home it sends a notification to your smartphone. So you can check and get a neighbour to check it out if you need to.
+Easy to install
+The Hive Motion Sensor is designed to fit perfectly into a corner of your room or on any wall. Pair it with the Hive Hub, add it to the Hive app and you’re all set.
+Kids home early from school?
+The Hive Motion Sensor will notify you so you can check they’re home and starting their homework on time.
+See in the dark
+With Hive Actions, set your Hive Motion Sensor to trigger your Hive Lights and find your way to the bathroom without bumping into the wall.
+Body on the beach, mind on the moments that matter
+Going away? If your Hive Motion Sensor detects movement at home it sends a notification to your smartphone. So you can check and get a neighbour to check it out if you need to.
+Thermostat
+At night
+View
+Sunset
+Hub
+Sensor
+Window & Door sensor
+Lights
+Plug
+Bring your home to life
+Hive products work brilliantly on their own, but they’re even better when they work together to get your home working seamlessly around you.
+More ways to know what’s happening in your home
+Hive Motion Sensor
+Close
+Hive
+News
+Legal
+Sign up to receive news and updates
+One moment...
+By submitting your email, you agree to receive our newsletter containing news, updates and promotions about Hive products and services. You can withdraw your consent at any time.
+Please refer to our
+or
+for more details.
+{{message}}
+© 2019 Centrica Hive Limited (trading as Hive). Registered in England (No. 5782908). Registered office: Millstream, Maidenhead Road, Windsor, Berkshire SL4 5GD. All rights reserved.
+Dev Tools
+Debug UI Widgets
+Include tracking scripts
+AB tests
+AB.ctaChooseAndCustomiseText
+AB.floatingBasket
+AB.trustpilotPopup
+AB.newExistingCustomerLandingPage
+AB.seasonalOfferNewCustomerLandingPage
+Environments
+Close
+British Gas customers can get
+exclusive discounts on Hive products
+Visit British Gas to find out more.

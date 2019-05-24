@@ -1,0 +1,237 @@
+ecobee3 Smart Thermostat with Room Sensors | ecobee | Smart Home Technology
+ecobeelogo
+ecobeelogo
+present
+ic_roomsensor_tstat_CA22
+A9D321DF-71AF-4F89-8E7C-9AD74BC9025872
+For Home
+For Business
+Company
+Resources
+Products
+Main
+Company
+Resources
+ecobee3
+The smarter wi-fi thermostat with room sensors. For homes with more than one room.
+$299
+$199
+ecobee3
+Sensor Technology
+Deliver comfort to the rooms that matter most.
+Most thermostats read the temperature in one place (usually the
+hallway) which can make other rooms uncomfortable. ecobee3 uses
+room sensors to deliver the preferred temperature to the rooms
+that matter. Simple.
+Smarter Comfort
+A complete comfort system for your home.
+Follow Me uses room sensors to know which room you’re in and automatically adjust to your preferred temperature.
+Smart Home/Away ensures you’re comfortable while you’re at home and saving money when you’re not.
+Smarter Control
+Effortless control at your fingertips.
+Adjust temperature and comfort settings easily
+from your Android and iOS devices, including Apple Watch.
+Free energy reports give you insights on how
+much you’ve saved based on run times and offer tips for further
+savings.
+Ecobee Press
+ENERGY SAVINGS
+Smart means reducing heating and cooling costs by up to 23%* a year.
+ENERGY STAR® certified, so you know it's good for you and the planet.
+Smarter Home
+Supports your connected home to make life simpler.
+Use Apple HomeKit to control your ecobee with Siri’s help on your iPhone, iPad or Apple Watch.
+With Amazon Echo, easily change the temperature and more with just your voice.
+Integrates seamlessly with Samsung SmartThings, IFTTT, Wink and more.
+Smarter Savings
+Engineered for energy savings. Designed for you.
+Uses local weather and your system to take the
+least amount of time to cool or heat your home.
+Vacation mode keeps energy use low and easy to adjust while you
+enjoy some much deserved time away.
+Alerts and reminders help you solve issues
+faster by notifying you right away if ecobee senses something
+isn’t working.
+Built to last
+ecobee is hardwired so you'll never be left out in the cold.
+Being hardwired means your thermostat isn’t relying on a battery
+or your HVAC equipment to charge itself (aka “power-stealing”).
+A little bit extra, for no extra.
+Easy Setup
+Getting started is simple.
+Will it work with my home?
+Yes, we are compatible with most residential heating and cooling systems.
+Can I install it myself?
+You bet. Use our step-by-step guide or call our friendly support team.
+Can I get it professionally installed?
+Yes, we can help connect you with certified pro installers in your area.
+Smart, really smart
+You have better things to do than teach your thermostat.
+ecobee thermostats use local weather to understand your home's unique energy profile and transforms thousands of data points into cost savings.
+Features
+Ordinary thermostats read the temperature in only one room, but are supposed to deliver comfort in all rooms. ecobee3 remote sensors deliver the right temperature in the rooms that matter most.
+If your ecobee3 senses that you are home during your scheduled Away period, or away during your scheduled Home period, it will automatically override your schedule to maximize comfort and savings.
+Control your comfort by averaging the temperature of the selected sensors that detect motion or all of the selected sensors in your home, regardless of motion.
+ecobee3 understands how your home heats up and cools down, and uses wi-fi to track your local weather throughout the day. It then uses this information to determine the best way to bring your home to your desired indoor temperature when you arrive home and maintain it while minimizing how long your heating or cooling equipment runs for.
+In homes with ventilators, ecobee3 will recognize the temperature difference on cool summer evenings and will use the outside air to cool down your home instead of the air conditioner.
+For homes with humidifiers, ecobee3 regulates indoor humidity to prevent frost buildup on windows when it’s cold outside and high humidity indoors.
+ecobee3 can use your air conditioner to lower indoor humidity in the absence of a dehumidifier.
+ecobee3 is constantly monitoring your equipment performance and will send you an alert if anything is not working or working sub-optimally. Similarly, ecobee3 can send you service reminders to help you maintain your equipment.
+At the end of a heating or cooling cycle, when the coil or heat exchanger is still hot/cold, ecobee3 runs the fan to get the most heating/cooling and dehumidification out from your equipment.
+ecobee3 optimizes usage of multistage heating and cooling equipment by engaging the higher stage when indoor temperature is notably different than desired temperature and switching back to the lower stage as your home gets closer to the desired temperature. You can also control staging by using advanced setting options.
+ecobee smart thermostats are compatible with HRVs, ERVs, and Remote Sensors, giving you ultimate control over your environment. ecobee has a robust API and an active developer community working on new ways to integrate your thermostat into your connected home.
+Home IQ™ shows you how much energy you conserved each month and gives you valuable insight into your heating and cooling equipment. It’s like a home energy audit at no additional cost!
+ecobee3
+Get the smarter wi-fi thermostat with room sensors that delivers comfort to the rooms that matter most.
+$199
+Free shipping (2-3 business days)30-day money back guarantee3 year warrantyENERGY STAR® certified
+ecobee3
+Get the smarter wi-fi thermostat with room sensors that delivers comfort to the rooms that matter most.
+$299
+Free shipping (2-3 business days)30-day money back guarantee3 year warrantyENERGY STAR® certified
+Technical Specs
+Display
+3.5” full-color LCD touch screen
+320 x 480 pixel display
+Product Dimensions
+ecobee3
+Length: 100 mm
+Width: 100 mm
+Depth: 22 mm
+Room Sensor
+Length: 44 mm
+With stand: 54 mm
+Width: 44 mm
+Depth: 20 mm
+Power Extender Kit*
+Length: 62.1 mm
+Width: 60.1 mm
+Depth: 21.4 mm
+*Optional for installation
+ecobee3
+Length: 3.93 in
+Width: 3.93 in
+Depth: 0.86 in
+Room Sensor
+Length: 1.73 in
+With stand: 2.12 in
+Width: 1.73 in
+Depth: 0.78 in
+Power Extender Kit*
+Length: 2.44 in
+Width: 2.36 in
+Depth: 0.84 in
+*Optional for installation
+Compatibility
+Gas, oil, electric, dual fuel
+Conventional (2H/2C)
+Heat Pump (4H/2C)
+Humidifier, Dehumidifier, Ventilator, HRV or ERV
+Wire Terminals
+Rc
+Rh
+G
+C
+Y1
+Y2
+W1 (AUX 1)
+W2 (AUX 2)
+O/B
+ACC +
+ACC -
+Connectivity & Security
+Wi-Fi, IEEE 802.11 b/g/n @ 2.4 GHz
+Wi-Fi Protected Access (WPA/WPA2) and Wired Equivalent Privacy (WEP)
+915MHz, future expansion slot
+DHCP (dynamic) or static IP addressing
+Transport Layer Security (TLS)
+Bandwidth
+15-20 MB/month
+Power Consumption
+less than 3.5 VA
+Apple HomeKit Enabled
+Controlling this HomeKit-enabled accessory requires an iPhone, iPad, or iPod touch with iOS 9 or later.
+Powering Methods
+Wired 24 VAC through terminals C and Rc or Rh. Power Extender Kit (included) enables you to reliably power your thermostat without having to run a C wire.
+Green
+Recyclable packaging
+Mercury-free
+Arsenic-free
+PVC-free
+ROHS compliant
+Temperature Range
+Desired Temperature: 7° to 33°C
+Display: 5° to 37°C
+Sensitivity: +/- 0.5°C
+Operating: 0° to 55°C
+Desired Temperature: 44° to 92°F
+Display: 41° to 98°F
+Sensitivity: +/- 0.9°F
+Operating: 32° to 131°F
+Humidity Range
+Display: 20% to 90% RH
+Sensitivity: +/- 5% RH
+Operating: 5% to 95% RH (non condensing)
+Storage
+-35° to 45°C
+5% to 95% RH (non condensing)
+-31° to 113°F
+5% to 95% RH (non condensing)
+Warranty
+3-year warranty
+Languages
+English
+In the Box
+ecobee3 thermostat
+Room sensor with detachable stand
+Quick start guide
+Installation guide
+Wire labels
+Screws and drywall plugs
+Optional for installation:
+Power Extender Kit (PEK)
+Standard and large trim plates
+ecobee4Smarter Bundle
+Save when you buy them together.
+$313 $273
+ecobee4Smarter Bundle
+Save when you buy them together.
+$403 $363
+Room Sensors2 Pack
+Pairs with your ecobee to help manage hot or cold spots.
+$79
+Room Sensors2 Pack
+Pairs with your ecobee to help manage hot or cold spots.
+$89
+What customers are saying.
+2596 Amazon Reviews, 4.5 out of 5 stars
+5 stars
+Best Household Improvement Ever!
+I'm a new homeowner and not yet secure in my DIY skills so I asked my brother-in-law to help me install it, but in truth I could have done it myself! I specifically purchased Ecobee to work with our Amazon Echo and so my husband who has MD can control the temperature and it is perfect!
+akoWonderWoman on August 31, 2016
+5 stars
+Great Customer Service
+I love my Ecobee3! We are renters, so this was a big undertaking for us to replace the thermostat that came with our apartment with a digital thermostat. But our air conditioning bills were getting crazy, our thermostat was very unreliable (it would randomly go up to 85 degrees in the middle of the night or other times for no reason), and we wanted to be able to control it from outside the home. We briefly considered The Nest, which has some great rebates from our power company. But after poring over reviews, we decided to go with the Ecobee, mainly because it was Home Kit compatible, and we may want to use that in the future since we have an Apple home network and Apple TV.
+Amoki on August 30, 2016
+5 stars
+Great for too-hot-in-summer and too-cold-in-winter rooms
+Product is great (and arrived fast). We needed our baby's room to have a sensor as it is always hotter in the summer and colder in the winter, as it was a guessing game with the original thermostat downstairs. After having 2 professional HVAC people come over and telling us there's nothing we can do with the ducts to improve the situation, we compromised for a smart thermostat to at least eliminate the guessing game (I would still want to change our HVAC configuration, but that's a 10k job).
+Bootvi on August 29, 2016
+5 stars
+I'm in love with my ecobee
+I'm in love with my ecobee. Upgraded from an old non-programmable Honeywell thermostat. So far, my HVAC seems to run MUCH less than with the old thermostat. I love the programmable schedules, and the sensor modules. I also installed the unit myself using the Power Extender Kit, and it was super easy. Really looking forward to lower energy consumption (and costs!) with this thermostat.
+BigIrishApe on August 25, 2016
+5 stars
+Great purchase
+Better than Nest in that it has discrete external sensors to focus on rooms you care about the most. Easy to program schedule. Set up was overall pretty easy. Love that I can control the temperature on my cellphone. Similar to Nest, it is a good-looking modern product but with (in my opnion) a more pleasant display and touchscreen.
+Jacquelyn M. Means on August 24, 2016
+5 stars
+The functionality and ease of use of this device is amazing. I'm already seeing the energy savings
+The functionality and ease of use of this device is amazing. I'm already seeing the energy savings. The sensor system is simply brilliant and the fact that they have motion detectors is amazing. The app is very easy to use and a breeze to setup with apple home. I will be purchasing additional sensors to make it even more smarter around my house. There is a lot of technology here, which is the main reason I choose this over the Nest and also a 3 year warranty.
+Y. Acosta on August 24, 2016
+5 stars
+Best Thermostat On The Market!
+I really believe this is the best thermostat on the market. You can place multiple external sensors around the house so that the Ecobee3 (E3) knows that the temperature is in different parts of the house. Since the E3 knows both the temperature in other parts of the house AND if someone is present, it can dynamically "care" about the temperature only in rooms that have recently seen occupancy!
+Ken S on July 16, 2016
+Address207 Queens Quay West, Suite 600 Toronto, ON M5J 1A7Phone1-877-932-6233 (Toll Free)1-647-428-2220 (International) (Toll Free) (International)Email Sales HoursMon-Fri (9am - 5pm EST)Support HoursMon-Fri (8am - 12am EST)Sat/Sun (9am - 9pm EST)Canadian holidays (9am - 9pm EST)
+© 2019 ecobee. All rights reserved.
