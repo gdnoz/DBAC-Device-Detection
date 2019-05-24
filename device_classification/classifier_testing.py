@@ -12,7 +12,6 @@ from sklearn.pipeline import Pipeline
 from sklearn import metrics
 import os
 
-
 def test_naive_bayes(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
@@ -132,7 +131,7 @@ def test_random_forrest(docs_to_train, X_train, X_test, y_train, y_test):
 
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
-    rf_classifier = RandomForestClassifier(n_estimators=100, max_depth=10, random_state=0)
+    rf_classifier = RandomForestClassifier(n_estimators=70, max_depth=10, random_state=0)
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -145,12 +144,12 @@ def test_random_forrest(docs_to_train, X_train, X_test, y_train, y_test):
     predicted = text_clf.predict(X_test)
     return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted), output_dict=True)
 
-def test_mlp_classifier(docs_to_train, X_train, X_test, y_train, y_test):
+def test_mlp_classifier(docs_to_train, X_train, X_test, y_train, y_test, alpha=1e-5, max_iter=50):
     from sklearn.neural_network import MLPClassifier
 
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
-    mlp_classifier = MLPClassifier(alpha=0.7, max_iter=400)
+    mlp_classifier = MLPClassifier(alpha=alpha, max_iter=max_iter)
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -163,12 +162,28 @@ def test_mlp_classifier(docs_to_train, X_train, X_test, y_train, y_test):
     predicted = text_clf.predict(X_test)
     return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted), output_dict=True)
 
-#def test_rmdl_classifier(docs_to_train, X_train, X_test, y_train, y_test):
-    #import RMDL
-    #RMDL.RMDL_Text.Text_Classification(X_train, y_train, X_test, y_test)
+def test_xgboost_classifier(docs_to_train, X_train, X_test, y_train, y_test):
+    from xgboost import XGBClassifier
 
+    count_vectorizer = CountVectorizer(stop_words='english')
+    tfidf_transformer = TfidfTransformer(use_idf=True)
+    xgb_classifier = XGBClassifier()
+
+    text_clf = Pipeline([
+        ('vect', count_vectorizer),
+        ('tfidf', tfidf_transformer),
+        ('clf', xgb_classifier)
+    ])
+
+    text_clf.fit(X_train, y_train)
+
+    predicted = text_clf.predict(X_test)
+    return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted), output_dict=True)
 
 if __name__ == "__main__":
-    from device_classification.utilities import run_tests_in_module
+    from device_classification.utilities import run_tests_in_module,run_tests_in_module_with_kfold_cross_validation
 
-    run_tests_in_module(__name__)
+    run_tests_in_module_with_kfold_cross_validation(__name__)
+
+
+

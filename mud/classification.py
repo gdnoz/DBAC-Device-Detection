@@ -46,7 +46,7 @@ class MudClassification:
         '''
 
         mud_file_urls = MUDUtilities.get_all_urls_from_mud(mud_file_contents)
-        text_from_mud_urls = RelevantTextScraper(mud_file_urls, self.scraping_threshold).extract_text_from_urls()
+        text_from_mud_urls = RelevantTextScraper(mud_file_urls, self.scraping_threshold).extract_text_from_urls_with_treshold()
 
         classification_result = self.classifier.predict_text(text_from_mud_urls)
 
@@ -62,10 +62,11 @@ class MudClassification:
         '''
         Classification based on Bing
         '''
-
+        '''
         urls = BingSearchAPI.first_ten_results(systeminfo)
+        print("Bing: " + str(urls))
 
-        text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls()
+        text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls_with_treshold()
 
         classification_result = self.classifier.predict_text(text_from_urls)
 
@@ -74,12 +75,27 @@ class MudClassification:
             return MudClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
 
         '''
-        Classification based on Google
+        #Classification based on Google
         '''
 
         urls = GoogleCustomSearchAPI.search(systeminfo)
 
-        text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls()
+        print("Google: " + str(urls))
+
+        text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls_with_treshold()
+
+        classification_result = self.classifier.predict_text(text_from_urls)
+
+        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
+            return MudClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
+        else:
+            return MudClassificationResult("No_classification",0.0)
+        '''
+        urls = GoogleCustomSearchAPI.search(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_results(systeminfo,only_html=True)
+
+        print("Google+Bing: " + str(urls))
+
+        text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls_with_treshold()
 
         classification_result = self.classifier.predict_text(text_from_urls)
 

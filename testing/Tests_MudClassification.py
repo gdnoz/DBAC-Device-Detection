@@ -16,6 +16,7 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
 
     numberOfTests = 0
     correctClassifications = 0
+    scoreSum = 0.0
     noClassifications = 0
 
     with open(os.path.join(constants.DATA_DIR, "mud_synthetic_test_set.csv"), "r") as f:
@@ -36,6 +37,7 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
 
             if classification == correctClassification:
                 correctClassifications += 1
+                scoreSum += score
                 print(mud_url + ": " + "pass" + " (" + classification + ", " + str(score) + ")")
                 continue
             elif classification == "No_classification":
@@ -44,8 +46,9 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
             print(mud_url + ": " + "fail" + " (" + classification + ", " + str(score) + ")")
 
     print("****************** TEST COMPLETE: c_tresh: " + str(threshold) + " s_thresh: " + str(scraping_threshold) + " ******************")
-    print("Accuracy:            " + str(float(correctClassifications/numberOfTests)))
-    print("No device_classification:   " + str(float(noClassifications/numberOfTests)))
+    print("Accuracy:                    " + str(float(correctClassifications/numberOfTests)))
+    print("No device_classification:    " + str(float(noClassifications/numberOfTests)))
+    print("Average score:               " + str(float(scoreSum/numberOfTests)))
 
 if __name__ == "__main__":
     #best so far:

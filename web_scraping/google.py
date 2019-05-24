@@ -6,12 +6,16 @@ class GoogleCustomSearchAPI:
     exclude_pdf = "+%2Dfiletype%3Apdf"
 
     @staticmethod
-    def search(search_terms: str) -> list:
-        import requests,json
+    def search(search_terms: str, exclude_pdf=False) -> list:
+        import requests
 
-        headers = {}
+        if exclude_pdf:
+            q = search_terms + GoogleCustomSearchAPI.exclude_pdf
+        else:
+            q = search_terms
+
         params = \
-            {"q": search_terms,#+GoogleCustomSearchAPI.exclude_pdf,
+            {"q": q,
              "cx": GoogleCustomSearchAPI.custom_search_engine_id,
              "key": GoogleCustomSearchAPI.api_key,
              "lr": "lang_en",

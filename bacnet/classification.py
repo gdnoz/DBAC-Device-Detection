@@ -75,7 +75,7 @@ class BacnetClassification:
 
         print("Classifying using Bing...")
 
-        urls = BingSearchAPI.first_ten_results(search_terms)
+        urls = BingSearchAPI.first_ten_results(search_terms,only_html=False)
 
         text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls()
 
@@ -92,7 +92,7 @@ class BacnetClassification:
 
         print("Classifying using Google...")
 
-        urls = GoogleCustomSearchAPI.search(search_terms)
+        urls = GoogleCustomSearchAPI.search(search_terms,exclude_pdf=False)
 
         text_from_urls = RelevantTextScraper(set(urls), self.scraping_threshold).extract_text_from_urls()
 
@@ -103,7 +103,6 @@ class BacnetClassification:
         else:
             print("Failed...")
             return BacnetClassificationResult("No_classification",0.0)
-
 
 if __name__ == "__main__":
     from bacnet.local_device_applications.test_devices import arob,bacdrpc,bacri,bacrpc,bacsri,cdd3,cdrbac,src100,touchplateultra
