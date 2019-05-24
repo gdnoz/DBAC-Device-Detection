@@ -1,5 +1,5 @@
 class GoogleCustomSearchAPI:
-    api_key = "AIzaSyCPpUsEJqELApfL8UpnTJ0zHXPetpSq-a4"
+    api_key = "AIzaSyARQbgHC8noqfizxAmU7B30q8DXw87v37Y"
     custom_search_engine_id = "003252831122657018969:yb1dw3wzz6c"
     endpoint = "https://www.googleapis.com/customsearch/v1"
 
