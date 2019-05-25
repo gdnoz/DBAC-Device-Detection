@@ -9,13 +9,13 @@ No problem. Chat with one of our experts, or call us at 1-217-903-5037. (Mon-Fri
 NO THANKS
 Snap Pro
 Accessories
-Spec
+Specs
 Snap Pro
 ∨
-Spec
+Specs
 Accessories
 Snap Pro
-As seen on Kickstarter. Pre-order Snap Pro today. Orders ship in April 2019.
+As seen on Kickstarter. Coming soon!
 Wire-Free
 No wires, less hassle. Install the mounting bracket. Magnetically attach Snap Pro. Swivel and reposition the 1080p HD camera to achieve
 the perfect viewing angle.
@@ -127,6 +127,7 @@ Layer Security (TLS) secure your Zmodo apps
 and devices. Snap Pro secures your home,
 US-based servers provided by meShare to
 secure your video and pictures.
+Want to connect Zmodo devices to Alexa?
 Camera
 1080P Color Sensor
 1.62mm Lens

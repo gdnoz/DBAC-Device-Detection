@@ -101,6 +101,58 @@ class RelevantTextScraper:
 
         return relevant_text
 
+    def extract_best_text(self) -> str:
+        """
+        Extracts text from the urls. Text is discarded if it is irrelevant.
+        :return: All relevant texts combined into a string.
+        """
+        import tldextract
+        from web_scraping.utilities import WebScrapingUtilities
+
+        relevant_text = ""
+        best_score = 0.0
+
+        for url in self.urls:
+            if not (any(element in url for element in self.blacklist) or self._is_url_sub_domain_of_element_in_blacklist(url) or url in self.visited_urls):
+                try:
+                    self.visited_urls.add(url)
+
+                    scraped_text = WebScrapingUtilities.extract_text_from_url(url,timeout=2)
+
+                    classification = self.classifier.predict_text(scraped_text)
+
+                    if classification.prediction_probability > best_score:
+                        relevant_text = scraped_text
+                        best_score = classification.prediction_probability
+
+                except Exception as ex:
+                    if ".pdf" in url: #Failed because url linked to a pdf file. Try again, but handle the pdf case specifically.
+                        print("Fetching .pdf")
+                        scraped_text = WebScrapingUtilities.get_pdf_content_from_url(url)
+
+                        classification = self.classifier.predict_text(scraped_text)
+
+                        if classification.prediction_probability > best_score:
+                            relevant_text = scraped_text
+                            best_score = classification.prediction_probability
+
+                    extract_result = tldextract.extract(url)
+
+                    is_top_level_domain = extract_result.suffix and extract_result.domain and not extract_result.subdomain
+                    is_sub_domain = extract_result.suffix and extract_result.domain and extract_result.subdomain
+
+                    if is_top_level_domain:
+                        self.blacklist.add(url)
+                    elif is_sub_domain:
+                        self.blacklist.add(url)
+                        self.expansion_urls.add(url)
+
+                    continue
+            else:
+                continue
+
+        return relevant_text
+
 
     def _is_url_sub_domain_of_element_in_blacklist(self, url: str) -> bool:
         """

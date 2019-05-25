@@ -1,86 +1,79 @@
 Beam: The Smart Soundbar for Your TV | Sonos
-Quickly build your home sound system with these speaker sets
-Browse sets:
-Mix and match products to build your home sound system
-Browse:
-Find the perfect accessory for your Sonos system
-Tech Support
-Sales Support
+Why Sonos
+Brilliant Sound
+Easy to Use
+Listen Your Way
+Support
+Community
+Product sales:
 Beam
-Buy
-Your browser's Javascript functionality is turned off. Please turn it on so that you can experience the full capabilities of this site.
-Beam
-The smart soundbar for your TV
-Roll over image to zoom in
-Beam
-The smart soundbar for your TV
-Plays music, TV, films, and more
-Exceptional dialogue clarity with Speech Enhancement
-Automatically pairs with your TV and remote
-Future-ready voice control
-Apple AirPlay-compatible with iOS devices
-Pay now
-€449
+—
 €449
 Select colour
-Black
-White
-Notify me
-Buy
-Free shipping, and 100-day returns policy.
-We’re sure that your Sonos experience will have you listening better. If for whatever reason, you’re not happy, let us know within 100 days. We will send you a shipping label and refund you in full for your purchase.
-For additional details, please review our .
-Small-to-medium size rooms
-Beam's compact and versatile design make it great for rooms where you’re shorter on space.
-Place on furniture or use a wall mount
-Place Beam on your TV stand or purchase the custom-designed wall mount to easily and securely hang it.
-Expands with you
-Beam is part of the Sonos sound system, so you can easily add more speakers to fill every room of your home with sound.
-Upgrade your TV with our most advanced soundbar.
-Premium sound
-Full-range woofers and tweeters harmonise low and high frequencies.
-Speech enhancement
-Never miss another word by turning on speech enhancement to get clearer dialogue.
-Night sound
-Enjoy late night TV without waking the whole house.
-HDMI ARC
-Instantly pair with your remote to control your TV with voice.
-Play everything that matters to you.
-TV. Movies. Music. Radio. Podcasts. Audiobooks. Games. AirPlay.
-Choose your control.
-Control Beam with your voice, the Sonos app, AirPlay or the app for your favourite music service.
-Add surround sound without wires.
-Create a home theatre system when you wirelessly connect a pair of rear speakers and a Sub.
-Compare Sonos TV Speakers
-Which product is right for you?
-Future ready voice control built-in
-Wall mountable
-Apple AirPlay
-Connections
-HDMI ARC
-Optical
-Optical
-Amplifiers
-5
-9
-10
-Price
+Add to basket
+→
+Beam
+Beam
+—
 €449
-€799
-€799
-Form factor
-Soundbar
-Soundbar
-Soundbase
-Simple to set up.
-Plug Beam into the power and connect it to your TV using the HDMI cable. If your TV does not support HDMI ARC, use the included Optical Audio Adapter.
-1
-Download the Sonos app
-2
-Connect to power and TV
-3
-Follow the app instructions
-Frequently Asked Questions
+High Definition Sound
+Select colour
+Add to basket
+The smart, compact soundbar for TV, music, and more.
+Play everything that matters to you with Beam. Control it with your voice*, remote, the Sonos app, and more.
+Hear every word clearly
+Beam was specifically tuned by Oscar-winning sound engineers to emphasise the sound of the human voice so you can always follow the story.
+Turn on Speech Enhancement in the app to clarify dialogue when characters whisper or the action explodes.
+Shuffling your playlist
+Voice control
+Amazon Alexa is built right-in so you can play music, check news, set alarms, get your questions answered, and more, completely hands free.
+*Subject to regional availability
+Setup is simple
+Go from unboxing to listening in minutes with just two cables and automatic remote detection.
+Features
+Four full-range woofers ensure you’ll hear the faithful playback of mid-range vocal frequencies plus deep, rich bass.
+One tweeter creates a crisp and clear dialogue.
+Three passive radiators help move air around inside the compact Sonos Beam and add warm sound to the bass.
+Adjustable bass and treble controls let you customise your sound by individual room or groups of rooms.
+Five Class-D digital amplifiers perfectly tuned to match the speaker drivers and acoustic architecture.
+Five far-field microphone array used for advanced beamforming and multi-channel echo cancellation.
+When the microphone LED is on, Beam is ready for a voice command. When the light is off, the microphone is off.
+Dimensions - H x W x D
+2.70 x 25.625 x 3.94 in. (68.5 x 651 x 100 mm)
+Weight
+6.2 lbs (2.8 kg)
+HDMI ARC
+HDMI Cable connects to your TV’s HDMI ARC input.
+Optical Audio
+Optical Audio Adapter to connect to your TV.
+Top-panel features
+Capacitive touch controls for volume up/down, previous/next track, play/pause, microphone mute. LED indicates status, mute status and voice feedback.
+Threaded mount
+1/2 in. (12.7 mm) / 10-32 threaded mounting socket.
+Power supply
+Auto-switching 100-240 V, 50-60 Hz AC universal input.
+Ethernet port
+One 10/100 Mbps Ethernet port. Wire directly to your router to operate your Sonos if WiFi is unstable.
+WiFi
+Connects to your home Wi-Fi network with any 802.11 b/g/n router. 802.11n only network configurations are not supported—you can either change the router settings to 802.11 b/g/n or connect a Sonos product to your router.
+Apple AirPlay 2 compatible
+Works with Apple AirPlay 2 on Apple devices [iOS 11.4 and higher]
+Sonos Beam, power cord, HDMI cable, Optical Audio Adapter, Sonos Beam QuickStart Guide and Legal/Warranty information.
+AirPlay 2
+Voice Control Built-in
+Mute for Privacy
+TV Remote Sync
+Capacitive Touch Controls
+Automatic Software Updates
+WiFi
+Delivery
+Easy returns
+Not exactly what you wanted? Return it within 100 days. We'll cover delivery costs.
+Free delivery
+Enjoy free 2-day delivery.
+Professional installation
+to customise your architectural Sonos system.
+FAQ
 How does Sonos Beam work with Amazon Alexa?
 Sonos Beam supports voice commands with Amazon Alexa. These include commands to start music and content with Spotify, TuneIn and Audible; commands to control other services started with the Sonos app, plus requests for popular Alexa features like “What’s my Flash Briefing?” or “What’s the weather?” or “Play Song Quiz”.
 How does Sonos Beam differ from Playbar and Playbase?
@@ -93,14 +86,13 @@ Do Sonos Beam microphones hear me when audio is playing?
 Yes. Five far-field microphones are built in to Sonos Beam to detect your voice from any direction, anywhere in the room. You can speak at natural volume to activate Alexa-supported voice commands.
 Can I turn off the far-field microphones?
 Yes, simply touch the microphone icon and the light will turn off/on. When the microphone light is on, Alexa is ready for a voice command. When the light is off, the microphone is off. This ensures privacy when you want it.
-View all questions
 How will Sonos Beam connect to smart home or home automation systems?
 Sonos Beam can control devices through skills in the Alexa app. In addition, Sonos has certified partnerships with smart home systems like Wink and Lutron. Based on your setup, commands to control various smart devices throughout your home will work. Possibilities include “Set temperature to 20” and “Turn Living Room lights on.”
 What is HDMI-ARC?
 Sonos Beam connects to your TV’s HDMI-ARC port. Most TVs have two to four HDMI ports, one of which is labelled ARC, which stands for Audio Return Channel. The HDMI-ARC port syncs audio and picture, plus automatically pairs your TV remote to Sonos Beam. If you’re unsure if your TV has an HDMI-ARC port, consult your TV specs with the manufacturer.
 If your TV is older than 5 years, or otherwise doesn't have an HDMI ARC port, you can use the included optical audio adapter to connect Sonos Beam to the optical port on your TV. Please note that Amazon Alexa TV voice commands will not work when connected via optical adapter.
-Does Sonos Beam support AirPlay?
-You can use AirPlay and stream straight to Sonos Beam from your iPad, iPhone and Mac.
+Does Sonos Beam support Apple AirPlay 2?
+You can use Apple AirPlay 2 and stream straight to Sonos Beam from your iPad, iPhone and Mac.
 Does Sonos Beam pair with other Sonos speakers for surround sound?
 Yes. While Sonos Beam is a great soundbar on its own, it also wirelessly pairs with our Sub for added bass and a pair of Sonos speakers for full surround sound. A setup with left and right rears and a Sub gives you true 5.1 surround sound.
 Can I wall mount Sonos Beam?
@@ -113,136 +105,26 @@ What if my TV supports a codec that isn’t one of the supported by Sonos Beam?
 When Sonos Beam is connected to HDMI-ARC on your TV, the TV and Sonos Beam automatically pick the best format that both systems can support. If you are using the Optical Audio Adapter, Sonos Beam will support PCM stereo and Dolby Digital.
 Why does Sonos Beam have Bluetooth Low Energy?
 Sonos Beam uses Bluetooth Low Energy (BLE) to temporarily communicate with your phone/tablet during the setup process. BLE does not support audio streaming. Once setup is done, Sonos Beam streams and updates via your own WiFi.
-The wireless home sound system that gets better over time.
-Easily connect Sonos speakers in different rooms over WiFi to create a home sound system that brings every room and everyone together. Regular software updates means your product is constantly improving.
-Four full-range woofers ensure you’ll hear the faithful playback of mid-range vocal frequencies plus deep, rich bass.
-One tweeter creates a crisp and clear dialogue.
-Three passive radiators help move air around inside the compact Sonos Beam and add warm sound to the bass.
-Adjustable bass and treble controls let you customise your sound by individual room or groups of rooms.
-Five Class-D digital amplifiers perfectly tuned to match the speaker drivers and acoustic architecture.
-Five far-field microphone array used for advanced beamforming and multi-channel echo cancellation.
-When the microphone LED is on, Alexa is ready for a voice command. When the light is off, the microphone is off.
-Dimensions - H x W x D
-2.70 x 25.625 x 3.94 in. (68.5 x 651 x 100 mm)
-Weight
-6.2 lbs (2.8 kg)
-HDMI ARC
-HDMI Cable connects to your TV’s HDMI ARC input.
-Optical Audio
-Optical Audio Adapter to connect to your TV.
-Top-panel features
-Capacitive touch controls for volume up/down, previous/next track, play/pause, microphone mute. LED indicates status, mute status and voice feedback.
-Power supply
-Auto-switching 100-240 V, 50-60 Hz AC universal input.
-Ethernet port
-One 10/100 Mbps Ethernet port. Wire directly to your router to operate your Sonos if WiFi is unstable.
-WiFi
-Connects to your home Wi-Fi network with any 802.11 b/g/n router. 802.11n only network configurations are not supported—you can either change the router settings to 802.11 b/g/n or connect a Sonos product to your router.
-AirPlay compatible
-Works with AirPlay on Apple devices [iOS 11.4 and higher]
-Sonos Beam, power cord, HDMI cable, Optical Audio Adapter, Sonos Beam QuickStart Guide and Legal/Warranty information.
-Audio
-Four full-range woofers ensure you’ll hear the faithful playback of mid-range vocal frequencies plus deep, rich bass.
-One tweeter creates a crisp and clear dialogue.
-Three passive radiators help move air around inside the compact Sonos Beam and add warm sound to the bass.
-Adjustable bass and treble controls let you customise your sound by individual room or groups of rooms.
-Five Class-D digital amplifiers perfectly tuned to match the speaker drivers and acoustic architecture.
-Five far-field microphone array used for advanced beamforming and multi-channel echo cancellation.
-When the microphone LED is on, Alexa is ready for a voice command. When the light is off, the microphone is off.
-General
-Dimensions - H x W x D
-2.70 x 25.625 x 3.94 in. (68.5 x 651 x 100 mm)
-Weight
-6.2 lbs (2.8 kg)
-HDMI ARC
-HDMI Cable connects to your TV’s HDMI ARC input.
-Optical Audio
-Optical Audio Adapter to connect to your TV.
-Top-panel features
-Capacitive touch controls for volume up/down, previous/next track, play/pause, microphone mute. LED indicates status, mute status and voice feedback.
-Power & Networking
-Power supply
-Auto-switching 100-240 V, 50-60 Hz AC universal input.
-Ethernet port
-One 10/100 Mbps Ethernet port. Wire directly to your router to operate your Sonos if WiFi is unstable.
-WiFi
-Connects to your home Wi-Fi network with any 802.11 b/g/n router. 802.11n only network configurations are not supported—you can either change the router settings to 802.11 b/g/n or connect a Sonos product to your router.
-AirPlay compatible
-Works with AirPlay on Apple devices [iOS 11.4 and higher]
-Contents
-Sonos Beam, power cord, HDMI cable, Optical Audio Adapter, Sonos Beam QuickStart Guide and Legal/Warranty information.
-Our 100 day return policy / Your right to withdraw the purchase
-We are confident that you will love your new Sonos product, however, if you are unsatisfied for any reason, simply . We will pick up the product free of cost at the original delivery address (in the ) and refund the full purchase price.
-If you need to return a product from outside of the Sonos Service Region, please contact . Shipping charges may apply.
-In order to return your Product under the 100 day return policy, please check that:
-You have purchased the product directly from Sonos (via phone or via the Website);
-You contact Sonos and begin the return process within 100 days from the original shipment date;
-The product is returned in the original Sonos packaging, with all materials included, and in new or as-new condition; and
-You strictly follow the Sonos return instructions as .
-A defective Sonos product? This is our Sonos Warranty.
-We stand for the quality of our Sonos products.
-We offer a 2 year full warranty on all products sold. The details of this warranty are set out in our .
-A summary of the conditions of the Sonos Warranty is set out below. In the event that there is any conflict between this summary and the EULA, the EULA will control.
-Your local consumer protection laws may provide additional rules on warranty. The Sonos Warranty does not in any way restrict the rights that you may have under such rules.
-The Sonos Warranty covers defects in materials and workmanship in every Sonos product for two (2) years from the date of shipment from Sonos or the date of the original retail purchase from an Authorised Sonos Dealer. The Sonos warranty does not guarantee that Sonos products will at all times operate without interruption or will be error-free, or that all errors may be corrected.
-If you have a valid claim under the Sonos Warranty and have returned the product in accordance with the procedure set out below, we will repair or replace the defective product free of cost.
-If we determine that the problem is not covered under the Sonos Warranty, we will notify you and inform you of service or replacement alternatives that are available to you for an additional fee.
-The warranty period is not extended if we repair or replace your product.
-Your Sonos Warranty is transferable with ownership, so if you give or sell the Sonos product to someone during the guarantee period, it's still covered.
-There are some exclusions to the Sonos Warranty, including but not limited to:
-Problems that result from external causes such as accident, abuse or misuse;
-Use that is not in accordance with Sonos' product instructions;
-Products with missing or altered serial numbers;
-Products which have had their housings opened or are otherwise tampered with; or
-Problems caused by using third party accessories, parts, or components.
-Exclusive events and announcements.
-Enter email address
-Go
-By signing up here I agree to receive Sonos' email newsletter and special promotional offers.
-Innovation
-Careers
-Responsibility
-News
-Legal
-Investors
-© 2004 - 2019 by Sonos, Inc. All rights reserved. Sonos and Sonos product names are trademarks or registered trademarks of Sonos, Inc. All other product names and services may be trademarks or service marks of their respective owners.
-Free shipping, free 45-day returns
-This offer applies to orders shipped within the continental United States and Canada on all sonos.com purchases. Request a return or exchange within 45-days and a free return label will be emailed to you. Contact our expert support team to answer all of your product and order questions.
-Choose your country
-|
-|
-|
-|
-|
-Are you a Human Being?
-OK
-Terms and Conditions
-Sonos Gift Card Terms and Conditions
-The following are the terms and conditions applicable to all Sonos Gift Cards, except as otherwise provided by law.
-Sonos Gift Cards may only be redeemed toward the purchase of eligible goods provided by Sonos, Inc. (“Sonos”) and its affiliates on www.sonos.com, or its affiliated websites, or eligible goods sold at an authorized custom install dealer. Sonos
-Gift Cards may not be redeemed for the purchase of any products or services of Sonos or otherwise, except as indicated by these terms and conditions. For a list of authorized custom install dealers, please contact Sonos at questions@sonos.com.
-The Sonos Gift Cards do not expire and may be redeemed for eligible purchases notwithstanding any stated expiration date.
-Except as required by law, the Sonos Gift Cards are not redeemable for cash, are not eligible for return, cannot be applied as payment to any account, cannot be used to purchase additional Sonos Gift Cards, and cannot be used for purchases for
-shipment outside the United States or for any other products or services as determined by Sonos in its sole discretion. If you have received your Sonos Gift Card through the purchase of a promotional bundle, and you return the other elements of
-the promotional bundle via the Sonos return program, you do not need to return the Sonos Gift Card. Instead, the Sonos Gift Card associated with the promotion will be automatically cancelled.
-The risk of loss and title for a Sonos Gift Card passes to a purchaser (“you”) upon receipt of the Sonos Gift Card by the purchaser or designated recipient, or our delivery to the carrier, whichever is applicable. Sonos is not responsible if
-any Sonos Gift Card is lost, stolen, destroyed or used without your permission.
-Sonos has the right to close customer accounts and bill alternative forms of payment if a fraudulently obtained Sonos Gift Card is redeemed and/or used to make purchases on www.sonos.com or any affiliated website, or an authorized customer install
-dealer.
-WE MAKE NO WARRANTIES, EXPRESS OR IMPLIED, WITH RESPECT TO SONOS GIFT CARDS, INCLUDING WITHOUT LIMITATION, ANY EXPRESS OR IMPLIED WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. IN THE EVENT A SONOS GIFT CARD IS NON-FUNCTIONAL,
-YOUR SOLE REMEDY, AND OUR SOLE LIABILITY, WILL BE THE REPLACEMENT OF SUCH GIFT CARD. CERTAIN STATE LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF
-THE ABOVE DISCLAIMERS, EXCLUSIONS, OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.
-Sonos may modify these terms and conditions at any time at our discretion, and any change shall be noted on these terms and conditions. The terms and conditions found at www.sonos.com/legal/terms apply.
-When you purchase, receive or redeem a Sonos Gift Card, you agree that the laws of the State of California, without regard to principles of conflict of laws, will govern these terms and conditions and your use of the Sonos Gift Card. All terms
-and conditions are applicable to the extent permitted by law. If any part of these terms and conditions is deemed to be invalid or otherwise unenforceable or illegal, the balance of these terms and conditions shall remain in effect and shall be
-construed in accordance with its terms as if the invalid or illegal provision, or the invalid or illegal portion of a provision, were not contained herein.
-Any dispute or claim relating in any way to Sonos Gift Cards shall be resolved by binding arbitration, rather than in court, except that you may assert claims in small claims court if your claims qualify. The Federal Arbitration Act and federal
-arbitration law apply to this agreement.
-The arbitration will be conducted by the American Arbitration Association ("AAA") under its rules, including the AAA's Supplementary Procedures for Consumer-Related Disputes. Payment of all filing, administration and arbitrator fees will be governed
-by the AAA's rules. Sonos and you agree that any dispute resolution proceedings will be conducted only on an individual basis and not in a class, consolidated or representative action. If for any reason a claim proceeds in court rather than in
-arbitration Sonos and you each waive any right to a jury trial. Sonos and you also agree that you or we may bring suit in court to enjoin infringement or other misuse of intellectual property rights.
-Revised October 28, 2014
-No amount was selected. Please select an amount before adding the gift card to your cart.
-To locate a Sonos dealer near you, please enter your address below.
-City
-Postal code
+Reviews
+Product manual
+Take a comprehensive look at the setup, function, and maintenance of Beam. The product manual details all of its specifications and how to care for your Sonos soundbar.
+Better together
+Why Choose Sonos
+Brilliant Sound
+Enjoy clear, richly-detailed sound that fills the room at any volume.
+Easy to Use
+Setup takes minutes, and control is simple with the Sonos app, Apple AirPlay 2, and your voice.
+Listen Your Way
+Customise your system and play what you want, where you want.
+Your browser's Javascript functionality is turned off. Please turn it on so that you can experience the full capabilities of this site.
+Get updates, exclusive offers, and more
+By subscribing here, you agree to receive emails and promotional offers from Sonos.
+Sign up
+Thank you!
+Sorry, we were unable to create that user account.
+© 2019 Sonos Inc.
+&horbar
+&horbar
+&horbar
+&horbar
+&horbar

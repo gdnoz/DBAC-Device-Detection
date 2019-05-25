@@ -51,7 +51,7 @@ UPC
 Warranty
 3-Year Limited
 Sensor Type
-Electrochemical, Photoelectric
+Photoelectric, Electrochemical
 Battery Backup
 10-Year Sealed Lithium
 Item Length

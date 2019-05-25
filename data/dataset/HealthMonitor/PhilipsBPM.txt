@@ -39,7 +39,9 @@ Kitchen
 Household products
 Ironing and Garment Care
 Household products
-Home Cleaning
+Air Purifiers
+Household products
+Vacuum Cleaners
 Products
 Lighting
 Lighting
@@ -54,6 +56,8 @@ Health
 Respiratory Care
 Health
 Psoriasis Treatment
+Health
+Hearing solutions
 Products
 Automotive
 Products
@@ -67,15 +71,21 @@ About Philips
 For professionals
 Back
 For professionals
-Upper arm blood pressure monitor
+My Philips
+Back
+My Philips
+Log out
+Upper arm blood pressure monitor DL8760/15
+Overall Rating
+/ 5
 -{discount-percentage}%
-Upper arm blood pressure monitor
-DL8760/15
-Overall rating
+Upper arm blood pressure monitor DL8760/15
+Overall Rating
 / 5
 Connected blood pressure tracking
 The connected upper arm blood pressure monitor allows you to measure your blood pressure and heart rate. Syncs automatically to the free Philips HealthSuite health app so you can conveniently track your measurements over time.
-DL8760/15
+Connected blood pressure tracking
+The connected upper arm blood pressure monitor allows you to measure your blood pressure and heart rate. Syncs automatically to the free Philips HealthSuite health app so you can conveniently track your measurements over time.
 Connected blood pressure tracking
 Play Pause
 /
@@ -85,14 +95,12 @@ Images
 [trigger to render Image Gallery]
 Connected blood pressure tracking
 The connected upper arm blood pressure monitor allows you to measure your blood pressure and heart rate. Syncs automatically to the free Philips HealthSuite health app so you can conveniently track your measurements over time.
-DL8760/15
-Overall rating
-/ 5
+Connected blood pressure tracking
+The connected upper arm blood pressure monitor allows you to measure your blood pressure and heart rate. Syncs automatically to the free Philips HealthSuite health app so you can conveniently track your measurements over time.
 Upper arm blood pressure monitor
 Blood pressure measurement, Heart rate measurement, Syncs with Philips health app
 DL8760/15
-Connected blood pressure tracking
-Syncs with free Philips HealthSuite health app
+Connected blood pressure tracking Syncs with free Philips HealthSuite health app
 Blood pressure measurement Heart rate measurement Syncs with Philips health app
 Measures systolic and diastolic pressure and heart rate
 Measures systolic and diastolic pressure and heart rate
@@ -108,7 +116,8 @@ No batteries required. Rechargeable using DC charger
 No batteries required. Rechargeable using DC charger
 Large backlit screen clearly shows your measurement results
 Large backlit screen clearly shows your measurement results.
-Show more
+Show all features
+Show less features
 * Based on start with fully charged battery and three measurements per day
 Recently viewed products
 You might be interested in

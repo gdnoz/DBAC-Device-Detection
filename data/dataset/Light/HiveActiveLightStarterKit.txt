@@ -64,7 +64,6 @@ AB.floatingBasket
 AB.trustpilotPopup
 AB.newExistingCustomerLandingPage
 AB.seasonalOfferNewCustomerLandingPage
-AB.usHomepageRedesign
 Environments
 Close
 British Gas customers can get
