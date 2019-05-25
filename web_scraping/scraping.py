@@ -112,7 +112,7 @@ class RelevantTextScraper:
 
         return relevant_text
 
-    def extract_best_text(self) -> str:
+    def extract_best_text(self, urls: set) -> str:
         """
         Extracts text from the urls. Text is discarded if it is irrelevant.
         :return: All relevant texts combined into a string.
@@ -123,7 +123,7 @@ class RelevantTextScraper:
         relevant_text = ""
         best_score = 0.0
 
-        for url in self.urls:
+        for url in urls:
             if not (any(element in url for element in self.blacklist) or self._is_url_sub_domain_of_element_in_blacklist(url) or url in self.visited_urls):
                 try:
                     self.visited_urls.add(url)

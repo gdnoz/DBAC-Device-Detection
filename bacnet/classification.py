@@ -60,7 +60,7 @@ class BacnetClassification:
 
         urls = BingSearchAPI.first_ten_results(search_terms,only_html=False)+GoogleCustomSearchAPI.search(search_terms,exclude_pdf=False)
 
-        text_from_urls = self.text_scraper.extract_text(set(urls))
+        text_from_urls = self.text_scraper.extract_best_text(set(urls))
 
         classification_result = self.classifier.predict_text(text_from_urls)
 

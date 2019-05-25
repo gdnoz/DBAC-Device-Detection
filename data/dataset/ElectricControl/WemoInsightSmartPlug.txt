@@ -8,7 +8,7 @@ Wemo® Insight Smart Plug is rated
 3.8 out of
 5 by
 121.
-y_2019, m_5, d_22, h_18
+y_2019, m_5, d_25, h_6
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
 co_hasreviews, tv_1, tr_120
@@ -29,7 +29,7 @@ Wemo® Insight Smart Plug is rated
 3.8 out of
 5 by
 121.
-y_2019, m_5, d_22, h_18
+y_2019, m_5, d_25, h_6
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
 co_hasreviews, tv_1, tr_120
@@ -150,14 +150,14 @@ malex from
 Does not work
 I followed the instructions to the letter but the Wemo will not shut off.
 Date published: 2018-11-07
-y_2019, m_5, d_22, h_18
+y_2019, m_5, d_25, h_6
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
 co_hasreviews, tv_1, tr_120
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getReviews, 93ms
+CLOUD, getReviews, 94ms
 REVIEWS, PRODUCT
 Related Products
 Select Options

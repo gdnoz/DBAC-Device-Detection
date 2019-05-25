@@ -45,13 +45,15 @@ class MudClassification:
         '''
         Classification MUD Urls
         '''
+        '''
         mud_file_urls = MUDUtilities.get_all_urls_from_mud(mud_file_contents)
-        text_from_mud_urls = RelevantTextScraper(mud_file_urls, self.scraping_threshold).extract_best_text()
+        text_from_mud_urls = self.text_scraper.extract_best_text(mud_file_urls)
 
         classification_result = self.classifier.predict_text(text_from_mud_urls)
 
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)
+        '''
 
         '''
         Preparing classification based on search engines.
@@ -60,7 +62,7 @@ class MudClassification:
 
         urls = GoogleCustomSearchAPI.search(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_results(systeminfo,only_html=True)
 
-        text_from_urls = self.text_scraper.extract_text(set(urls))
+        text_from_urls = self.text_scraper.extract_best_text(set(urls))
 
         classification_result = self.classifier.predict_text(text_from_urls)
 
@@ -68,4 +70,4 @@ class MudClassification:
             return MudClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
         else:
             return MudClassificationResult("No_classification",0.0)
-        '''
+

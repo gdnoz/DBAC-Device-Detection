@@ -8,14 +8,14 @@ Wemo Mini Smart Plug is rated
 4.1 out of
 5 by
 657.
-y_2019, m_5, d_22, h_18
+y_2019, m_5, d_23, h_17
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
 co_hasreviews, tv_0, tr_657
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 94ms
+CLOUD, getAggregateRating, 79ms
 REVIEWS, PRODUCT
 Write a review
 Ask a question
@@ -28,14 +28,14 @@ Wemo Mini Smart Plug is rated
 4.1 out of
 5 by
 657.
-y_2019, m_5, d_22, h_18
+y_2019, m_5, d_23, h_17
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
 co_hasreviews, tv_0, tr_657
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 94ms
+CLOUD, getAggregateRating, 79ms
 REVIEWS, PRODUCT
 Belkin: Apple Employee Discount
 $29.99
@@ -150,7 +150,7 @@ Eric_00 from
 Easy setup, works very well with Google Home!
 This was a impulse buy at Home Depot. Glad that I did.
 Date published: 2019-05-08
-y_2019, m_5, d_22, h_18
+y_2019, m_5, d_23, h_17
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
 co_hasreviews, tv_0, tr_657
@@ -161,7 +161,7 @@ CLOUD, getReviews, 78ms
 REVIEWS, PRODUCT
 Related Products
 Select Options
-linksys_hybris4
+linksys_hybris5
 CONNECT WITH US
 This is a required field.
 Email id is invalid.
