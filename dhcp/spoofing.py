@@ -22,8 +22,6 @@ class DHCPSpoofing:
 
         _,localmacraw = get_if_raw_hwaddr(conf.iface)
 
-        #conf.iface = "lo0"
-
         own_ip_address = socket.gethostbyname(socket.getfqdn())
 
         dhcp_discover_packet = Ether(src=mac, dst='ff:ff:ff:ff:ff:ff', type=0x800)\
@@ -31,7 +29,6 @@ class DHCPSpoofing:
                         /UDP(dport=67, sport=68)\
                         /BOOTP(chaddr=localmacraw, ciaddr = '0.0.0.0',xid=RandInt(), flags = 1) \
                         /DHCP(options=[('message-type', 'discover'), ('param_req_list',) + tuple([x for x in dhcp_fingerprint]),('vendor_class_id', dhcp_vendor), (161, bytes(mud_url,encoding='utf8')), 'end'])
-        #, (161, mud_url)
 
         print("Sending DHCP Discover packet to interface " + str(conf.iface) + "...")
         sendp(dhcp_discover_packet)

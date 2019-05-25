@@ -1,10 +1,17 @@
+'''
+Contains utility methods to run all functions in a specified module.
+These functions are expected to return a dict which contains the result of training a specific model.
+This then runs these functions several times, averages their scores and prints the results.
+'''
+
+
+
 def run_tests_in_module_with_kfold_cross_validation(module_name: str):
     import constants,sys,os
     import numpy as np
     from inspect import getmembers, isfunction
     from sklearn.model_selection import train_test_split, KFold
     from sklearn.datasets import load_files
-
 
     average_result = dict()
 

@@ -1,3 +1,5 @@
+//<- This ignores the line
+
 Speaker:
 GoogleHome,https://store.google.com/us/product/google_home?hl=en-US
 GoogleHomeMini,https://store.google.com/us/product/google_home_mini?hl=en-US
@@ -21,6 +23,8 @@ iSeeBellDoorbell,https://www.iseebell.com/video-doorbell
 RemoBell,https://remoplus.co/products/remobell_wireless_wifi_video_doorbell
 NestDoorbell,https://nest.com/dk/doorbell/nest-hello/overview/
 Gamkov,http://www.gamkovonline.com/products/detail/21584
+ADTDoorbell,https://www.adt.com/doorbell-camera
+NuToneKnock,http://www.nutone.com/nutoneknock
 
 Camera:
 NestCam,https://nest.com/cameras/nest-cam-indoor/overview/
@@ -31,7 +35,6 @@ MaximusCameraFloodLight,https://getkuna.com/pages/camera-floodlight
 ArloUltra,https://arlo.com/nz/?cid=eml_000135
 WansViewQ3S,http://www.wansview.com/cn/proinfo.aspx?proid=11&categoryid=4&aids=2
 ReoLink1,https://reolink.com/product/rlc-422w/
-ReoLink
 D-link,http://us.dlink.com/products/connect/full-hd-180-degree-wi-fi-camera/
 ReoLink,http://us.dlink.com/home-solutions/wifi-camera/
 UbiquitiCamera,https://www.ui.com/unifi-video/unifi-video-camera-g3-micro/
@@ -59,8 +62,8 @@ WithingsBPMCore,https://www.withings.com/it/en/bpm-core
 CueHealthMonitoringSystem,https://www.cuehealth.com/#product
 MobiUSSP1System,https://www.frontierhealth.co/products/mobius-sp1-system
 Activ5,https://www.activ5.com/mobile-device-demo/
-BodyGuardianHeart,https://www.preventicesolutions.com/technologies/body-guardian-heart.html
-BodyGuardianVerite,https://www.preventicesolutions.com/services/body-guardian-verite.html
+BodyGuardianHeart,https://preventicesolutions.com/hcp/body-guardian-heart
+BodyGuardianVerite,https://preventicesolutions.com/hcp/body-guardian-verite
 FitbitAriaScale,https://www.fitbit.com/dk/aria2
 GarminIndexScale,https://buy.garmin.com/en-US/US/p/530464
 OmronEvolv,https://www.omron-healthcare.com/en/evolv#evolv
@@ -106,7 +109,6 @@ Thustar HomeAlarm,https://home-security-alarm.systemalarm.net/thustar-wireless-h
 KeruiHomeIntruder,http://www.keruistore.com/KERUI-W193-2G-3G-WiFi-PSTN-Wireless-Home-Intruder-Alarm-System-APP-Control-alarm.php
 Smanos X500,https://www.smanos.com/X500
 BlaupunktQ3200,https://www.blaupunkt.com/en/nc/products/home-security/products/single/15137/
-BigEasy,https://www.bigeasysecurity.com/collections/wireless-alarm-system-wireless-home-security-systems/products/smart-wifi-alarm-package
 SkylinkAlarm,http://www.skylinkstore.com/store/us/skylinknet-alarm-system-starter-kit-1.html
 SkylinkOverview,http://www.skylinkhome.com/products/skylinknet-alarm-systems-kits
 GlobalGadgets,https://global-gadgets.co.uk/pd-smart-wifi-house-alarm-46-c.asp
@@ -119,13 +121,16 @@ HiveMotionSensor,https://www.hivehome.com/products/hive-motion-sensor
 EveMotionSensor,https://www.evehome.com/en/eve-motion
 FibaroMotionSensor,https://www.fibaro.com/en/products/motion-sensor/
 DLinkWifiMotionSensor,http://us.dlink.com/products/connected-home/wi-fi-motion-sensor/
-YaleMotionSensor
 Honeywell5800PIR,https://www.security.honeywell.com/product-repository/5800pir-series
 Honeywell5800PIROD,https://www.security.honeywell.com/product-repository/5800pir-od
 GeeniMotionSensor,https://mygeeni.com/collections/smart-sensors/products/geeni-wi-fi-smart-motion-sensor-no-hub-required-white
 Nedis,https://www.nedis.com/product/wifi-smart-motion-sensor-wired-indoor
 Proteus,https://proteussensor.com/wi-fi-motion-sensor.html
 UbiquitiMotionSensor,https://www.wifi-stock.com/details/ubiquiti-mfi_msw.html
+XfinityMotionSensor,https://www.xfinity.com/learn/home-security/devices/motion-sensor
+connectSense,https://www.connectsense.com/wireless-motion-sensor
+HueMotionSensor,https://www2.meethue.com/en-us/p/hue-motion-sensor/046677473389
+FosmonMotionSensor,https://www.fosmon.com/wavelink/wavelink-motion-sensor-for-wireless-motion-sensor-door-chime-white-1-pack
 
 ElectricControl:
 SmartThingsOutlet,https://www.smartthings.com/products/smartthings-outlet
@@ -140,6 +145,8 @@ GeeniSurge,https://mygeeni.com/collections/power/products/geeni-gn-sw003-199-sur
 KasaSmartPlug,https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-wifi-power-outlet-kp200
 KasaSmartOutdoor,https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-wifi-outdoor-plug-kp400
 WifiPlug,https://wifiplug.co.uk/product/wifiplug-home-ios-android-compatible-fully-loaded-smart-plug/
+SupernightPlug,https://supernight.cc/products/hom0031
+GoSundSmartPlug,https://www.gosund.store/products/mini-smart-wifi-plug
 
 IndustryController:
 EclypsenLight,https://www.distech-controls.com/en/us/products/eclypse/eclypse-nlight-solution/related-products/eclypse-nlight-solution/

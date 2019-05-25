@@ -2,8 +2,8 @@ from mud.classification import MudClassification
 from mud.utilities import MUDUtilities
 import constants,os
 
-def local_test(threshold: float, scrape_threshold: float):
-    mud_classifier = MudClassification(threshold, scrape_threshold)
+def local_test(threshold: float):
+    mud_classifier = MudClassification(threshold, 0.0)
 
     #["Tplink Camera.json","Ring doorbell.json","BlipcareBP meter.json"]:
     #os.listdir(constants.MUDFILES_DIR)
@@ -12,7 +12,13 @@ def local_test(threshold: float, scrape_threshold: float):
         print("FINAL PREDICTION: " + str(result.predicted_class) + ": " + str(result.score))
 
 def synthetic_test_set_test(threshold: float, scraping_threshold: float):
-    mud_classifier = MudClassification(threshold, scraping_threshold)
+    '''
+    Tests the classification of MUD files using the set of test mud files specified in data/mud_synthetic_test_set.csv
+    :param threshold: threshold to be used for the mud classification.
+    :return:
+    '''
+
+    mud_classifier = MudClassification(threshold,scraping_threshold)
 
     numberOfTests = 0
     correctClassifications = 0
@@ -45,15 +51,39 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
 
             print(mud_url + ": " + "fail" + " (" + classification + ", " + str(score) + ")")
 
-    print("****************** TEST COMPLETE: c_tresh: " + str(threshold) + " s_thresh: " + str(scraping_threshold) + " ******************")
+    print("****************** TEST COMPLETE: c_tresh: " + str(threshold)+ " s_threshold: " + str(scraping_threshold) + " ******************")
     print("Accuracy:                    " + str(float(correctClassifications/numberOfTests)))
     print("No device_classification:    " + str(float(noClassifications/numberOfTests)))
     print("Average score:               " + str(float(scoreSum/numberOfTests)))
 
+def single_test(mud_url: str,threshold: float, scraping_threshold: float, correctClassification: str):
+    mud_classifier = MudClassification(threshold, scraping_threshold)
+
+    mud_file_from_web = MUDUtilities.get_mud_file(mud_url)
+
+    classification_result = mud_classifier.classify_mud_contents(mud_file_from_web)
+
+    classification = classification_result.predicted_class
+    score = classification_result.score
+
+    if classification == correctClassification:
+        print(mud_url + ": " + "pass" + " (" + classification + ", " + str(score) + ")")
+    else:
+        print(mud_url + ": " + "fail" + " (" + classification + ", " + str(score) + ")")
+
 if __name__ == "__main__":
     #best so far:
+    '''
+    single_test("https://iotanalytics.unsw.edu.au/mud/tribyspeakerMud.json",0.2,0.1,"Speaker")
+    single_test("https://iotanalytics.unsw.edu.au/mud/belkincameraMud.json", 0.2, 0.1, "Speaker")
+    single_test("https://iotanalytics.unsw.edu.au/mud/samsungsmartcamMud.json", 0.2, 0.1, "Speaker")
+    single_test("https://iotanalytics.unsw.edu.au/mud/wemomotionMud.json", 0.2, 0.1, "Speaker")
+    single_test("https://iotanalytics.unsw.edu.au/mud/withingsbabymonitorMud.json", 0.2, 0.1, "Speaker")
+    '''
 
-    synthetic_test_set_test(0.2,0.1)
+    #synthetic_test_set_test(0.2,0.0)
+    #synthetic_test_set_test(0.15,0.25)
+    synthetic_test_set_test(0.2, 0.1)
     #local_test(0.2,0.1)
 
     #for c_thresh in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]:

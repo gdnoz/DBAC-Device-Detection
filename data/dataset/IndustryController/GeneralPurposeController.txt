@@ -1,0 +1,114 @@
+OPN-UCXP i-Vu® UC Open XP - Universal programmable controller for air handlers, chiller plants, hot water systems, lighting, and other HVAC equipment. 12 Inputs/12 Outputs. | Carrier Building Solutions
+This site uses cookies. By continuing to use this site you are agreeing to use cookies. Find out
+../../../../../CommonSearchHandler.ashx
+Toggle navigation
+../../../../../CommonEmailHandler.ashx
+1
+-No1
+EMAIL PRODUCT DETAILS
+Indicates a Required Field
+* Your Name
+* Your Email Address
+* Recipient's Email Address
+Send
+Your product information request has been sent!
+Email has been sent to you , please check your spam/junk emails if you are unable to find the email.
+SERVER ERROR!!
+Due to some internal error, the mail has not been sent.
+Controls - BACnet HVAC Controllers - Legacy
+OPN-UCXP
+i-Vu® UC Open XP
+OPN-UCXP
+General Purpose Controller
+Universal programmable controller provides auxiliary building control to interface with air handlers, chiller plants, hot water systems, lighting, and other HVAC equipment. 12 Inputs/12 Outputs.
+The UC Open XP controller provides auxiliary building control to interface with air handlers, chiller plants, hot water systems, lighting, and other HVAC equipment. The UC Open XP’s factory-engineered control programs provide simple building integration for commercial applications with 24 I/O point capability. The UC Open XP also provides support for 24 additional I/O points through the use of the UC Open XP IO Expander. When combined, these controllers can support up to 48 total I/O points for even greater flexibility.
+Application Features
+Comprehensive library of factory-engineered control programs available for air and water systems, including: CV and VAV AHU control, WSHP loop control (boilers/towers/pumps), chiller plant control, hot water systems, lighting control, metering, and network data sharing
+Supports Snap graphical programming for creating customized control programs
+Supports Carrier communicating room sensors, which allow for local setpoint adjustment and local overrides
+Hardware Features
+Expands the UC Open XP Controller to support up to 48 I/O points
+Removable screw terminals for I/O connections
+Versatile mounting options: may be mounted directly onto the UC Open XP enclosure or separately within the mounting enclosure
+System Benefits
+Integrated Carrier linkage algorithm for plug-and-play integration with Carrier systems
+Fully plug-and-play with the Carrier i-Vu Building Automation System
+Supports demand limiting for maximum energy savings
+BACNet Support
+Advanced application controller (B-AAC), as defined in BACNet 135-2001 Annex L
+Communication Ports
+BACNet Port: EIA-485 port for BACnet MS/TP communications (baud rate is DIP switch selectable)
+Local Access port: For system start-up and troubleshooting (115.2 kbps)
+Rnet port: For connecting Carrier communicating room sensors and Carrier's touchscreen user interface
+Inputs
+12 inputs: Configurable for 0-10V, RTD/Thermistor/Dry contact, or 0-20mA. Inputs 1 and 2 may be used for pulse counting. All analog inputs have 12 bit A/D resolution.
+Outputs
+6 binary outputs: Configured as dry contact, normally open or normally closed. All binary outputs must be powered from a Class 2 power source.
+6 analog outputs: 1 and 2 are configurable for 0-10V or 0-20mA; 3-6 are 0-10V only. Analog outputs have 8 bit D/A resolution.
+Protection
+Incoming power and network connections are protected by non-replaceable internal solidstate polyswitches that reset themselves when the condition that causes a fault returns to normal. The power, network, input, and output connections are also protected against voltage transient and surge events.
+Real Time Clock
+Battery-backed real time clock keeps track of time in event of power failure.
+Battery
+10-year Lithium CR2032 battery provides a minimum of 10,000 hours of trend data & time retention during power outages.
+Status Indicators
+LED status of power, running, and errors. LED indicators for transmit/receive for BACnet port and for each of the 12 outputs.
+Controller Addressing
+Rotary DIP switches set BACnet MS/TP MAC address of controller.
+Listed By
+UL-916, FCC Part 15-Subpart B- Class A, CE EN50082-1997
+Environmental Operating Range
+Operating: -24° to 140°F (-30° to 60°C), 10-90% relative humidity, non-condensing
+Storage: -24°F to 140°F (-30° to 60°C), 10-90% relative humidity, non-condensing
+Power Requirements
+24VAC +/- 10%, 50-60Hz
+20VA power consumption
+26VDC (25V min, 30V max
+Single Class 2 source only, 100VA or less
+Dimensions
+Length: 11-13/16” (30 cm)
+Width: 5” (12.7 cm)
+Depth: 2” (5.1 cm)
+Weight: 1.1 lbs. (0.50 kg)
+BrochuresMore
+Installation/OperatingProduct Data
+Brochure
+Published
+11/15/2018
+Published
+11/15/2018
+Published
+11/15/2018
+Product Data
+Published
+6/9/2017
+Warranty Card
+Published
+7/10/2015
+Controls
+Published
+2/3/2017
+Installation
+Published
+3/1/2019
+Published
+1/31/2019
+California residents please see .
+Products
+Training
+Service
+Rentals
+Software
+Literature
+Information For
+Connect
+Share
+Visit Us
+|
+|
+|
+|
+|
+Carrier is part of , a unit of
+© Carrier Corporation
+2019

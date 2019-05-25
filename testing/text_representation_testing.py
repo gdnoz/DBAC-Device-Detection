@@ -1,20 +1,16 @@
 import numpy as np
-import sklearn
-from sklearn import datasets
-from sklearn.linear_model import SGDClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
-from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import CountVectorizer,TfidfVectorizer,TfidfTransformer
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.svm import LinearSVC
+from sklearn.feature_extraction.text import CountVectorizer,TfidfTransformer
 from sklearn.pipeline import Pipeline
 from sklearn import metrics
-from inspect import getmembers, isfunction
-import os,sys
+
+'''
+Various tests of different text classification.
+'''
 
 def test_no_tfidf(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
-    svc_classifier = SVC(kernel='linear')
+    svc_classifier = LinearSVC()
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -29,7 +25,7 @@ def test_no_tfidf(docs_to_train, X_train, X_test, y_train, y_test):
 def test_tf(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=False)
-    svc_classifier = SVC(kernel='linear')
+    svc_classifier = LinearSVC()
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -45,7 +41,7 @@ def test_tf(docs_to_train, X_train, X_test, y_train, y_test):
 def test_tfidf(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
-    svc_classifier = SVC(kernel='linear')
+    svc_classifier = LinearSVC()
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -60,7 +56,7 @@ def test_tfidf(docs_to_train, X_train, X_test, y_train, y_test):
 
 def test_no_tfidf_bigram(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(ngram_range=(1, 2),stop_words='english')
-    svc_classifier = SVC(kernel='linear')
+    svc_classifier = LinearSVC()
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -75,7 +71,7 @@ def test_no_tfidf_bigram(docs_to_train, X_train, X_test, y_train, y_test):
 def test_tf_bigram(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(ngram_range=(1, 2),stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=False)
-    svc_classifier = SVC(kernel='linear')
+    svc_classifier = LinearSVC()
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -91,7 +87,7 @@ def test_tf_bigram(docs_to_train, X_train, X_test, y_train, y_test):
 def test_tfidf_bigram(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(ngram_range=(1, 2),stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
-    svc_classifier = SVC(kernel='linear')
+    svc_classifier = LinearSVC()
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -106,38 +102,10 @@ def test_tfidf_bigram(docs_to_train, X_train, X_test, y_train, y_test):
 
 def test_no_tfidf_bigram_char(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(analyzer='char',ngram_range=(1, 2), stop_words='english')
-    svc_classifier = SVC(kernel='linear')
+    svc_classifier = LinearSVC()
 
     text_clf = Pipeline([
         ('tfidf_vect', count_vectorizer),
-        ('clf', svc_classifier)
-    ])
-
-    text_clf.fit(X_train, y_train)
-
-    predicted = text_clf.predict(X_test)
-    return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted),output_dict=True)
-'''
-def test_tf_bigram_char(docs_to_train, X_train, X_test, y_train, y_test):
-    tfidf_vectorizer= TfidfVectorizer(analyzer='char',ngram_range=(1, 2),stop_words='english',use_idf=False)
-    svc_classifier = SVC(kernel='linear')
-
-    text_clf = Pipeline([
-        ('tfidf_vect', tfidf_vectorizer),
-        ('clf', svc_classifier)
-    ])
-
-    text_clf.fit(X_train, y_train)
-
-    predicted = text_clf.predict(X_test)
-    return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted),output_dict=True)
-'''
-def test_tfidf_bigram_char(docs_to_train, X_train, X_test, y_train, y_test):
-    ttfidf_vectorizer= TfidfVectorizer(analyzer='char',ngram_range=(1, 2),stop_words='english',use_idf=True)
-    svc_classifier = SVC(kernel='linear')
-
-    text_clf = Pipeline([
-        ('tfidf_vect', ttfidf_vectorizer),
         ('clf', svc_classifier)
     ])
 
@@ -157,7 +125,7 @@ class LemmaTokenizer(object):
 
 def test_no_tfidf_lemmatizer(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(tokenizer=LemmaTokenizer(), stop_words='english', strip_accents='unicode', lowercase=True)
-    svc_classifier = SVC(kernel='linear')
+    svc_classifier = LinearSVC()
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -172,7 +140,7 @@ def test_no_tfidf_lemmatizer(docs_to_train, X_train, X_test, y_train, y_test):
 def test_tf_lemmatizer(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(tokenizer=LemmaTokenizer(), stop_words='english', strip_accents='unicode', lowercase=True)
     tfidf_transformer = TfidfTransformer(use_idf=False)
-    svc_classifier = SVC(kernel='linear')
+    svc_classifier = LinearSVC()
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -188,7 +156,7 @@ def test_tf_lemmatizer(docs_to_train, X_train, X_test, y_train, y_test):
 def test_tfidf_lemmatizer(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(tokenizer=LemmaTokenizer(), stop_words='english', strip_accents='unicode', lowercase=True)
     tfidf_transformer = TfidfTransformer(use_idf=True)
-    svc_classifier = SVC(kernel='linear')
+    svc_classifier = LinearSVC()
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -203,4 +171,5 @@ def test_tfidf_lemmatizer(docs_to_train, X_train, X_test, y_train, y_test):
 
 if __name__ == "__main__":
     from device_classification.utilities import run_tests_in_module_with_kfold_cross_validation,run_tests_in_module
+    #run_tests_in_module_with_kfold_cross_validation(__name__)
     run_tests_in_module(__name__)

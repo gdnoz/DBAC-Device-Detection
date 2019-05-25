@@ -8,6 +8,8 @@ class GoogleCustomSearchAPI:
     @staticmethod
     def search(search_terms: str, exclude_pdf=False) -> list:
         import requests
+        from requests import HTTPError
+
 
         if exclude_pdf:
             q = search_terms + GoogleCustomSearchAPI.exclude_pdf
@@ -22,12 +24,11 @@ class GoogleCustomSearchAPI:
              }
 
         response = requests.get(GoogleCustomSearchAPI.endpoint, params=params)
-        response.raise_for_status()
 
         try:
+            response.raise_for_status()
             return [result_dict['link'] for result_dict in response.json()['items']]
         except KeyError:
             return []
-
-if __name__ == "__main__":
-    print(GoogleCustomSearchAPI.search("blipcareBPmeter"))
+        except HTTPError:
+            return []

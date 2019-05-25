@@ -17,7 +17,7 @@ X
 {}
 Add to Cart
 View Details
-com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO@6f1696bb(com.demandware.beehive.orm.internal.state2.RelationalObjectInstanceState@557dfb5e[com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO) [d0523091338d7bf9d51a415b3f]])
+com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO@6f1696bb(com.demandware.beehive.orm.internal.state2.RelationalObjectInstanceState@5b2b1480[com.demandware.beehive.core.capi.domain.PersistentObjectPOKey(com.demandware.beehive.xcs.internal.catalog.CatalogCategoryPO) [d0523091338d7bf9d51a415b3f]])
 JBL Link 20
 Alternate Views
 Images
@@ -252,7 +252,7 @@ Michael1000 from
 Great features!
 Looking forward to taking with me on my vacation with the family.
 Date published: 2019-03-25
-y_2019, m_5, d_24, h_2
+y_2019, m_5, d_23, h_2
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
 co_hasreviews, tv_0, tr_143
@@ -281,8 +281,8 @@ Answered by: Lightbrigner
 Date published: 2018-12-30
 How is this integrated with smart hubs? Smartthings maybe?
 Asked by: Fearz
-Not sure what you mean by integration but I setup my SmartThings hub in the google home app. So now all of my devices connected to the hub can be controlled with google assistant.&nbsp;
-Answered by: benrudolph
+Unfortunately , there is no integration yet with smart hubs.
+Answered by: Mario at Customer service
 Date published: 2017-12-02
 does the link 20 have a jack for
 wired auxilliary input?
@@ -302,7 +302,7 @@ You're going to want either a sound bar, or sound base, or a powered pair of spe
 The JBL Link series don't have any way to receive the TV's audio.
 Answered by: nopenope
 Date published: 2019-02-07
-y_2019, m_5, d_24, h_2CST
+y_2019, m_5, d_23, h_2CST
 bvseo_bulk, prod_bvqa, vn_bulk_2.0.12
 cp_1, bvpage1
 co_hasquestionsanswers, tq_210

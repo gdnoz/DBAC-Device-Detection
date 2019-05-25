@@ -15,10 +15,8 @@ from gensim.models import doc2vec,fasttext
 import os,random
 
 '''
-https://github.com/ibrahimsharaf/doc2vec/blob/master/model.py
+https://github.com/ibrahimsharaf/doc2vec/blob/master/model.py under MIT License https://github.com/ibrahimsharaf/doc2vec/blob/master/LICENSE
 '''
-
-
 
 def label_sentences(corpus, label_type):
     labeled = []
@@ -87,7 +85,6 @@ for epoch in range(10):
 
 d2v.save("d2v.model")
 ft.save("ft.model")
-
 
 train_vectors = get_vectors(d2v, len(X_train), 300, 'Train')
 train_vectors_1 = get_vectors(None, len(X_train), 300, 'Train')

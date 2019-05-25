@@ -27,6 +27,10 @@ class DataSetCreator:
             category_path = ""
 
             for line in f:
+                lol = line[:2]
+                if line[:2] == "//": #Ignore Comments
+                    continue
+
                 stripped_line = line.rstrip()
                 if self._category_regex.match(stripped_line):
                     category = stripped_line[:-1] #Remove last element
@@ -55,3 +59,11 @@ class DataSetCreator:
                         print(e)
                         print("Skipping " + document_name + "...")
 
+if __name__ == "__main__":
+    import os,constants
+    import dataset_utilities.data_set_proportionality_check
+
+    ds_creator = DataSetCreator(constants.DATA_SET_URLS_FILE_PATH)
+    ds_creator.create_local_data_set(constants.DATA_SET_PATH)
+
+    print(dataset_utilities.data_set_proportionality_check.data_set_proportionality_check())
