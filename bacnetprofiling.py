@@ -25,6 +25,10 @@ class BacnetProfiler:
         print("Device type:             " + classification_result.predicted_class)
         print("Classification score:    " + str(classification_result.score))
 
+        print("Bacnet query result:")
+        print(query_result)
+
+
         print("****************** Bacnet profiling completed *******************")
 
 if __name__ == "__main__":

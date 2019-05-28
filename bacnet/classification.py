@@ -16,6 +16,7 @@ class BacnetClassification:
 
     def __init__(self, classification_threshold: float, scraping_threshold: float):
         from device_classification.text_classification import DeviceClassifier
+        from web_scraping.scraping import RelevantTextScraper
         self.threshold = classification_threshold
         self.text_scraper = RelevantTextScraper(scraping_threshold)
         self.classifier = DeviceClassifier(threshold=classification_threshold)
@@ -26,7 +27,6 @@ class BacnetClassification:
         :param queried_objects: The queried objects of the device in json format
         :return: BacnetClassificationResult containing predicted class and score.
         '''
-        from web_scraping.scraping import RelevantTextScraper
         from web_scraping.google import GoogleCustomSearchAPI
         from bacnet.utilities import BacnetUtilities
         from web_scraping.bing import BingSearchAPI
