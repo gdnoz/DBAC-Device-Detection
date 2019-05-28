@@ -15,7 +15,7 @@ co_hasreviews, tv_1, tr_120
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 94ms
+CLOUD, getAggregateRating, 78ms
 REVIEWS, PRODUCT
 Write a review
 Ask a question
@@ -36,7 +36,7 @@ co_hasreviews, tv_1, tr_120
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 94ms
+CLOUD, getAggregateRating, 78ms
 REVIEWS, PRODUCT
 $49.99
 Buy Now
@@ -157,11 +157,11 @@ co_hasreviews, tv_1, tr_120
 loc_en_US, sid_P-F7C029, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getReviews, 94ms
+CLOUD, getReviews, 140ms
 REVIEWS, PRODUCT
 Related Products
 Select Options
-linksys_hybris4
+linksys_hybris5
 CONNECT WITH US
 This is a required field.
 Email id is invalid.

@@ -146,19 +146,19 @@ class RelevantTextScraper:
                         if classification.prediction_probability > best_score:
                             relevant_text = scraped_text
                             best_score = classification.prediction_probability
+                    else:
+                        extract_result = tldextract.extract(url)
 
-                    extract_result = tldextract.extract(url)
+                        is_top_level_domain = extract_result.suffix and extract_result.domain and not extract_result.subdomain
+                        is_sub_domain = extract_result.suffix and extract_result.domain and extract_result.subdomain
 
-                    is_top_level_domain = extract_result.suffix and extract_result.domain and not extract_result.subdomain
-                    is_sub_domain = extract_result.suffix and extract_result.domain and extract_result.subdomain
+                        if is_top_level_domain:
+                            self.blacklist.add(url)
+                        elif is_sub_domain:
+                            self.blacklist.add(url)
+                            self.expansion_urls.add(url)
 
-                    if is_top_level_domain:
-                        self.blacklist.add(url)
-                    elif is_sub_domain:
-                        self.blacklist.add(url)
-                        self.expansion_urls.add(url)
-
-                    continue
+                        continue
             else:
                 continue
 

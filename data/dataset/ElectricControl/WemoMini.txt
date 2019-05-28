@@ -7,15 +7,15 @@ F7C063
 Wemo Mini Smart Plug is rated
 4.1 out of
 5 by
-657.
-y_2019, m_5, d_23, h_17
+659.
+y_2019, m_5, d_25, h_6
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
-co_hasreviews, tv_0, tr_657
+co_hasreviews, tv_0, tr_659
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 79ms
+CLOUD, getAggregateRating, 94ms
 REVIEWS, PRODUCT
 Write a review
 Ask a question
@@ -27,15 +27,15 @@ F7C063
 Wemo Mini Smart Plug is rated
 4.1 out of
 5 by
-657.
-y_2019, m_5, d_23, h_17
+659.
+y_2019, m_5, d_25, h_6
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
-co_hasreviews, tv_0, tr_657
+co_hasreviews, tv_0, tr_659
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getAggregateRating, 79ms
+CLOUD, getAggregateRating, 94ms
 REVIEWS, PRODUCT
 Belkin: Apple Employee Discount
 $29.99
@@ -90,6 +90,24 @@ Weight
 Additional Information
 Electrical Rating: 120V~/15A/60Hz/1800W;
 Indoor Use: Designed for residential indoor dry location use only.
+Rated 4 out of
+5
+by
+Tom528 from
+Works pretty well
+I’ve been using a wemo mini for a few months now. Overall it works pretty well, occasionally loses connection to my Google mini, but I can just as easily use the app to control the plugs. Definitely makes life a little easier as I have these in the kids rooms. Now I don’t have to go from room to room making sure the kids turn their lights off!
+Date published: 2019-05-22
+Rated 3 out of
+5
+by
+mjp26362 from
+When the Wemo Wifi is up and running, it's great.
+I have two mini smart plugs.
+Have found that getting connected to the Wemo site isn't always possible.
+Not sure why.
+It's a "great when it works" type thing.
+Has made me hesitant to purchase anymore.
+Date published: 2019-05-22
 Rated 1 out of
 5
 by
@@ -135,33 +153,18 @@ Great automation products
 I've been using Wemo products for nearly 5 years now.
 I love the many options available to automate and integrate with Alexa and IFTTT services.
 Date published: 2019-05-09
-Rated 5 out of
-5
-by
-Manet from
-Easy to install, works great
-I bought combination of smart plug and light switch for $30.00 from home depot as part of their promotion. Cant complain on price, i think i got a very good deal.
-Installation is very simple and instructions straighforward. I was done in 15 mins. Really like the feature that i can control it from phone, user friendly app. WIll recommend. BTW: I bought smart plug and light switch for $30.00 as part of their promotion.
-Date published: 2019-05-08
-Rated 5 out of
-5
-by
-Eric_00 from
-Easy setup, works very well with Google Home!
-This was a impulse buy at Home Depot. Glad that I did.
-Date published: 2019-05-08
-y_2019, m_5, d_23, h_17
+y_2019, m_5, d_25, h_6
 bvseo_bulk, prod_bvrr, vn_bulk_2.0.12
 cp_1, bvpage1
-co_hasreviews, tv_0, tr_657
+co_hasreviews, tv_0, tr_659
 loc_en_US, sid_P-F7C063, prod, sort_[SortEntry(order=FEATURED, direction=DESCENDING), SortEntry(order=SUBMISSION_TIME, direction=DESCENDING)]
 clientName_belkin
 bvseo_sdk, java_sdk, bvseo-2.3.0.0
-CLOUD, getReviews, 78ms
+CLOUD, getReviews, 234ms
 REVIEWS, PRODUCT
 Related Products
 Select Options
-linksys_hybris5
+linksys_hybris4
 CONNECT WITH US
 This is a required field.
 Email id is invalid.

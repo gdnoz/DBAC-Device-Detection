@@ -1,0 +1,94 @@
+DNT-T305
+North America
+Italiano
+Português (Brazil)
+Pусский
+Polski
+Deutsch
+>
+>
+>
+DNT-T305
+DNT-T305
+The DNT-T305 is a fully programmable, Native BACnet™ Advanced Application Controller that communicates on an RS-485 LAN using the BACnet MS/TP protocol. The DNT-T305’s attractive housing includes a LCD display with a wide-angle view and an intuitive keypad.
+Application The DNT-T305 is suitable for various room applications with small I/O requirements such as Fan Coil Units, Unit Ventilators and Heat Pumps. Because of its programming capability, the DNT-T305 can be used to create or modify GCL+ programs and BACnet objects for specific applications. Features
+Native BACnet firmware BACnet MS/TP communications Attractive wall-mount housing 4/8/16 button keypad Fully programmable in GCL+ Application database can be loaded over the network Controller firmware can be flash loaded over the network Derived Network Addressing (DNA) for simple integration into a standard network architecture Service port
+BACnet Device Profile BACnet Advanced Application Controller (B-AAC) LCD Large font 4-digit alpha numeric display (for time, object value or units) Small font 4-digit alpha numeric display (for time or units display) 12-digit alpha numeric display (for object names, menu commands or options) 10 display icons representing different functions Keypad 4, 8 or 16 buttons (suitable for different applications) Security door Temperature Sensor Thermistor input - 10k½ at 77°F (25°C) Accuracy +/-0.4°F from 32-158°F (+/- 0.2°C from 0-70°C) Display resolution of 0.1° Stability 0.24°F over 5 years (0.13°C) External Inputs 3 Universal inputs - 10 bit (supporting 0-5v, 0-10v, 10k½) External Outputs 5 Binary FET outputs (AC or DC switching or PWM) Jumper selection for internal or external power on binary outputs Technology 32-bit processor 1 MB (8 megabit) Flash memory 128 KB SRAM memory for database CPU Status LED Device Addressing Set via keypad configuration setup or software setup Communications Ports Main LAN (NET1) BACnet MS/TP @ 9600, 19200, 38400 or 76800 bps (default) (maximum of 99 devices per BACnet MS/TP segment) SubLAN (NET2) None with this model Connectors AMP plug-in terminal connectors Wiring Class 2 Power 24 VAC 5VA, 65VA with BOs fully-loaded Ambient 32° - 131°F (0° - 55°C) 10 - 90% RH (non-condensing) Dimensions 5 3/4 x 4 1/4 x 1 1/4 in. (14.7 x 10.9 x 3.8 cm) with housing 0.50 lb. (240 g) with housing Compliance CE FCC Listings UL 916 Listed BTL Listed
+Tags:
+{{Title}}
+or,
+Opening existing...
+Click to select:
+Opening all...
+({{ItemsCount}})
+Categories:
+Programmable
+Local User Interfaces
+{{Title}}
+Vertical Markets
+Leisure
+Polish
+Commercial
+Usługi
+Россия
+Sustainability
+Polish
+Healthcare
+Polish
+Hospitality
+Polish
+Education
+Education
+Manufacturing & Industrial
+Polish
+Products
+Access Control
+User Interfaces
+Small Sites
+Large Scale Applications
+Lighting
+Centralized Lighting Control
+DLS Relay Panels
+Distributed Lighting Control
+GE Lightsweep
+Network Switches
+Energy Management
+Energy Management Software
+Energy Awareness
+Facilities Management
+Supervisory Software
+Mobile User Interface
+Infrastructure
+Local User Interfaces
+Integration
+Gateways
+HVAC
+General Purpose Programmable I/O Controllers
+System Controllers (DSC) - Gen. Purpose
+Ethernet Application Controllers (DAC-E) - Gen. Purpose
+MS/TP Application Controllers (DAC)
+Central Plant Controllers
+enteliBUS
+Expanders & IO Modules
+System Controllers (DSC) - Cntrl. Plant
+Network Sensors & IO Expansion Modules
+Delta Network Sensors (DNS)
+Wireless Sensors
+enOcean Temperature Sensors
+IO Expansion Modules (DFMs)
+Individual Zone Controllers
+Configurable
+VAV/VVT Network Thermostats (DZNT)
+Network Thermostats (DNT)
+Programmable
+Fan Coil Controllers (DFC)
+VAV Controllers (DVC)
+Wall Thermostats
+Ethernet & PoE
+Ethernet System Controllers (DSC-E)
+Ethernet Application Controllers (DAC-E)
+Power over Ethernet Controllers (DxC-PoE)
+Ethernet VAV Controllers (DVC-E)
+Delta Difference
+Related Products
+© 2019 Delta Controls
