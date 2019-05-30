@@ -61,10 +61,10 @@ class BacnetClassification:
 
         urls = BingSearchAPI.first_ten_results(search_terms,only_html=False)+GoogleCustomSearchAPI.search(search_terms,exclude_pdf=False)
 
-        cumulative_scores = self.text_scraper.cumulative_classification(set(urls))
+        avg_scores = self.text_scraper.avg_scoring_classification(set(urls))
 
-        best_classification = max(cumulative_scores)
-        best_classification_score = max(cumulative_scores.values())
+        best_classification = max(avg_scores)
+        best_classification_score = max(avg_scores.values())
 
         if best_classification_score > self.threshold and best_classification is not "":
             return BacnetClassificationResult(best_classification,best_classification_score)
