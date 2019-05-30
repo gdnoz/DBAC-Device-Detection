@@ -72,18 +72,15 @@ def single_test(mud_url: str,threshold: float, scraping_threshold: float, correc
         print(mud_url + ": " + "fail" + " (" + classification + ", " + str(score) + ")")
 
 if __name__ == "__main__":
-    #best so far:
-    '''
-    single_test("https://iotanalytics.unsw.edu.au/mud/tribyspeakerMud.json",0.2,0.1,"Speaker")
-    single_test("https://iotanalytics.unsw.edu.au/mud/belkincameraMud.json", 0.2, 0.1, "Speaker")
-    single_test("https://iotanalytics.unsw.edu.au/mud/samsungsmartcamMud.json", 0.2, 0.1, "Speaker")
-    single_test("https://iotanalytics.unsw.edu.au/mud/wemomotionMud.json", 0.2, 0.1, "Speaker")
-    single_test("https://iotanalytics.unsw.edu.au/mud/withingsbabymonitorMud.json", 0.2, 0.1, "Speaker")
-    '''
+    #single_test("https://iotanalytics.unsw.edu.au/mud/tplinkcameraMud.json",0.2,0.1,"Speaker")
+    #single_test("https://iotanalytics.unsw.edu.au/mud/NetatmoWeatherStationMud.json", 0.2, 0.1, "Speaker")
+    #single_test("https://iotanalytics.unsw.edu.au/mud/samsungsmartcamMud.json", 0.2, 0.1, "Speaker")
+    #single_test("https://iotanalytics.unsw.edu.au/mud/belkincameraMud.json", 0.2, 0.1, "MediaPlayer")
+    single_test("https://iotanalytics.unsw.edu.au/mud/chromecastUltraMud.json", 0.2, 0.1, "MediaPlayer")
 
     #synthetic_test_set_test(0.2,0.0)
     #synthetic_test_set_test(0.15,0.25)
-    synthetic_test_set_test(0.2, 0.1)
+    #synthetic_test_set_test(0.2, 0.1)
     #local_test(0.2,0.1)
 
     #for c_thresh in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]:

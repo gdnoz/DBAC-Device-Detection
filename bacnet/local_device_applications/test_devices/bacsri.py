@@ -1,5 +1,5 @@
 '''
-Based on: http://www.syxthsense.com/product/product_pdf/MOD3.101-BAC-RI.pdf
+Based on: http://www.syxthsense.com/product/product_pdf/MOD3.102-SRI-70.pdf
 
 Room Controller
 

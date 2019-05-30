@@ -1,9 +1,9 @@
-arob,IndustryRoomController
+arob,IndustryController
 bacdrpc,IndustryEnvironmentSensor
-bacri,IndustryRoomController
+bacri,IndustryController
 bacrpc,IndustryEnvironmentSensor
-bacsri,IndustryRoomController
+bacsri,IndustryController
 cdd3,IndustryEnvironmentSensor
 cdrbac,IndustryEnvironmentSensor
-src100,IndustryRoomController
-touchplateultra,IndustryLightControl
+src100,IndustryController
+touchplateultra,IndustryController

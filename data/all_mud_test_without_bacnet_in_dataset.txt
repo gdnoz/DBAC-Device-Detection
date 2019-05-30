@@ -23,8 +23,8 @@ https://iotanalytics.unsw.edu.au/mud/wemomotionMud.json: fail (ElectricControl, 
 https://iotanalytics.unsw.edu.au/mud/wemoswitchMud.json: pass (ElectricControl, 0.7214552975313803)
 https://iotanalytics.unsw.edu.au/mud/withingsbabymonitorMud.json: fail (HealthMonitor, 0.5624675412566857)
 https://iotanalytics.unsw.edu.au/mud/withingscardioMud.json: pass (HealthMonitor, 0.9331013360964564)
-Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
 https://iotanalytics.unsw.edu.au/mud/withingssleepsensorMud.json: pass (HealthMonitor, 0.8896640805274271)
+
 ****************** TEST COMPLETE: c_tresh: 0.2 s_threshold: 0.1 ******************
 Accuracy:                    0.8333333333333334
 No device_classification:    0.041666666666666664

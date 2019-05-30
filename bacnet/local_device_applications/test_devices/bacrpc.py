@@ -1,7 +1,7 @@
 '''
-Based on: https://www.kele.com/Catalog/08%20Gas_Specialty_Sensors/PDFs/CDD3%20BACNET%20WALL%20INSTALLSHEET.pdf
+Based on: http://greystoneenergy.com/webcura/files/282732_rpc_bacnet_install.pdf
 
-CDD3 BACnet Room Carbon Dioxide Detector.
+BACnet Room Pressure Monitor.
 
 Simulates and queries device based on the above data sheet.
 '''

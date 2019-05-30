@@ -132,17 +132,19 @@ class RelevantTextScraper:
 
                     classification = self.classifier.predict_text(scraped_text)
 
+                    print(str(url) + " & " + str(classification.prediction_probability) + " " + str(classification.predicted_class))
+
                     if classification.prediction_probability > best_score:
                         relevant_text = scraped_text
                         best_score = classification.prediction_probability
 
                 except Exception as ex:
                     if ".pdf" in url: #Failed because url linked to a pdf file. Try again, but handle the pdf case specifically.
-                        print("Fetching .pdf")
                         scraped_text = WebScrapingUtilities.get_pdf_content_from_url(url)
 
                         classification = self.classifier.predict_text(scraped_text)
 
+                        print("Retrieved pdf: " + str(url) + "\n" "with score: " + str(classification.prediction_probability))
                         if classification.prediction_probability > best_score:
                             relevant_text = scraped_text
                             best_score = classification.prediction_probability
