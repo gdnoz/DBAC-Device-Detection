@@ -61,7 +61,7 @@ class BacnetClassification:
 
         urls = BingSearchAPI.first_ten_results(search_terms,only_html=False)+GoogleCustomSearchAPI.search(search_terms,exclude_pdf=False)
 
-        cumulative_scores = self.text_scraper.cumulative_classification(set(urls))
+        cumulative_scores = self.text_scraper.cumulative_classification(set(urls),r2_scoring=True)
 
         best_classification = max(cumulative_scores)
         best_classification_score = max(cumulative_scores.values())

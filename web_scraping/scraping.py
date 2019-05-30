@@ -166,7 +166,7 @@ class RelevantTextScraper:
 
         return relevant_text
 
-    def cumulative_classification(self, urls: set) -> dict:
+    def cumulative_classification(self, urls: set, r2_scoring=False) -> dict:
         """
         Extracts text from the urls, performs classification and
         cumulatively scores all classifications over the scraping threshold.
@@ -175,6 +175,7 @@ class RelevantTextScraper:
         import tldextract
         from web_scraping.utilities import WebScrapingUtilities
         from collections import Counter
+        from math import pow
 
         cumulative_score_counter = Counter()
 
@@ -191,7 +192,10 @@ class RelevantTextScraper:
                     classification = self.classifier.predict_text(scraped_text)
 
                     if classification.predicted_class != "":
-                        cumulative_score_counter[classification.predicted_class] += classification.prediction_probability
+                        if r2_scoring:
+                            cumulative_score_counter[classification.predicted_class] += classification.prediction_probability**2
+                        else:
+                            cumulative_score_counter[classification.predicted_class] += classification.prediction_probability
 
                 except Exception as ex:
                     if ".pdf" in url:  # Failed because url linked to a pdf file. Try again, but handle the pdf case specifically.
@@ -200,7 +204,11 @@ class RelevantTextScraper:
                         classification = self.classifier.predict_text(scraped_text)
 
                         if classification.predicted_class != "":
-                            cumulative_score_counter[classification.predicted_class] += classification.prediction_probability
+                            if r2_scoring:
+                                cumulative_score_counter[classification.predicted_class] += classification.prediction_probability**2
+                            else:
+                                cumulative_score_counter[
+                                    classification.predicted_class] += classification.prediction_probability
                     else:
                         extract_result = tldextract.extract(url)
 
