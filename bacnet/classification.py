@@ -30,6 +30,7 @@ class BacnetClassification:
         from web_scraping.google import GoogleCustomSearchAPI
         from bacnet.utilities import BacnetUtilities
         from web_scraping.bing import BingSearchAPI
+        import operator
 
         '''
         Preparing classification based on search engines.
@@ -60,15 +61,17 @@ class BacnetClassification:
 
         urls = BingSearchAPI.first_ten_results(search_terms,only_html=False)+GoogleCustomSearchAPI.search(search_terms,exclude_pdf=False)
 
-        text_from_urls = self.text_scraper.extract_best_text(set(urls))
+        cumulative_scores = self.text_scraper.cumulative_classification(set(urls))
 
-        classification_result = self.classifier.predict_text(text_from_urls)
+        best_classification = max(cumulative_scores)
+        best_classification_score = max(cumulative_scores.values())
 
-        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
-            return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
+        if best_classification_score > self.threshold and best_classification is not "":
+            return BacnetClassificationResult(best_classification,best_classification_score)
         else:
             print("Failed...")
             return BacnetClassificationResult("No_classification",0.0)
+
 
 if __name__ == "__main__":
     from bacnet.local_device_applications.test_devices import arob,bacdrpc,bacri,bacrpc,bacsri,cdd3,cdrbac,src100,touchplateultra

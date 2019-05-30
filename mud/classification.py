@@ -62,12 +62,20 @@ class MudClassification:
 
         urls = GoogleCustomSearchAPI.search(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_results(systeminfo,only_html=True)
 
-        text_from_urls = self.text_scraper.extract_best_text(set(urls))
+        cumulative_scores = self.text_scraper.cumulative_classification(set(urls))
+        print()
+        print(cumulative_scores)
 
-        classification_result = self.classifier.predict_text(text_from_urls)
+        most_common = cumulative_scores.most_common(1)
 
-        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
-            return MudClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
+        if len(most_common) == 0:
+            return MudClassificationResult("No_classification", 0.0)
+
+        best_classification_score = most_common[0][1]
+        best_classification = most_common[0][0]
+
+        if best_classification_score > self.threshold and best_classification is not "":
+            return MudClassificationResult(best_classification, best_classification_score)
         else:
-            return MudClassificationResult("No_classification",0.0)
-
+            print("Failed...")
+            return MudClassificationResult("No_classification", 0.0)
