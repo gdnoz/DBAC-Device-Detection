@@ -1,0 +1,19 @@
+ECLYPSE nLight Solution -
+ECLYPSE nLight Solution
+Ideal for Office Building, Small retail or K12 application. Combined AHU and mechanical equipment control,to the power of the nLight to create a unique Unified solution.It is modular and scalable, to effectively address any HVAC combined with lighting application for up to 48 points IO points and 300 lighting devices.
+Customize your ECLYPSE Connected System Controller, by selecting from:
+2 power supplies
+1 control, automation and connectivity servers
+12 I/O modules - can be combined together for up 48 IO points
+Communication/integration options
+In daisy-chain wired IP, supports STP loop-free topology configuration
+Proven high-performance and power efficient single core-processor, providing scalable speed (above 1GHZ) for accelerated reading and control of points, and enhanced trending capabilities
+Enables Modbus RTU integration
+Cost effectively connect meters, VFDs and other Modbus devices without additional gateways
+Daisy-chain up to 12 Allure™ series communicating sensors via the dedicated subnet port
+Direct connection to EC-gfxProgram, graphical programming interface, and mobile apps
+Embedded with ENVYSION, web-based graphic design and visualization interface, for hosting of system-based graphics, and visualization of HVAC and lighting resources as well as schedules, alarms, and trend logs directly from the controller
+Auto-addressing eliminates the need to manually assign an address to each I/O module reducing installation and configuration time
+All modules are plug & play devices, equipped with HD-15 connectors transmitting power and communications, for fast and easy assembly
+Hot-swappable tool-less design and unique latching mechanism
+Suggested Replacement Products

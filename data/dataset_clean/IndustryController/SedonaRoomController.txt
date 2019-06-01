@@ -1,0 +1,51 @@
+R-ION Sedona Room Controller | Ontrol EN
+R-ION Sedona Room Controller
+R-ION series products are programmable room controllers ideal for managing a wide range of individual building products such as fan-coil units and VAV boxes.
+Extremely flexible customization options are available thanks to configurable color touchscreen, full programmability, custom logo possibility and various styles and color options.
+The unit has no on-board inputs & outputs, but is able to connect to a multitude of external IO, due to multiple communication ports and protocols. Integrated temperature sensor is standard on all versions. The unit can also be ordered in a temperature plus relative humidity sensing configuration.
+In addition to basic fan-speed and temperature settings, lighting controls can easily be integrated, as well as custom application specific functions (e.g. Do Not Disturb / Make Up Room buttons for hotel rooms).
+Frame Styles
+Two frame styles are available. The original smaller frame (style 1) can be supplied in white or black.
+The newer frame (style 2) presents a more contemporary look, with white or black acrylic glass bezel. Other inset options can be available on demand, including other colors and finishes (e.g. wood, metal, brass..)
+White with acrylic glass inset
+R-ION controllers support various industry standard protocols simultaneously. The main supervisory system communication (Port 1) is serial RS485 or wireless IP depending on basic version:
+WIFI versions support Sox protocol, BacNET IP (slave), ModbusTcp (master and/or slave)
+Serial versions support BacNET MSTP (slave) and Modbus RTU in either master or slave configuration.
+Optionally, one or more of the following auxiliary communication ports may be available:
+Second RS485 port (Modbus & DMX drivers available)
+Belimo MP-Bus port
+DALI (Digital Addressable Lighting Interface) port
+Features
+Two-piece interlocking design greatly simplifes installation on the wall-unit side, as the IO module can be located close to the terminal unit being controlled, with only comms wiring into the wall unit.
+3.5” resistive color touch-screen
+Freely programmable
+Fully customizable graphics
+Powered by
+Integrated temperature sensor
+Optional relative humidity sensor
+WIFI option
+Belimo MP-Bus option
+Dali (Digital Addressable Lighting Interface) option
+DMX driver available
+Low profile, only 10.5 mm thick
+Surface-mount option
+Developed by Tridium,  is the industry's first, open source development framework that provides a complete software platform for developing, deploying, integrating, and managing pervasive device applications. It brings the power of programmable control and the Internet down to edge devices. Sedona distributes decision making control and manageability to any device and brings intelligence and connectivity to the network edge and back.
+Mounting
+Flush wall mount using
+- standard round electrical box, 60 mm axles distance, min. 45(40)mm depth (both frame styles)
+- standard UK style box 86x86 mm (frame style 2 only)
+Display
+3.5" resistive touch-screen, 65K colors
+Comms
+Port 1: Main RS485 (BacNET Slave, Modbus RTU master or slave) or WIFI
+Port 2 : Auxiliary RS485 (Modbus RTU master)
+Port 3: DALI (Master)
+Port 4: Belimo MP-Bus (Master)
+Wireless
+IEEE 802.11b WIFI
+Connections
+Screw terminals, max 1 mm² (26-16 AWG)
+Operating temperature
+Storage temperature
+Relative Humidity
+Protection
