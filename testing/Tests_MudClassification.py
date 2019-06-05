@@ -76,13 +76,7 @@ if __name__ == "__main__":
     #single_test("https://iotanalytics.unsw.edu.au/mud/NetatmoWeatherStationMud.json", 0.2, 0.1, "Speaker")
     #single_test("https://iotanalytics.unsw.edu.au/mud/samsungsmartcamMud.json", 0.2, 0.1, "Speaker")
     #single_test("https://iotanalytics.unsw.edu.au/mud/belkincameraMud.json", 0.2, 0.1, "MediaPlayer")
-    single_test("https://iotanalytics.unsw.edu.au/mud/chromecastUltraMud.json", 0.2, 0.1, "MediaPlayer")
+    #single_test("https://iotanalytics.unsw.edu.au/mud/chromecastUltraMud.json", 0.2, 0.1, "MediaPlayer")
 
-    #synthetic_test_set_test(0.2,0.0)
-    #synthetic_test_set_test(0.15,0.25)
-    #synthetic_test_set_test(0.2, 0.1)
-    #local_test(0.2,0.1)
+    synthetic_test_set_test(0.2, 0.1)
 
-    #for c_thresh in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]:
-    #    for s_thresh in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]:
-    #        synthetic_test_set_test(c_thresh,s_thresh)

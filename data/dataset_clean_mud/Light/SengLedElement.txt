@@ -1,0 +1,114 @@
+sengled: Products - Security - ###Element Plus
+Security
+Connectivity
+Feature Lighting
+Support
+Element Plus
+Sengled Element Plus lights up your smart home, whether you are at home or away. Different lighting moods can be controlled conveniently and infinitely adjusted using the app. If you use Amazon Alexa, connect it to Element Plus and use voice commands () for controling your lighting mood at home.
+Sengled Element PlusLIGHT UP YOUR SMART HOME:
+Sengled Element Plus lights up your smart home, whether you are at home or away. If you use Amazon Alexa, you can dim the light easily with voice commands (). Different lighting moods can be controlled conveniently and infinitely adjusted using the app. From cold white through to warm-white light – simply select to suit your needs.
+You can even create time windows for each room and each lamp. Preprogrammed lighting times can, for example, be used for burglar deterrence – creating the impression that you are at home. Simply screw Element Plus into a standard E27 light socket and download our free app onto your smartphone or tablet.
+The app allows you not only to control your light but can also offer you an option for reading your energy consumption.
+Unpack, connect the hub, screw in, ready!Element Plus simply screws into a standard E27 light socket and is immediately ready for use. You can dim Element Plus not only using the app but also in the normal way at the light switch. Combined with the hub, Element Plus is perfect for your smart lighting home. You can create an ambience of well-being for your home with up to 50 lamps.
+Element Plus AppThe free Element Plus app gives you complete control over your light. Whether cold-white or warm-white light, your home is illuminated exactly as you want. Let Element Plus wake you up gently in the morning. Switch on Element Plus at any time, and from anywhere. Connect it to Amazon Alexa and control the lighting mood easily with voice commands ().
+Order Element Plus onlineRemotely controllable LED + light control – With Element Plus, controlling brightness and lighting mood plus creating programmable scenarios is child‘s play. The light can be dimmed by using the app, a regular light switch or with voice commands by connecting it to Amazon Alexa ().
+RRP: £ 19,99
+RRP: £ 79,99
+RRP: £ 19,99
+RRP: £ 79,99
+Technical Data
+Model number:
+Z01-A60EAE27
+Energy supply:
+220-240 Volt, 50 Hz
+Lamp base:
+E27/B22
+Energy consumption:
+9,8 Watt ±10%
+Operating temperature:
+-20°C to +40°C
+Air humidity:
+10%–95%
+Luminous flux:
+806 lumens
+Colour temperature:
+2700-6500 Kelvin, controllable via app
+Colour rendering index:
+> 80
+Beam angle:
+270 degrees
+Dimmable:
+yes, via app or wall switch on/off
+Zigbee Protocol:
+zigbee HA 1.2.1
+zigbee pro
+Housing colour:
+warm white
+Dimensions:
+height 120 mm, diameter 60 mm
+Weight:
+210 g
+Downloads
+FAQ - Frequently Asked QuestionsAdding/Removing Hubs and Bulbs
+1. How should I reset the hub?
+Press and hold the white round button on the side of the hub for at minimum eight seconds and then release it, after a few seconds, the middle blue signal indicator light on the front of the hub should light up in a few seconds and flash eight times if the reset is successful. Wait for up to 30 seconds for the indicator light to steady.
+2. How should I reset the bulb to factory default?
+Please first delete the bulb from its current account if it is already associated to an account. Power on the bulb, wait for at minimum 4 seconds, then power cycle the bulb (off then back on) quickly for at minimum ten times. The bulb will blink five times indicating pairing mode.
+3. What is the router requirement for a successful connection between the hub and the router?
+Your router supports 2.4Ghz Wi-Fi. Also its name (SSID) and its Wi-Fi password must be a combination of the following characters: uppercase and lowercase letters (Aa–Zz), numbers (0–9), and symbols (~!@#$%^&*='|()_+{}[];',.?:-/space). Supported Wi-Fi password can also contain the symbol " and has to be between 8 and 31 characters long. It also must not begin with or end with spaces. Spaces in the middle of s string are acceptable.
+4. When adding a new hub in my account, why can’t my App find the hub?
+To add a new hub via the Element Plus app from your mobile device, please first make sure your hub has been reset prior to a new connection. Then make sure your mobile device is connected to the same 2.4GHz Wi-Fi network that the hub is connected to. Also check that this Wi-Fi network from your router is working properly. Last but not least, power on the hub, wait for about 60 seconds allowing the software on the hub enough time to initialize, then try again.
+5. Can the app support adding multiple hubs to the same account?
+Yes.
+6. What happens to the bulbs when its associated hub is deleted from the account without deleting the bulbs from the hub first?
+The bulbs that are associated with the deleted hub will also be deleted from the same account. However, when this hub is connected to another account later on, the bulbs will automatically show up under the same hub in the new account.
+7. What happens if I try to pair a bulb to the same hub twice?
+If a bulb was already previously paired to a hub successfully, the App will not allow the bulb to be paired again to the same hub unless one of the following two things happened:
+The bulb is first deleted from the account followed by a factory default reset of the bulb.
+The bulb is factory default reset.
+8. I accidentally deleted a bulb from my hub, how do I add it back?
+First, factory reset the bulb. Then add it as normal.
+9. Why is there not a “red cross” delete icon next to each bulb under the Devices settings from “Devices” to delete it?
+Please make sure your mobile device is connected to the same 2.4GHz Wi-Fi network that the hub is connected to. Also check that this Wi-Fi network from your router is working properly. Refresh the device under “Devices”, and then you should be able to see the “red cross” icon for deleting the bulbs from the device settings. You can enter device settings by clicking the “wheel” icon to the right of the hub name under “Devices”.
+10. Why can't I connect to my hub using WPS?
+Please check the following steps to establish a successful WPS connection.
+The hub is NOT connected to the router via an Ethernet cable.
+Your router has to support 2.4GHz and it also has to meet the SSID and password requirement outlined above.
+Your mobile device is connected to your router’s 2.4GHz Wi-Fi.
+Ensure that your router has WPS enabled. Some routers may have this setting disabled by default.
+Also each router may have different ways of activating WPS, so please read the router's instructions carefully before the pairing process. We cannot guarantee that the WPS pairing works with all types of routers.
+Performance and General App Information
+1. What is the recommended distance between bulbs and hub?
+Depending on what sits in between a hub and a bulb, the typical working range in an indoor US residential setting is roughly between 50 to 180 feet.
+2. After I add the hub to my account, do I have to remove the Ethernet cable between the router and the hub?
+No, it is not required. After the initial pairing, the hub can be connected to the router either wirelessly via the Wi-Fi network or in wired mode via the Ethernet cable for normal operation. In some cases where your Wi-Fi network is crowded with too many connected devices or Wi-Fi strength is weak, the wired mode may provide a more reliable connection.
+3. What do I have to do if I decide to change the password on my current router or replace my current router?
+Please delete the hub from your account, reset it, then connect it to the new router via an Ethernet cable and add the hub back to your account via the Element Plus App.
+4. How long does it take for the App to know that the hub is powered off?
+It normally takes up to 60 seconds for the App to detect the hub as offline.
+5. How long does it take for the hub to find its way back to the network if I power it off and then power it back on?
+It normally takes about one minute from the time the hub is powered back on before it can connect back to the network and show up as active again in the account, subject to network condition.
+6. The device status in the App seems to be out of sync with the actual device status or the hubs/bulbs show up as offline when they were supposedly to be online, what should I do?
+There are times when the status of the active devices on the App can be out of sync with their actual status because the App does not automatically get the update. To retrieve the latest status, go to "Devices" or "Individual bulbs", swipe your finger down the screen until you see "Release to refresh..." appear on the screen, then remove your finger from the screen. This will help synchronize the active device list and device status between the App and the server. The device list and Individual bulb list also have auto refreshing mechanism built-in and update the device status every 10 seconds.
+7. I have occasionally seen “Hub offline” when hub is actually powered on. Why would the hub be offline?
+This normally happens when hub loses its connection to the router or the Internet connection via the router has been interrupted. This problem should correct itself once the network connection is recovered. You can try moving the hub closer to the router to see if the problem goes away. You can also try refreshing the device list to update the device status.
+Wall Switch or Dimmer Operations
+1. How many states does a bulb have in the App?
+There are three states that a bulb has as far as App is concerned:
+On: Online and being turned on. This is indicated in the Individual bulb list with a white bulb icon in orange background.Off: Online and being turned off. This is indicated in the Individual bulb list with a white bulb icon in grey background.Offline: Offline and is considered being powered off. This is indicated in the Individual bulb list with a bulb icon having white and grey stripes in grey background plus an “X” above the bulb image.
+2. If I use the App to first turn off the bulb, then power cycle the bulb using the wall switch, will the bulb stay in “off” state or go to “on” state?
+The bulb will power on and enter “on” state.
+3. Can the bulb remember the last dim level?
+Yes, bulb remembers the last dim level.
+If the last dim level is not 0%, the bulb will remember its last dim level whether it is turned off by the App or by the wall switch.
+If the last dim level is 0%, the dim level will stay 0% when the bulb is turned back on via the App. But the dim level will go to 100% if it is turned back on via the wall switch.
+4. Does a wall dimmer interfere with bulb operation?
+Sengled Element Plus bulb does not flash when being adjusted by a wall dimmer, unlike many other brands of Zigbee bulbs. However, due to the nature of electric circuit design, many of the following features related to wall switch operation will be disabled.
+Report “off” state to the hub when being powered off by the dimmer.
+Dimming capability via dimmer double click.
+Zigbee network rejoin via dimmer.
+Enter EZ-Mode via dimmer.
+Enable factory default reset of bulb via dimmer.
+Scheduling
+1. How are start time and end time for the schedule determined?
+When one creates a schedule, Element Plus App by default will set the end time to be one hour after the specified start time. Users can adjust both from the schedule settings; only the start time has to be earlier than the end time. End time will be within 24 hours from the start time.

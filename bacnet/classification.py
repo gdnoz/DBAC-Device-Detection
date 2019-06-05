@@ -62,9 +62,9 @@ class BacnetClassification:
 
         text_from_urls = self.text_scraper.extract_best_text(set(urls))
 
-        print("_____________TEXT_____________")
-        print(text_from_urls)
-        print("______________________________")
+        #print("_____________TEXT_____________")
+        #print(text_from_urls)
+        #print("______________________________")
 
         classification_result = self.classifier.predict_text(text_from_urls)
 

@@ -60,7 +60,7 @@ class MudClassification:
         '''
         systeminfo = MUDUtilities.get_systeminfo_from_mud_file(mud_file_contents)
 
-        print("Search terms: " + systeminfo)
+        #print("Search terms: " + systeminfo)
 
         urls = GoogleCustomSearchAPI.search(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_results(systeminfo,only_html=True)
 

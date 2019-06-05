@@ -132,7 +132,7 @@ class RelevantTextScraper:
 
                     classification = self.classifier.predict_text(scraped_text)
 
-                    print(str(url) + " & " + str(classification.prediction_probability) + " " + str(classification.predicted_class))
+                    #print(str(url) + " & " + str(classification.prediction_probability) + " " + str(classification.predicted_class))
 
                     if classification.prediction_probability > best_score:
                         relevant_text = scraped_text
@@ -144,7 +144,7 @@ class RelevantTextScraper:
 
                         classification = self.classifier.predict_text(scraped_text)
 
-                        print("Retrieved pdf: " + str(url) + "\n" "with score: " + str(classification.prediction_probability))
+                        #print("Retrieved pdf: " + str(url) + "\n" "with score: " + str(classification.prediction_probability))
                         if classification.prediction_probability > best_score:
                             relevant_text = scraped_text
                             best_score = classification.prediction_probability
