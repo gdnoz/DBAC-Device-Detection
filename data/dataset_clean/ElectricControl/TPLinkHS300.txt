@@ -1,0 +1,85 @@
+Kasa Smart Wi-Fi Power Strip | Kasa Smart
+A Smarter Power Strip
+Kasa Smart Wi-Fi Power Strip
+|  HS300
+Kasa Smart Wi-Fi Power Strip
+A Smarter Power Strip | HS300
+The Kasa Smart Wi-Fi Power Strip is a smarter way to control multiple devices from anywhere.
+Features
+6 Smart Outlets
+Independently control 6 smart outlets and charge 3 devices with built-in USB ports.
+Surge Protection
+ETL certified surge protection shields sensitive electronics and appliances from sudden power surges that can occur during weather storms and cause irreparable damage.
+Energy Monitoring
+Monitor how much energy devices connected to the power strip consume. Check on each one from your Kasa Smart app and turn off ones that are using too much.
+Voice Control
+Control your smart power strip using simple voice commands with Alexa, Google Assistant, or Microsoft Cortana.
+Grouping
+Use Grouping to combine all six of your smart plugs on the power strip with other Kasa Smart devices for seamless control with one single tap on your smartphone.
+Control From Anywhere
+Control connected devices from anywhere with the Kasa Smart app. Power up your office remotely and even your holiday lights from the app.
+Independent Control
+Independently control 6 smart outlets, and charge 3 devices with built-in USB ports. Ideal for controlling electronics in your home, game room, small business, or home office. Set schedules for each outlet individually or control them all in a Group. Control connected devices from the Kasa Smart app or with your favorite voice assistant.
+Surge Protection
+ETL certified surge protection shields sensitive electronics and appliances from sudden power surges that can occur during weather storms, such as lightning and rainstorms, and cause irreparable damage.
+Your Voice Has Power
+Use simple voice commands to control all of your Kasa Smart devices with any Alexa, Google Assistant or Microsoft Cortana device. Tell your voice assistant to turn on your living room lamp, have it schedule the coffee maker for the morning, even turn on your office fan when it gets too hot.
+A Single Tap Is All It Takes
+Use the Grouping feature on the Kasa Smart app to combine your devices together for unified control with one single tap on your smartphone. Combine your living room bulbs, plugs and light switches together for an easier way to turn them on when you get home.
+Technical Specifications 
+Communication
+Wi-fi Protocol
+IEEE 802.11b/g/n
+Wi-fi Frequency
+2.4GHz
+Kasa App System Requirement
+iOS 10 or Android 4.4 or higher
+Wi-fi Requirements
+Secured home Wi-Fi connection required
+Hardware
+Product Dimensions (w x D x H)
+14.17 x 2.49 x 1.48 in (360 x 63.3 x 37.5 mm)
+Packaging Dimensions (w x D x H)
+16.93 x 5.04 x 2.28 in (430 x 128 x 58 mm)
+Product Weight
+1.55 lb (0.702 kg)
+Packaging Weight
+1.97 lb (0.892 kg)
+Ports And Connections
+AC plug and power socket
+3 USB ports
+Buttons
+Reset switch
+Led Panel
+Wi-Fi LED (red, amber, green)
+Status LED
+Plug Type
+3-prong plug
+General
+General Features
+6 smart outlets
+Built-in Surge protector
+3 USB ports
+Connects to a secure 2.4GHz Wi-Fi network
+Certification
+ETL, FCC
+Operating Temperature
+0ºC ~ 40ºC (32°F ~ 104°F )
+Operating Humidity
+10%~90%RH, Non-condensing
+Environment
+Indoors only
+Warranty Description
+2-year limited warranty (US only)
+Working Status
+Input
+100-125V~, 60Hz, 15A
+Output
+15A 1875W maximum load in total
+Vpr
+500V(L-N) 500V(L-G) 500V(N-G) Type 3 SPD
+Usb
+5V/2.4A each; 5V/4A in total
+What's Included
+(1) Kasa Smart Wi-Fi Power Strip, 6-Outlets
+(1) Quick Start Guide

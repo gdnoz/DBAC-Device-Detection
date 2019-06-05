@@ -1,0 +1,82 @@
+/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7 "/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/testing/Tests_MudClassification.py"
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+
+Counter({'Speaker': 0.2709167699814327, 'HealthMonitor': 0.17588749106863436, 'Light': 0.1689131163062473, 'HouseEnvironmentMonitor': 0.15599170228140483})
+https://iotanalytics.unsw.edu.au/mud/amazonEchoMud.json: pass (Speaker, 0.2709167699814327)
+
+Counter({'Doorbell': 0.4404398428493619, 'ElectricControl': 0.20199672077960296, 'HealthMonitor': 0.1655528168744033, 'Light': 0.150203009751399})
+https://iotanalytics.unsw.edu.au/mud/augustdoorbellcamMud.json: pass (Doorbell, 0.4404398428493619)
+
+Counter({'HouseEnvironmentMonitor': 0.4621431494793308})
+https://iotanalytics.unsw.edu.au/mud/awairAirQualityMud.json: pass (HouseEnvironmentMonitor, 0.4621431494793308)
+
+Counter({'Camera': 0.30963201936723284, 'HealthMonitor': 0.19553971915713775, 'Light': 0.1654759066980204, 'ElectricControl': 0.15908581499909122})
+https://iotanalytics.unsw.edu.au/mud/belkincameraMud.json: pass (Camera, 0.30963201936723284)
+
+Counter()
+https://iotanalytics.unsw.edu.au/mud/blipcareBPmeterMud.json: fail (No_classification, 0.0)
+
+Counter({'Camera': 0.43510070718095606, 'Speaker': 0.2576681936583845, 'HouseEnvironmentMonitor': 0.19621207040383365, 'HealthMonitor': 0.17521198164535862, 'Light': 0.1648539465992136})
+https://iotanalytics.unsw.edu.au/mud/canaryCameraMud.json: pass (Camera, 0.43510070718095606)
+
+Counter({'Speaker': 0.30554224439258404, 'MediaPlayer': 0.2885097638027633})
+https://iotanalytics.unsw.edu.au/mud/chromecastUltraMud.json: fail (Speaker, 0.30554224439258404)
+
+Counter({'Camera': 0.5066903341534063, 'HouseEnvironmentMonitor': 0.3860864656411811, 'HealthMonitor': 0.20934268081405027})
+https://iotanalytics.unsw.edu.au/mud/dropcamMud.json: pass (Camera, 0.5066903341534063)
+
+Counter({'Light': 0.38382349129853577, 'HealthMonitor': 0.2008054823416658})
+https://iotanalytics.unsw.edu.au/mud/HueBulbMud.json: pass (Light, 0.38382349129853577)
+
+Counter({'ElectricControl': 0.25927070972496785, 'HealthMonitor': 0.18002201224882186, 'Light': 0.1545856659912416})
+https://iotanalytics.unsw.edu.au/mud/ihomepowerplugMud.json: pass (ElectricControl, 0.25927070972496785)
+
+Counter({'Light': 0.338233281307272, 'HealthMonitor': 0.19469612738958966})
+https://iotanalytics.unsw.edu.au/mud/lifxbulbMud.json: pass (Light, 0.338233281307272)
+
+Counter({'HouseEnvironmentMonitor': 0.5460578946370316, 'Alarm': 0.37931744817192703, 'HealthMonitor': 0.19850029092233396})
+https://iotanalytics.unsw.edu.au/mud/nestsmokesensorMud.json: pass (HouseEnvironmentMonitor, 0.5460578946370316)
+
+Counter({'Alarm': 0.40972947082176514, 'Camera': 0.378304565935109, 'HealthMonitor': 0.18430164750386338, 'Light': 0.16176522914646682})
+https://iotanalytics.unsw.edu.au/mud/NetatmoCameraMud.json: fail (Alarm, 0.40972947082176514)
+
+Counter({'HouseEnvironmentMonitor': 0.20281141966456603, 'HealthMonitor': 0.1912937890490177})
+https://iotanalytics.unsw.edu.au/mud/NetatmoWeatherStationMud.json: pass (HouseEnvironmentMonitor, 0.20281141966456603)
+
+Counter({'Doorbell': 0.544694875239532, 'Alarm': 0.24915110093719456, 'HealthMonitor': 0.1801364697127371})
+https://iotanalytics.unsw.edu.au/mud/ringdoorbellMud.json: pass (Doorbell, 0.544694875239532)
+
+Counter({'Camera': 0.26965818721726276, 'HouseEnvironmentMonitor': 0.23693130890898867, 'Speaker': 0.20530321117756592, 'HealthMonitor': 0.1926356276610492, 'Light': 0.16888594172157204})
+https://iotanalytics.unsw.edu.au/mud/samsungsmartcamMud.json: pass (Camera, 0.26965818721726276)
+
+Counter({'Camera': 0.44280842441508383, 'Speaker': 0.17095153023167334, 'Light': 0.16067329569266378, 'HealthMonitor': 0.15973427717189032})
+https://iotanalytics.unsw.edu.au/mud/tplinkcameraMud.json: pass (Camera, 0.44280842441508383)
+
+Counter({'ElectricControl': 0.4565482875551928, 'HealthMonitor': 0.2011738974878287, 'Light': 0.16708473487584707, 'Camera': 0.16368630502677492})
+https://iotanalytics.unsw.edu.au/mud/tplinkplugMud.json: pass (ElectricControl, 0.4565482875551928)
+
+Counter({'Speaker': 0.23130712889850386, 'HealthMonitor': 0.18847220676762433, 'HouseEnvironmentMonitor': 0.1712589554904814, 'Light': 0.16640746774071266})
+https://iotanalytics.unsw.edu.au/mud/tribyspeakerMud.json: pass (Speaker, 0.23130712889850386)
+
+Counter({'ElectricControl': 0.3823933483380843, 'Light': 0.1614983479196435})
+https://iotanalytics.unsw.edu.au/mud/wemomotionMud.json: fail (ElectricControl, 0.3823933483380843)
+
+Counter({'ElectricControl': 0.4664741361881514})
+https://iotanalytics.unsw.edu.au/mud/wemoswitchMud.json: pass (ElectricControl, 0.4664741361881514)
+
+Counter({'HealthMonitor': 0.31190588580460443})
+https://iotanalytics.unsw.edu.au/mud/withingsbabymonitorMud.json: fail (HealthMonitor, 0.31190588580460443)
+
+Counter({'HealthMonitor': 0.6145619650234648})
+https://iotanalytics.unsw.edu.au/mud/withingscardioMud.json: pass (HealthMonitor, 0.6145619650234648)
+WARNING:bs4.dammit:Some characters could not be decoded, and were replaced with REPLACEMENT CHARACTER.
+
+Counter({'HealthMonitor': 0.5340345661366785})
+https://iotanalytics.unsw.edu.au/mud/withingssleepsensorMud.json: pass (HealthMonitor, 0.5340345661366785)
+****************** TEST COMPLETE: c_tresh: 0.2 s_threshold: 0.1 ******************
+Accuracy:                    0.7916666666666666
+No device_classification:    0.041666666666666664
+Average score:               0.3214669662632485
+
+Process finished with exit code 0

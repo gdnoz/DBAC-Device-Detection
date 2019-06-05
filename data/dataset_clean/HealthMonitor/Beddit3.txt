@@ -1,0 +1,30 @@
+Beddit 3 Sleep Tracker | Best Sleep Trackers 2019
+Browse All
+Beddit 3 Sleep TrackerThird generation Beddit improves on design and adds more sensors May 25, 2019
+The latest version of the Beddit’s acclaimed sleep tracker improves automatic sleep tracking and adds environmental monitoring.
+UPDATE: Beddit was acquired by Apple in May 2017. Watch this space for further news.
+Overview
+The Beddit sleep tracker consists of a thin, narrow sensor strip which you place underneath your sheets. When you lie down in bed, Beddit can automatically track your sleep patterns, using a technique called ballistocardiography, a non-invasive method which ‘listens’ to the ballistic forces of your heart movements.
+Having launched their first sleep tracker back in 2013 after a successful crowdfunding campaign, Beddit have now launched the third iteration of their product. The Beddit 3 improves on the previous designs, improves its automatic sleep tracking function, and adds an environmental sensor to monitor room temperature and humidity.
+Design & Ergonomics
+The most apparent difference between the Beddit 2.0 and Beddit 3 is with the long sensor strip itself. One of the main gripes about the Beddit 2 was the method for attaching the sensor to your bed – an inelegant adhesive strip. Whilst this proved effective at keeping the sensor in place, removing the Beddit from your mattress – such as when you want to clean your bed – made the adhesive less and less sticky over time.
+Thankfully, Beddit 3 improves this situation by placing the sensor strip in a fabric housing. Instead of using adhesive tape to secure the strip, the Beddit 3 fabric housing incorporates a series of rubber bumps on the underside which provide enough friction to stop the strip moving around in your bed.
+Beddit have also reworked the housing for all the electronics. Whereas previously the plastic housing for the electronics used to hang over the edge of your bed, in the Beddit 3 everything has been miniaturised to fit into an end-piece which is joined to the USB plug. Although much smaller, Beddit 3 has managed to cram in an environmental sensor.
+Features
+Beddit 3 retains all of the functionality of the previous versions, tracking sleep quality, heart rate, breathing, snoring, plus, two new additions, room temperature and humidity.
+Placed discreetly under your mattress and with a USB power adapter, there’s nothing to wear on your body and no batteries to worry about charging. At only 1.5mm, the sensor is extremely thin as to be unnoticeable when you lie down. A 3 meter cable provides plenty of length to connect to your power source.
+Automatic sleep tracking
+One of the biggest innovations in the Beddit 3 is its capacitive touch sensor. This is embedded into the sensor strip itself and enables the new automatic sleep tracking mode. Previously, automatic sleep tracking was available on the Beddit 2, but used your phone’s GPS signal as a way to tell the sensor you were in bed.
+Thankfully, this not so ideal system has been replaced by a capacitive touch sensor, which means sleep tracking begins as soon as you lie down, without having to press any buttons. And being capacitive, Beddit will not respond to objects like books or heavy bags that you place on the bed. Sadly, for Android users, automatic sleep tracking is, at the time of writing only available with Apple devices.
+Snoring and environmental sensing
+Beddit 3 also retains the built-in snoring detection function. This uses your phone’s microphone to detect snore disturbances, which is useful, if nothing else to settle domestic arguments with your partner. Snore detection, coupled with breathing and heart-rate data could be useful for detecting any underlying health issues you may not be aware of.
+New to Beddit 3 is environmental sensing whereby you can monitor the humidity and temperature in your bedroom. This can be used to tailor your bedroom environment for your ideal sleep conditions.
+Software
+The Beddit app tracks a number of sleep metrics. These include:
+Sleep time and efficiency
+Sleep onset (time it takes to fall asleep)
+Light and deep sleep cycles
+Time way from bed
+Time awake
+In the morning, you’ll automatically be given a sleep score to see how well your night’s rest has been. In terms of other measurements, Beddit 3 can also calculate your average breathing rate, resting heart-rate and ‘heart-rate curve’. Data is automatically transferred to your smartphone for an instant readout. You can also set a smart alarm to wake you in the optimal phase of light sleep in the morning to reduce the grogginess known as sleep inertia (waking from deep sleep).
+Beddit 3 is available in selected Apple Stores and via Amazon.

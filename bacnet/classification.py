@@ -63,8 +63,13 @@ class BacnetClassification:
 
         avg_scores = self.text_scraper.avg_scoring_classification(set(urls))
 
-        best_classification = max(avg_scores)
-        best_classification_score = max(avg_scores.values())
+        if len(avg_scores) > 0:
+            best_classification = max(avg_scores)
+            best_classification_score = max(avg_scores.values())
+        else:
+            best_classification = ""
+            best_classification_score = 0.0
+
 
         if best_classification_score > self.threshold and best_classification is not "":
             return BacnetClassificationResult(best_classification,best_classification_score)

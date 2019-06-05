@@ -1,0 +1,23 @@
+SmartThings - SmartThings Motion Sensor
+SmartThings Motion Sensor
+Add a little smartness to your things.
+A door that knows when to lock itself
+Product Features
+Monitor motion and temperature.
+Adjust the sensor angle with the quick tilt magnetic ball mount.
+Requires a SmartThings Hub or a compatible device with SmartThings Hub functionality.
+Benefits with SmartThings
+Monitor your Motion Sensor and other connected devices with the SmartThings app for iPhone or Android.
+Receive alerts from SmartThings if your Motion Sensor detects movement, or if the temperature changes.
+Automate connected devices with SmartThings and set them to turn on or off if your Motion Sensor detects movement, or if the temperature changes.
+Notes
+There are two models of the Samsung SmartThings Motion Sensor. To see the differences and determine which one you have, please see [this article](https://support.smartthings.com/hc/en-us/articles/212204223-Which-SmartThings-motion-sensor-model-do-I-have-).
+This device is compatible with the ADT Security Hub, but is not compatible with ADT professional monitoring services.
+Technical Information
+Model Number: IM6001-MTP01
+Color: White
+Dimensions: 2.23" x 2.19" x 1.98"
+Weight: 3.36 oz
+Protocol: ZigBee3
+Power Source: Battery
+Battery Type: CR2
