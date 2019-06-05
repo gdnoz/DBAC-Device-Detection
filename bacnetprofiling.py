@@ -25,8 +25,8 @@ class BacnetProfiler:
         print("Device type:             " + classification_result.predicted_class)
         print("Classification score:    " + str(classification_result.score))
 
-        print("Bacnet query result:")
-        print(query_result)
+        #print("Bacnet query result:")
+        #print(query_result)
 
 
         print("****************** Bacnet profiling completed *******************")
@@ -34,7 +34,7 @@ class BacnetProfiler:
 if __name__ == "__main__":
     from bacnet.local_device_applications.test_devices import arob,bacdrpc,bacri,bacrpc,bacsri,cdd3,cdrbac,src100,touchplateultra
 
-    mud_profiler = BacnetProfiler(arob.run_application)
+    #mud_profiler = BacnetProfiler(arob.run_application)
     #mud_profiler = BacnetProfiler(bacdrpc.run_application)
     #mud_profiler = BacnetProfiler(bacri.run_application)
     #mud_profiler = BacnetProfiler(bacrpc.run_application)
@@ -42,6 +42,6 @@ if __name__ == "__main__":
     #mud_profiler = BacnetProfiler(cdd3.run_application)
     #mud_profiler = BacnetProfiler(cdrbac.run_application)
     #mud_profiler = BacnetProfiler(src100.run_application)
-    #mud_profiler = BacnetProfiler(touchplateultra.run_application)
+    mud_profiler = BacnetProfiler(touchplateultra.run_application)
 
     mud_profiler.run()

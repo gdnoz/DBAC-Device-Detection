@@ -1,0 +1,48 @@
+WiFi Smart Motion Sensor | Wired | Indoor | Nedis
+Activitity
+Locations
+Select your language
+WiFi Smart Motion Sensor | Wired | Indoor
+WiFi Smart Motion Sensor | Wired | Indoor
+This Smart Wi-Fi Motion Sensor (with a 10 m range across a detection area of 120°) can be used as part of a wireless security system or simply to turn appliances on when you enter a room.
+Easy to set up
+Setting it up couldn’t be easier as it simply connects with your Wi-Fi router to allow control by your smartphone or tablet and for alerts to be sent to your device.
+Pair with other products
+Alternatively, it can be paired with other devices and appliances in the Nedis® SmartLife range to trigger events, such as switching on lights, when someone enters a room.
+About Nedis® SmartLife
+Discover a wide and ever-expanding range of products - such as bulbs, switches, sockets, sensors, and cameras – that can all be controlled through an easy-to-use and intuitive app. With voice control features supported by Amazon Alexa and Google Home, and no need for anything more than your existing Wi-Fi network, this is the connected, smart home made simple.
+Whether you're looking for a single smart bulb or socket, or you want to automate your entire house, discover how accessible smart technology is today.
+Read more
+Show less
+Product specifications
+Power plug
+Euro / Type C (CEE 7/16)
+Wireless technology
+Wi-Fi
+Features
+Tamper Detection
+Colour
+White
+Input Voltage
+5 VDC
+Antenna gain
+0 dBi
+Detector range
+10 m
+Frequency range
+2400 - 2483.5 MHz
+Max. radio transmit power
+17 dBm
+App available for
+Android™ & iOS
+Battery type
+2x CR123A
+Detector angle
+120 °
+Operating Temperature
+-10 - 45 °C
+Package contents
+Motion sensor
+Wall mount
+USB cable
+USB power adapter (EU)

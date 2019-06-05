@@ -1,0 +1,153 @@
+ecobee3 Smart Thermostat with Room Sensors | ecobee | Smart Home Technology
+ecobeelogo
+ecobeelogo
+present
+ic_roomsensor_tstat_CA22
+A9D321DF-71AF-4F89-8E7C-9AD74BC9025872
+For Home
+For Business
+Company
+Resources
+Products
+Main
+Company
+Resources
+ecobee3
+The smarter wi-fi thermostat with room sensors. For homes with more than one room.
+ecobee3
+Sensor Technology
+Deliver comfort to the rooms that matter most.
+Most thermostats read the temperature in one place (usually the
+hallway) which can make other rooms uncomfortable. ecobee3 uses
+room sensors to deliver the preferred temperature to the rooms
+that matter. Simple.
+Smarter Comfort
+A complete comfort system for your home.
+Follow Me uses room sensors to know which room you’re in and automatically adjust to your preferred temperature.
+Smart Home/Away ensures you’re comfortable while you’re at home and saving money when you’re not.
+Smarter Control
+Effortless control at your fingertips.
+Adjust temperature and comfort settings easily
+from your Android and iOS devices, including Apple Watch.
+Free energy reports give you insights on how
+much you’ve saved based on run times and offer tips for further
+savings.
+Ecobee Press
+ENERGY SAVINGS
+Smart means reducing heating and cooling costs by up to 23%* a year.
+ENERGY STAR® certified, so you know it's good for you and the planet.
+Smarter Home
+Supports your connected home to make life simpler.
+Use Apple HomeKit to control your ecobee with Siri’s help on your iPhone, iPad or Apple Watch.
+With Amazon Echo, easily change the temperature and more with just your voice.
+Integrates seamlessly with Samsung SmartThings, IFTTT, Wink and more.
+Smarter Savings
+Engineered for energy savings. Designed for you.
+Uses local weather and your system to take the
+least amount of time to cool or heat your home.
+Vacation mode keeps energy use low and easy to adjust while you
+enjoy some much deserved time away.
+Alerts and reminders help you solve issues
+faster by notifying you right away if ecobee senses something
+isn’t working.
+Built to last
+ecobee is hardwired so you'll never be left out in the cold.
+Being hardwired means your thermostat isn’t relying on a battery
+or your HVAC equipment to charge itself (aka “power-stealing”).
+A little bit extra, for no extra.
+Easy Setup
+Getting started is simple.
+Will it work with my home?
+Yes, we are compatible with most residential heating and cooling systems.
+Can I install it myself?
+You bet. Use our step-by-step guide or call our friendly support team.
+Can I get it professionally installed?
+Yes, we can help connect you with certified pro installers in your area.
+Smart, really smart
+You have better things to do than teach your thermostat.
+ecobee thermostats use local weather to understand your home's unique energy profile and transforms thousands of data points into cost savings.
+Features
+Ordinary thermostats read the temperature in only one room, but are supposed to deliver comfort in all rooms. ecobee3 remote sensors deliver the right temperature in the rooms that matter most.
+If your ecobee3 senses that you are home during your scheduled Away period, or away during your scheduled Home period, it will automatically override your schedule to maximize comfort and savings.
+Control your comfort by averaging the temperature of the selected sensors that detect motion or all of the selected sensors in your home, regardless of motion.
+ecobee3 understands how your home heats up and cools down, and uses wi-fi to track your local weather throughout the day. It then uses this information to determine the best way to bring your home to your desired indoor temperature when you arrive home and maintain it while minimizing how long your heating or cooling equipment runs for.
+In homes with ventilators, ecobee3 will recognize the temperature difference on cool summer evenings and will use the outside air to cool down your home instead of the air conditioner.
+For homes with humidifiers, ecobee3 regulates indoor humidity to prevent frost buildup on windows when it’s cold outside and high humidity indoors.
+ecobee3 can use your air conditioner to lower indoor humidity in the absence of a dehumidifier.
+ecobee3 is constantly monitoring your equipment performance and will send you an alert if anything is not working or working sub-optimally. Similarly, ecobee3 can send you service reminders to help you maintain your equipment.
+At the end of a heating or cooling cycle, when the coil or heat exchanger is still hot/cold, ecobee3 runs the fan to get the most heating/cooling and dehumidification out from your equipment.
+ecobee3 optimizes usage of multistage heating and cooling equipment by engaging the higher stage when indoor temperature is notably different than desired temperature and switching back to the lower stage as your home gets closer to the desired temperature. You can also control staging by using advanced setting options.
+ecobee smart thermostats are compatible with HRVs, ERVs, and Remote Sensors, giving you ultimate control over your environment. ecobee has a robust API and an active developer community working on new ways to integrate your thermostat into your connected home.
+Home IQ™ shows you how much energy you conserved each month and gives you valuable insight into your heating and cooling equipment. It’s like a home energy audit at no additional cost!
+ecobee3
+Get the smarter wi-fi thermostat with room sensors that delivers comfort to the rooms that matter most.
+$199
+Free shipping (2-3 business days)30-day money back guarantee3 year warrantyENERGY STAR® certified
+ecobee3
+Get the smarter wi-fi thermostat with room sensors that delivers comfort to the rooms that matter most.
+$299
+Free shipping (2-3 business days)30-day money back guarantee3 year warrantyENERGY STAR® certified
+Technical Specs
+Display
+3.5” full-color LCD touch screen
+320 x 480 pixel display
+Product Dimensions
+ecobee3
+ecobee3
+Room Sensor
+Power Extender Kit*
+*Optional for installation
+Compatibility
+Gas, oil, electric, dual fuel
+Conventional (2H/2C)
+Heat Pump (4H/2C)
+Humidifier, Dehumidifier, Ventilator, HRV or ERV
+Wire Terminals
+Connectivity & Security
+Wi-Fi, IEEE 802.11 b/g/n @ 2.4 GHz
+Wi-Fi Protected Access (WPA/WPA2) and Wired Equivalent Privacy (WEP)
+915MHz, future expansion slot
+DHCP (dynamic) or static IP addressing
+Transport Layer Security (TLS)
+Bandwidth
+15-20 MB/month
+Power Consumption
+less than 3.5 VA
+Apple HomeKit Enabled
+Controlling this HomeKit-enabled accessory requires an iPhone, iPad, or iPod touch with iOS 9 or later.
+Powering Methods
+Wired 24 VAC through terminals C and Rc or Rh. Power Extender Kit (included) enables you to reliably power your thermostat without having to run a C wire.
+Green
+Recyclable packaging
+Mercury-free
+Arsenic-free
+PVC-free
+ROHS compliant
+Temperature Range
+Warranty
+3-year warranty
+Languages
+English
+In the Box
+ecobee3 thermostat
+Room sensor with detachable stand
+Quick start guide
+Installation guide
+Wire labels
+Screws and drywall plugs
+Optional for installation:
+Power Extender Kit (PEK)
+Standard and large trim plates
+ecobee4Smarter Bundle
+Save when you buy them together.
+ecobee4Smarter Bundle
+Save when you buy them together.
+Room Sensors2 Pack
+Pairs with your ecobee to help manage hot or cold spots.
+Room Sensors2 Pack
+Pairs with your ecobee to help manage hot or cold spots.
+What customers are saying.
+2596 Amazon Reviews, 4.5 out of 5 stars
+Best Household Improvement Ever!
+Best Thermostat On The Market!
+I really believe this is the best thermostat on the market. You can place multiple external sensors around the house so that the Ecobee3 (E3) knows that the temperature is in different parts of the house. Since the E3 knows both the temperature in other parts of the house AND if someone is present, it can dynamically "care" about the temperature only in rooms that have recently seen occupancy!

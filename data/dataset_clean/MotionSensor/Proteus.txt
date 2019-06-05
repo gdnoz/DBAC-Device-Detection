@@ -1,0 +1,99 @@
+Proteus M5 Wi Fi Motion Sensor w/ email & text alerts
+A Sensor for every application
+Proteus Home series presents smart wifi solutions for your sensing needs. Email/ Text alerts. Audible buzzer.
+Water Sensors
+Connect up to 5 sensors. Extend 25 ft or more.
+Pair with a sump pump sensor. View all options
+Sump Pump Sensors
+Quick mounting float switch triggers when water rises above set level inside the sump pit.
+Motion Sensors
+Configure alerts when motion is detected. Or if no motion is detected for a set time. Select days of week, hours of day, schedules.
+Temperature/ Humidity Sensors
+Accurate Temperature/ Humidity sensors to keep track of ambient settings even when you are not home.
+Door/ Contact Sensors
+Magnetic switch sensors configurable to 'Normally Closed' or 'Normally Open'. You pick the application.
+PRO features with a personal touch
+Proteus PRO series presents advanced sensing solutions for your industrial monitoring applications. Friendly interface, data APIs, software plugins, cloud push and more.
+Temperature, Humidity, Contacts, Line Voltage and more. Works with Nagios and other software. Plugins available.
+Spot and Rope Style sensors for water, chemical leaks. Add-on sensor options. Get alerts before damage spreads.
+Monitor power lines, fluctuations, and ensure power integrity 24x7. Get alerts immediately.
+Robust interface to add internet connectivity to the most common sensors. Multiple sensor power options. Offset calibration. Remote monitoring and relay contact option.
+Web GUI
+Responsive Magento Theme
+Ultimo is a premium Magento theme with advanced admin module. It's extremely customizable and fully responsive. Can be used for every type of store.
+50+ CMS blocks
+You can use CMS blocks as content placeholders to display custom content in almost every part of the store. Import sample CMS blocks from the demo.
+190-pages documentation
+The best Magento theme documentation on ThemeForest. It also describes selected Magento features which you need to know when starting to work with Magento.
+Easy to customize
+Use Ultimo as a starting point for your custom projects. Unlike many other themes, Ultimo lets you create multiple custom sub-themes (theme variants) for your clients.
+Proteus M5
+Wi-Fi Motion Sensor
+Monitor movements in or around your home, business, vacation home and other areas securely with the Proteus M5 Wi-Fi motion sensor with email and text alerts. The motion sensor is always awake and can be placed in nearly any area, alerting you when someone passes through or when the area is deserted for extended periods.
+Linking a Wi-Fi motion sensor to your phone or email allows you to keep your home or business safe wherever you are. You can also be sure that your house-sitter or employees are checking in as planned. The M5 Wi-Fi motion sensor is discrete, effortless to install, easy to customize and highly versatile.
+Plug the motion sensor into an outlet or use a power cord for a longer reach.
+•	Motion Sensors for Home, Garage, Office, Vocation spots, and more.
+•	No False Alarms
+•	Configure for "Movement" or "No Movement" and set your desired times.
+•	Activate/ turn off/ schedule for specific time of days, weekends
+•	Seamless connectivity to your home/ office WiFi
+•	Super Quick and Easy Setup from your smartphone or PC browser
+Got a question? Need help while setting up? Call us and talk to real and friendly support staff. No automated messages.
+In stock
+SKU PSM050
+$99.00
+AC Plug Style
+NoneUS Style plug (North America, Canada) EU Style plug (Asia, Europe) AU Style plug (Austraila, New Zealand)
+Qty
+Add to Cart
+Simple and Easy Setup.
+now for more info about our products.
+Great Support Team if you need assistance
+No Hassle, Easy Returns.
+Related Products
+Check items to add to the cart or
+select all
+$99.00
+Add to Cart
+Proteus M5
+Motion Sensors With Purpose.
+Proteus M5 Motion Sensor brings together the simplicity of plug and play motion detection along with advanced scheduling and notification capabilities. Configurable as a motion detector or as a No-motion detector with precise time control and sensitivity settings, the possibilities are limitless.
+Compact Design.
+Proteus comes in a surprisingly compact feature rich package. Plug it right into a wall outlet (100-240V AC). No batteries to replace.
+It connects directly to your wifi, with no additional hubs or gateways required. Oh, and it wont block your second wall outlet.
+Easy to Setup.
+You can
+use your smart phone, tablet or a laptop to setup the sensor.
+Power up your sensor.
+Connect your phone/ laptop to ProteusSetup-xxxxx network.
+Wait for setup screen to popup.
+Select your wifi, enter wifi password.
+Select timezone.
+Enter primary email.
+Save Settings.
+Pet Friendly
+Proteus
+M5 comes with a motion sensor designed to detect large moving objects: Read Humans. Its carefully oriented internal detection zones are fine tuned to eliminate false trips when your cat walks in.
+There are no audible alerts on the M5.
+Email, Text, Call Alerts
+Get Notifications by emails, text , call alerts when alarms are tripped. Add multiple emails, and phone numbers. Get Notified instantly.
+Alert on Motion
+Proteus M5 lets you monitor homes, offices, garages and other locations to notify you when motion is detected. You can schedule the on/ off days and time for the sensor. Selectable sensitivity settings let you configure the sensor precisely for your application.
+No-Motion Detection
+M5 can be configured to alert you when it does not detect motion. You can specify time shots, duration and days of week when the sensor needs to be monitoring.
+Sync Multiple Sensors
+When configuring no-motion detection, you can sync multiple sensors in multiple locations to work in tandem. This means if any one of them detects motion, it will be synced with the other sensors in the group. This will work even when sensors are not in the same building.
+Easy Reset.
+Got a new router? Changed your wifi password? Simply reset the sensor by pressing the reset button for 5 seconds leading to a long beep. Continue to setup the sensor with your new wifi network.
+Notify on Power Outage.
+With smart monitoring from our cloud, you will be notified as quick as 10 minutes after power or wifi goes down. You will be notified if the sensor stops working even when power and wifi are good. When the sensor comes back online after power, wifi is restored or sensor issues resolved, you will be notified as well.
+Inside the box.
+Proteus Base Unit with Motion Sensor.
+AC Power Supply.
+Quick Start Guide.
+Requirements
+All Proteus WiFi Sensors require a 2.4 GHz Wi-Fi network for operation.
+Voice Call Alerts
+Voice call alerts are part of the advanced options package and is a paid option. Notifications are charged on a per call basis at 9¢/ call
+Power supply
+All proteus sensors, unless specified otherwise, are powered directly from a 120-240V AC wall outlet. Simply plugin the sensor to a standard wall outlet and you are good to go.

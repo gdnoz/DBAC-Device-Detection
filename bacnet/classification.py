@@ -63,8 +63,12 @@ class BacnetClassification:
 
         cumulative_scores = self.text_scraper.cumulative_classification(set(urls),r2_scoring=True)
 
-        best_classification = max(cumulative_scores)
-        best_classification_score = max(cumulative_scores.values())
+        if len(cumulative_scores) > 0:
+            best_classification = max(cumulative_scores)
+            best_classification_score = max(cumulative_scores.values())
+        else:
+            best_classification = ""
+            best_classification_score = 0.0
 
         if best_classification_score > self.threshold and best_classification is not "":
             return BacnetClassificationResult(best_classification,best_classification_score)
