@@ -63,12 +63,15 @@ class BacnetClassification:
 
         cumulative_scores = self.text_scraper.cumulative_classification(set(urls),r2_scoring=True)
 
-        if len(cumulative_scores) > 0:
-            best_classification = max(cumulative_scores)
-            best_classification_score = max(cumulative_scores.values())
-        else:
-            best_classification = ""
-            best_classification_score = 0.0
+        print(cumulative_scores)
+
+        most_common = cumulative_scores.most_common(1)
+
+        if len(most_common) == 0:
+            return BacnetClassificationResult("No_classification", 0.0)
+
+        best_classification_score = most_common[0][1]
+        best_classification = most_common[0][0]
 
         if best_classification_score > self.threshold and best_classification is not "":
             return BacnetClassificationResult(best_classification,best_classification_score)
