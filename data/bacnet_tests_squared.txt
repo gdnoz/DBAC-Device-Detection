@@ -1,17 +1,11 @@
 arob(AROB Universal Room Controller),No_classification,0.0,fail
 bacdrpc(BACnet Room Pressure Monitor),No_classification,0.0,fail
-bacri(BAC-RI Room Interface Module),IndustryEnvironmentSensor,0.91,fail
+bacri(BAC-RI Room Interface Module),IndustryController,1.18,pass
 bacrpc(BACnet Room Pressure Monitor),IndustryEnvironmentSensor,0.30,pass
-bacsri(SRI-70 Analogue Room Interfaces),No_classification,0.0,fail
-cdd3(CDD3 CO2 Detector),IndustryEnvironmentSensor,1.65,pass
-cdrbac(CDR-BAC Room CO2 and Temperature Sensors),IndustryEnvironmentSensor,3.13,pass
-src100(SRC-100 Series Zone Controllers),IndustryEnvironmentSensor,0.58,fail
-touchplateultra(Light Controller),Light,0.22,fail
+bacsri(SRI-70 Analogue Room Interfaces),IndustryController,0.31,pass
+cdd3(CDD3 CO2 Detector),IndustryEnvironmentSensor,2.51,pass
+cdrbac(CDR-BAC Room CO2 and Temperature Sensors),IndustryEnvironmentSensor,4.72,pass
+src100(SRC-100 Series Zone Controllers),IndustryController,1.24,pass
+touchplateultra(Light Controller),IndustryController,0.39,pass
 
-3/9=0.333 accuracy
-
-
-bacri(BAC-RI Room Interface Module),IndustryEnvironmentSensor,0.91,fail
-src100(SRC-100 Series Zone Controllers),IndustryEnvironmentSensor,0.58,fail
-touchplateultra(Light Controller),Light,0.22,fail
-
+7/9=0.78 accuracy
