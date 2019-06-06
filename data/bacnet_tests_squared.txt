@@ -9,3 +9,9 @@ src100(SRC-100 Series Zone Controllers),IndustryEnvironmentSensor,0.58,fail
 touchplateultra(Light Controller),Light,0.22,fail
 
 3/9=0.333 accuracy
+
+
+bacri(BAC-RI Room Interface Module),IndustryEnvironmentSensor,0.91,fail
+src100(SRC-100 Series Zone Controllers),IndustryEnvironmentSensor,0.58,fail
+touchplateultra(Light Controller),Light,0.22,fail
+
