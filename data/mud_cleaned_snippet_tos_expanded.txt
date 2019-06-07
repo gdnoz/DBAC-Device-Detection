@@ -1,0 +1,33 @@
+/Library/Frameworks/Python.framework/Versions/3.7/bin/python3.7 "/Users/mathiasthomsen/Dropbox/Uni/0_DBAC Thesis/DBAC Device Detection/testing/Tests_MudClassification.py"
+/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/sklearn/externals/joblib/externals/cloudpickle/cloudpickle.py:47: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+https://iotanalytics.unsw.edu.au/mud/amazonEchoMud.json: pass (Speaker, 0.22433547409288032)
+https://iotanalytics.unsw.edu.au/mud/augustdoorbellcamMud.json: pass (Doorbell, 0.6440948856759301)
+https://iotanalytics.unsw.edu.au/mud/awairAirQualityMud.json: pass (HouseEnvironmentMonitor, 0.6369244748598893)
+https://iotanalytics.unsw.edu.au/mud/belkincameraMud.json: pass (Camera, 0.2327684616550895)
+https://iotanalytics.unsw.edu.au/mud/blipcareBPmeterMud.json: fail (No_classification, 0.0)
+https://iotanalytics.unsw.edu.au/mud/canaryCameraMud.json: pass (Camera, 0.4235659565682837)
+https://iotanalytics.unsw.edu.au/mud/chromecastUltraMud.json: pass (MediaPlayer, 0.8039965338567269)
+https://iotanalytics.unsw.edu.au/mud/dropcamMud.json: fail (HouseEnvironmentMonitor, 0.8005410819750909)
+https://iotanalytics.unsw.edu.au/mud/HueBulbMud.json: pass (Light, 0.6692767374139731)
+https://iotanalytics.unsw.edu.au/mud/ihomepowerplugMud.json: pass (ElectricControl, 0.46766330560515845)
+https://iotanalytics.unsw.edu.au/mud/lifxbulbMud.json: pass (Light, 0.6697712190210368)
+https://iotanalytics.unsw.edu.au/mud/nestsmokesensorMud.json: pass (HouseEnvironmentMonitor, 0.7270216413497986)
+https://iotanalytics.unsw.edu.au/mud/NetatmoCameraMud.json: fail (Alarm, 0.39734894808909765)
+https://iotanalytics.unsw.edu.au/mud/NetatmoWeatherStationMud.json: pass (HouseEnvironmentMonitor, 0.2924885845126907)
+https://iotanalytics.unsw.edu.au/mud/ringdoorbellMud.json: pass (Doorbell, 0.8501388655033855)
+https://iotanalytics.unsw.edu.au/mud/samsungsmartcamMud.json: pass (Camera, 0.4089293935646755)
+https://iotanalytics.unsw.edu.au/mud/tplinkcameraMud.json: pass (Camera, 0.3561201504668466)
+https://iotanalytics.unsw.edu.au/mud/tplinkplugMud.json: pass (ElectricControl, 0.9162146667022116)
+https://iotanalytics.unsw.edu.au/mud/tribyspeakerMud.json: pass (Speaker, 0.6844099321382928)
+https://iotanalytics.unsw.edu.au/mud/wemomotionMud.json: fail (ElectricControl, 0.5388179685932982)
+https://iotanalytics.unsw.edu.au/mud/wemoswitchMud.json: pass (ElectricControl, 0.8435423420830337)
+https://iotanalytics.unsw.edu.au/mud/withingsbabymonitorMud.json: fail (HealthMonitor, 0.6478717581114167)
+https://iotanalytics.unsw.edu.au/mud/withingscardioMud.json: pass (HealthMonitor, 0.8829025653536627)
+https://iotanalytics.unsw.edu.au/mud/withingssleepsensorMud.json: pass (HealthMonitor, 0.9099518536238976)
+****************** TEST COMPLETE: c_tresh: 0.2 s_threshold: 0.1 ******************
+Accuracy:                    0.7916666666666666
+No device_classification:    0.041666666666666664
+Average score:               0.4851715435019776
+
+Process finished with exit code 0
