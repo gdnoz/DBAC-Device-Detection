@@ -63,7 +63,7 @@ if __name__ == "__main__":
     import os,constants
     import dataset_utilities.data_set_proportionality_check
 
-    ds_creator = DataSetCreator(constants.DATA_SET_URLS_FILE_PATH)
-    ds_creator.create_local_data_set(constants.DATA_SET_PATH)
+    ds_creator = DataSetCreator(constants.DATA_SET_TOS_ADDITIONS_FILE_PATH)
+    ds_creator.create_local_data_set(constants.DATA_SET_CLEAN_TOS_PATH)
 
     print(dataset_utilities.data_set_proportionality_check.data_set_proportionality_check())

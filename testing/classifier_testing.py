@@ -213,5 +213,6 @@ def test_xgboost_classifier(docs_to_train, X_train, X_test, y_train, y_test):
 
 if __name__ == "__main__":
     from device_classification.utilities import run_tests_in_module,run_tests_in_module_with_kfold_cross_validation
+    import constants
 
-    run_tests_in_module_with_kfold_cross_validation(__name__)
+    run_tests_in_module_with_kfold_cross_validation(__name__,constants.DATA_SET_CLEAN_TOS_PATH)

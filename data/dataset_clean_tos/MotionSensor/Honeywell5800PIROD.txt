@@ -1,0 +1,42 @@
+5800PIR-OD | Motion Sensors | 5800 Wireless Products | Honeywell Commercial Security
+Full Description
+The 5800PIR-OD is a AA lithium battery powered wireless outdoor motion
+detector intended for use with Honeywell alarm systems that support 5800 Series
+wireless devices. The 5800PIR-OD is an ideal solution for outdoor sensing needs
+in difficult to wire locations— avoiding the costs and time to trench hardwired
+solutions. It’s perfect for both residential (activity monitors, e-mail alerts,
+turning on video cameras) and commercial (protecting copper theft, utility and
+electrical substations, cellular sites, commercial buildings, car lots and more)
+applications.
+The 5800PIR-OD consists of two passive infrared (PIR) sensors that must
+both be tripped to declare an alarm, providing immunity to false alarm sources,
+pets and other animals. These sensors can be adjusted to alter the detection
+range. The transmitter can send alarm, tamper and low battery condition messages
+to the alarm panel.
+Part Number
+5800PIR-OD
+Discriminates both large and small animals to reduce false alarms
+Adjustable range patterns from 7' up to 40'. The 90º pattern can also be
+adjusted throughout a 180º field of view by simply swiveling the housing.
+Battery saving feature allows you to select five seconds of inactivity
+(for higher security requirements or where up-to-date information is critical)
+or 120 seconds of inactivity after alarm (for initial notification)
+Immune to bright lights from head lamps, sunlight and other light sources
+that typically generate false detections
+Full Supervision – The 5800PIR-OD is fully supervised to monitor for low
+battery, case tamper and trouble conditions
+Versatile Mounting – Whether you choose to affix the detector to a wall or
+a fence post, mounting is simple with the enclosed hardware
+Tamper Protection – The detector has a built-in tamper switch that can
+communicate back to the control panel in the event it is removed from the
+wall
+Part No.
+Description
+5800PIR-OD
+Wireless Outdoor PIR Motion Sensor
+462
+AA 1.5V Lithium Battery (four per
+unit)
+Where To Buy
+Support Material
+Product Documents

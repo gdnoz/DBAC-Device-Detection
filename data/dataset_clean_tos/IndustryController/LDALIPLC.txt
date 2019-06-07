@@ -1,0 +1,36 @@
+Programmable DALI Controller
+Programmable DALI Controller
+LDALI-PLC4: Programmable DALI Controller
+The LDALI‑PLC4 controllers are powerful, programmable lighting controllers, which can be programmed by L‑STUDIO. With Alarming, Scheduling, Trending and e-mail notification (AST™) the LDALI‑PLC4 controller is a perfect solution for DALI lighting systems with application requirements not covered by the standard application of the non-programmable L‑DALI controllers.
+DALI Network Interface
+The LDALI-PLC4 device is equipped with 4 independent DALI channels. Up to 64 DALI or DALI-2 based luminaries per DALI channel can be controlled individually or via 16 groups. All luminaries are monitored for lamp or ballast defect. L-DALI represents a DALI-Master in the DALI network which can interact with DALI-2 multi-sensors and buttons in Multi-Master mode. Up to 16 DALI-2 multi-sensors and up to 64 DALI-2 button inputs are supported per DALI channel.
+Built-In DALI Bus Power Supply
+The LDALI-PLC4 comes with a built-in DALI bus power supply, which can supply each DALI channel with a guaranteed supply current of 116 mA. An external DALI bus power supply can be added to top up the supply current to 232 mA. External power supplies are available for up to four DALI channels. The DALI bus power can be switched on and off via web interface or LCD UI. Thanks to the switching power supply, these devices can handle input voltages from 85 – 240 V AC, 50/ 60 Hz.
+Local Operation and Override
+The L‑DALI Controllers come with a built-in backlit display (128x64) and a jog dial for local operation and override. Using the local operation, maintenance tasks (DALI device replacement, burn-in mode, etc.) can be executed without the need of any software tool.
+Programmable
+The LDALI‑PLC4 can be programmed using the L‑STUDIO programming tool. It can be programmed using IEC 61499 for integration into the L‑ROC system and IEC 61131 for stand-alone operation.
+Connectivity
+The LDALI‑PLC4 controller provides connectivity functions to concurrently integrate CEA‑709 (LonMark Systems), BACnet, KNX, and Modbus subsystems. LonMark Systems can be integrated via IP‑852 (Ethernet/ IP). BACnet integration is supported through BACnet/ IP (Ethernet/ IP) or BACnet MS/ TP (RS‑485), KNXnet/ IP and Modbus TCP via Ethernet/ IP.
+The gateway functionality allows data communication between all communication technologies available on the device. Different technology data points are mapped through Local Connections on the device. The mapping of different technology data points on distributed devices is supported by Global Connections.
+Each LDALI‑PLC4 is equipped with two Ethernet ports. It can either be configured to use the internal switch to interconnect the two ports or every port is configured to work in a separate IP network.
+When the Ethernet ports are configured for two separate IP networks, one port can be connected for instance to a WAN (Wide Area Network) with enabled network security (HTTPS) while the second port can be configured to be connected to an insecure network (LAN) where the standard building automation protocols like BACnet/ IP, LON/ IP, or Modbus TCP are present. These devices also feature firewall functionality to isolate particular protocols or services between the ports.
+Using the internal switch, a daisy chained line topology of up to 20 devices can be built, which reduces costs for network installation. The IP switch also allows the setup of a redundant Ethernet installation (ring topology), which increases reliability. The redundant Ethernet topology is enabled by the Rapid Spanning Tree Protocol (RSTP), which is supported by most managed switches.
+The LDALI‑PLC4 provides fully featured AST™ functionality (Alarming, Scheduling, and Trending) and can be integrated perfectly into the L‑WEB System.
+IoT Integration
+The IoT function (Node.js) allows connecting the system to almost any cloud service, either for uploading historical data to analytics services, delivering alarm messages to alarm processing services or operating parts of the control system over a cloud service (e.g., scheduling based on Web calendars or booking systems). Processing Internet information such as weather data in forecast-based control is also possible. Finally, the JavaScript kernel also allows implementing serial protocols to non-standard equipment.
+Device Configuration via Tool or Web Interface
+The device configuration, commissioning, and parameterization is done either with the configuration tool software or via the integrated web server.
+EnOcean, SMI and LIOB/‌IP
+Wireless EnOcean sensors and buttons can be integrated via the optional L‑ENO EnOcean interface. For sunblinds the LSMI-804 extension module allows the integration of up to four SMI channels. Physical I/ Os can be integrated through L‑IOB I/ O Modules via LIOB‑IP.
+Advanced DALI Functions
+DALI SensorsThe LDALI-PLC4 Controllers support the integration of DALI-2 multi-sensors for presence detection and light level recognition. In addition to the LOYTEC multi-sensors LDALI-MS2 and LDALI-MS3, DALI-2 sensors of many well-known manufacturers can be used.
+DALI Buttons
+For manual operation, DALI-2 push button couplers, like the LDALI-BM2, DALI-2 operation panels, and IR remote controls can be integrated into the system. The function executed when a button is pressed is freely programmable in the program logic.
+DALI Relay ModulesStandard loads in the power grid can be controlled via DALI using DALI relay modules, like the LDALI-RM3 and LDALI-RM4.
+DALI Color ControlThe LDALI-PLC4 allows controlling DALI luminaires with color control functionality (DT8). Both, tunable white (Tc) and full RGB color control (RGBWAF and xy-coordinate) are supported. Changing the light colour is possible via scenes or controlled via the program logic.
+Auto Burn-In for fluorescent Lamps Fluorescent lamps must be operated about 100 hours with 100 % brightness before they may be dimmed. This burn-in process is monitored by L‑DALI for each lamp. After 100 hours burn-in time, the lamp’s constant light control is enabled.
+Automatic Test of Emergency Lighting SystemsIn DALI emergency lighting systems based on IEC 62386-202, L-DALI can be used for testing the system. The results can be logged.
+Collection of important operational Parameters For maximum transparency in the lighting system, L‑DALI can record the operating hours of each lamp and also the energy consumption (calculated).
+DALI Device Replacement made easy Defective DALI ballasts can easily be replaced directly on the L‑DALI Controller (LCD and jog dial) or via the web interface. No software tool is necessary.
+LDALI-PLC4: Programmable DALI Controller ProductsLDALI-PLC4Freely programmable DALI Controller, 4 DALI channelsb1353298d0004dba8ac869e35470e6b4LDALI-PWR2-UDALI-2 power supply, 85-240 V, 50/60 Hz, Output: 2 x 16 VDC, 116 mA (DALI bus)1a3fb79ef58a4f3ea0a0dbbab4c9c681LDALI-PWR4-UDALI-2 power supply, 85-240 V, 50/60 Hz, Output: 4 x 16 VDC, 116 mA (DALI bus)9445d5b1dc52489ba19c592e7706714eL-RC1Infrared remote control for room automation applications

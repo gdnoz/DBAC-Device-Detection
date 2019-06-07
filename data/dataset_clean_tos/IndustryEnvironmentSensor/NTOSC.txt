@@ -1,0 +1,18 @@
+NT-OSC Occupancy Sensor - Ceiling Mount - Network HVAC
+or
+© 2019 Network HVAC
+Store powered by Bigcommerce
+NT-OSC Occupancy Sensor - Ceiling Mount
+NT-OSC Occupancy Sensor - Ceiling Mount
+Gift Wrapping:
+Quantity:
+Add to Cart
+Add to Wishlist
+Product Description
+The NT-OSC and NT-OSW are occupancy sensors designed for automatic occupancy control of your HVAC system. They can be wall, corner or ceiling mounted to provide the best detection area for each application. The sensors provides an occupied / unoccupied signal to all Net/X Thermostats with CLK1/CLK2 terminals. A 4-wire cable (thermostat cable or CAT5) is all thats needed for connection.The NT-OSC and NT-OSW occupancy sensors are perfect for partial use rooms and areas in just about any facility. In office spaces, schools,worship facilities, and portable buildings, the adjustable Verify Occupancy setting allows random in-and-out occupancy and cleaning personnel to come into the area for a short period of time without the sensors triggering the HVAC unit back into occupied mode. Thesensors are designed to be used with the commercial keypad lockout feature of the Net/X thermostats.
+Features
+Connects to any Net/X thermostat with the CLK1/CLK2 terminals
+No addressing needed; automatically recognized by the Net/X thermostat
+24VAC Power supplied by the Net/X thermostat remote sensor bus
+Adjustable 'Verify Occupancy' times of 0 sec, 10 sec, 30 sec, 1 min, 5 min, and 10 min
+Adjustable 'Minimum Occupied' times of 10 sec, 1 min, 5 min, 10 min, 20 min and 30 min
