@@ -58,15 +58,16 @@ class BacnetClassification:
 
         print("Classifying using Bing and Google...")
 
-        urls = BingSearchAPI.first_ten_results(search_terms,only_html=False)+GoogleCustomSearchAPI.search(search_terms,exclude_pdf=False)
+        snippets = GoogleCustomSearchAPI.search_text(search_terms, exclude_pdf=True) \
+                   + BingSearchAPI.first_ten_snippets(search_terms, only_html=True)
 
-        text_from_urls = self.text_scraper.extract_best_text(set(urls))
+        best_snippet = self.text_scraper.extract_best_snippet(set(snippets))
 
         #print("_____________TEXT_____________")
         #print(text_from_urls)
         #print("______________________________")
 
-        classification_result = self.classifier.predict_text(text_from_urls)
+        classification_result = self.classifier.predict_text(best_snippet)
 
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)

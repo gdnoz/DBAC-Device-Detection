@@ -60,13 +60,11 @@ class MudClassification:
         '''
         systeminfo = MUDUtilities.get_systeminfo_from_mud_file(mud_file_contents)
 
-        #print("Search terms: " + systeminfo)
+        snippets = GoogleCustomSearchAPI.search_text(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_snippets(systeminfo,only_html=True)
 
-        urls = GoogleCustomSearchAPI.search(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_results(systeminfo,only_html=True)
+        best_snippet = self.text_scraper.extract_best_snippet(set(snippets))
 
-        text_from_urls = self.text_scraper.extract_best_text(set(urls))
-
-        classification_result = self.classifier.predict_text(text_from_urls)
+        classification_result = self.classifier.predict_text(best_snippet)
 
         if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
             return MudClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)

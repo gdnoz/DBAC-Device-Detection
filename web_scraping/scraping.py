@@ -166,6 +166,28 @@ class RelevantTextScraper:
 
         return relevant_text
 
+    def extract_best_snippet(self, snippets: set) -> str:
+        """
+        Extracts text from the urls. Text is discarded if it is irrelevant.
+        :return: All relevant texts combined into a string.
+        """
+        from web_scraping.utilities import WebScrapingUtilities
+
+        best_snippet = ""
+        best_score = 0.0
+
+        for snippet in snippets:
+            try:
+                classification = self.classifier.predict_text(snippet)
+
+                if classification.prediction_probability > best_score:
+                    best_snippet = snippet
+                    best_score = classification.prediction_probability
+
+            except Exception:
+                continue
+
+        return best_snippet
 
     def _is_url_sub_domain_of_element_in_blacklist(self, url: str) -> bool:
         """

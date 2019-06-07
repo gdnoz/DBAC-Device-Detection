@@ -26,7 +26,7 @@ class BacnetProfiler:
         print("Classification score:    " + str(classification_result.score))
 
         print("Bacnet query result:")
-        print(query_result)
+        #print(query_result)
 
 
         print("****************** Bacnet profiling completed *******************")
