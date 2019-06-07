@@ -59,9 +59,10 @@ class BacnetClassification:
 
         print("Classifying using Bing and Google...")
 
-        urls = BingSearchAPI.first_ten_results(search_terms,only_html=False)+GoogleCustomSearchAPI.search(search_terms,exclude_pdf=False)
+        snippets = GoogleCustomSearchAPI.search_text(search_terms, exclude_pdf=True) \
+                   + BingSearchAPI.first_ten_snippets(search_terms, only_html=True)
 
-        avg_scores = self.text_scraper.avg_scoring_classification(set(urls))
+        avg_scores = self.text_scraper.avg_scoring_snippet_classification(set(snippets))
 
         most_common = avg_scores.most_common(1)
 

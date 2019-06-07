@@ -279,6 +279,35 @@ class RelevantTextScraper:
 
         return avg_score_counter
 
+    def avg_scoring_snippet_classification(self, snippets: set) -> dict:
+        """
+        Extracts text from the urls, performs classification and
+        cumulatively scores all classifications over the scraping threshold.
+        """
+
+        from collections import Counter
+
+        score_counter = Counter()
+        counter = Counter()
+
+        for snippet in snippets:
+            try:
+                classification = self.classifier.predict_text(snippet)
+
+                if classification.predicted_class != "":
+                    score_counter[classification.predicted_class] += classification.prediction_probability
+                    counter[classification.predicted_class] += 1
+            except Exception:
+                    continue
+
+        avg_score_counter = Counter()
+
+        for key in score_counter:
+            avg_score_counter[key] = score_counter[key]/float(counter[key])
+
+        return avg_score_counter
+
+
     def _is_url_sub_domain_of_element_in_blacklist(self, url: str) -> bool:
         """
         Checks if the blacklist contains other urls which are different sub domains of the same domain as the input.

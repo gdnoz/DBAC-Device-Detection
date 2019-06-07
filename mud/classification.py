@@ -60,9 +60,9 @@ class MudClassification:
         '''
         systeminfo = MUDUtilities.get_systeminfo_from_mud_file(mud_file_contents)
 
-        urls = GoogleCustomSearchAPI.search(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_results(systeminfo,only_html=True)
+        snippets = GoogleCustomSearchAPI.search_text(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_snippets(systeminfo,only_html=True)
 
-        avg_scores = self.text_scraper.avg_scoring_classification(set(urls))
+        avg_scores = self.text_scraper.avg_scoring_snippet_classification(set(snippets))
         print()
         print(avg_scores)
 

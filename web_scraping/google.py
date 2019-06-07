@@ -32,3 +32,30 @@ class GoogleCustomSearchAPI:
             return []
         except HTTPError:
             return []
+
+    @staticmethod
+    def search_text(search_terms: str, exclude_pdf=False) -> list:
+        import requests
+        from requests import HTTPError
+
+        if exclude_pdf:
+            q = search_terms + GoogleCustomSearchAPI.exclude_pdf
+        else:
+            q = search_terms
+
+        params = \
+            {"q": q,
+             "cx": GoogleCustomSearchAPI.custom_search_engine_id,
+             "key": GoogleCustomSearchAPI.api_key,
+             "lr": "lang_en",
+             }
+
+        response = requests.get(GoogleCustomSearchAPI.endpoint, params=params)
+
+        try:
+            response.raise_for_status()
+            return [result_dict['title'] + " " + result_dict['snippet'] for result_dict in response.json()['items']]
+        except KeyError:
+            return []
+        except HTTPError:
+            return []
