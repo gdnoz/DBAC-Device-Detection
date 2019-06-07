@@ -23,7 +23,36 @@ class BingSearchAPI:
         response = requests.get(BingSearchAPI.endpoint, headers=headers, params=params)
         response.raise_for_status()
 
+        json_resp = response.json()
+
         try:
             return [result_dict['url'] for result_dict in response.json()['webPages']['value']]
         except KeyError:
             return []
+
+    @staticmethod
+    def _search_text(search_terms: str, limit: int, only_html=False) -> list:
+        import requests
+
+        headers = {"Ocp-Apim-Subscription-Key": BingSearchAPI.api_key}
+        params = {"q": search_terms,
+                  "count": limit,
+                  "textDecorations": True,
+                  "setLang": "en"
+                  }
+
+        if only_html:
+            params.update({"textFormat": "HTML"})
+
+        response = requests.get(BingSearchAPI.endpoint, headers=headers, params=params)
+        response.raise_for_status()
+
+        json_resp = response.json()
+
+        try:
+            return [result_dict['name'] + " " + result_dict['snippet'] for result_dict in response.json()['webPages']['value']]
+        except KeyError:
+            return []
+
+if __name__ == "__main__":
+    print(BingSearchAPI._search_text("chromecastultra", limit=10))
