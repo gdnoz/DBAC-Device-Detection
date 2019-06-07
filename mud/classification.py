@@ -63,7 +63,7 @@ class MudClassification:
         urls = GoogleCustomSearchAPI.search(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_results(systeminfo,only_html=True)
 
         cumulative_scores = self.text_scraper.cumulative_classification(set(urls), r2_scoring=True)
-        print()
+
         print(cumulative_scores)
 
         most_common = cumulative_scores.most_common(1)

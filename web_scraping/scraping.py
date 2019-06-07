@@ -191,7 +191,7 @@ class RelevantTextScraper:
 
                     classification = self.classifier.predict_text(scraped_text)
 
-                    print(str(url) + " & " + str(classification.prediction_probability) + " " + str(classification.predicted_class))
+                    #print(str(url) + " & " + str(classification.prediction_probability) + " " + str(classification.predicted_class))
 
                     if classification.predicted_class != "":
                         if r2_scoring:
