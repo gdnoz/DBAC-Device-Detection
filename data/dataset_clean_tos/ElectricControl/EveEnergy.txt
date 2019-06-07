@@ -1,0 +1,77 @@
+Eve Energy | evehome.com
+Good to know
+How do built-in schedules work?
+Schedules that you set once in the app are automatically stored on Eve Energy, which ensures autonomous operation without a wireless connection. So you can set Eve Energy to automatically switch on a connected lamp at sunset, activate your filter coffee machine at 7 AM, and much more – all independently of your home hub.
+Does Eve Energy have an onboard switch?
+Yes. The little green LED is a button that you simply press. That way, whether your phone is out of reach, you don’t want to disturb the peace with a voice command, or a guest does not have access, Eve Energy can be operated like a regular switch.
+Is Eve Energy safe for children?
+Yes. Thanks to built-in terminal shutters that automatically close when unoccupied by a connected device, Eve Energy is off limits to budding electricians. Plus it features a child lock that disables the onboard button.
+Switch appliances on and off from anywhere. Know how much power they’re using. And have them come to life on their own. Everything about Eve Energy says: you’re in control.
+Talk or tap to control.
+Hands tied? Already comfortable? Switch on any appliance in your home with a simple tap, Siri voice command, or a press of the onboard button. And activate the child lock to prevent unwanted operation.
+Access on the go.
+Your home hub will keep you connected to your abode whether you’re strolling around the block, or exploring the world.
+Put everyday essentials on autopilot.
+Set schedules for lights, humidifiers, fans, and other vital devices. Then go about your usual business while they get on with theirs – all independently of your home hub.
+Make it easy for everyone.
+Have your appliances respond to occupancy. So everything is as it should be for the last to leave and first to return.
+Watch those watts.
+Curiosity. Economy. Conservation. Reasons to monitor power consumption and projected cost are aplenty. Eve Energy gives you the insight to embrace yours.
+Hey Siri, it's bedtime.
+Set the perfect scene.
+Scenes enable multiple accessories to work in concert. So you can create a scene called "Bedtime" that turns on your bedside lamp via Eve Energy, locks your doors, and shuts your shades – all with one tap or voice command.
+Set the perfect scene.
+Scenes enable multiple accessories to work in concert. So you can create a scene called "Bedtime" that turns on your bedside lamp via Eve Energy, locks your doors, and shuts your shades – all with one tap or voice command.
+Bedtime
+"Hey Siri, it's bedtime."
+Power-on stars
+Power-on lanterns
+Power-on fairy lights
+Command on demand.
+Set scenes in a flash via Siri, your Control Center, or Apple Watch. Easily engage accessories using the Home app on your iPhone, iPad, or iPod touch. And to see concise records, gain insights, and enjoy full control of your connected home, look no further than the Eve app.
+Safe as houses.
+Eve accessories are exclusively HomeKit-enabled. Your personal data is under no circumstances captured, saved to a cloud, or sold. Even when accessing your home remotely via your home hub, all data is end-to-end encrypted and stored on your iPhone or iPad. Superior privacy, advanced security, and absolute peace of mind – it’s all here.
+"It’s amazing. Set up scenes, control products individually, control pretty much everything in your house if you want..."
+"Elgato’s latest smartplug is a super-cool energy watchdog."
+"If you’re looking to start building your smart home, the Eve Energy is a good first step."
+"Honestly, it's the gateway to beginning, and enjoying Apple's HomeKit."
+"This is a useful gadget if you want to track power consumption."
+Truly smart.
+Equipped with Bluetooth low energy technology, Eve accessories ensure reliable operation independently of bridges. Setup is quick and easy. Energy consumption is minimal. And accessory response time is snappy.
+Compatible with your ecosystem.
+Straight out of the box, Eve accessories work with your iPhone, iPad, iPod touch, and Apple Watch. Your HomePod, Apple TV or iPad will serve as a home hub, seamlessly automating your accessories and keeping you connected while out and about.
+Connect with us
+Technical Details
+Requirements
+Specifications
+To control this HomeKit-enabled accessory, iOS 12.1 or later is recommended. To automate and control this accessory while away from home, you need either a HomePod, an Apple TV with tvOS 11 or later, or an iPad with iOS 11 or later set up as a home hub.
+Power
+Input / Output:
+AC 100-240 V, 50/60 Hz
+Australia:
+max. 8 A / 1840 W
+China:
+max. 8 A / 2000 W, 50/60 Hz, 250 V~
+Europe:
+max. 11 A / 2500 W
+Japan:
+max. 11 A / 1100 W
+United Kingdom:
+max. 13 A / 2500 W
+U.S. & Canada:
+max. 15 A / 1800 W
+Compatibility
+Australia:
+Type I sockets (AS 3112)
+China:
+Type I sockets (GB 1002)
+Europe:
+Type E & F sockets, Type C & F appliances
+Japan:
+Type A & B sockets, Type A appliances
+United Kingdom:
+Type G (BS 1363) sockets & appliances
+U.S. & Canada:
+Type B sockets, Type A & B appliances
+Wireless Connection
+Bluetooth Low Energy
