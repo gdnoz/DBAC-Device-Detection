@@ -59,7 +59,7 @@ class BacnetClassification:
 
         print("Classifying using Bing and Google...")
 
-        snippets = GoogleCustomSearchAPI.search_text(search_terms, exclude_pdf=True) + BingSearchAPI.first_ten_snippets(search_terms, only_html=True)
+        snippets = GoogleCustomSearchAPI.search_text(search_terms) + BingSearchAPI.first_ten_snippets(search_terms)
 
         cumulative_scores = self.text_scraper.cumulative_classification_snippets(set(snippets), r2_scoring=True)
 
