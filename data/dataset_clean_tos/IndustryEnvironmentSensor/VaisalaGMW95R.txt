@@ -1,0 +1,29 @@
+GMW95R BACnet/Modbus CO2, Temperature and Humidity Sensor for demanding HVAC, with Certificate -
+Vaisala Online Store
+GMW95R
+GMW95R BACnet/Modbus CO2, Temperature and Humidity Sensor for demanding HVAC, with Certificate
+https://store.vaisala.com/eu/productresources/large1/GMW95R.jpg
+The Vaisala digital Carbon Dioxide, Temperature, and Humidity Transmitter GMW95R is intended for demand controlled ventilation applications, green buildings and Indoor air quality monitoring (IAQ). It features both BACnet MS/TP and Modbus RTU output options. The GMW90 Series Transmitters are suitable for LEED projects as the accuracy is better than the required ±75 ppm even after 5 years of use. After 5 years the transmitters can be easily calibrated in the field.The GMW90 Series Carbon Dioxide and Temperature Transmitters use proprietary Micro-Electro-Mechanical System (MEMS) technology for measuring carbon dioxide. The sensor’s continuous reference measurement enables reliable and accurate readings, outstanding long-term stability, extended lifetime, and minimal maintenance.
+This wall-mounted transmitter is easy to install and it has very low maintenance requirements. Field calibration can be done quickly against a GM70 CO2 meter, against calibration gas bottles with straightforward trimmer adjustment or by exchanging intelligent GM10 CO2 measurement modules that come with a traceable calibration certificate. The display is always included for easy calibration. See The transmitter has user exchangeable measurement modules, which can be ordered as spare parts. The module is delivered with a calibration certificate.
+GMW95R BACnet/Modbus CO2, Temperature and Humidity Sensor for demanding HVAC, with Certificate
+The Vaisala digital Carbon Dioxide, Temperature, and Humidity Transmitter GMW95R is intended for demand controlled ventilation applications, green buildings and Indoor air quality monitoring (IAQ). It features both BACnet MS/TP and Modbus RTU output options. The GMW90 Series Transmitters are suitable for LEED projects as the accuracy is better than the required ±75 ppm even after 5 years of use. After 5 years the transmitters can be easily calibrated in the field.The GMW90 Series Carbon Dioxide and Temperature Transmitters use proprietary Micro-Electro-Mechanical System (MEMS) technology for measuring carbon dioxide. The sensor’s continuous reference measurement enables reliable and accurate readings, outstanding long-term stability, extended lifetime, and minimal maintenance.
+This wall-mounted transmitter is easy to install and it has very low maintenance requirements. Field calibration can be done quickly against a GM70 CO2 meter, against calibration gas bottles with straightforward trimmer adjustment or by exchanging intelligent GM10 CO2 measurement modules that come with a traceable calibration certificate. The display is always included for easy calibration. See The transmitter has user exchangeable measurement modules, which can be ordered as spare parts. The module is delivered with a calibration certificate.
+The package includes:
+Transmitter
+Quick guide
+Traceable calibration certificate
+The Vaisala Digital Carbon Dioxide, Temperature and Humidity Transmitter GMW95R for Ventilation Control and Indoor air quality monitoring (IAQ)
+Standard delivery time for single unit: 1 week
+Compare
+Detailed information
+Measurement parameter(s)Carbon dioxideTemperatureHumidity
+Measurement range0 ... 5000 ppm CO2-5 ... +55 °C (+23 ... +131°F) T0 ... 95% RH
+Measurement accuracyat +20 … +30 °C (+ 68 … + 86 °F) ± (30 ppm + 2 % of reading) CO2at +20 ... +30 °C (+68 ... +86 °F) ±0.5 °C (± 0.9 °F) TTemperature range +10 ... +40 °C (+50 ... +104 °F) 0 ... 60 %RH ±2.5 %RH
+Operating temperature-5 ... +55 °C (+23 ... +131 °F)
+Operating voltage18 … 35 VDC, 24 VAC ± 20% 50/60 Hz
+Digital outputsRS-485 BACnet/Modbus
+Housing classificationIP30
+Links
+Related Products and Accessories
+Spare Parts for This Product
+Did not find products or accessories and spares parts you were looking for? Online Store has a limited selection of our products. See our Discuss your specific needs with our knowledgeable Sales Engineers.

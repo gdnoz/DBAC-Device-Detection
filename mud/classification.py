@@ -61,7 +61,7 @@ class MudClassification:
         systeminfo = MUDUtilities.get_systeminfo_from_mud_file(mud_file_contents)
 
         #urls = GoogleCustomSearchAPI.search(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_results(systeminfo,only_html=True)
-        snippets = GoogleCustomSearchAPI.search_text(systeminfo,exclude_pdf=True)+BingSearchAPI._search_text(systeminfo,limit=10,only_html=True)
+        snippets = GoogleCustomSearchAPI.search_text(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_snippets(systeminfo,only_html=True)
 
         cumulative_scores = self.text_scraper.cumulative_classification_snippets(set(snippets), r2_scoring=True)
 

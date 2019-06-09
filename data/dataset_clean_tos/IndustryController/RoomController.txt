@@ -1,0 +1,36 @@
+BACnet Room Controller (RTC2)
+BACnet Room Controller (RTC2)
+More Views
+BACnet Room Controller (RTC2)
+Availability:
+BACnet RTC2 Room Controller from Titan Products
+*Model
+-- Please Select --24V surface mount white (RTC2/T/SM/STDW) +£7.0024V flush mount white (RTC2/T/F/STDW) 24V flush mount brushed SS (RTC2/T/F/BSS) +£9.0024V flush mount polished chrome (RTC2/T/F/POC) +£13.000-10V flush mount white (RTC2/A/F/STDW) 0-10V surface mount white (RTC2/A/SM/STDW) +£7.000-10V flush mount brushed SS (RTC2/A/F/BSS) +£9.000-10V flush mount polished chrome (RTC2/A/F/POC) +£13.00
+* Required Fields
+£91.00
+Qty:
+Add to Cart
+Related Products
+Check items to add to the cart or
+£23.00
+Description
+Our RTC2 Room Controllers are designed to offer low cost room control for applications such as fan coils that require either 0-10V or 24V AC actuator control. They are BACnet enabled, allowing them to communicate on a networked BMS.
+The RTC2 is available in 2 and 4 button versions with the 2 button version offering setpoint adjust only, while the 4 button version adds a 0-10V fan speed control output.
+The controllers have options for frost protection, high limit protection and ECO settings for fabric protection. The units are also available with a built-in control temperature sensor which can reduce on-site wiring and remove the need for a remote sensor.
+For fan applications that require a relay fan speed signal, the RTC2 can be used with our IO/RM3 relay pack which converts the 0-10V fan signal to a 3-stage relay fan control output.
+The units are available in white, brushed stainless steel, polished chrome and brass. A surface mounted, white box version is also available.
+The RTC2 offers temperature setpoint and fan speed control and we also offer an RTC22b for temperature setpoint only.
+Key Features:
+Low cost
+Stylish aesthetics
+BACnet communications
+Frost protection, high limit and ECO settings
+In-built sensor option
+Project Quantity Price Breaks available. Contact us now for prices.
+Got a question? Call us on 0161 406 6480 or email
+Datasheets
+Orders are normally prepared for dispatch the same day depending on stock, with all orders sent via a tracked courier service. Please see the cut-off times below. Orders placed after these times will be processed the following working day.
+We will do our best to fulfil all orders within 1 to 2 working days meaning you will typically receive your item(s) within 48 hours of placing your order. In cases where items are temporarily out of stock, deliveries will take longer. Please contact the sales office to confirm stock availability.
+Delivery free of charge for all web orders over £500.
+For deliveries abroad please see delivery options at checkout.
+For returns there is a restocking charge of 15% of the total goods value (min. £10).

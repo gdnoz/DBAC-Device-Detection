@@ -7,6 +7,10 @@ class BingSearchAPI:
         return BingSearchAPI._search(search_terms, limit=10, only_html=only_html)
 
     @staticmethod
+    def first_ten_snippets(search_terms: str, only_html=False) -> list:
+        return BingSearchAPI._search_text(search_terms, limit=10, only_html=only_html)
+
+    @staticmethod
     def _search(search_terms: str, limit: int, only_html=False) -> list:
         import requests
 

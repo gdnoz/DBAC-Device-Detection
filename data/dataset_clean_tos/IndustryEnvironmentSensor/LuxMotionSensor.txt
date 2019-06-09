@@ -1,0 +1,48 @@
+Wireless Motion | Lux Sensor
+Wireless Motion | Lux Sensor
+Contact Us
+Dealer Login
+Join Our Newsletter
+Body Top
+> Wireless Motion | Lux Sensor
+Comfort in any Environment
+No matter how your office space is configured or designed, wireless sensors allow you to easily monitor and control your building environment.
+As part of Automated Logic’s wireless sensing line, wireless motion/lux sensors are used to detect motion and light in a space. Because there are no wires to run, they can be added to your building easily.
+Wireless sensors work in conjunction with a wireless adapter, which enables wireless communication between the sensors and a
+BACnet controller in the space. By sensing temperature, humidity, and occupancy wirelessly, our WebCTRL controllers can make smart decisions to optimize the control of heating and cooling systems in the building, providing optimum occupant comfort and energy efficiency.
+Easy to Install
+Communicates on the Rnet sensor network, via a wireless adapter
+Can be installed up to 60’ away from wireless sensors
+Enables wireless sensing on new or retrofit projects
+Wireless software included for quick & easy sensor pairing
+Available in different frequencies for different parts of the world
+Sensing Capabilities
+Passive infrared motion sensor ensures reliable detection of occupant presence for occupancy-based control
+Integrated light sensor for daylight harvesting strategies
+Automated Logic Wireless System Benefits
+Wireless and battery-less space sensors
+(assuming sufficient lighting exists in space)
+Maintenance-free capacitors power the sensors during unlit periods for up to 4-days without a light source
+Easy and cost-effective installation
+No repeaters or amplifiers required for zone-based applications
+Sensors transmit on COV (change of value), to save energy
+Integrates seamlessly with WebCTRL alarming for proactive monitoring of important sensor conditions, including:
+Sensor backup capacitor charge
+Sensor signal strength
+Sensor offline
+Can co-exist on Rnet with Automated Logic’s
+Single-program controllers can support a total of 5 sensors
+Multi-program controllers can support up to 15 sensors
+Products > Sensors
+Sensors
+Notes
+Set this sensor to detect temperature only or to detect both temperature and humidity, or connect a remote thermistor to monitor temperature in another location.
+Enjoy the monitoring features of the Standard sensor, with the addition of a setpoint dial for adjusting room temperature.
+This sensor is the complete monitoring package, including temperature and humidity sensing, an onboard passive infrared (PIR) motion sensor, setpoint adjustment and a digital display.
+This wireless, self-powered, passive infrared (PIR) sensor is the perfect solution for occupancy-based lighting and temperature control.Motion | Occupancy DetectionLight Level Sensing
+Placed on the interior side of any door or window frame, this sensor can detect when doors and windows are opened or closed, providing energy-saving HVAC control.
+The wireless adapter enables communication between the wireless sensors and any WebCTRL® controller, allowing it to optimize control of the HVAC and lighting systems in the space.
+The ZS sensors are designed to measure room temperature, relative humidity, carbon dioxide and VOCs (Volatile Organic Compounds), and are available in a variety of zone-sensing combinations to address your specific control requirements. Designed to work with ZN, SE and ME controllers, the ZS sensor line includes the ZS Standard, ZS Plus, ZS Pro and ZS Pro-F.
+WIRELESS SENSORSGreat products for a better building.
+By reading building conditions, you can make smart decisions about how to control the lighting and HVAC in your building. Various control strategies are executed to optimize energy usage and enhance occupant comfort based on the measured conditions.
+You’ll be able to monitor sensor data no matter where you are, easily making intelligent decisions at any time. Add the backing of our services and support, network of authorized partners and our wireless solutions takes your network to the next level.
