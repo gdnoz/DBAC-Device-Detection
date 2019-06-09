@@ -72,7 +72,7 @@ def single_test(mud_url: str,threshold: float, scraping_threshold: float, correc
         print(mud_url + ": " + "fail" + " (" + classification + ", " + str(score) + ")")
 
 if __name__ == "__main__":
-    #single_test("https://iotanalytics.unsw.edu.au/mud/tplinkcameraMud.json",0.2,0.1,"Speaker")
+    #single_test("https://iotanalytics.unsw.edu.au/mud/amazonEchoMud.json",0.2**2,0.1,"Camera")
     #single_test("https://iotanalytics.unsw.edu.au/mud/NetatmoWeatherStationMud.json", 0.2, 0.1, "Speaker")
     #single_test("https://iotanalytics.unsw.edu.au/mud/samsungsmartcamMud.json", 0.2**2, 0.1, "Camera")
     #single_test("https://iotanalytics.unsw.edu.au/mud/belkincameraMud.json", 0.2, 0.1, "MediaPlayer")
