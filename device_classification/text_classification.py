@@ -50,21 +50,21 @@ class DeviceClassifier:
         '''
 
         from collections import Counter
-        cumulative_score_counter = Counter()
+        score_counter = Counter()
 
         for snippet in snippets:
             classification = self.predict_text(snippet)
 
             if classification.prediction_probability >= snippet_threshold:
                 if r2_scoring:
-                    cumulative_score_counter[classification.predicted_class] += classification.prediction_probability ** 2
+                    score_counter[classification.predicted_class] += classification.prediction_probability ** 2
                 else:
-                    cumulative_score_counter[classification.predicted_class] += classification.prediction_probability
+                    score_counter[classification.predicted_class] += classification.prediction_probability
 
-        if len(cumulative_score_counter) == 0:
+        if len(score_counter) == 0:
             return DeviceClassifier.DeviceClassificationResult("No_classification", 0.0)
 
-        most_common = cumulative_score_counter.most_common(1)
+        most_common = score_counter.most_common(1)
 
         best_classification_score = most_common[0][1]
         best_classification = most_common[0][0]
