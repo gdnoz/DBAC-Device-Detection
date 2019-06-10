@@ -42,41 +42,10 @@ class MudClassification:
         from web_scraping.bing import BingSearchAPI
         from web_scraping.google import GoogleCustomSearchAPI
 
-        '''
-        Classification MUD Urls
-        '''
-        '''
-        mud_file_urls = MUDUtilities.get_all_urls_from_mud(mud_file_contents)
-        text_from_mud_urls = self.text_scraper.extract_best_text(mud_file_urls)
-
-        classification_result = self.classifier.predict_text(text_from_mud_urls)
-
-        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
-            return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)
-        '''
-
-        '''
-        Preparing classification based on search engines.
-        '''
         systeminfo = MUDUtilities.get_systeminfo_from_mud_file(mud_file_contents)
 
-        #urls = GoogleCustomSearchAPI.search(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_results(systeminfo,only_html=True)
         snippets = GoogleCustomSearchAPI.search_text(systeminfo)+BingSearchAPI.first_ten_snippets(systeminfo)
 
-        cumulative_scores = self.text_scraper.cumulative_classification_snippets(set(snippets), r2_scoring=True)
+        classification_result = self.classifier.predict_snippets(snippets)
 
-        print(cumulative_scores)
-
-        most_common = cumulative_scores.most_common(1)
-
-        if len(most_common) == 0:
-            return MudClassificationResult("No_classification", 0.0)
-
-        best_classification_score = most_common[0][1]
-        best_classification = most_common[0][0]
-
-        if best_classification_score > self.threshold and best_classification is not "":
-            return MudClassificationResult(best_classification, best_classification_score)
-        else:
-            print("Failed...")
-            return MudClassificationResult("No_classification", 0.0)
+        return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)

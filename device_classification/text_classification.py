@@ -41,6 +41,39 @@ class DeviceClassifier:
         else:
             return DeviceClassifier.DeviceClassificationResult(self.labels[class_index],prob)
 
+    def predict_snippets(self, snippets: list, r2_scoring=True) -> (str,float):
+        '''
+        Each snippet is classified and the score is accumulated for each class.
+        The highest scoring class is the returned classification.
+        :param snippets: Text snippets from Google or Bing
+        :return: DeviceClassificationResult
+        '''
+
+        from collections import Counter
+        cumulative_score_counter = Counter()
+
+        for snippet in snippets:
+            classification = self.predict_text(snippet)
+
+            if classification.predicted_class != "":
+                if r2_scoring:
+                    cumulative_score_counter[classification.predicted_class] += classification.prediction_probability ** 2
+                else:
+                    cumulative_score_counter[classification.predicted_class] += classification.prediction_probability
+
+        if len(cumulative_score_counter) == 0:
+            return DeviceClassifier.DeviceClassificationResult("No_classification", 0.0)
+
+        most_common = cumulative_score_counter.most_common(1)
+
+        best_classification_score = most_common[0][1]
+        best_classification = most_common[0][0]
+
+        if best_classification_score > self.threshold and best_classification is not "":
+            return DeviceClassifier.DeviceClassificationResult(best_classification, best_classification_score)
+        else:
+            return DeviceClassifier.DeviceClassificationResult("No_classification", 0.0)
+
     class DeviceClassificationResult:
         """
         Represents a device_classification result, containing the predicted class and a score of the prediction (accuracy).

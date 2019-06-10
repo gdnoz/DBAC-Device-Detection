@@ -47,48 +47,18 @@ class BacnetClassification:
         else:
             vendor_name = BacnetUtilities.get_vendor_name_from_query(queried_objects)
             model_name = BacnetUtilities.get_model_name_from_query(queried_objects)
-            device_object_name = BacnetUtilities.get_device_object_name_from_query(queried_objects) #Not useful?
 
-            search_terms = vendor_name + " " + model_name# + " " + device_object_name
-
-        print("Search terms: " + search_terms)
+            search_terms = vendor_name + " " + model_name
 
         '''
         Classification based on Bing and Google
         '''
-
         print("Classifying using Bing and Google...")
 
         snippets = GoogleCustomSearchAPI.search_text(search_terms) + BingSearchAPI.first_ten_snippets(search_terms)
 
-        cumulative_scores = self.text_scraper.cumulative_classification_snippets(set(snippets), r2_scoring=True)
+        classification_result = self.classifier.predict_snippets(snippets)
 
-        print(cumulative_scores)
-
-        most_common = cumulative_scores.most_common(1)
-
-        if len(most_common) == 0:
-            return BacnetClassificationResult("No_classification", 0.0)
-
-        best_classification_score = most_common[0][1]
-        best_classification = most_common[0][0]
-
-        if best_classification_score > self.threshold and best_classification is not "":
-            return BacnetClassificationResult(best_classification,best_classification_score)
-        else:
-            print("Failed...")
-            return BacnetClassificationResult("No_classification",0.0)
-
-
-if __name__ == "__main__":
-    from bacnet.local_device_applications.test_devices import arob,bacdrpc,bacri,bacrpc,bacsri,cdd3,cdrbac,src100,touchplateultra
-    from web_scraping.scraping import RelevantTextScraper
-    from bacnet.utilities import BacnetUtilities
-
-    text = arob.run_application()
-
-    bc = BacnetClassification(0.2,0.1)
-
-    print(bc.classify_bacnet_objects(text))
+        return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
 
 

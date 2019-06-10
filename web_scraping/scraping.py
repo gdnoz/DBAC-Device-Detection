@@ -229,31 +229,6 @@ class RelevantTextScraper:
 
         return cumulative_score_counter
 
-    def cumulative_classification_snippets(self, snippets: set, r2_scoring=False) -> dict:
-        """
-        Extracts text from the urls, performs classification and
-        cumulatively scores all classifications over the scraping threshold.
-        """
-        from collections import Counter
-        cumulative_score_counter = Counter()
-
-        for snippet in snippets:
-            try:
-                classification = self.classifier.predict_text(snippet)
-
-                # print(str(url) + " & " + str(classification.prediction_probability) + " " + str(classification.predicted_class))
-
-                if classification.predicted_class != "":
-                    if r2_scoring:
-                        cumulative_score_counter[classification.predicted_class] += classification.prediction_probability ** 2
-                    else:
-                        cumulative_score_counter[classification.predicted_class] += classification.prediction_probability
-
-            except Exception:
-                continue
-
-        return cumulative_score_counter
-
     def _is_url_sub_domain_of_element_in_blacklist(self, url: str) -> bool:
         """
         Checks if the blacklist contains other urls which are different sub domains of the same domain as the input.
