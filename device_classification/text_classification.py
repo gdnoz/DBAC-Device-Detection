@@ -41,7 +41,7 @@ class DeviceClassifier:
         else:
             return DeviceClassifier.DeviceClassificationResult(self.labels[class_index],prob)
 
-    def predict_snippets(self, snippets: list, r2_scoring=True) -> (str,float):
+    def predict_snippets(self, snippets: list, snippet_threshold: float, r2_scoring=True) -> (str,float):
         '''
         Each snippet is classified and the score is accumulated for each class.
         The highest scoring class is the returned classification.
@@ -55,7 +55,7 @@ class DeviceClassifier:
         for snippet in snippets:
             classification = self.predict_text(snippet)
 
-            if classification.predicted_class != "":
+            if classification.prediction_probability >= snippet_threshold:
                 if r2_scoring:
                     cumulative_score_counter[classification.predicted_class] += classification.prediction_probability ** 2
                 else:

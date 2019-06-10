@@ -14,11 +14,10 @@ class BacnetClassification:
     Performs device_classification on bacnet test_devices based on text retrieved from object queries, which is provided as input.
     '''
 
-    def __init__(self, classification_threshold: float, scraping_threshold: float):
+    def __init__(self, classification_threshold: float, snippet_threshold: float):
         from device_classification.text_classification import DeviceClassifier
-        from web_scraping.scraping import RelevantTextScraper
         self.threshold = classification_threshold
-        self.text_scraper = RelevantTextScraper(scraping_threshold)
+        self.snippet_threshold = snippet_threshold
         self.classifier = DeviceClassifier(threshold=classification_threshold)
 
     def classify_bacnet_objects(self, queried_objects: str) -> BacnetClassificationResult:
@@ -57,7 +56,7 @@ class BacnetClassification:
 
         snippets = GoogleCustomSearchAPI.search_text(search_terms) + BingSearchAPI.first_ten_snippets(search_terms)
 
-        classification_result = self.classifier.predict_snippets(snippets)
+        classification_result = self.classifier.predict_snippets(snippets,self.snippet_threshold)
 
         return BacnetClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
 

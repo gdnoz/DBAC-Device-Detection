@@ -11,13 +11,11 @@ class MudClassification:
     Given a mud file as input, the file will be used to classify the type of the device.
     """
 
-    def __init__(self, classification_threshold: float, scraping_threshold: float):
+    def __init__(self, classification_threshold: float, snippet_threshold: float):
         from device_classification.text_classification import DeviceClassifier
-        from web_scraping.scraping import RelevantTextScraper
         self.threshold = classification_threshold
-        self.scraping_threshold = scraping_threshold
+        self.snippet_threshold = snippet_threshold
         self.classifier = DeviceClassifier(threshold=classification_threshold)
-        self.text_scraper = RelevantTextScraper(scraping_threshold)
 
     def classify_mud_file(self, filename: str) -> MudClassificationResult:
         """
@@ -46,6 +44,6 @@ class MudClassification:
 
         snippets = GoogleCustomSearchAPI.search_text(systeminfo)+BingSearchAPI.first_ten_snippets(systeminfo)
 
-        classification_result = self.classifier.predict_snippets(snippets)
+        classification_result = self.classifier.predict_snippets(snippets, self.snippet_threshold)
 
         return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)
