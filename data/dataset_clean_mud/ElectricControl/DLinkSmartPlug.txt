@@ -1,0 +1,73 @@
+Wi-Fi Smart Plug | D-Link
+Wi-Fi Smart Plug
+DSP-W110
+Share
+Control Your Devices
+From Anywhere
+Meet the mydlink Wi-Fi Smart Plug (DSP-W110). It allows you to turn your devices on or off, wherever you are.
+Features
+Turn Devices On/Off with the Mobile App
+Instantly turn devices on or off from your smartphone
+or tablet.
+Create On/Off Schedules for Your Devices
+Set your devices to work for you whenever you want.
+Your Life Can Be A Lot Easier With The Smart Plug
+Turn things on and off from your smartphone or tablet using the mobile app. The app is easy to use and it’ll send you customized notifications.
+Create On/Off Schedules For Your Devices
+Your devices should work for you whenever you want them to, right? We agree ─ and that’s why we made the Smart Plug. You can set device schedules so that you walk into a brightly-lit home every day after work with your favorite song playing and the AC exactly where you
+want it.
+Really Easy Setup
+Connect to an existing Wi-Fi network with a simple push of the Wi-Fi Protected Setup (WPS) button on the Smart Plug and on the router. It gets you connected in minutes.
+Peace of Mind
+Left the curling iron plugged in!? Don’t stress. Turn it off using your phone. Ah, that’s better.
+Let The Smart Plug Worry About The Unexpected
+Turn your mydlink Smart Plugs on or off with the sound of your voice! Experience hands-free control and the convenience of easily turning on lights when your hands are full, or turning off the fan as you leave the room.
+One language, a world of possibilities.
+With IFTTT (If This Then That) support, it's easy to pair your devices with other IFTTT-enabled products and apps to customize your smart home. Use IFTTT recipes to automatically turn your lights at sunrise, or receive a phone call if a leak is detected in your home. The possibilities of IFTTT are endless -- how will you use it?*
+*IFTTT supports DSP-W110 Rev A only. Revision B1 support coming soon
+Technical Specifications
+General
+IEEE 802.11n
+Functionality
+Support Functions
+Smart remote control
+Push alert notifications
+On/off power scheduling
+System Compatibility
+mydlink® Home app for iOS and Android
+Check device app store for OS requirement/compatibility
+Amazon Echo
+Compatibility
+Supports on/off based voice commands (such as "Alexa, ask mydlink to turn on the living room fan"
+IFTTT (If This Then That)
+Compatibility
+Compatible with any IFTTT-enabled product or app
+Recipes and applicable Triggers/Actions can be found at https://ifttt.com/dlink_smart_plug
+Physical
+Use
+Indoor only
+Weight
+0.28 lbs (4.41 ounces)
+Power Input
+100 to 125V AC
+Power Consumption
+3 watts maximum
+Power Capacity
+Up to 1800W / 15AMPs
+Temperature
+Operating: 32 to 104 °F (0 to 40 °C)
+Storage: -4 to 149 °F (-20 to 65 °C)
+Certifications
+FCC
+UL
+Dimensions (W x D x H)
+2.0 x 1.2 x 3.5 inches
+Warranty
+1 Year Limited
+Meet the mydlink® Wi-Fi Smart Plug DSP-W110
+The D-Link Connected Home
+Related Products
+Easy Scheduling – Create on/off schedules for your devices
+Smart Remote Control – Use the free mydlink Home app to instantly turn devices on/off from your smartphone or tablet
+Easy setup – Easily connect to existing Wi-Fi with WPS (Wi-Fi Protected Setup button)
+Wi-Fi Connectivity – Requires no additional hub or device, works with any Wi-Fi network

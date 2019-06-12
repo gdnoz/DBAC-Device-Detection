@@ -1,4 +1,4 @@
-def data_set_proportionality_check() -> dict:
+def data_set_proportionality_check(dataset_path: str) -> dict:
     '''
     Checks the numer of words and unique words in each category for the data set.
     Used to check the proportionality of the classes.
@@ -10,7 +10,7 @@ def data_set_proportionality_check() -> dict:
 
     result = dict()
 
-    for (path,_,filenames) in list(os.walk(constants.DATA_SET_PATH))[1:]:
+    for (path,_,filenames) in list(os.walk(dataset_path))[1:]:
         category = path.split("/")[-1]
 
         result.update({category:dict()})
@@ -34,6 +34,6 @@ def data_set_proportionality_check() -> dict:
     return json.dumps(result,indent=4)
 
 if __name__ == '__main__':
-    import json
-    print(data_set_proportionality_check())
+    import constants
+    print(data_set_proportionality_check(constants.DATA_SET_PATH_TOS))
 

@@ -1,0 +1,35 @@
+On/Off Plug-in Switch — Dome Home Automation
+Shop
+Back
+The On/Off Plug-In SwitchEnergy Savings, Safety, and Convenience In One Box.$34.97
+The Dome On/Off Plug-In Switch not only lets your Z-Wave Hub turn on or off any plugged in device, it will also let you know how much power it eats up everyday. Plus, it has built-in overload protection to prevent sparks and stuff, its small size so it doesn't hog the adjacent outlet, and it extends your Z-Wave range.
+Smart Outlet Usage Ideas
+Automate Your LightingUse with Door/Window Sensors or Motion Detectors to automatically turn on lamps when a room is occupied. Turn them off automatically if the room is vacant for an extended period of time.
+Save The GreeneryKeep track of how much energy and money power-hungry appliances and electronics consume on a daily basis. You'll be surprised - some electronics like subwoofers consume energy even when they seem to be off.
+Streamlined EntertainmentDetect when your TV turns on and dim your lights automatically. Keep track of how often you or family members watch TV, and squash that habit with hard data.
+Features
+Control Dumb Devices
+Make your old lamp, aquarium pump, etc. smart!
+Built-in Range Extender
+Boost Z-Wave coverage for more reliability.
+Low Profile
+Doesn't cover up the adjacent outlet (and it looks nice.)
+Overload Protection
+Automatically turns off and notifies you when overloaded.
+Customizable Options
+Customize the LED behavior, overload cutoff, and more.
+Energy Monitoring
+Know how much energy the plugged in device uses.
+Spec/Info
+Power supply110-230V AC 50/60Hz
+Working current35mA
+Max current13A
+Power Consumption0.13W
+Operating temperature32 - 104 °F (0 - 40 °C)
+Mounting OptionsOutlet (Single Space)
+WarrantyOne Year Parts & Labor
+Sensor Dimensions1.8" x 1.8" x 1.8”
+Raido ProtocolZ-Wave(500 series)
+Radio Frequency908.4 MHz US
+CapabilitiesBinary Switch (Outlet)Notifications(Overload) Controllable LEDs
+RangeUp to 150’ depending on environment
