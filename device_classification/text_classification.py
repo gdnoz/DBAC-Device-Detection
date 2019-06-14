@@ -54,12 +54,16 @@ class DeviceClassifier:
 
         for snippet in snippets:
             classification = self.predict_text(snippet)
+            print(snippet)
+            print(classification.predicted_class + " | " + str(classification.prediction_probability))
 
             if classification.prediction_probability >= snippet_threshold:
                 if r2_scoring:
                     score_counter[classification.predicted_class] += classification.prediction_probability ** 2
                 else:
                     score_counter[classification.predicted_class] += classification.prediction_probability
+
+        print(score_counter)
 
         if len(score_counter) == 0:
             return DeviceClassifier.DeviceClassificationResult("No_classification", 0.0)

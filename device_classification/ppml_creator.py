@@ -38,7 +38,6 @@ text_clf = Pipeline([
 
 text_clf.fit(X_train,y_train)
 
-
 try:
     os.remove(os.path.join(constants.PMML_DIR,"vectorizer.pkl"))
     os.remove(os.path.join(constants.PMML_DIR,"transformer.pkl"))
