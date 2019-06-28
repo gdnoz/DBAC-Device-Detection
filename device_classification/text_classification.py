@@ -35,9 +35,8 @@ class DeviceClassifier:
         import operator
         class_index, prob = max(enumerate(predict_proba), key=operator.itemgetter(1))
 
-
         if prob < self.threshold:
-            return DeviceClassifier.DeviceClassificationResult("",0.0)
+            return DeviceClassifier.DeviceClassificationResult("No_classification",0.0)
         else:
             return DeviceClassifier.DeviceClassificationResult(self.labels[class_index],prob)
 
@@ -54,8 +53,8 @@ class DeviceClassifier:
 
         for snippet in snippets:
             classification = self.predict_text(snippet)
-            print(snippet)
-            print(classification.predicted_class + " | " + str(classification.prediction_probability))
+            #print(snippet)
+            #print(classification.predicted_class + " | " + str(classification.prediction_probability))
 
             if classification.prediction_probability >= snippet_threshold:
                 if r2_scoring:

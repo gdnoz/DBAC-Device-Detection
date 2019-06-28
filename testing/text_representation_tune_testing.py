@@ -17,7 +17,7 @@ import os
 Tests for tuning parameters of various text representations. Primarily tests of using different sizes of n-grams.
 '''
 
-def tune_tfidf_ngram():
+def tune_tfidf_ngram(dataset_path: str):
     warnings.filterwarnings("ignore")
 
     count_vectorizer = CountVectorizer(stop_words='english')
@@ -30,7 +30,6 @@ def tune_tfidf_ngram():
         ('clf', svc_classifier)
     ])
 
-    dataset_path = constants.DATA_SET_PATH
     categories = [x[1] for x in os.walk(dataset_path)][0]
 
     docs_to_train = load_files(dataset_path, description=None, categories=categories,
@@ -41,9 +40,34 @@ def tune_tfidf_ngram():
     gs = GridSearchCV(tdf_ngram, param, cv=8, n_jobs=-1, scoring='accuracy')
     gs.fit(docs_to_train.data,docs_to_train.target)
 
-    plot_grid_search(gs.cv_results_,param['vect__ngram_range'],param['clf__kernel'],'n-gram range','kernel','tfidf.png')
+    plot_grid_search(gs.cv_results_,param['vect__ngram_range'],param['clf__kernel'],'n-gram range','kernel','TF-IDF n-gram test','tfidf.png')
 
-def tune_tf_ngram():
+def tune_tfidf_varying_ngram(dataset_path: str):
+    warnings.filterwarnings("ignore")
+
+    count_vectorizer = CountVectorizer(stop_words='english')
+    tfidf_transformer = TfidfTransformer(use_idf=True)
+    svc_classifier = SVC()
+
+    tdf_ngram = Pipeline([
+        ('vect', count_vectorizer),
+        ('tfidf', tfidf_transformer),
+        ('clf', svc_classifier)
+    ])
+
+    categories = [x[1] for x in os.walk(dataset_path)][0]
+
+    docs_to_train = load_files(dataset_path, description=None, categories=categories,
+                               load_content=True, encoding='utf-8', shuffle=True, random_state=42)
+
+    param = {'vect__ngram_range' : [(1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7),(1,8),(1,9),(1,10)], 'clf__kernel':['linear']}
+
+    gs = GridSearchCV(tdf_ngram, param, cv=8, n_jobs=-1, scoring='accuracy')
+    gs.fit(docs_to_train.data,docs_to_train.target)
+
+    plot_grid_search(gs.cv_results_,param['vect__ngram_range'],param['clf__kernel'],'(1,n)-gram range','kernel','TF-IDF (1,n)-gram test','varying_ngram_tfidf.png')
+
+def tune_tf_ngram(dataset_path: str):
     warnings.filterwarnings("ignore")
 
     count_vectorizer = CountVectorizer(stop_words='english')
@@ -56,20 +80,19 @@ def tune_tf_ngram():
         ('clf', svc_classifier)
     ])
 
-    dataset_path = constants.DATA_SET_PATH
     categories = [x[1] for x in os.walk(dataset_path)][0]
 
     docs_to_train = load_files(dataset_path, description=None, categories=categories,
                                load_content=True, encoding='utf-8', shuffle=True, random_state=42)
 
-    param = {'vect__ngram_range' : [(1,1),(2,2),(3,3),(4,4),(5,5),(6,6),(7,7),(8,8),(9,9),(10,10)], 'clf__kernel':['linear']}
+    param = {'vect__ngram_range' : [(1,1),(2,2),(3,3),(4,4),(5,5),(6,6),(7,7),(8,8),(9,9),(10,10)], 'clf__kernel':['linear','poly','rbf']}
 
     gs = GridSearchCV(tdf_ngram, param, cv=8, n_jobs=-1, scoring='accuracy')
     gs.fit(docs_to_train.data,docs_to_train.target)
 
-    plot_grid_search(gs.cv_results_,param['vect__ngram_range'],param['clf__kernel'],'n-gram range','kernel','tf.png')
+    plot_grid_search(gs.cv_results_,param['vect__ngram_range'],param['clf__kernel'],'n-gram range','kernel','TF n-gram test','tf.png')
 
-def plot_grid_search(cv_results, grid_param_1, grid_param_2, name_param_1, name_param_2,figname,x_log_scale=False,y_log_scale=False):
+def plot_grid_search(cv_results, grid_param_1, grid_param_2, name_param_1, name_param_2,figtitle,figname,x_log_scale=False,y_log_scale=False):
     import matplotlib.pyplot as plt
 
     scores_mean = cv_results['mean_test_score']
@@ -83,9 +106,9 @@ def plot_grid_search(cv_results, grid_param_1, grid_param_2, name_param_1, name_
     for idx, val in enumerate(grid_param_2):
         ax.plot(grid_param_1, scores_mean[idx,:], '-o', label= name_param_2 + ': ' + str(val))
 
-    ax.set_title("Grid Search Scores", fontsize=20, fontweight='bold')
+    ax.set_title(figtitle, fontsize=20, fontweight='bold')
     ax.set_xlabel(name_param_1, fontsize=16)
-    ax.set_ylabel('CV Average Score', fontsize=16)
+    ax.set_ylabel('CV Average Acc. Score', fontsize=16)
 
     if x_log_scale:
         ax.set_xscale("log")
@@ -99,5 +122,6 @@ def plot_grid_search(cv_results, grid_param_1, grid_param_2, name_param_1, name_
     plt.savefig("representation_pngs/"+figname)
 
 if __name__ == "__main__":
-    #tune_tfidf_ngram()
-    tune_tf_ngram()
+    tune_tfidf_ngram(os.path.join(constants.DATA_DIR, "dataset_initial"))
+    tune_tf_ngram(os.path.join(constants.DATA_DIR, "dataset_initial"))
+    tune_tfidf_varying_ngram(os.path.join(constants.DATA_DIR, "dataset_initial"))

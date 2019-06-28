@@ -1,0 +1,139 @@
+NC450 | HD Pan/Tilt Wi-Fi Camera | TP-Link Australia
+Your browser does not support JavaScript. Please turn it on for the best experience.
+From Denmark (English)?
+Get products, events and services for your region.
+HD Pan/Tilt Wi-Fi Camera
+NC450
+720p HD Imaging - HD resolution provides sharper, clearer images
+Pan / Tilt - See up to 360 degrees horizontally and 150 degrees vertically.
+Night Vision- Know what’s happening when it’s dark, with up to 8 metres of night vision.
+Motion & Sound Detection -Receive push and email notifications when motion or sound is detected.
+2-way Audio – Start 2-way audio with ease to communicate with your family instantly
+Micro SD Card Storage -Save your videos and images easily thanks to an integrated SD slot
+*Support up to 128GB, Micro SD card not included
+tpCamera App - Use the tpCamera app to access feeds from anywhere, at any time
+Secure Any Angle From Anywhere
+HD Pan/Tilt Wi-Fi Camera
+WITH NIGHT VISION
+NC450
+Smooth Pan/Tilt For a Better View
+The NC450 is your favorable companion that meets your home and office surveillance needs, keeping you in touch with what matters most. With its smooth and durable Pan/Tilt of up to 300/110 degrees, you can
+turn the camera to almost any position you want and watch over a wider area of your home.
+Excellent HD Clarity
+With glass camera lens and a 1/4” progressive scan CMOS sensor, you can capture 720p high definition vivid video and crystal-clear
+stills. The infrared LED helps the camera to get night vision with excellent image quality.
+1/4" progressive scan CMOS sensor
+Lens mount with IR cutter
+Infrared LED
+Glass Lens
+Camera shell
+Peace of Mind at Night
+The camera will automatically switch to a sharp monochrome video stream at night and provide clear, detailed images at ranges
+of up to 8 meters in total darkness. You can easily know what’s happening during the night.
+Instant Alert for Important Events
+The NC450 can send you automatic push and email notifications when movement or sound is detected and keep you
+aware of what’s going on immediately. The integrated Micro SD Card slot supports up to 128GB storage, allowing you
+to save pictures and videos for memorable moments.
+Communicate with Ease
+With excellent 2-way streaming audio, you can communicate with your family instantly
+whenever you want.
+Convenient Remote Access for Daily Monitoring
+The tpCamera app allows you to take control of your Wi-Fi camera anywhere and anytime with internet access. You can easily monitor your room, record video, and snap pictures with the touch of your fingertips.
+Pan Tilt
+Night Vision
+Motion Detection
+SD Card Slot
+Image Sensor
+1/4" Progressive scan CMOS sensor
+Resolution
+1.0 Megapixel (1280 x 720)
+Lens
+F: 2.0, f: 3.6 mm
+Viewing Angle
+FOV = 75°
+Pan/Tilt Range
+Pan range 300° Tilt range 110°
+Video Compression
+H.264
+Frame Rate & Resolutions
+Max. 30 fps at 1280x720 (HD)
+Video Streaming
+Controllable Frame rate
+Image Settings
+Rotation: Mirror, FlipConfigurable brightness, contrast, saturationOverlay capabilities: time, date, text
+Audio Communication
+2-Way
+Audio Input
+Built-in microphone
+Audio Output
+Built-in speaker
+Input Trigger
+Motion/Sound detection
+Notification
+E-mail, App
+Storage
+Micro SD Card (support up to 128GB)
+Auto Tracking
+Motion
+Standards and Protocols
+Bonjour, TCP/IP, DHCP, ARP, ICMP, FTP, SMTP, NFS,DNS, NTP, HTTP, HTTPS, UDP, ONVIF, RTSP
+Security
+Multiple password-protected user levels
+Wireless Data Rates
+IEEE 802.11 b/g/n, Up to 300Mbps
+Frequency
+2.4-2.4835GHz
+Wireless Transmit Power
+<20dBm (EIRP)
+Wireless Encryption
+WEP, WPA/WPA2, WPA-PSK/WPA2-PSK
+Network Interface
+RJ-45 for Ethernet 10/100 Base-T
+Power Connector
+DC power jack
+Button
+Reset/WPS push button
+Users
+13 simultaneous unicast users
+Bundled Management Software
+Viewing and recording up to 36 cameras
+Supported OS
+Windows XP or higherMac OS X 10.7 or higherAndroid 4.1 or higheriOS 7.0 or higher
+Supported Browser
+Microsoft Internet Explorer 8.0 or higherFirefox 4.0 or higherSafari 5.0 or higherChrome 5.0 or higherOpera 12.0 or higher
+External Power Supply
+12V DC, Max 12W
+Certification
+RoHS, FCC, CE
+Package Contents
+NC450Power AdapterExtension CableRJ-45 Ethernet CableQuick Installation GuidePassive PoE Injector
+Environment
+Operating Temperature: 0°C~40°C (32°F ~104°F)Storage Temperature: -40°C ~70°C (-40°F ~158°F)Operating Humidity: 10%~90% non-condensingStorage Humidity: 5%~90% non-condensing
+Dimensions( H X W X D )
+5.7 x 4.3 x 4.2 in. ( 144 x 109 x 106 mm )
+Packaging Dimensions
+10.6 x 8.8 x 5.3 in. (270 x223 x 135mm)
+PoE
+12V DC, Max 12W
+Supported OS
+Windows 10
+Warranty
+Limited 3-Year WarrantyFor further information on our warranty policy please visit: http://www.tp-link.com.au/support/rma
+Awards
+APC Mag Recommends Product
+NC450 was recommend by APC magazine
+2017, Australia
+Tech Life Australia
+NC450 has received a Editors' Choice award from TechLife Australia magazine
+2018, Australia
+approved award
+NC450 received an approved award from TechLife magazine.
+2018, Australia
+About Us
+Press
+Partners
+Join TP-Link Community
+TP-Link takes your privacy seriously. For further details on TP-Link's privacy practices, see .
+Sign Up
+Follow Us
+Copyright © 2019 TP-Link Technologies Co., Ltd. All rights reserved.

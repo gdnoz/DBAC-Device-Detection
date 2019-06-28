@@ -53,7 +53,7 @@ if __name__=="__main__":
         word = get_key_for_value(count_vectorizer.vocabulary_, int_word)
         category_tfidf_counters[y_train[document]][1][word] += tf_idf
 
-    '''
+
     for document,int_word,occurence in zip(cv_coo.row, cv_coo.col, cv_coo.data):
         word = get_key_for_value(count_vectorizer_solo.vocabulary_,int_word)
 
@@ -73,7 +73,7 @@ if __name__=="__main__":
         plt.imshow(wordcloud, interpolation="bilinear")
         plt.axis("off")
         plt.savefig(os.path.join(constants.WORDCLOUDS_PATH,category+".png"))
-    '''
+
 
     for (category, counter) in category_tfidf_counters:
         print(category)

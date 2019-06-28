@@ -1,4 +1,5 @@
 from sklearn.calibration import CalibratedClassifierCV
+from sklearn.linear_model import SGDClassifier
 
 import constants,os
 import sklearn
@@ -28,7 +29,8 @@ X_train, X_test, y_train, y_test = train_test_split(docs_to_train.data,
 
 count_vectorizer = CountVectorizer(stop_words='english')
 tfidf_transformer = TfidfTransformer(use_idf=True)
-classifier = SVC(kernel = 'linear', probability = True)
+#classifier = SGDClassifier(loss='log', tol=1e-5, random_state=42)
+classifier = SVC(kernel='linear', probability=True)
 
 text_clf = Pipeline([
         ('vect', count_vectorizer),

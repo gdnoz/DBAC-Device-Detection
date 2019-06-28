@@ -168,6 +168,7 @@ class RelevantTextScraper:
 
     def cumulative_classification(self, urls: set, r2_scoring=False) -> dict:
         """
+        Used in the improvement attempt CSS.
         Extracts text from the urls, performs classification and
         cumulatively scores all classifications over the scraping threshold.
         """

@@ -83,11 +83,11 @@ if __name__ == "__main__":
 
     #single_test("https://iotanalytics.unsw.edu.au/mud/blipcareBPmeterMud.json", 0.2**2, 0.1, "HealthMonitor")
     #single_test("https://iotanalytics.unsw.edu.au/mud/wemomotionMud.json", 0.2**2, 0.1, "MotionSensor")
-    single_test("https://iotanalytics.unsw.edu.au/mud/withingsbabymonitorMud.json", 0.2**2, 0.1, "Camera")
+    #single_test("https://iotanalytics.unsw.edu.au/mud/withingsbabymonitorMud.json", 0.2**2, 0.1, "Camera")
 
 
     #synthetic_test_set_test(0.2, 0.1) #best for non cumulative scoring
-    #synthetic_test_set_test(0.2**2, 0.1) #best for cumulative scoring
+    synthetic_test_set_test(0.2**2, 0.1) #best for cumulative scoring
     #local_test(0.2,0.1)
 
     #for c_thresh in [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6]:

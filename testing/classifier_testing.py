@@ -12,7 +12,7 @@ from sklearn import metrics
 '''
 Contains functions that test different classifiers with different configurations and returns reports on accuracy.
 '''
-
+'''
 def test_naive_bayes(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
@@ -28,9 +28,25 @@ def test_naive_bayes(docs_to_train, X_train, X_test, y_train, y_test):
 
     predicted = text_clf.predict(X_test)
     return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted), output_dict=True)
-
+'''
 def test_libsvm_svc(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
+    tfidf_transformer = TfidfTransformer(use_idf=True)
+    svc_classifier = SVC(kernel='linear')
+
+    text_clf = Pipeline([
+        ('vect', count_vectorizer),
+        ('tfidf', tfidf_transformer),
+        ('clf', svc_classifier)
+    ])
+
+    text_clf.fit(X_train, y_train)
+
+    predicted = text_clf.predict(X_test)
+    return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted), output_dict=True)
+'''
+def test_libsvm_svc_bigram(docs_to_train, X_train, X_test, y_train, y_test):
+    count_vectorizer = CountVectorizer(stop_words='english', ngram_range=(1,2))
     tfidf_transformer = TfidfTransformer(use_idf=True)
     svc_classifier = SVC(kernel='linear')
 
@@ -60,7 +76,7 @@ def test_liblinear_svc(docs_to_train, X_train, X_test, y_train, y_test):
 
     predicted = text_clf.predict(X_test)
     return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted), output_dict=True)
-'''
+
 def test_libsvm_svc_nonlinear(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
@@ -96,7 +112,7 @@ def test_libsvm_svc_poly(docs_to_train, X_train, X_test, y_train, y_test):
 def test_sgd_classifier(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
-    sgd_classifier = SGDClassifier(loss='hinge', penalty='l2', alpha=1e-3, random_state=42,verbose=1)
+    sgd_classifier = SGDClassifier(loss='hinge', penalty='l2', tol=1e-5, random_state=42)
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -112,7 +128,7 @@ def test_sgd_classifier(docs_to_train, X_train, X_test, y_train, y_test):
 def test_sgd_log_classifier(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
-    sgd_classifier = SGDClassifier(loss='log', penalty='l2', alpha=1e-3, random_state=42,verbose=1)
+    sgd_classifier = SGDClassifier(loss='log', penalty='l2', tol=1e-5, random_state=42)
 
     text_clf = Pipeline([
         ('vect', count_vectorizer),
@@ -124,7 +140,7 @@ def test_sgd_log_classifier(docs_to_train, X_train, X_test, y_train, y_test):
 
     predicted = text_clf.predict(X_test)
     return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted), output_dict=True)
-
+'''
 def test_sgd_modifiedhuber_classifier(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
@@ -140,7 +156,7 @@ def test_sgd_modifiedhuber_classifier(docs_to_train, X_train, X_test, y_train, y
 
     predicted = text_clf.predict(X_test)
     return metrics.classification_report(y_test, predicted,target_names=docs_to_train.target_names, labels=np.unique(predicted), output_dict=True)
-
+'''
 def test_logistic_regression(docs_to_train, X_train, X_test, y_train, y_test):
     count_vectorizer = CountVectorizer(stop_words='english')
     tfidf_transformer = TfidfTransformer(use_idf=True)
@@ -213,5 +229,7 @@ def test_xgboost_classifier(docs_to_train, X_train, X_test, y_train, y_test):
 
 if __name__ == "__main__":
     from device_classification.utilities import run_tests_in_module,run_tests_in_module_with_kfold_cross_validation
+    import os,constants
 
-    run_tests_in_module_with_kfold_cross_validation(__name__)
+    #run_tests_in_module_with_kfold_cross_validation(__name__,os.path.join(constants.DATA_DIR,"dataset_clean_tos"))
+    run_tests_in_module(__name__,os.path.join(constants.DATA_DIR,"dataset_clean_tos"))

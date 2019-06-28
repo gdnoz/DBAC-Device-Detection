@@ -43,7 +43,7 @@ def tune_linear_svc():
     gs.fit(docs_to_train.data, docs_to_train.target)
 
     plot_grid_search(gs.cv_results_, params['clf__C'], params['clf__tol'], 'C',
-                     'Tol', 'linear_svc.png',x_log_scale=True)
+                     'Tol','SVM (LibSVM) Grid Search', 'linear_svc.png',x_log_scale=True)
 
 def tune_random_forrest():
     from sklearn.ensemble import RandomForestClassifier
@@ -74,7 +74,7 @@ def tune_random_forrest():
     gs.fit(docs_to_train.data, docs_to_train.target)
 
     plot_grid_search(gs.cv_results_, params['clf__n_estimators'], params['clf__max_depth'], 'N Estimators',
-                     'Max Depth', 'rf.png')
+                     'Max Depth','RF Grid Search', 'rf.png')
 
 def tune_xgboost():
     from xgboost import XGBClassifier
@@ -103,7 +103,7 @@ def tune_xgboost():
     gs = GridSearchCV(mlp_pipeline,params, cv=8,n_jobs=-1, scoring='accuracy')
     gs.fit(docs_to_train.data, docs_to_train.target)
 
-    plot_grid_search(gs.cv_results_, params['clf__n_estimators'], params['clf__max_depth'], 'N Estimators','Max Depth', 'xgboost.png')
+    plot_grid_search(gs.cv_results_, params['clf__n_estimators'], params['clf__max_depth'], 'N Estimators','Max Depth','XGBoost Grid Search', 'xgboost.png')
 
 
 def tune_mlp():
@@ -132,10 +132,98 @@ def tune_mlp():
     gs = GridSearchCV(mlp_pipeline, param, cv=8, n_jobs=-1, scoring='accuracy')
     gs.fit(docs_to_train.data,docs_to_train.target)
 
-    plot_grid_search(gs.cv_results_,param['clf__alpha'],param['clf__max_iter'],'Alpha','Max Iterations','mlp.png',x_log_scale=True)
+    plot_grid_search(gs.cv_results_,param['clf__alpha'],param['clf__max_iter'],'Alpha','Max Iterations','MLP Grid Search','mlp.png',x_log_scale=True)
+
+def tune_mlp_hidden_layers():
+    from sklearn.neural_network import MLPClassifier
+
+    warnings.filterwarnings("ignore")
+
+    count_vectorizer = CountVectorizer(stop_words='english')
+    tfidf_transformer = TfidfTransformer(use_idf=True)
+    mlp_classifier = MLPClassifier(alpha=1e-6)
+
+    mlp_pipeline = Pipeline([
+        ('vect', count_vectorizer),
+        ('tfidf', tfidf_transformer),
+        ('clf', mlp_classifier)
+    ])
+
+    dataset_path = constants.DATA_SET_PATH
+    categories = [x[1] for x in os.walk(dataset_path)][0]
+
+    docs_to_train = load_files(dataset_path, description=None, categories=categories,
+                               load_content=True, encoding='utf-8', shuffle=True, random_state=42)
+
+    param = {'clf__hidden_layer_sizes' : [(50,),(100,),(150,),(200,)], 'clf__max_iter' : range(50,500,50)}
+
+    gs = GridSearchCV(mlp_pipeline, param, cv=8, n_jobs=-1, scoring='accuracy')
+    gs.fit(docs_to_train.data,docs_to_train.target)
+
+    plot_grid_search(gs.cv_results_,param['clf__hidden_layer_sizes'],param['clf__max_iter'],'Hidden Layer Depth','Max Iterations','MLP Grid Search','mlp_layer_depth.png',x_log_scale=False)
+
+def tune_sgd_log():
+    from sklearn.linear_model import SGDClassifier
+
+    warnings.filterwarnings("ignore")
+
+    count_vectorizer = CountVectorizer(stop_words='english')
+    tfidf_transformer = TfidfTransformer(use_idf=True)
+    sgd_classifier = SGDClassifier(loss='log', penalty='l2', alpha=1e-3, random_state=42)
+
+    mlp_pipeline = Pipeline([
+        ('vect', count_vectorizer),
+        ('tfidf', tfidf_transformer),
+        ('clf', sgd_classifier)
+    ])
+
+    dataset_path = constants.DATA_SET_PATH
+    categories = [x[1] for x in os.walk(dataset_path)][0]
+
+    docs_to_train = load_files(dataset_path, description=None, categories=categories,
+                               load_content=True, encoding='utf-8', shuffle=True, random_state=42)
+
+    params = {'clf__alpha': [1e-1,1e-2,1e-3,1e-4,1e-5,1e-6,1e-7], 'clf__tol': [1e-6,1e-5,1e-4,1e-3,1e-2,1e-1]}
+
+    gs = GridSearchCV(mlp_pipeline, params, cv=8,
+                      n_jobs=-1, scoring='accuracy')
+    gs.fit(docs_to_train.data, docs_to_train.target)
+
+    plot_grid_search(gs.cv_results_, params['clf__alpha'], params['clf__tol'], 'Alpha',
+                     'Tol','SGD LR Grid Search', 'sgd_log.png',x_log_scale=True)
+
+def tune_sgd_svm():
+    from sklearn.linear_model import SGDClassifier
+
+    warnings.filterwarnings("ignore")
+
+    count_vectorizer = CountVectorizer(stop_words='english')
+    tfidf_transformer = TfidfTransformer(use_idf=True)
+    sgd_classifier = SGDClassifier(loss='hinge', penalty='l2', alpha=1e-3, random_state=42)
+
+    mlp_pipeline = Pipeline([
+        ('vect', count_vectorizer),
+        ('tfidf', tfidf_transformer),
+        ('clf', sgd_classifier)
+    ])
+
+    dataset_path = constants.DATA_SET_PATH
+    categories = [x[1] for x in os.walk(dataset_path)][0]
+
+    docs_to_train = load_files(dataset_path, description=None, categories=categories,
+                               load_content=True, encoding='utf-8', shuffle=True, random_state=42)
+
+    params = {'clf__alpha': [1e-1,1e-2,1e-3,1e-4,1e-5,1e-6,1e-7], 'clf__tol': [1e-6,1e-5,1e-4,1e-3,1e-2,1e-1]}
+
+    gs = GridSearchCV(mlp_pipeline, params, cv=8,
+                      n_jobs=-1, scoring='accuracy')
+    gs.fit(docs_to_train.data, docs_to_train.target)
+
+    plot_grid_search(gs.cv_results_, params['clf__alpha'], params['clf__tol'], 'Alpha',
+                     'Tol','SGD SVM Grid Search', 'sgd_svm.png',x_log_scale=True)
 
 
-def plot_grid_search(cv_results, grid_param_1, grid_param_2, name_param_1, name_param_2,figname,x_log_scale=False,y_log_scale=False):
+def plot_grid_search(cv_results, grid_param_1, grid_param_2, name_param_1, name_param_2,figtitle,figname,x_log_scale=False,y_log_scale=False):
     import matplotlib.pyplot as plt
 
     scores_mean = cv_results['mean_test_score']
@@ -149,7 +237,7 @@ def plot_grid_search(cv_results, grid_param_1, grid_param_2, name_param_1, name_
     for idx, val in enumerate(grid_param_2):
         ax.plot(grid_param_1, scores_mean[idx,:], '-o', label= name_param_2 + ': ' + str(val))
 
-    ax.set_title("Grid Search Scores", fontsize=20, fontweight='bold')
+    ax.set_title(figtitle, fontsize=20, fontweight='bold')
     ax.set_xlabel(name_param_1, fontsize=16)
     ax.set_ylabel('CV Average Score', fontsize=16)
 
@@ -168,4 +256,7 @@ if __name__ == "__main__":
     #tune_linear_svc()
     #tune_mlp()
     #tune_random_forrest()
-    tune_xgboost()
+    #tune_xgboost()
+    tune_mlp_hidden_layers()
+    #tune_sgd_log()
+    tune_sgd_svm()
