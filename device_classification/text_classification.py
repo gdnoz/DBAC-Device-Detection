@@ -33,12 +33,12 @@ class DeviceClassifier:
         predict_proba = self.pipeline.predict_proba([text])[0]
 
         import operator
-        class_index, prob = max(enumerate(predict_proba), key=operator.itemgetter(1))
+        class_index, probability = max(enumerate(predict_proba), key=operator.itemgetter(1))
 
-        if prob < self.threshold:
+        if probability < self.threshold:
             return DeviceClassifier.DeviceClassificationResult("No_classification",0.0)
         else:
-            return DeviceClassifier.DeviceClassificationResult(self.labels[class_index],prob)
+            return DeviceClassifier.DeviceClassificationResult(self.labels[class_index],probability)
 
     def predict_snippets(self, snippets: list, snippet_threshold: float, r2_scoring=True) -> (str,float):
         '''
