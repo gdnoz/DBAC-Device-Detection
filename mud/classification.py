@@ -44,6 +44,12 @@ class MudClassification:
 
         snippets = GoogleCustomSearchAPI.search_text(systeminfo)+BingSearchAPI.first_ten_snippets(systeminfo)
 
+        whole_text = ""
+
+        for snippet in snippets:
+            whole_text += snippet + " "
+
         classification_result = self.classifier.predict_snippets(snippets, self.snippet_threshold)
+        #classification_result = self.classifier.predict_text(whole_text)
 
         return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)
