@@ -62,4 +62,4 @@ class GoogleCustomSearchAPI:
 
 
 if __name__ == "__main__":
-    print(GoogleCustomSearchAPI.search_text("youtube"))
+    print(GoogleCustomSearchAPI.search_text("Neptronic ARBGVH"))

@@ -56,4 +56,4 @@ class LatexTableGenerator:
 
 if __name__ == "__main__":
     import constants,os
-    LatexTableGenerator.generate_table_for_dataset(os.path.join(constants.DATA_DIR,"dataset_urls_expanded_20.txt"))
+    LatexTableGenerator.generate_table_for_dataset(os.path.join(constants.DATA_DIR,"dataset_urls.txt"))
