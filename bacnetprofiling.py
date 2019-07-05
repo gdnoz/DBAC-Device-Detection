@@ -16,7 +16,7 @@ class BacnetProfiler:
 
         print("************************ Query complete! ************************")
 
-        bacnet_classification = BacnetClassification(0.2**2,0.1)
+        bacnet_classification = BacnetClassification(0.2**2,0.2)
 
         classification_result = bacnet_classification.classify_bacnet_objects(query_result)
 

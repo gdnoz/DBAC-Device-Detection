@@ -62,7 +62,7 @@ class DeviceClassifier:
                 else:
                     score_counter[classification.predicted_class] += classification.prediction_probability
 
-        print(score_counter)
+        #print(score_counter)
 
         if len(score_counter) == 0:
             return DeviceClassifier.DeviceClassificationResult("No_classification", 0.0)
