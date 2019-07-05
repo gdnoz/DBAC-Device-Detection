@@ -1,6 +1,6 @@
 from mud.classification import MudClassification
 from mud.utilities import MUDUtilities
-from timeit import default_timer as timer
+from timeit import default_timer as time
 import constants,os
 
 def local_test(threshold: float):
@@ -26,7 +26,7 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
     scoreSum = 0.0
     noClassifications = 0
 
-    times = list()
+    timers = list()
 
     with open(os.path.join(constants.DATA_DIR, "mud_synthetic_test_set.csv"), "r") as f:
         for line in f:
@@ -37,7 +37,7 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
             mud_url = split[0]
             correctClassification = split[1].rstrip()
 
-            start = timer()
+            start = time()
 
             mud_file_from_web = MUDUtilities.get_mud_file(mud_url)
 
@@ -51,15 +51,15 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
                 scoreSum += score
                 print(mud_url + ": " + "pass" + " (" + classification + ", " + str(score) + ")")
 
-                end = timer()
-                times.append((end - start))
+                end = time()
+                timers.append((end - start))
 
                 continue
             elif classification == "No_classification":
                 noClassifications += 1
 
-            end = timer()
-            times.append((end-start))
+            end = time()
+            timers.append((end-start))
 
             print(mud_url + ": " + "fail" + " (" + classification + ", " + str(score) + ")")
 
@@ -67,7 +67,7 @@ def synthetic_test_set_test(threshold: float, scraping_threshold: float):
     print("Accuracy:                    " + str(float(correctClassifications/numberOfTests)))
     print("No device_classification:    " + str(float(noClassifications/numberOfTests)))
     print("Average score:               " + str(float(scoreSum/numberOfTests)))
-    print("Average time:                " + str(sum(times)/len(times)))
+    print("Average time:                " + str(sum(timers)/len(timers)))
 
 def single_test(mud_url: str,threshold: float, scraping_threshold: float, correctClassification: str):
     mud_classifier = MudClassification(threshold, scraping_threshold)
