@@ -247,14 +247,14 @@ def plot_grid_search(cv_results, grid_param_1, grid_param_2, name_param_1, name_
     if y_log_scale:
         ax.set_yscale("log")
 
-    ax.legend(loc="best", fontsize=15)
+    ax.legend(loc='upper center', bbox_to_anchor=(1.45, 0.8), shadow=True, ncol=1)
     ax.grid('on')
 
-    plt.savefig("classifier_pngs/"+figname)
+    plt.savefig("classifier_pngs/"+figname,bbox_inches="tight")
 
 if __name__ == "__main__":
     #tune_linear_svc()
-    #tune_mlp()
+    tune_mlp()
     #tune_random_forrest()
     #tune_xgboost()
     tune_mlp_hidden_layers()

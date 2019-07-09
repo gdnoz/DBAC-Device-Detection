@@ -16,7 +16,7 @@ from sklearn2pmml.pipeline import PMMLPipeline
 Creates the trained models, which then can be loaded and used for classification later.
 '''
 
-dataset_path = os.path.join(os.path.join(os.path.pardir,"data"),"dataset_clean_tos")
+dataset_path = os.path.join(os.path.join(os.path.pardir,"data"),"dataset")
 
 categories = [x[1] for x in os.walk(dataset_path)][0]
 
