@@ -1,0 +1,7 @@
+blipcare failed
+****************** TEST COMPLETE: c_tresh: 0.04000000000000001 s_threshold: 0.1 ******************
+Accuracy:                    0.96
+No device_classification:    0.00
+Average score:               2.56
+
+Process finished with exit code 0

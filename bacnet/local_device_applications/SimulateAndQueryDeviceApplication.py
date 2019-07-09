@@ -13,15 +13,11 @@ Class for simulating a BACnet device and then querying it of it's objects.
 def run_application(**kwargs) -> str:
     '''
     Simulates the device given the specified arguments and returns the query of it's objects.
-    :param objectname:
-    :param objectidentifier:
-    :param maxapdulength:
-    :param segmentationsupported:
-    :param vendoridentifier:
-    :param objects:
-    :return:
+    :param kwargs: Specifies all the objects that are going to be defined for the simulated device.
+    :return: Result of querying the device for its objects.
     '''
 
+    #Thread for simulating device
     thread = threading.Thread(target=LocalDeviceApplication.run_application, kwargs=kwargs)
     thread.start()
 

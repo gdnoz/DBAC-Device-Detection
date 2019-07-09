@@ -1,7 +1,7 @@
 '''
-Based on: http://greystoneenergy.com/webcura/files/282732_rpc_bacnet_install.pdf
+Based on: http://downloads.greystoneenergy.com/Website%20Documents/DP/IN-GE-DPRCBXXX.pdf
 
-BACnet Room Pressure Monitor RPC Series.
+BACnet Room Dew Point Transmitter DPR Series.
 
 Simulates and queries device based on the above data sheet.
 '''

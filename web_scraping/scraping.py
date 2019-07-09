@@ -132,7 +132,7 @@ class RelevantTextScraper:
 
                     classification = self.classifier.predict_text(scraped_text)
 
-                    #print(str(url) + " & " + str(classification.prediction_probability) + " " + str(classification.predicted_class))
+                    print(str(url) + " & " + str(classification.prediction_probability) + " " + str(classification.predicted_class))
 
                     if classification.prediction_probability > best_score:
                         relevant_text = scraped_text
@@ -144,7 +144,7 @@ class RelevantTextScraper:
 
                         classification = self.classifier.predict_text(scraped_text)
 
-                        #print("Retrieved pdf: " + str(url) + "\n" "with score: " + str(classification.prediction_probability))
+                        print("Retrieved pdf: " + str(url) + "\n" "with score: " + str(classification.prediction_probability))
                         if classification.prediction_probability > best_score:
                             relevant_text = scraped_text
                             best_score = classification.prediction_probability
@@ -166,28 +166,69 @@ class RelevantTextScraper:
 
         return relevant_text
 
-    def extract_best_snippet(self, snippets: set) -> str:
+    def cumulative_classification(self, urls: set, r2_scoring=False) -> dict:
         """
-        Extracts text from the urls. Text is discarded if it is irrelevant.
-        :return: All relevant texts combined into a string.
+        Used in the improvement attempt CSS.
+        Extracts text from the urls, performs classification and
+        cumulatively scores all classifications over the scraping threshold.
         """
+
+        import tldextract
         from web_scraping.utilities import WebScrapingUtilities
+        from collections import Counter
+        from math import pow
 
-        best_snippet = ""
-        best_score = 0.0
+        cumulative_score_counter = Counter()
 
-        for snippet in snippets:
-            try:
-                classification = self.classifier.predict_text(snippet)
 
-                if classification.prediction_probability > best_score:
-                    best_snippet = snippet
-                    best_score = classification.prediction_probability
+        for url in urls:
+            if not (any(element in url for element in
+                        self.blacklist) or self._is_url_sub_domain_of_element_in_blacklist(
+                    url) or url in self.visited_urls):
+                try:
+                    self.visited_urls.add(url)
 
-            except Exception:
+                    scraped_text = WebScrapingUtilities.extract_text_from_url(url, timeout=2)
+
+                    classification = self.classifier.predict_text(scraped_text)
+
+                    #print(str(url) + " & " + str(classification.prediction_probability) + " " + str(classification.predicted_class))
+
+                    if classification.predicted_class != "":
+                        if r2_scoring:
+                            cumulative_score_counter[classification.predicted_class] += classification.prediction_probability**2
+                        else:
+                            cumulative_score_counter[classification.predicted_class] += classification.prediction_probability
+
+                except Exception as ex:
+                    if ".pdf" in url:  # Failed because url linked to a pdf file. Try again, but handle the pdf case specifically.
+                        scraped_text = WebScrapingUtilities.get_pdf_content_from_url(url)
+
+                        classification = self.classifier.predict_text(scraped_text)
+
+                        if classification.predicted_class != "":
+                            if r2_scoring:
+                                cumulative_score_counter[classification.predicted_class] += classification.prediction_probability**2
+                            else:
+                                cumulative_score_counter[
+                                    classification.predicted_class] += classification.prediction_probability
+                    else:
+                        extract_result = tldextract.extract(url)
+
+                        is_top_level_domain = extract_result.suffix and extract_result.domain and not extract_result.subdomain
+                        is_sub_domain = extract_result.suffix and extract_result.domain and extract_result.subdomain
+
+                        if is_top_level_domain:
+                            self.blacklist.add(url)
+                        elif is_sub_domain:
+                            self.blacklist.add(url)
+                            self.expansion_urls.add(url)
+
+                        continue
+            else:
                 continue
 
-        return best_snippet
+        return cumulative_score_counter
 
     def _is_url_sub_domain_of_element_in_blacklist(self, url: str) -> bool:
         """

@@ -11,13 +11,11 @@ class MudClassification:
     Given a mud file as input, the file will be used to classify the type of the device.
     """
 
-    def __init__(self, classification_threshold: float, scraping_threshold: float):
+    def __init__(self, classification_threshold: float, snippet_threshold: float):
         from device_classification.text_classification import DeviceClassifier
-        from web_scraping.scraping import RelevantTextScraper
         self.threshold = classification_threshold
-        self.scraping_threshold = scraping_threshold
+        self.snippet_threshold = snippet_threshold
         self.classifier = DeviceClassifier(threshold=classification_threshold)
-        self.text_scraper = RelevantTextScraper(scraping_threshold)
 
     def classify_mud_file(self, filename: str) -> MudClassificationResult:
         """
@@ -42,32 +40,10 @@ class MudClassification:
         from web_scraping.bing import BingSearchAPI
         from web_scraping.google import GoogleCustomSearchAPI
 
-        '''
-        Classification MUD Urls
-        '''
-        '''
-        mud_file_urls = MUDUtilities.get_all_urls_from_mud(mud_file_contents)
-        text_from_mud_urls = self.text_scraper.extract_best_text(mud_file_urls)
-
-        classification_result = self.classifier.predict_text(text_from_mud_urls)
-
-        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
-            return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)
-        '''
-
-        '''
-        Preparing classification based on search engines.
-        '''
         systeminfo = MUDUtilities.get_systeminfo_from_mud_file(mud_file_contents)
 
-        snippets = GoogleCustomSearchAPI.search_text(systeminfo,exclude_pdf=True)+BingSearchAPI.first_ten_snippets(systeminfo,only_html=True)
+        snippets = BingSearchAPI.first_ten_snippets(systeminfo)+GoogleCustomSearchAPI.search_text(systeminfo)
 
-        best_snippet = self.text_scraper.extract_best_snippet(set(snippets))
+        classification_result = self.classifier.predict_snippets(snippets, self.snippet_threshold)
 
-        classification_result = self.classifier.predict_text(best_snippet)
-
-        if classification_result.prediction_probability > self.threshold and classification_result.predicted_class is not "":
-            return MudClassificationResult(classification_result.predicted_class,classification_result.prediction_probability)
-        else:
-            return MudClassificationResult("No_classification",0.0)
-
+        return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)

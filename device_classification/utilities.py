@@ -7,7 +7,7 @@ This then runs these functions several times, averages their scores and prints t
 
 
 def run_tests_in_module_with_kfold_cross_validation(module_name: str, dataset_path: str):
-    import constants,sys,os
+    import sys,os
     import numpy as np
     from inspect import getmembers, isfunction
     from sklearn.model_selection import train_test_split, KFold
@@ -49,8 +49,8 @@ def run_tests_in_module_with_kfold_cross_validation(module_name: str, dataset_pa
         print('{:30}'.format(key)+'{:15}'.format(str(val['precision avg'])[:4])+'{:15}'.format(str(val['recall avg'])[:4])
               +'{:15}'.format(str(val['f1 score avg'])[:4])+'{:15}'.format(str(val['support'])[:4]))
 
-def run_tests_in_module(module_name: str):
-    import constants,sys,os
+def run_tests_in_module(module_name: str, dataset_path: str):
+    import sys,os
     import numpy as np
     from inspect import getmembers, isfunction
     from sklearn.model_selection import train_test_split, KFold
@@ -62,7 +62,6 @@ def run_tests_in_module(module_name: str):
     functions = [o for o in getmembers(sys.modules[module_name]) if isfunction(o[1]) and o[1].__module__ == module_name]
 
     for function in functions:
-        dataset_path = constants.DATA_SET_PATH
         categories = [x[1] for x in os.walk(dataset_path)][0]
 
 

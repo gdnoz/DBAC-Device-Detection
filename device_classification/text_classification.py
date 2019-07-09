@@ -33,12 +33,49 @@ class DeviceClassifier:
         predict_proba = self.pipeline.predict_proba([text])[0]
 
         import operator
-        class_index, prob = max(enumerate(predict_proba), key=operator.itemgetter(1))
+        class_index, probability = max(enumerate(predict_proba), key=operator.itemgetter(1))
 
-        if prob < self.threshold:
-            return DeviceClassifier.DeviceClassificationResult("",0.0)
+        if probability < self.threshold:
+            return DeviceClassifier.DeviceClassificationResult("No_classification",0.0)
         else:
-            return DeviceClassifier.DeviceClassificationResult(self.labels[class_index],prob)
+            return DeviceClassifier.DeviceClassificationResult(self.labels[class_index],probability)
+
+    def predict_snippets(self, snippets: list, snippet_threshold: float, r2_scoring=True) -> (str,float):
+        '''
+        Each snippet is classified and the score is accumulated for each class.
+        The highest scoring class is the returned classification.
+        :param snippets: Text snippets from Google or Bing
+        :return: DeviceClassificationResult
+        '''
+
+        from collections import Counter
+        score_counter = Counter()
+
+        for snippet in snippets:
+            classification = self.predict_text(snippet)
+            #print(snippet)
+            #print(classification.predicted_class + " | " + str(classification.prediction_probability))
+
+            if classification.prediction_probability >= snippet_threshold:
+                if r2_scoring:
+                    score_counter[classification.predicted_class] += classification.prediction_probability ** 2
+                else:
+                    score_counter[classification.predicted_class] += classification.prediction_probability
+
+        #print(score_counter)
+
+        if len(score_counter) == 0:
+            return DeviceClassifier.DeviceClassificationResult("No_classification", 0.0)
+
+        most_common = score_counter.most_common(1)
+
+        best_classification_score = most_common[0][1]
+        best_classification = most_common[0][0]
+
+        if best_classification_score > self.threshold and best_classification is not "":
+            return DeviceClassifier.DeviceClassificationResult(best_classification, best_classification_score)
+        else:
+            return DeviceClassifier.DeviceClassificationResult("No_classification", 0.0)
 
     class DeviceClassificationResult:
         """

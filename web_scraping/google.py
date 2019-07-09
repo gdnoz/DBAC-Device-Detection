@@ -25,6 +25,8 @@ class GoogleCustomSearchAPI:
 
         response = requests.get(GoogleCustomSearchAPI.endpoint, params=params)
 
+        json_resp = response.json()
+
         try:
             response.raise_for_status()
             return [result_dict['link'] for result_dict in response.json()['items']]
@@ -34,17 +36,12 @@ class GoogleCustomSearchAPI:
             return []
 
     @staticmethod
-    def search_text(search_terms: str, exclude_pdf=False) -> list:
+    def search_text(search_terms: str) -> list:
         import requests
         from requests import HTTPError
 
-        if exclude_pdf:
-            q = search_terms + GoogleCustomSearchAPI.exclude_pdf
-        else:
-            q = search_terms
-
         params = \
-            {"q": q,
+            {"q": search_terms,
              "cx": GoogleCustomSearchAPI.custom_search_engine_id,
              "key": GoogleCustomSearchAPI.api_key,
              "lr": "lang_en",
@@ -52,10 +49,17 @@ class GoogleCustomSearchAPI:
 
         response = requests.get(GoogleCustomSearchAPI.endpoint, params=params)
 
+        response_json = response.json()
+
         try:
             response.raise_for_status()
-            return [result_dict['title'] + " " + result_dict['snippet'] for result_dict in response.json()['items']]
+            return [result_dict['title'] + " " + result_dict['snippet'] for result_dict in response_json['items']]
         except KeyError:
             return []
         except HTTPError:
             return []
+
+
+
+if __name__ == "__main__":
+    print(GoogleCustomSearchAPI.search_text("Neptronic ARBGVH"))
