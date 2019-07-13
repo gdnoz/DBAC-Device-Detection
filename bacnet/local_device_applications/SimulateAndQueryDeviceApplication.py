@@ -1,8 +1,5 @@
 import asyncio
 import threading
-from typing import List
-
-from bacpypes.object import Object
 
 from bacnet.local_device_applications import LocalDeviceApplication, ReadAllObjectPropertiesApp
 

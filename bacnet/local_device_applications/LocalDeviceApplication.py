@@ -65,7 +65,10 @@ def run_application(**kwargs):
     import netifaces
     from ipaddress import IPv4Network
 
+    #Get IP of 'en0' interface.
     wifi_ip = netifaces.ifaddresses('en0')[netifaces.AF_INET][0]
+
+    #Construct address of device.
     address = wifi_ip['addr'] + "/" + str(IPv4Network("0.0.0.0/" + wifi_ip['netmask']).prefixlen) + ":47808"
 
     this_device = LocalDeviceObject(**kwargs)

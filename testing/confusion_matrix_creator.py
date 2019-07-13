@@ -7,16 +7,16 @@ from sklearn.utils.multiclass import unique_labels
 
 def plot_confusion_matrix(y_true, y_pred, classes, title,cmap=plt.cm.Blues):
     # Compute confusion matrix
-    cm = confusion_matrix(y_true, y_pred)
+    cmatrix = confusion_matrix(y_true, y_pred)
     # Only use the labels that appear in the data
     classes = classes[unique_labels(y_true, y_pred)]
 
     fig, ax = plt.subplots()
-    im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
+    im = ax.imshow(cmatrix, interpolation='nearest', cmap=cmap)
     ax.figure.colorbar(im, ax=ax)
     # We want to show all ticks...
-    ax.set(xticks=np.arange(cm.shape[1]),
-           yticks=np.arange(cm.shape[0]),
+    ax.set(xticks=np.arange(cmatrix.shape[1]),
+           yticks=np.arange(cmatrix.shape[0]),
            # ... and label them with the respective list entries
            xticklabels=classes, yticklabels=classes,
            title=title,
@@ -29,12 +29,12 @@ def plot_confusion_matrix(y_true, y_pred, classes, title,cmap=plt.cm.Blues):
 
     # Loop over data dimensions and create text annotations.
     fmt = '.2f'
-    thresh = cm.max() / 2.
-    for i in range(cm.shape[0]):
-        for j in range(cm.shape[1]):
-            ax.text(j, i, format(cm[i, j]),
+    thresh = cmatrix.max() / 2.
+    for i in range(cmatrix.shape[0]):
+        for j in range(cmatrix.shape[1]):
+            ax.text(j, i, format(cmatrix[i, j]),
                     ha="center", va="center",
-                    color="white" if cm[i, j] > thresh else "black")
+                    color="white" if cmatrix[i, j] > thresh else "black")
     fig.tight_layout()
     return ax
 

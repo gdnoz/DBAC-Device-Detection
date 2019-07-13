@@ -239,7 +239,3 @@ class PdfToTextConverter:
                 os.rmdir(os.path.join(root, name))
 
         return output
-
-if __name__ == "__main__":
-    test = WebScrapingUtilities.get_content_from_url("http://f.licitationen.dk/2ans3fldwwje02ca.pdf")
-    PdfToTextConverter.pdf_to_text(test)

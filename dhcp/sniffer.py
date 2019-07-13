@@ -1,9 +1,3 @@
-"""
-https://github.com/juga0/dhcpcfp example of dhcp sniffing
-FILTER_DHCP_MAC = "udp and src port 68 and dst port 67" \
-                      " and ether src {}"
-"""
-
 class DiscoveryPacketSniffer:
     """
     Utility class for sniffing for DHCP Discover Packets on the local ethernet interface.
@@ -21,8 +15,6 @@ class DiscoveryPacketSniffer:
         from scapy.layers.l2 import Ether
         from scapy.sendrecv import sniff
         from scapy.config import conf
-
-        #conf.iface = "lo0"
 
         print("Listening for DHCP Discover packets on interface " + str(conf.iface) + "...")
 
@@ -46,22 +38,6 @@ class DiscoveryPacketSniffer:
     def is_discovery_packet(packet):
         from scapy.layers.dhcp import DHCP
 
-        """
-        DHCP Message Types:
-        
-           Value   Message Type
-           -----   ------------
-             1     DHCPDISCOVER
-             2     DHCPOFFER
-             3     DHCPREQUEST
-             4     DHCPDECLINE
-             5     DHCPACK
-             6     DHCPNAK
-             7     DHCPRELEASE
-             8     DHCPINFORM
-             
-        Source: https://tools.ietf.org/html/rfc2132, Section 9.6
-        """
         return DHCP in packet and packet[DHCP].options[0][1] == 1
 
 class SniffResult:
