@@ -31,6 +31,8 @@ class BacnetProfiler:
         print("Classification score:    " + str(classification_result.score))
         print("Time:                    " + str(end-start))
 
+        print(query_result)
+
         print("****************** Bacnet profiling completed *******************")
 
 if __name__ == "__main__":
