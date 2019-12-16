@@ -63,7 +63,7 @@ class MudClassification:
 
         return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)
 
-    def generate_acl_profile(acl_list: dict) -> MudAclProfile:
+    def generate_acl_profile(self, acl_list: dict) -> MudAclProfile:
         """
         Generates lists of services provided and used over the internet and LAN
         from MUD ACLs
