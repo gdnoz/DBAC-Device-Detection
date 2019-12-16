@@ -122,3 +122,37 @@ class MUDUtilities:
                 device = items[1].rstrip()
 
                 WebScrapingUtilities.get_http_content_from_url_and_save(url, constants.MUDFILES_DIR, device + ".json")
+
+    @staticmethod
+    def get_acl_list_json(acl: str) -> list:
+        """
+        Retrieve dict object with only the ACL nodes from the string 
+        returned by function extract_acls_from_mud_contents
+        """
+        from json import loads
+        return loads(acl)['ietf-access-control-list:access-lists']['acl']
+        
+    @staticmethod
+    def get_acl_from_acl_list_item(acl: list) -> list:
+        """
+        Retrieve list of ACL entries in object returned by the function
+        get_acl_list_json
+        """
+        return acl["aces"]["ace"]
+
+    @staticmethod
+    def get_protocol_name_from_num(num: int) -> str:
+        """
+        Retrieve the protocol name from the corresponding identifier
+        in the MUD file, as specified here:
+        https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
+        """
+        import csv
+
+        protocol_list = []
+        with open('data/protocol-numbers.csv', 'r') as csvfile:
+            rdr = csv.reader(csvfile, delimiter=',')
+            ROI = [row for i, row in enumerate(rdr) if i > 0 and row[0] == str(num)]
+            return ROI[0][1]
+
+        return ""

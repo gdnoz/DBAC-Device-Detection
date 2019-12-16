@@ -42,8 +42,14 @@ class MUDProfiler:
         print("Name:                    " + fingerprint_result.device_name)
         print("Fingerprint score:       " + str(fingerprint_result.score))
 
+        acl_list = MUDUtilities.get_acl_list_json(MUDUtilities.extract_acls_from_mud_contents(mud_file_from_web))
         print("Mud file ACLs:")
-        print(MUDUtilities.extract_acls_from_mud_contents(mud_file_from_web))
+
+        acl_profile = MudClassification.generate_acl_profile(acl_list)
+        print('provides_lan:\n'+str(acl_profile.provides_lan))
+        print('provides_net:\n'+str(acl_profile.provides_net))
+        print('uses_lan:\n'+str(acl_profile.uses_lan))
+        print('uses_net:\n'+str(acl_profile.uses_net))
 
         print("******************** MUD profiling completed *****************")
 
