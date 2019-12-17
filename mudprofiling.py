@@ -49,6 +49,11 @@ class MUDProfiler:
         sxc_contract = MUDUtilities.generate_contract_from_acl_profile(acl_profile)
         print(sxc_contract)
 
+        contacts_all = set.union(acl_profile.contacts_in, acl_profile.contacts_out)
+        print('Contact domains:')
+        for dom in contacts_all:
+            print('\t'+dom)
+
         print("******************** MUD profiling completed *****************")
 
 if __name__ == "__main__":
