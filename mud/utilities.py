@@ -156,3 +156,51 @@ class MUDUtilities:
             return ROI[0][1]
 
         return ""
+
+    @staticmethod
+    def split_service_list(services: list) -> list:
+        """
+        Split each string of a list by a semicolon and return as list of tuples
+        """
+        ret = []
+
+        for service in services:
+            split = service.split(':')
+            if (len(split) > 1):
+                ret.append((split[0], split[1]))
+            else:
+                ret.append(service)
+
+        return ret
+
+    from mud.classification import MudAclProfile
+    from sxc.contract import SxcContract
+    @staticmethod
+    def generate_contract_from_acl_profile(acl_profile: MudAclProfile) -> SxcContract:
+        """
+        Generate, in as much detail as it is possible, a SxC contract from a MudAclProfile object
+        """
+        from mud.classification import MudAclProfile
+        from sxc.contract import SxcContract, SxcRule
+
+        rules = []
+
+        # Handle wildcard
+        provides_all = set.intersection(acl_profile.provides_lan, acl_profile.provides_net)
+        requires_all = set.intersection(acl_profile.uses_lan, acl_profile.uses_net)
+        if (len(provides_all) > 0 or len(requires_all) > 0):
+            rules.append(SxcRule(acl_profile.device+'_all', acl_profile.device, '*', '*', provides_all, requires_all))
+
+        # Handle LAN
+        provides_lan = set.difference(acl_profile.provides_lan, provides_all)
+        requires_lan = set.difference(acl_profile.uses_lan, requires_all)
+        if (len(provides_lan) > 0 or len(requires_lan) > 0):
+            rules.append(SxcRule(acl_profile.device+'_lan', acl_profile.device, 'LAN', '*', provides_lan, requires_lan))
+        
+        # Handle internet
+        provides_net = MUDUtilities.split_service_list(set.difference(acl_profile.provides_net, provides_all))
+        requires_net = MUDUtilities.split_service_list(set.difference(acl_profile.uses_net, requires_all))
+        if (len(provides_net) > 0 or len(requires_net) > 0):
+            rules.append(SxcRule(acl_profile.device+'_net', acl_profile.device, 'Internet', '*', provides_net, requires_net))
+
+        return SxcContract(acl_profile.device, rules)

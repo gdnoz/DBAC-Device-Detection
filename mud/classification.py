@@ -7,19 +7,28 @@ class MudClassificationResult:
         self.score = score
 
 class MudAclProfile:
+    device = ''
     provides_lan = set([])
     provides_net = set([])
     uses_lan = set([])
     uses_net = set([])
+    contacts_out = set([])
+    contacts_in = set([])
 
-    def __init__(self, provides_lan: set,
+    def __init__(self, device: str,
+                       provides_lan: set,
                        provides_net: set,
                        uses_lan: set,
-                       uses_net: set):
+                       uses_net: set,
+                       contacts_out: set,
+                       contacts_in: set):
+        self.device = device
         self.provides_lan = provides_lan
         self.provides_net = provides_net
         self.uses_lan = uses_lan
         self.uses_net = uses_net
+        self.contacts_out = contacts_out
+        self.contacts_in = contacts_in
 
 class MudClassification:
     """
@@ -63,22 +72,21 @@ class MudClassification:
 
         return MudClassificationResult(classification_result.predicted_class, classification_result.prediction_probability)
 
-    def generate_acl_profile(self, acl_list: dict) -> MudAclProfile:
+    def generate_acl_profile(self, device: str, acl_list: dict) -> MudAclProfile:
         """
         Generates lists of services provided and used over the internet and LAN
         from MUD ACLs
         """
         from mud.utilities import MUDUtilities
 
-
         provides_lan = set([])
         provides_net = set([])
         uses_lan = set([])
         uses_net = set([])
-        
-        for a in acl_list:
-            print(a['name'])
+        contacts_out = set([])
+        contacts_in = set([])
 
+        for a in acl_list:
             outbound = a['name'].startswith('from')
             port_prefix = 'destination-' if outbound else 'source-'
             dns_prefix = 'ietf-acldns:dst-' if outbound else 'ietf-acldns:src-'
@@ -86,37 +94,33 @@ class MudClassification:
             acl = MUDUtilities.get_acl_from_acl_list_item(a)
 
             for ace in acl:
-                service_port = -1
+                service = ''
                 dname = ''
-                print('\t ace: ' + ace['name'])
+                
                 for rule in ace['matches']:
-                    # TODO: Is this even important?
-                    # try:
-                    #     service['protocol'] = MUDUtilities.get_protocol_name_from_num(ace['matches'][rule]['protocol'])
-                    # except KeyError:
-                    #     pass
                     try:
                         dname = ace['matches'][rule][dns_prefix + 'dnsname']
                     except KeyError:
                         pass
                     try:
                         # TODO: Different operators? (not just eq)
-                        service_port = int(ace['matches'][rule][port_prefix + 'port']['port'])
-                    except KeyError:
-                        pass
-                    
-                    print('\t\t matches: ' + str(rule))
-                    try:
-                        print('\t\t\t rule: ' + str(ace['matches'][rule]))
+                        service = str(ace['matches'][rule][port_prefix + 'port']['port'])
                     except KeyError:
                         pass
 
                 local = dname == ''
 
-                if   service_port >= 0 and outbound and local:          uses_lan.add(service_port)
-                elif service_port >= 0 and outbound and not local:      uses_net.add(service_port)
-                elif service_port >= 0 and not outbound and local:      provides_lan.add(service_port)
-                elif service_port >= 0 and not outbound and not local:  provides_net.add(service_port)
+                # if dname != '':
+                #     service = dname+':'+service
 
+                if outbound:
+                    contacts_out.add(dname)
+                else:
+                    contacts_in.add(dname)
 
-        return MudAclProfile(provides_lan, provides_net, uses_lan, uses_net)
+                if   service != '' and outbound and local:          uses_lan.add(service)
+                elif service != '' and outbound and not local:      uses_net.add(service)
+                elif service != '' and not outbound and local:      provides_lan.add(service)
+                elif service != '' and not outbound and not local:  provides_net.add(service)
+
+        return MudAclProfile(device, provides_lan, provides_net, uses_lan, uses_net, contacts_out, contacts_in)

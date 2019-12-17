@@ -35,4 +35,4 @@ class DHCPSpoofing:
 
 if __name__ == "__main__":
     #DHCPSpoofing.send_dhcp_discover("https://iotanalytics.unsw.edu.au/mud/samsungsmartcamMud.json", "00:A0:C9:14:C8",[1,33,3,6,15,28,51,58,59],"dhcpcd-5.2.10:Linux-3.8.13+:armv7l:Marvell Berlin SoC (Flattened Device Tree)")
-    DHCPSpoofing.send_dhcp_discover("https://iotanalytics.unsw.edu.au/mud/HueBulbMud.json","00:00:00:00:7b:be",[1,33,3,6,12,15,28,51,58,59,119],"dhcpcd-5.2.10:Linux-3.8.13+")
+    DHCPSpoofing.send_dhcp_discover("https://iotanalytics.unsw.edu.au/mud/hpprinterMud.json","00:00:00:00:7b:be",[1,33,3,6,12,15,28,51,58,59,119],"dhcpcd-5.2.10:Linux-3.8.13+")

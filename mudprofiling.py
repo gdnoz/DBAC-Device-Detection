@@ -5,8 +5,10 @@ class MUDProfiler:
     Furthermore, DHCP fingerprinting also occurs.
     """
 
-    def __init__(self, local_mud_file=False):
-        self.local_mud_file = local_mud_file
+    sniff_result = None
+
+    def __init__(self, sniff_result):
+        self.sniff_result = sniff_result
 
     def run(self):
         from dhcp.sniffer import DiscoveryPacketSniffer
@@ -14,45 +16,41 @@ class MUDProfiler:
         from mud.classification import MudClassification,MudClassificationResult
         from mud.utilities import MUDUtilities
 
-        print("****************** Performing MUD Profiling ******************")
+        if self.sniff_result == None:
+            print("****************** Performing MUD Profiling ******************")
 
-        print("****************** Sniffing for DHCP Packet ******************")
+            print("****************** Sniffing for DHCP Packet ******************")
 
-        sniff_result = DiscoveryPacketSniffer.sniff()
+            self.sniff_result = DiscoveryPacketSniffer.sniff()
 
-        print("*********************** Packet obtained! *********************\n\n")
+            print("*********************** Packet obtained! *********************\n\n")
 
         mud_classification = MudClassification(0.2**2, 0.2)
 
-        mud_file_from_web = MUDUtilities.get_mud_file(sniff_result.mud_url)
+        mud_file_from_web = MUDUtilities.get_mud_file(self.sniff_result.mud_url)
 
         print("******************** MUD profiling result ********************")
 
-        if not self.local_mud_file:
-            classification_result = mud_classification.classify_mud_contents(mud_file_from_web)
-            print("Device type:             " + classification_result.predicted_class)
-            print("Classification score:    " + str(classification_result.score))
-        else: #In this case, the url is just a file path to a mud file on the machine.
-            classification_result = mud_classification.classify_mud_file(sniff_result.mud_url)
-            print("Device type:             " + classification_result.predicted_class)
-            print("Classification score:    " + str(classification_result.score))
+        classification_result = mud_classification.classify_mud_contents(mud_file_from_web)
+        print("Device type:             " + classification_result.predicted_class)
+        print("Classification score:    " + str(classification_result.score))
 
-        fingerprint_result = FingerbankApi.interrogate(sniff_result.dhcp_fingerprint,sniff_result.dhcp_vendor,sniff_result.mac)
+        fingerprint_result = FingerbankApi.interrogate(self.sniff_result.dhcp_fingerprint,self.sniff_result.dhcp_vendor,self.sniff_result.mac)
 
-        print("Name:                    " + fingerprint_result.device_name)
+        deviceid = (fingerprint_result.device_name + '.' + fingerprint_result.device_name).replace(" ", "")
+        print("Name:                    " + deviceid)
         print("Fingerprint score:       " + str(fingerprint_result.score))
 
         acl_list = MUDUtilities.get_acl_list_json(MUDUtilities.extract_acls_from_mud_contents(mud_file_from_web))
         print("Mud file ACLs:")
 
-        acl_profile = MudClassification.generate_acl_profile(acl_list)
-        print('provides_lan:\n'+str(acl_profile.provides_lan))
-        print('provides_net:\n'+str(acl_profile.provides_net))
-        print('uses_lan:\n'+str(acl_profile.uses_lan))
-        print('uses_net:\n'+str(acl_profile.uses_net))
+        deviceid = classification_result.predicted_class + '.' + MUDUtilities.get_systeminfo_from_mud_file(mud_file_from_web)
+        acl_profile = mud_classification.generate_acl_profile(deviceid, acl_list)
+        sxc_contract = MUDUtilities.generate_contract_from_acl_profile(acl_profile)
+        print(sxc_contract)
 
         print("******************** MUD profiling completed *****************")
 
 if __name__ == "__main__":
-    mud_profiler = MUDProfiler(local_mud_file=False)
+    mud_profiler = MUDProfiler()
     mud_profiler.run()
