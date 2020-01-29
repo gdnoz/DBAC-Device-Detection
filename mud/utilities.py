@@ -189,7 +189,7 @@ class MUDUtilities:
         provides_all = set.intersection(acl_profile.provides_lan, acl_profile.provides_net)
         requires_all = set.intersection(acl_profile.uses_lan, acl_profile.uses_net)
         if (len(provides_all) > 0 or len(requires_all) > 0):
-            rules.append(SxcRule(acl_profile.device+'_all', acl_profile.device, '*', '*', provides_all, requires_all))
+            rules.append(SxcRule(acl_profile.device+'.all', acl_profile.device, '*', '*', provides_all, requires_all))
 
         # Handle LAN
         provides_lan = set.difference(acl_profile.provides_lan, provides_all)
