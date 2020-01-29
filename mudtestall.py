@@ -20,7 +20,7 @@ devices = [
     {'name':'dropcamMud',               'id':33475},#
     {'name':'hellobarbieMud',           'id':61588},#?
     {'name':'hpprinterMud',             'id':157},#
-    {'name':'HueBulbMud',               'id':50239},#
+    {'name':'HueBulbMud',               'id':50151},#
     {'name':'ihomepowerplugMud',        'id':49667},#
     {'name':'lifxbulbMud',              'id':12759},#
     {'name':'nestsmokesensorMud',       'id':33476},#

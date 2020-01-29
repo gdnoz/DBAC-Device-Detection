@@ -10,42 +10,42 @@ Security contract Amazon.Echo:
 		Domain:     LAN
 		Shares:     *
 		Provides:   {'67', '53'}
-		Requires:   {'67', '5353', '1900', '53'}
+		Requires:   {'67', '1900', '5353', '53'}
 	Rule Amazon.Echo.net:
 		Device:     Amazon.Echo
 		Domain:     Internet
 		Shares:     *
-		Provides:   ['443', '33434', '80', '123']
-		Requires:   ['33434', '123', '443', '80']
+		Provides:   ['80', '33434', '443', '123']
+		Requires:   ['80', '33434', '123', '443']
 
 Contact domains:
 	
-	softwareupdates.amazon.com
-	device-metrics-us.amazon.com
-	api.amazonalexa.com
-	1.north-america.pool.ntp.org
-	2.north-america.pool.ntp.org
-	files.whooshkaa.com
 	media.whooshkaa.com
 	www.example.com
-	www.example.net
 	0.north-america.pool.ntp.org
-	kindle-time.amazon.com
-	pindorama-us-west-2.amazon.com
-	device-fingerprintdb-v1.s3.amazonaws.com
-	tinytts-us-west-2.amazon.com
-	ntp-g7g.amazon.com
-	pins.amazon.com
-	www.example.org
-	dcape-na.amazon.com
 	3.north-america.pool.ntp.org
 	todo-ta-g7g.amazon.com
+	dcape-na.amazon.com
+	pindorama-us-west-2.amazon.com
+	ntp-g7g.amazon.com
 	www.meethue.com
+	softwareupdates.amazon.com
+	api.amazonalexa.com
+	files.whooshkaa.com
+	www.example.net
+	device-metrics-us.amazon.com
+	pins.amazon.com
+	www.example.org
+	tinytts-us-west-2.amazon.com
+	2.north-america.pool.ntp.org
+	device-fingerprintdb-v1.s3.amazonaws.com
+	1.north-america.pool.ntp.org
+	kindle-time.amazon.com
 ******************** MUD profiling completed *****************
 testing {'name': 'augustdoorbellcamMud', 'id': 49529}
 ******************** MUD profiling result ********************
 Device type:             Doorbell
-Classification score:    3.0469612649864475
+Classification score:    3.1092160093065084
 Name:                    August.DoorBellCamera
 Mud file ACLs:
 Security contract August.DoorBellCamera:
@@ -65,25 +65,25 @@ Security contract August.DoorBellCamera:
 Contact domains:
 	
 	doorbells.august.com
-	s3-us-west-2.amazonaws.com
-	rpsv2.video-cloud.net
-	rpsv12.video-cloud.net
-	rpsv3.video-cloud.net
-	logger.august.com
-	rpsv4.video-cloud.net
-	august.pubnub.com
-	rpsv5.video-cloud.net
-	vcsv2.video-cloud.net
-	336971aac5bba454b967-3ec27f5c732731b07836c69a45967ad6.ssl.cf1.rackcdn.com
-	v2servers.video-cloud.net
-	rpsv11.video-cloud.net
-	rpsv7.video-cloud.net
-	rpsv10.video-cloud.net
 	rpsv222.video-cloud.net
-	rpsv1.video-cloud.net
+	vcsv2.video-cloud.net
 	rbs-sticky.august.com
+	rpsv1.video-cloud.net
 	iconfig.august.com
+	v2servers.video-cloud.net
+	336971aac5bba454b967-3ec27f5c732731b07836c69a45967ad6.ssl.cf1.rackcdn.com
 	dmsv2.video-cloud.net
+	rpsv2.video-cloud.net
+	rpsv10.video-cloud.net
+	s3-us-west-2.amazonaws.com
+	rpsv5.video-cloud.net
+	rpsv4.video-cloud.net
+	rpsv7.video-cloud.net
+	rpsv11.video-cloud.net
+	rpsv12.video-cloud.net
+	august.pubnub.com
+	logger.august.com
+	rpsv3.video-cloud.net
 ******************** MUD profiling completed *****************
 testing {'name': 'awairAirQualityMud', 'id': 50378}
 ******************** MUD profiling result ********************
@@ -96,7 +96,7 @@ Security contract Awair.R2:
 		Device:     Awair.R2
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '53'}
 	Rule Awair.R2.net:
 		Device:     Awair.R2
@@ -107,9 +107,9 @@ Security contract Awair.R2:
 
 Contact domains:
 	
+	timeserver.awair.is
 	messaging.awair.is
 	ota.awair.is
-	timeserver.awair.is
 ******************** MUD profiling completed *****************
 testing {'name': 'belkincameraMud', 'id': 39881}
 ******************** MUD profiling result ********************
@@ -128,25 +128,25 @@ Security contract Belkin.NetCam:
 		Device:     Belkin.NetCam
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '3478', '53'}
-		Requires:   {'67', '3478', '1900', '53'}
+		Provides:   {'3478', '53', '67'}
+		Requires:   {'3478', '67', '1900', '53'}
 	Rule Belkin.NetCam.net:
 		Device:     Belkin.NetCam
 		Domain:     Internet
 		Shares:     *
-		Provides:   ['443', '8443', '8899', '123', '3475']
-		Requires:   ['443', '8443', '8899', '123', '3475']
+		Provides:   ['3475', '123', '8899', '443', '8443']
+		Requires:   ['3475', '123', '8899', '443', '8443']
 
 Contact domains:
 	
-	nat.xbcs.net
-	api.xbcs.net
-	www.google.com
 	prod1-nat-xbcs-net-1543133972.us-east-1.elb.amazonaws.com
-	time.windows.com
-	ping.seedonk.com
+	nat.xbcs.net
 	devices.xbcs.net
+	ping.seedonk.com
 	origin.belkin-us.tendplatform.com
+	www.google.com
+	api.xbcs.net
+	time.windows.com
 ******************** MUD profiling completed *****************
 testing {'name': 'blipcareBPmeterMud', 'id': 25485}
 ******************** MUD profiling result ********************
@@ -159,8 +159,8 @@ Security contract BLIP.Systems:
 		Device:     BLIP.Systems
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
-		Requires:   {'67', '53'}
+		Provides:   {'53', '67'}
+		Requires:   {'53', '67'}
 	Rule BLIP.Systems.net:
 		Device:     BLIP.Systems
 		Domain:     Internet
@@ -183,7 +183,7 @@ Security contract Canary.All-in-One:
 		Device:     Canary.All-in-One
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '53'}
 	Rule Canary.All-in-One.net:
 		Device:     Canary.All-in-One
@@ -194,14 +194,14 @@ Security contract Canary.All-in-One:
 
 Contact domains:
 	
-	v.canaryis.com
-	09-wl2-d-prod.canaryis.com
 	i.canaryis.com
+	09-wl2-d-prod.canaryis.com
+	ipv4.connman.net
+	b.canaryis.com
+	h.canaryis.com
+	v.canaryis.com
 	m.canaryis.com
 	o.canaryis.com
-	ipv4.connman.net
-	h.canaryis.com
-	b.canaryis.com
 ******************** MUD profiling completed *****************
 testing {'name': 'chromecastUltraMud', 'id': 49244}
 ******************** MUD profiling result ********************
@@ -215,54 +215,54 @@ Security contract Google.ChromecastUltra:
 		Domain:     LAN
 		Shares:     *
 		Provides:   {'67', '53'}
-		Requires:   {'67', '5353', '1900', '53'}
+		Requires:   {'67', '53', '1900', '5353'}
 	Rule Google.ChromecastUltra.net:
 		Device:     Google.ChromecastUltra
 		Domain:     Internet
 		Shares:     *
-		Provides:   ['5228', '80', '123', '443']
-		Requires:   ['5228', '80', '123', '443']
+		Provides:   ['80', '5228', '123', '443']
+		Requires:   ['80', '5228', '123', '443']
 
 Contact domains:
 	
-	pagead2.googlesyndication.com
-	lh3.googleusercontent.com
-	ade.googlesyndication.com
-	googleads.g.doubleclick.net
-	r3---sn-55goxu-ntqe.googlevideo.com
-	time.google.com
-	clients1.google.com
-	secure.insightexpressai.com
-	r4---sn-ntqe6n76.googlevideo.com
-	mtalk.google.com
-	ssl.gstatic.com
-	cast.scdn.co
-	fonts.gstatic.com
-	lh4.googleusercontent.com
-	yt3.ggpht.com
 	android.clients.google.com
-	r2---sn-ntq7yned.googlevideo.com
-	www.gstatic.com
-	clients3.google.com
-	fonts.googleapis.com
-	tools.google.com
-	lh6.googleusercontent.com
-	google.com
-	ajax.googleapis.com
-	connectivitycheck.gstatic.com
-	storage.googleapis.com
-	www.youtube-nocookie.com
-	www.googleapis.com
-	ad.doubleclick.net
 	api-partner.spotify.com
 	lh5.googleusercontent.com
+	www.youtube-nocookie.com
+	r3---sn-55goxu-ntqe.googlevideo.com
+	www.gstatic.com
+	clients1.google.com
+	ade.googlesyndication.com
+	google.com
 	r1---sn-55goxu-ntqe.googlevideo.com
+	lh6.googleusercontent.com
+	connectivitycheck.gstatic.com
 	www.youtube.com
-	cdn.ravenjs.com
-	clients2.google.com
-	i.ytimg.com
+	fonts.googleapis.com
 	securepubads.g.doubleclick.net
+	r4---sn-ntqe6n76.googlevideo.com
+	storage.googleapis.com
+	r2---sn-ntq7yned.googlevideo.com
 	clients4.google.com
+	clients3.google.com
+	time.google.com
+	lh3.googleusercontent.com
+	ssl.gstatic.com
+	fonts.gstatic.com
+	tools.google.com
+	ajax.googleapis.com
+	lh4.googleusercontent.com
+	www.googleapis.com
+	secure.insightexpressai.com
+	mtalk.google.com
+	googleads.g.doubleclick.net
+	clients2.google.com
+	pagead2.googlesyndication.com
+	ad.doubleclick.net
+	yt3.ggpht.com
+	cdn.ravenjs.com
+	cast.scdn.co
+	i.ytimg.com
 ******************** MUD profiling completed *****************
 testing {'name': 'dropcamMud', 'id': 33475}
 ******************** MUD profiling result ********************
@@ -275,7 +275,7 @@ Security contract Nest.Camera:
 		Device:     Nest.Camera
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '53'}
 	Rule Nest.Camera.net:
 		Device:     Nest.Camera
@@ -287,8 +287,8 @@ Security contract Nest.Camera:
 Contact domains:
 	
 	oculus2275-us1.dropcam.com
-	nexus-us1.dropcam.com
 	nexus.dropcam.com
+	nexus-us1.dropcam.com
 	pool.ntp.org
 ******************** MUD profiling completed *****************
 testing {'name': 'hellobarbieMud', 'id': 61588}
@@ -302,7 +302,7 @@ Security contract Nabi.BarbieTablet:
 		Device:     Nabi.BarbieTablet
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '53'}
 	Rule Nabi.BarbieTablet.net:
 		Device:     Nabi.BarbieTablet
@@ -313,8 +313,8 @@ Security contract Nabi.BarbieTablet:
 
 Contact domains:
 	
-	storage.toytalk.com
 	firmware.toytalk.com
+	storage.toytalk.com
 	puppeteer.toytalk.com
 ******************** MUD profiling completed *****************
 testing {'name': 'hpprinterMud', 'id': 157}
@@ -328,55 +328,55 @@ Security contract HP.Printer:
 		Device:     HP.Printer
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '547', '53'}
-		Requires:   {'547', '5355', '53', '5353', '67', '137'}
+		Provides:   {'53', '67', '547'}
+		Requires:   {'137', '67', '53', '5355', '5353', '547'}
 	Rule HP.Printer.net:
 		Device:     HP.Printer
 		Domain:     Internet
 		Shares:     *
-		Provides:   ['5223', '80', '5222', '443']
-		Requires:   ['5223', '80', '5222', '443']
+		Provides:   ['80', '5222', '443', '5223']
+		Requires:   ['5222', '5223', '443', '80']
 
 Contact domains:
 	
-	chat.hpeprint.com
 	xmpp009.hpeprint.com
 	h10141.www1.hp.com
+	chat.hpeprint.com
 ******************** MUD profiling completed *****************
-testing {'name': 'HueBulbMud', 'id': 50239}
+testing {'name': 'HueBulbMud', 'id': 50151}
 ******************** MUD profiling result ********************
 Device type:             Light
 Classification score:    0.8036154568567293
-Name:                    Philips.PhilipsHueSmartlighting
+Name:                    Philips.LightBulb
 Mud file ACLs:
-Security contract Philips.PhilipsHueSmartlighting:
-	Rule Philips.PhilipsHueSmartlighting.lan:
-		Device:     Philips.PhilipsHueSmartlighting
+Security contract Philips.LightBulb:
+	Rule Philips.LightBulb.lan:
+		Device:     Philips.LightBulb
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
-		Requires:   {'53', '67', '1900', '5353'}
-	Rule Philips.PhilipsHueSmartlighting.net:
-		Device:     Philips.PhilipsHueSmartlighting
+		Provides:   {'53', '67'}
+		Requires:   {'67', '1900', '53', '5353'}
+	Rule Philips.LightBulb.net:
+		Device:     Philips.LightBulb
 		Domain:     Internet
 		Shares:     *
 		Provides:   ['80', '123', '443']
-		Requires:   ['443', '80', '123']
+		Requires:   ['80', '443', '123']
 
 Contact domains:
 	
 	dcp.cpp.philips.com
-	time1.google.com
+	time4.google.com
+	diagnostics.meethue.com
+	www.ecdinterface.philips.com
+	bridge.meethue.com
 	www2.meethue.com
 	time.meethue.com
-	ws.meethue.com
-	www.ecdinterface.philips.com
 	time3.google.com
-	diagnostics.meethue.com
 	time2.google.com
+	ws.meethue.com
 	fds.cpp.philips.com
-	bridge.meethue.com
-	time4.google.com
+	time1.google.com
 ******************** MUD profiling completed *****************
 testing {'name': 'ihomepowerplugMud', 'id': 49667}
 ******************** MUD profiling result ********************
@@ -389,7 +389,7 @@ Security contract iHome.SmartPlug:
 		Device:     iHome.SmartPlug
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '5353', '53'}
 	Rule iHome.SmartPlug.net:
 		Device:     iHome.SmartPlug
@@ -400,8 +400,8 @@ Security contract iHome.SmartPlug:
 
 Contact domains:
 	
-	time.evrythng.com
 	mqtt.evrythng.com
+	time.evrythng.com
 ******************** MUD profiling completed *****************
 testing {'name': 'lifxbulbMud', 'id': 12759}
 ******************** MUD profiling result ********************
@@ -420,7 +420,7 @@ Security contract LIFX.lighting:
 		Device:     LIFX.lighting
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '53'}
 	Rule LIFX.lighting.net:
 		Device:     LIFX.lighting
@@ -431,8 +431,8 @@ Security contract LIFX.lighting:
 
 Contact domains:
 	
-	v2.broker.lifx.co
 	pool.ntp.org
+	v2.broker.lifx.co
 ******************** MUD profiling completed *****************
 testing {'name': 'nestsmokesensorMud', 'id': 33476}
 ******************** MUD profiling result ********************
@@ -456,53 +456,53 @@ Security contract Nest.Smoke+COAlarm:
 
 Contact domains:
 	
-	czfe36.front01.iad01.production.nest.com
-	czfe117.front01.iad01.production.nest.com
-	czfe03.front01.iad01.production.nest.com
-	czfe53.front01.iad01.production.nest.com
-	czfe17.front01.iad01.production.nest.com
-	czfe108.front01.iad01.production.nest.com
-	czfe100.front01.iad01.production.nest.com
-	czfe116.front01.iad01.production.nest.com
-	czfe93.front01.iad01.production.nest.com
-	czfe33.front01.iad01.production.nest.com
-	czfe119.front01.iad01.production.nest.com
-	czfe89.front01.iad01.production.nest.com
-	czfe06.front01.iad01.production.nest.com
-	czfe104.front01.iad01.production.nest.com
-	czfe79.front01.iad01.production.nest.com
-	czfe43.front01.iad01.production.nest.com
-	czfe41.front01.iad01.production.nest.com
-	czfe48.front01.iad01.production.nest.com
-	czfe67.front01.iad01.production.nest.com
-	czfe22.front01.iad01.production.nest.com
-	czfe71.front01.iad01.production.nest.com
-	weave-logsink.nest.com
-	czfe94.front01.iad01.production.nest.com
-	czfe16.front01.iad01.production.nest.com
-	czfe32.front01.iad01.production.nest.com
-	czfe58.front01.iad01.production.nest.com
 	czfe73.front01.iad01.production.nest.com
-	czfe105.front01.iad01.production.nest.com
-	czfe91.front01.iad01.production.nest.com
-	czfe70.front01.iad01.production.nest.com
-	czfe42.front01.iad01.production.nest.com
-	czfe11.front01.iad01.production.nest.com
-	czfe50.front01.iad01.production.nest.com
-	czfe118.front01.iad01.production.nest.com
-	czfe56.front01.iad01.production.nest.com
-	czfe30.front01.iad01.production.nest.com
-	czfe04.front01.iad01.production.nest.com
-	czfe14.front01.iad01.production.nest.com
-	czfe49.front01.iad01.production.nest.com
-	czfe84.front01.iad01.production.nest.com
-	czfe66.front01.iad01.production.nest.com
-	czfe113.front01.iad01.production.nest.com
-	czfe109.front01.iad01.production.nest.com
-	czfe21.front01.iad01.production.nest.com
-	czfe60.front01.iad01.production.nest.com
-	czfe95.front01.iad01.production.nest.com
 	frontdoor.nest.com
+	czfe50.front01.iad01.production.nest.com
+	czfe53.front01.iad01.production.nest.com
+	czfe03.front01.iad01.production.nest.com
+	czfe67.front01.iad01.production.nest.com
+	czfe06.front01.iad01.production.nest.com
+	czfe17.front01.iad01.production.nest.com
+	czfe41.front01.iad01.production.nest.com
+	czfe16.front01.iad01.production.nest.com
+	czfe42.front01.iad01.production.nest.com
+	czfe84.front01.iad01.production.nest.com
+	czfe89.front01.iad01.production.nest.com
+	czfe33.front01.iad01.production.nest.com
+	czfe109.front01.iad01.production.nest.com
+	czfe117.front01.iad01.production.nest.com
+	czfe58.front01.iad01.production.nest.com
+	czfe100.front01.iad01.production.nest.com
+	czfe04.front01.iad01.production.nest.com
+	czfe70.front01.iad01.production.nest.com
+	czfe105.front01.iad01.production.nest.com
+	czfe14.front01.iad01.production.nest.com
+	czfe113.front01.iad01.production.nest.com
+	czfe79.front01.iad01.production.nest.com
+	czfe56.front01.iad01.production.nest.com
+	weave-logsink.nest.com
+	czfe30.front01.iad01.production.nest.com
+	czfe22.front01.iad01.production.nest.com
+	czfe60.front01.iad01.production.nest.com
+	czfe104.front01.iad01.production.nest.com
+	czfe118.front01.iad01.production.nest.com
+	czfe91.front01.iad01.production.nest.com
+	czfe48.front01.iad01.production.nest.com
+	czfe11.front01.iad01.production.nest.com
+	czfe49.front01.iad01.production.nest.com
+	czfe116.front01.iad01.production.nest.com
+	czfe32.front01.iad01.production.nest.com
+	czfe108.front01.iad01.production.nest.com
+	czfe71.front01.iad01.production.nest.com
+	czfe36.front01.iad01.production.nest.com
+	czfe93.front01.iad01.production.nest.com
+	czfe119.front01.iad01.production.nest.com
+	czfe66.front01.iad01.production.nest.com
+	czfe43.front01.iad01.production.nest.com
+	czfe21.front01.iad01.production.nest.com
+	czfe94.front01.iad01.production.nest.com
+	czfe95.front01.iad01.production.nest.com
 ******************** MUD profiling completed *****************
 testing {'name': 'NetatmoCameraMud', 'id': 73007}
 ******************** MUD profiling result ********************
@@ -515,28 +515,28 @@ Security contract Netatmo.Camera:
 		Device:     Netatmo.Camera
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '53'}
 	Rule Netatmo.Camera.net:
 		Device:     Netatmo.Camera
 		Domain:     Internet
 		Shares:     *
-		Provides:   ['4500', '500', '80', '123', '443']
-		Requires:   ['4500', '500', '80', '123', '443']
+		Provides:   ['500', '4500', '123', '80', '443']
+		Requires:   ['500', '4500', '123', '80', '443']
 
 Contact domains:
 	
-	v4.netatmo.net
-	clients3.google.com
-	v5.netatmo.net
-	3.android.pool.ntp.org
-	2.android.pool.ntp.org
-	v9.netatmo.net
 	v3.netatmo.net
-	v2.netatmo.net
-	v7.netatmo.net
 	v8.netatmo.net
+	clients3.google.com
+	v9.netatmo.net
+	v2.netatmo.net
+	3.android.pool.ntp.org
+	v4.netatmo.net
+	v7.netatmo.net
 	apicom.netatmo.net
+	2.android.pool.ntp.org
+	v5.netatmo.net
 	vpn.netatmo.net
 ******************** MUD profiling completed *****************
 testing {'name': 'NetatmoWeatherStationMud', 'id': 50048}
@@ -550,7 +550,7 @@ Security contract Netatmo.PersonalWeatherStations:
 		Device:     Netatmo.PersonalWeatherStations
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '53'}
 	Rule Netatmo.PersonalWeatherStations.net:
 		Device:     Netatmo.PersonalWeatherStations
@@ -574,8 +574,8 @@ Security contract Pix-Star.WiFiFrame:
 		Device:     Pix-Star.WiFiFrame
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
-		Requires:   {'67', '137', '138', '53'}
+		Provides:   {'53', '67'}
+		Requires:   {'137', '67', '138', '53'}
 	Rule Pix-Star.WiFiFrame.net:
 		Device:     Pix-Star.WiFiFrame
 		Domain:     Internet
@@ -599,21 +599,21 @@ Security contract Ring.Doorbell:
 		Device:     Ring.Doorbell
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '53'}
 	Rule Ring.Doorbell.net:
 		Device:     Ring.Doorbell
 		Domain:     Internet
 		Shares:     *
-		Provides:   ['443', '9998', '80', '123']
-		Requires:   ['9998', '80', '123', '443']
+		Provides:   ['9998', '80', '443', '123']
+		Requires:   ['80', '123', '9998', '443']
 
 Contact domains:
 	
-	2.pool.ntp.org
-	fw.ring.com
-	rss-dpd-service.ring.com
 	wu.ring.com
+	rss-dpd-service.ring.com
+	fw.ring.com
+	2.pool.ntp.org
 ******************** MUD profiling completed *****************
 testing {'name': 'samsungsmartcamMud', 'id': 8109}
 ******************** MUD profiling result ********************
@@ -626,22 +626,22 @@ Security contract Samsung.IPCamera:
 		Device:     Samsung.IPCamera
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
-		Requires:   {'67', '5353', '1900', '53'}
+		Provides:   {'53', '67'}
+		Requires:   {'67', '1900', '5353', '53'}
 	Rule Samsung.IPCamera.net:
 		Device:     Samsung.IPCamera
 		Domain:     Internet
 		Shares:     *
-		Provides:   ['123', '5222', '443']
-		Requires:   ['123', '5222', '443']
+		Provides:   ['5222', '123', '443']
+		Requires:   ['5222', '123', '443']
 
 Contact domains:
 	
-	xmpp.samsungsmartcam.com
 	asia.pool.ntp.org
 	media.samsungsmartcam.com
 	europe.pool.ntp.org
 	pool.ntp.org
+	xmpp.samsungsmartcam.com
 ******************** MUD profiling completed *****************
 testing {'name': 'SmartThingsMud', 'id': 15909}
 ******************** MUD profiling result ********************
@@ -654,8 +654,8 @@ Security contract Samsung.SmartThings:
 		Device:     Samsung.SmartThings
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
-		Requires:   {'67', '1900', '53'}
+		Provides:   {'53', '67'}
+		Requires:   {'53', '67', '1900'}
 	Rule Samsung.SmartThings.net:
 		Device:     Samsung.SmartThings
 		Domain:     Internet
@@ -665,8 +665,8 @@ Security contract Samsung.SmartThings:
 
 Contact domains:
 	
-	dc-na02-useast1.connect.smartthings.com
 	DC.connect.smartthings.com
+	dc-na02-useast1.connect.smartthings.com
 	pool.ntp.org
 ******************** MUD profiling completed *****************
 testing {'name': 'tplinkcameraMud', 'id': 15673}
@@ -680,23 +680,23 @@ Security contract TP-Link.IPCamera:
 		Device:     TP-Link.IPCamera
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '5353', '53'}
 	Rule TP-Link.IPCamera.net:
 		Device:     TP-Link.IPCamera
 		Domain:     Internet
 		Shares:     *
-		Provides:   ['443', '80', '3478', '123']
-		Requires:   ['123', '3478', '443', '80']
+		Provides:   ['3478', '80', '443', '123']
+		Requires:   ['3478', '80', '123', '443']
 
 Contact domains:
 	
-	ipc.tplinkcloud.com
+	aps1-relay.tplinkcloud.com
 	devs.tplinkcloud.com
 	sg-stun.tplinkcloud.com
-	aps1-relay.tplinkcloud.com
-	ipcserv.tplinkcloud.com
 	0.pool.ntp.org
+	ipc.tplinkcloud.com
+	ipcserv.tplinkcloud.com
 ******************** MUD profiling completed *****************
 testing {'name': 'tplinkplugMud', 'id': 43324}
 ******************** MUD profiling result ********************
@@ -709,28 +709,28 @@ Security contract TP-Link.HS100:
 		Device:     TP-Link.HS100
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '53'}
 	Rule TP-Link.HS100.net:
 		Device:     TP-Link.HS100
 		Domain:     Internet
 		Shares:     *
-		Provides:   ['123', '50443']
-		Requires:   ['123', '50443']
+		Provides:   ['50443', '123']
+		Requires:   ['50443', '123']
 
 Contact domains:
 	
-	s1b.time.edu.cn
 	time-b.nist.gov
-	1.asia.pool.ntp.org
-	us.pool.ntp.org
+	devs.tplinkcloud.com
+	s1b.time.edu.cn
+	fr.pool.ntp.org
+	0.cn.pool.ntp.org
+	ru.pool.ntp.org
 	de.pool.ntp.org
 	uk.pool.ntp.org
-	fr.pool.ntp.org
-	devs.tplinkcloud.com
 	ca.pool.ntp.org
-	ru.pool.ntp.org
-	0.cn.pool.ntp.org
+	1.asia.pool.ntp.org
+	us.pool.ntp.org
 ******************** MUD profiling completed *****************
 testing {'name': 'tribyspeakerMud', 'id': 49362}
 ******************** MUD profiling result ********************
@@ -743,31 +743,31 @@ Security contract Invoxia.SmartPortableSpeaker:
 		Device:     Invoxia.SmartPortableSpeaker
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '53', '5353'}
 	Rule Invoxia.SmartPortableSpeaker.net:
 		Device:     Invoxia.SmartPortableSpeaker
 		Domain:     Internet
 		Shares:     *
-		Provides:   ['123', '5228', '8090', '80', '10002', '443']
-		Requires:   ['123', '10003', '5228', '8090', '80', '10002', '443']
+		Provides:   ['10002', '123', '80', '443', '5228', '8090']
+		Requires:   ['8090', '10002', '123', '80', '10003', '5228', '443']
 
 Contact domains:
 	
-	18393.live.streamtheworld.com
-	crossbar.invoxia.io
-	developer.invoxia.com
-	playerservices.streamtheworld.com
-	3.invoxia.pool.ntp.org
-	ws.invoxia.io
-	0.invoxia.pool.ntp.org
-	sip.aws.invoxia.io
 	streaming.novaentertainment.com.au
 	whatismyip.akamai.com
-	1129153316.airable.io
+	developer.invoxia.com
+	playerservices.streamtheworld.com
 	2.invoxia.pool.ntp.org
-	15373.live.streamtheworld.com
+	18393.live.streamtheworld.com
 	esdk-ffl.spotify.com
+	crossbar.invoxia.io
+	0.invoxia.pool.ntp.org
+	3.invoxia.pool.ntp.org
+	1129153316.airable.io
+	ws.invoxia.io
+	sip.aws.invoxia.io
+	15373.live.streamtheworld.com
 ******************** MUD profiling completed *****************
 testing {'name': 'wemomotionMud', 'id': 33694}
 ******************** MUD profiling result ********************
@@ -780,8 +780,8 @@ Security contract Belkin.WeMo:
 		Device:     Belkin.WeMo
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '123', '53'}
-		Requires:   {'67', '123', '1900', '53'}
+		Provides:   {'53', '67', '123'}
+		Requires:   {'67', '1900', '123', '53'}
 	Rule Belkin.WeMo.net:
 		Device:     Belkin.WeMo
 		Domain:     Internet
@@ -791,9 +791,9 @@ Security contract Belkin.WeMo:
 
 Contact domains:
 	
-	tunnel.xbcs.net
-	devices.xbcs.net
 	xbcs.net
+	devices.xbcs.net
+	tunnel.xbcs.net
 ******************** MUD profiling completed *****************
 testing {'name': 'wemoswitchMud', 'id': 33876}
 ******************** MUD profiling result ********************
@@ -806,14 +806,14 @@ Security contract Belkin.SmartHome:
 		Device:     Belkin.SmartHome
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '3478', '123', '53'}
-		Requires:   {'53', '67', '3478', '123', '1900'}
+		Provides:   {'3478', '53', '67', '123'}
+		Requires:   {'67', '53', '123', '3478', '1900'}
 	Rule Belkin.SmartHome.net:
 		Device:     Belkin.SmartHome
 		Domain:     Internet
 		Shares:     *
-		Provides:   ['8443', '3475']
-		Requires:   ['8443', '3475']
+		Provides:   ['3475', '8443']
+		Requires:   ['3475', '8443']
 
 Contact domains:
 	
@@ -831,8 +831,8 @@ Security contract Withings.SBM:
 		Device:     Withings.SBM
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
-		Requires:   {'67', '53', '5353'}
+		Provides:   {'53', '67'}
+		Requires:   {'53', '67', '5353'}
 	Rule Withings.SBM.net:
 		Device:     Withings.SBM
 		Domain:     Internet
@@ -842,13 +842,13 @@ Security contract Withings.SBM:
 
 Contact domains:
 	
-	us-iweb-fwd-01-lxc-04.withings.net
-	fr-on-fwd-03.withings.net
+	fr-ovh-fwd-03.withings.net
+	fr-eqx-fwd-06.withings.com
 	babyws.withings.net
 	fr-on-vm-02-lxc-03.withings.net
-	fr-eqx-fwd-06.withings.com
+	fr-on-fwd-03.withings.net
+	us-iweb-fwd-01-lxc-04.withings.net
 	fr-on-vm-02-lxc-05.withings.net
-	fr-ovh-fwd-03.withings.net
 ******************** MUD profiling completed *****************
 testing {'name': 'withingscardioMud', 'id': 33908}
 ******************** MUD profiling result ********************
@@ -861,7 +861,7 @@ Security contract Nokia.-WithingsIoT:
 		Device:     Nokia.-WithingsIoT
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
+		Provides:   {'53', '67'}
 		Requires:   {'67', '53'}
 	Rule Nokia.-WithingsIoT.net:
 		Device:     Nokia.-WithingsIoT
@@ -885,8 +885,8 @@ Security contract Withings.AURA:
 		Device:     Withings.AURA
 		Domain:     LAN
 		Shares:     *
-		Provides:   {'67', '53'}
-		Requires:   {'67', '53', '5353'}
+		Provides:   {'53', '67'}
+		Requires:   {'53', '67', '5353'}
 	Rule Withings.AURA.net:
 		Device:     Withings.AURA
 		Domain:     Internet
