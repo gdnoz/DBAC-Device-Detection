@@ -1,927 +1,900 @@
+testing {'name': 'amazonEchoMud', 'id': 15666}
 ******************** MUD profiling result ********************
-Device type:             ElectricControl
-Classification score:    0.11116104441801232
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Device type:             Speaker
+Classification score:    0.1898873123920699
+Name:                    Amazon.Echo
 Mud file ACLs:
-Security contract ElectricControl.amazonEcho:
-        Rule ElectricControl.amazonEcho_lan:
-                Device:     ElectricControl.amazonEcho
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '1900', '5353', '53'}
-        Rule ElectricControl.amazonEcho_net:
-                Device:     ElectricControl.amazonEcho
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['33434', '443', '80', '123']
-                Requires:   ['33434', '80', '443', '123']
+Security contract Amazon.Echo:
+	Rule Amazon.Echo.lan:
+		Device:     Amazon.Echo
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'1900', '67', '53', '5353'}
+	Rule Amazon.Echo.net:
+		Device:     Amazon.Echo
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['80', '443', '33434', '123']
+		Requires:   ['80', '443', '33434', '123']
 
 Contact domains:
-
-        2.north-america.pool.ntp.org
-        api.amazonalexa.com
-        pindorama-us-west-2.amazon.com
-        www.example.net
-        device-fingerprintdb-v1.s3.amazonaws.com
-        1.north-america.pool.ntp.org
-        dcape-na.amazon.com
-        ntp-g7g.amazon.com
-        device-metrics-us.amazon.com
-        www.meethue.com
-        todo-ta-g7g.amazon.com
-        files.whooshkaa.com
-        kindle-time.amazon.com
-        pins.amazon.com
-        tinytts-us-west-2.amazon.com
-        www.example.org
-        3.north-america.pool.ntp.org
-        0.north-america.pool.ntp.org
-        www.example.com
-        media.whooshkaa.com
-        softwareupdates.amazon.com
+	
+	www.example.net
+	files.whooshkaa.com
+	softwareupdates.amazon.com
+	pindorama-us-west-2.amazon.com
+	api.amazonalexa.com
+	0.north-america.pool.ntp.org
+	ntp-g7g.amazon.com
+	tinytts-us-west-2.amazon.com
+	dcape-na.amazon.com
+	3.north-america.pool.ntp.org
+	todo-ta-g7g.amazon.com
+	kindle-time.amazon.com
+	pins.amazon.com
+	2.north-america.pool.ntp.org
+	www.example.com
+	media.whooshkaa.com
+	device-metrics-us.amazon.com
+	1.north-america.pool.ntp.org
+	www.meethue.com
+	device-fingerprintdb-v1.s3.amazonaws.com
+	www.example.org
 ******************** MUD profiling completed *****************
-testing augustdoorbellcamMud
+testing {'name': 'augustdoorbellcamMud', 'id': 49529}
 ******************** MUD profiling result ********************
 Device type:             Doorbell
-Classification score:    5.410039199147967
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    6.226663815559897
+Name:                    August.DoorBellCamera
 Mud file ACLs:
-Security contract Doorbell.augustdoorbellcam:
-        Rule Doorbell.augustdoorbellcam_lan:
-                Device:     Doorbell.augustdoorbellcam
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '547', '53'}
-                Requires:   {'67', '547', '53'}
-        Rule Doorbell.augustdoorbellcam_net:
-                Device:     Doorbell.augustdoorbellcam
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['443']
-                Requires:   ['443']
+Security contract August.DoorBellCamera:
+	Rule August.DoorBellCamera.lan:
+		Device:     August.DoorBellCamera
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53', '547'}
+		Requires:   {'67', '53', '547'}
+	Rule August.DoorBellCamera.net:
+		Device:     August.DoorBellCamera
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['443']
+		Requires:   ['443']
 
 Contact domains:
-
-        iconfig.august.com
-        rpsv4.video-cloud.net
-        336971aac5bba454b967-3ec27f5c732731b07836c69a45967ad6.ssl.cf1.rackcdn.com
-        vcsv2.video-cloud.net
-        august.pubnub.com
-        rpsv1.video-cloud.net
-        rpsv10.video-cloud.net
-        rpsv7.video-cloud.net
-        rpsv12.video-cloud.net
-        rbs-sticky.august.com
-        logger.august.com
-        rpsv5.video-cloud.net
-        rpsv11.video-cloud.net
-        rpsv3.video-cloud.net
-        rpsv2.video-cloud.net
-        doorbells.august.com
-        dmsv2.video-cloud.net
-        s3-us-west-2.amazonaws.com
-        rpsv222.video-cloud.net
-        v2servers.video-cloud.net
+	rpsv7.video-cloud.net
+	rpsv11.video-cloud.net
+	
+	august.pubnub.com
+	rpsv10.video-cloud.net
+	rpsv5.video-cloud.net
+	rpsv12.video-cloud.net
+	rpsv222.video-cloud.net
+	logger.august.com
+	336971aac5bba454b967-3ec27f5c732731b07836c69a45967ad6.ssl.cf1.rackcdn.com
+	doorbells.august.com
+	rpsv4.video-cloud.net
+	s3-us-west-2.amazonaws.com
+	rpsv1.video-cloud.net
+	rpsv3.video-cloud.net
+	vcsv2.video-cloud.net
+	dmsv2.video-cloud.net
+	v2servers.video-cloud.net
+	iconfig.august.com
+	rbs-sticky.august.com
+	rpsv2.video-cloud.net
 ******************** MUD profiling completed *****************
-testing awairAirQualityMud
+testing {'name': 'awairAirQualityMud', 'id': 50378}
 ******************** MUD profiling result ********************
 Device type:             HouseEnvironmentMonitor
-Classification score:    3.6168661860436275
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    3.8604699943076852
+Name:                    Awair.R2
 Mud file ACLs:
-Security contract HouseEnvironmentMonitor.awairAirQuality:
-        Rule HouseEnvironmentMonitor.awairAirQuality_lan:
-                Device:     HouseEnvironmentMonitor.awairAirQuality
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53'}
-        Rule HouseEnvironmentMonitor.awairAirQuality_net:
-                Device:     HouseEnvironmentMonitor.awairAirQuality
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['8883', '443']
-                Requires:   ['8883', '443']
+Security contract Awair.R2:
+	Rule Awair.R2.lan:
+		Device:     Awair.R2
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53'}
+	Rule Awair.R2.net:
+		Device:     Awair.R2
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['8883', '443']
+		Requires:   ['8883', '443']
 
 Contact domains:
-
-        timeserver.awair.is
-        messaging.awair.is
-        ota.awair.is
+	
+	messaging.awair.is
+	ota.awair.is
+	timeserver.awair.is
 ******************** MUD profiling completed *****************
-testing belkincameraMud
+testing {'name': 'belkincameraMud', 'id': 39881}
 ******************** MUD profiling result ********************
 Device type:             Camera
-Classification score:    1.0718351588752537
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    0.3067396429362946
+Name:                    Belkin.NetCam
 Mud file ACLs:
-Security contract Camera.belkincamera:
-        Rule Camera.belkincamera_all:
-                Device:     Camera.belkincamera
-                Domain:     *
-                Shares:     *
-                Provides:   {'5104'}
-                Requires:   {'5104'}
-        Rule Camera.belkincamera_lan:
-                Device:     Camera.belkincamera
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53', '3478'}
-                Requires:   {'67', '1900', '3478', '53'}
-        Rule Camera.belkincamera_net:
-                Device:     Camera.belkincamera
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['443', '8443', '8899', '123', '3475']
-                Requires:   ['443', '8443', '8899', '123', '3475']
+Security contract Belkin.NetCam:
+	Rule Belkin.NetCam_all:
+		Device:     Belkin.NetCam
+		Domain:     *
+		Shares:     *
+		Provides:   {'5104'}
+		Requires:   {'5104'}
+	Rule Belkin.NetCam.lan:
+		Device:     Belkin.NetCam
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53', '3478'}
+		Requires:   {'3478', '67', '53', '1900'}
+	Rule Belkin.NetCam.net:
+		Device:     Belkin.NetCam
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['8443', '443', '3475', '123', '8899']
+		Requires:   ['8443', '443', '3475', '123', '8899']
 
 Contact domains:
-
-        ping.seedonk.com
-        prod1-nat-xbcs-net-1543133972.us-east-1.elb.amazonaws.com
-        origin.belkin-us.tendplatform.com
-        nat.xbcs.net
-        time.windows.com
-        api.xbcs.net
-        devices.xbcs.net
-        www.google.com
+	ping.seedonk.com
+	
+	time.windows.com
+	api.xbcs.net
+	prod1-nat-xbcs-net-1543133972.us-east-1.elb.amazonaws.com
+	www.google.com
+	devices.xbcs.net
+	origin.belkin-us.tendplatform.com
+	nat.xbcs.net
 ******************** MUD profiling completed *****************
-testing blipcareBPmeterMud
+testing {'name': 'blipcareBPmeterMud', 'id': 25485}
 ******************** MUD profiling result ********************
 Device type:             No_classification
 Classification score:    0.0
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Name:                    BLIP.Systems
 Mud file ACLs:
-Security contract No_classification.blipcareBPmeter:
-        Rule No_classification.blipcareBPmeter_lan:
-                Device:     No_classification.blipcareBPmeter
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53'}
-        Rule No_classification.blipcareBPmeter_net:
-                Device:     No_classification.blipcareBPmeter
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['8777']
-                Requires:   ['8777']
+Security contract BLIP.Systems:
+	Rule BLIP.Systems.lan:
+		Device:     BLIP.Systems
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53'}
+	Rule BLIP.Systems.net:
+		Device:     BLIP.Systems
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['8777']
+		Requires:   ['8777']
 
 Contact domains:
-
-        tech.carematix.com
+	
+	tech.carematix.com
 ******************** MUD profiling completed *****************
-testing canaryCameraMud
+testing {'name': 'canaryCameraMud', 'id': 36963}
 ******************** MUD profiling result ********************
 Device type:             Camera
-Classification score:    1.1658807410249024
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    1.7916238349820208
+Name:                    Canary.All-in-One
 Mud file ACLs:
-Security contract Camera.canaryCamera:
-        Rule Camera.canaryCamera_lan:
-                Device:     Camera.canaryCamera
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53'}
-        Rule Camera.canaryCamera_net:
-                Device:     Camera.canaryCamera
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['80', '443']
-                Requires:   ['80', '443']
+Security contract Canary.All-in-One:
+	Rule Canary.All-in-One.lan:
+		Device:     Canary.All-in-One
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53'}
+	Rule Canary.All-in-One.net:
+		Device:     Canary.All-in-One
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['80', '443']
+		Requires:   ['80', '443']
 
 Contact domains:
-
-        ipv4.connman.net
-        v.canaryis.com
-        o.canaryis.com
-        b.canaryis.com
-        h.canaryis.com
-        i.canaryis.com
-        m.canaryis.com
-        09-wl2-d-prod.canaryis.com
+	
+	i.canaryis.com
+	m.canaryis.com
+	v.canaryis.com
+	b.canaryis.com
+	09-wl2-d-prod.canaryis.com
+	ipv4.connman.net
+	h.canaryis.com
+	o.canaryis.com
 ******************** MUD profiling completed *****************
-testing chromecastUltraMud
+testing {'name': 'chromecastUltraMud', 'id': 49244}
 ******************** MUD profiling result ********************
 Device type:             MediaPlayer
-Classification score:    3.32765525353154
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    3.8984530089722433
+Name:                    Google.ChromecastUltra
 Mud file ACLs:
-Security contract MediaPlayer.chromecastUltra:
-        Rule MediaPlayer.chromecastUltra_lan:
-                Device:     MediaPlayer.chromecastUltra
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53', '1900', '5353'}
-        Rule MediaPlayer.chromecastUltra_net:
-                Device:     MediaPlayer.chromecastUltra
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['5228', '80', '443', '123']
-                Requires:   ['5228', '80', '443', '123']
+Security contract Google.ChromecastUltra:
+	Rule Google.ChromecastUltra.lan:
+		Device:     Google.ChromecastUltra
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'1900', '67', '53', '5353'}
+	Rule Google.ChromecastUltra.net:
+		Device:     Google.ChromecastUltra
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['80', '5228', '443', '123']
+		Requires:   ['80', '5228', '443', '123']
 
 Contact domains:
-
-        fonts.gstatic.com
-        r2---sn-ntq7yned.googlevideo.com
-        time.google.com
-        clients1.google.com
-        fonts.googleapis.com
-        www.youtube-nocookie.com
-        mtalk.google.com
-        secure.insightexpressai.com
-        ajax.googleapis.com
-        www.gstatic.com
-        lh5.googleusercontent.com
-        android.clients.google.com
-        r4---sn-ntqe6n76.googlevideo.com
-        googleads.g.doubleclick.net
-        r1---sn-55goxu-ntqe.googlevideo.com
-        ssl.gstatic.com
-        clients2.google.com
-        www.googleapis.com
-        www.youtube.com
-        connectivitycheck.gstatic.com
-        pagead2.googlesyndication.com
-        tools.google.com
-        google.com
-        lh4.googleusercontent.com
-        clients3.google.com
-        securepubads.g.doubleclick.net
-        storage.googleapis.com
-        cast.scdn.co
-        ade.googlesyndication.com
-        ad.doubleclick.net
-        r3---sn-55goxu-ntqe.googlevideo.com
-        yt3.ggpht.com
-        i.ytimg.com
-        clients4.google.com
-        lh6.googleusercontent.com
-        api-partner.spotify.com
-        lh3.googleusercontent.com
-        cdn.ravenjs.com
+	
+	android.clients.google.com
+	connectivitycheck.gstatic.com
+	www.youtube-nocookie.com
+	lh6.googleusercontent.com
+	lh3.googleusercontent.com
+	www.gstatic.com
+	securepubads.g.doubleclick.net
+	secure.insightexpressai.com
+	lh4.googleusercontent.com
+	ad.doubleclick.net
+	time.google.com
+	clients1.google.com
+	ssl.gstatic.com
+	yt3.ggpht.com
+	pagead2.googlesyndication.com
+	google.com
+	r3---sn-55goxu-ntqe.googlevideo.com
+	storage.googleapis.com
+	www.youtube.com
+	i.ytimg.com
+	clients4.google.com
+	googleads.g.doubleclick.net
+	cast.scdn.co
+	clients3.google.com
+	fonts.gstatic.com
+	ajax.googleapis.com
+	lh5.googleusercontent.com
+	r4---sn-ntqe6n76.googlevideo.com
+	mtalk.google.com
+	www.googleapis.com
+	clients2.google.com
+	fonts.googleapis.com
+	r1---sn-55goxu-ntqe.googlevideo.com
+	cdn.ravenjs.com
+	tools.google.com
+	r2---sn-ntq7yned.googlevideo.com
+	ade.googlesyndication.com
+	api-partner.spotify.com
 ******************** MUD profiling completed *****************
-testing dropcamMud
+testing {'name': 'dropcamMud', 'id': 33475}
 ******************** MUD profiling result ********************
 Device type:             Camera
-Classification score:    1.2105336116182401
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    1.1697195186970801
+Name:                    Nest.Camera
 Mud file ACLs:
-Security contract Camera.dropcam:
-        Rule Camera.dropcam_lan:
-                Device:     Camera.dropcam
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53'}
-        Rule Camera.dropcam_net:
-                Device:     Camera.dropcam
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['443', '123']
-                Requires:   ['443', '123']
+Security contract Nest.Camera:
+	Rule Nest.Camera.lan:
+		Device:     Nest.Camera
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53'}
+	Rule Nest.Camera.net:
+		Device:     Nest.Camera
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['443', '123']
+		Requires:   ['443', '123']
 
 Contact domains:
-
-        pool.ntp.org
-        oculus2275-us1.dropcam.com
-        nexus-us1.dropcam.com
-        nexus.dropcam.com
+	
+	oculus2275-us1.dropcam.com
+	nexus-us1.dropcam.com
+	pool.ntp.org
+	nexus.dropcam.com
 ******************** MUD profiling completed *****************
-testing hellobarbieMud
+testing {'name': 'hellobarbieMud', 'id': 61588}
 ******************** MUD profiling result ********************
 Device type:             HealthMonitor
-Classification score:    0.04537075897998361
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    0.08942543413904669
+Name:                    Nabi.BarbieTablet
 Mud file ACLs:
-Security contract HealthMonitor.hellobarbie:
-        Rule HealthMonitor.hellobarbie_lan:
-                Device:     HealthMonitor.hellobarbie
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53'}
-        Rule HealthMonitor.hellobarbie_net:
-                Device:     HealthMonitor.hellobarbie
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['443']
-                Requires:   ['443']
+Security contract Nabi.BarbieTablet:
+	Rule Nabi.BarbieTablet.lan:
+		Device:     Nabi.BarbieTablet
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53'}
+	Rule Nabi.BarbieTablet.net:
+		Device:     Nabi.BarbieTablet
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['443']
+		Requires:   ['443']
 
 Contact domains:
-
-        storage.toytalk.com
-        puppeteer.toytalk.com
-        firmware.toytalk.com
+	
+	firmware.toytalk.com
+	storage.toytalk.com
+	puppeteer.toytalk.com
 ******************** MUD profiling completed *****************
-testing hpprinterMud
+testing {'name': 'hpprinterMud', 'id': 157}
 ******************** MUD profiling result ********************
 Device type:             No_classification
 Classification score:    0.0
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Name:                    HP.Printer
 Mud file ACLs:
-Security contract No_classification.hpprinter:
-        Rule No_classification.hpprinter_lan:
-                Device:     No_classification.hpprinter
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '547', '53'}
-                Requires:   {'67', '137', '53', '5355', '547', '5353'}
-        Rule No_classification.hpprinter_net:
-                Device:     No_classification.hpprinter
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['5222', '80', '5223', '443']
-                Requires:   ['443', '5223', '80', '5222']
+Security contract HP.Printer:
+	Rule HP.Printer.lan:
+		Device:     HP.Printer
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53', '547'}
+		Requires:   {'67', '53', '5355', '5353', '137', '547'}
+	Rule HP.Printer.net:
+		Device:     HP.Printer
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['80', '443', '5223', '5222']
+		Requires:   ['80', '443', '5223', '5222']
 
 Contact domains:
-
-        h10141.www1.hp.com
-        xmpp009.hpeprint.com
-        chat.hpeprint.com
+	
+	xmpp009.hpeprint.com
+	h10141.www1.hp.com
+	chat.hpeprint.com
 ******************** MUD profiling completed *****************
-testing HueBulbMud
+testing {'name': 'HueBulbMud', 'id': 50239}
 ******************** MUD profiling result ********************
 Device type:             Light
-Classification score:    1.1659630478935132
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    1.3944521012518385
+Name:                    Philips.PhilipsHueSmartlighting
 Mud file ACLs:
-Security contract Light.HueBulb:
-        Rule Light.HueBulb_lan:
-                Device:     Light.HueBulb
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '1900', '5353', '53'}
-        Rule Light.HueBulb_net:
-                Device:     Light.HueBulb
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['80', '443', '123']
-                Requires:   ['80', '443', '123']
+Security contract Philips.PhilipsHueSmartlighting:
+	Rule Philips.PhilipsHueSmartlighting.lan:
+		Device:     Philips.PhilipsHueSmartlighting
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53', '1900', '5353'}
+	Rule Philips.PhilipsHueSmartlighting.net:
+		Device:     Philips.PhilipsHueSmartlighting
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['80', '443', '123']
+		Requires:   ['80', '443', '123']
 
 Contact domains:
-
-        fds.cpp.philips.com
-        www.ecdinterface.philips.com
-        bridge.meethue.com
-        time2.google.com
-        www2.meethue.com
-        time4.google.com
-        diagnostics.meethue.com
-        time1.google.com
-        time.meethue.com
-        ws.meethue.com
-        time3.google.com
-        dcp.cpp.philips.com
+	
+	www.ecdinterface.philips.com
+	www2.meethue.com
+	dcp.cpp.philips.com
+	time1.google.com
+	ws.meethue.com
+	time4.google.com
+	bridge.meethue.com
+	diagnostics.meethue.com
+	fds.cpp.philips.com
+	time2.google.com
+	time3.google.com
+	time.meethue.com
 ******************** MUD profiling completed *****************
-testing ihomepowerplugMud
+testing {'name': 'ihomepowerplugMud', 'id': 49667}
 ******************** MUD profiling result ********************
 Device type:             ElectricControl
-Classification score:    1.0987290998131711
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    1.1490782288208177
+Name:                    iHome.SmartPlug
 Mud file ACLs:
-Security contract ElectricControl.ihomepowerplug:
-        Rule ElectricControl.ihomepowerplug_lan:
-                Device:     ElectricControl.ihomepowerplug
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '5353', '53'}
-        Rule ElectricControl.ihomepowerplug_net:
-                Device:     ElectricControl.ihomepowerplug
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['80', '443']
-                Requires:   ['80', '443']
+Security contract iHome.SmartPlug:
+	Rule iHome.SmartPlug.lan:
+		Device:     iHome.SmartPlug
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53', '5353'}
+	Rule iHome.SmartPlug.net:
+		Device:     iHome.SmartPlug
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['80', '443']
+		Requires:   ['80', '443']
 
 Contact domains:
-
-        mqtt.evrythng.com
-        time.evrythng.com
+	
+	time.evrythng.com
+	mqtt.evrythng.com
 ******************** MUD profiling completed *****************
-testing lifxbulbMud
+testing {'name': 'lifxbulbMud', 'id': 12759}
 ******************** MUD profiling result ********************
 Device type:             Light
-Classification score:    1.2415984806241223
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    0.5017245348653397
+Name:                    LIFX.lighting
 Mud file ACLs:
-Security contract Light.lifxbulb:
-        Rule Light.lifxbulb_all:
-                Device:     Light.lifxbulb
-                Domain:     *
-                Shares:     *
-                Provides:   set()
-                Requires:   {'56700'}
-        Rule Light.lifxbulb_lan:
-                Device:     Light.lifxbulb
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53'}
-        Rule Light.lifxbulb_net:
-                Device:     Light.lifxbulb
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['56700', '123']
-                Requires:   ['123']
+Security contract LIFX.lighting:
+	Rule LIFX.lighting_all:
+		Device:     LIFX.lighting
+		Domain:     *
+		Shares:     *
+		Provides:   set()
+		Requires:   {'56700'}
+	Rule LIFX.lighting.lan:
+		Device:     LIFX.lighting
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53'}
+	Rule LIFX.lighting.net:
+		Device:     LIFX.lighting
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['56700', '123']
+		Requires:   ['123']
 
 Contact domains:
-
-        pool.ntp.org
-        v2.broker.lifx.co
+	
+	v2.broker.lifx.co
+	pool.ntp.org
 ******************** MUD profiling completed *****************
-testing nestsmokesensorMud
+testing {'name': 'nestsmokesensorMud', 'id': 33476}
 ******************** MUD profiling result ********************
 Device type:             HouseEnvironmentMonitor
-Classification score:    1.5379782140780476
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    0.5452413333086316
+Name:                    Nest.Smoke+COAlarm
 Mud file ACLs:
-Security contract HouseEnvironmentMonitor.nestsmokesensor:
-        Rule HouseEnvironmentMonitor.nestsmokesensor_lan:
-                Device:     HouseEnvironmentMonitor.nestsmokesensor
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53'}
-        Rule HouseEnvironmentMonitor.nestsmokesensor_net:
-                Device:     HouseEnvironmentMonitor.nestsmokesensor
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['11095']
-                Requires:   ['11095']
+Security contract Nest.Smoke+COAlarm:
+	Rule Nest.Smoke+COAlarm.lan:
+		Device:     Nest.Smoke+COAlarm
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53'}
+	Rule Nest.Smoke+COAlarm.net:
+		Device:     Nest.Smoke+COAlarm
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['11095']
+		Requires:   ['11095']
 
 Contact domains:
-
-        czfe58.front01.iad01.production.nest.com
-        czfe94.front01.iad01.production.nest.com
-        czfe100.front01.iad01.production.nest.com
-        czfe06.front01.iad01.production.nest.com
-        czfe93.front01.iad01.production.nest.com
-        czfe43.front01.iad01.production.nest.com
-        czfe60.front01.iad01.production.nest.com
-        czfe17.front01.iad01.production.nest.com
-        czfe32.front01.iad01.production.nest.com
-        czfe42.front01.iad01.production.nest.com
-        frontdoor.nest.com
-        czfe03.front01.iad01.production.nest.com
-        czfe116.front01.iad01.production.nest.com
-        czfe48.front01.iad01.production.nest.com
-        czfe91.front01.iad01.production.nest.com
-        czfe21.front01.iad01.production.nest.com
-        czfe70.front01.iad01.production.nest.com
-        czfe04.front01.iad01.production.nest.com
-        czfe53.front01.iad01.production.nest.com
-        czfe108.front01.iad01.production.nest.com
-        czfe84.front01.iad01.production.nest.com
-        czfe30.front01.iad01.production.nest.com
-        weave-logsink.nest.com
-        czfe49.front01.iad01.production.nest.com
-        czfe71.front01.iad01.production.nest.com
-        czfe79.front01.iad01.production.nest.com
-        czfe36.front01.iad01.production.nest.com
-        czfe56.front01.iad01.production.nest.com
-        czfe66.front01.iad01.production.nest.com
-        czfe73.front01.iad01.production.nest.com
-        czfe22.front01.iad01.production.nest.com
-        czfe117.front01.iad01.production.nest.com
-        czfe11.front01.iad01.production.nest.com
-        czfe109.front01.iad01.production.nest.com
-        czfe67.front01.iad01.production.nest.com
-        czfe119.front01.iad01.production.nest.com
-        czfe33.front01.iad01.production.nest.com
-        czfe104.front01.iad01.production.nest.com
-        czfe95.front01.iad01.production.nest.com
-        czfe113.front01.iad01.production.nest.com
-        czfe14.front01.iad01.production.nest.com
-        czfe105.front01.iad01.production.nest.com
-        czfe50.front01.iad01.production.nest.com
-        czfe16.front01.iad01.production.nest.com
-        czfe89.front01.iad01.production.nest.com
-        czfe118.front01.iad01.production.nest.com
-        czfe41.front01.iad01.production.nest.com
+	
+	czfe16.front01.iad01.production.nest.com
+	czfe43.front01.iad01.production.nest.com
+	czfe66.front01.iad01.production.nest.com
+	czfe119.front01.iad01.production.nest.com
+	czfe117.front01.iad01.production.nest.com
+	czfe109.front01.iad01.production.nest.com
+	czfe118.front01.iad01.production.nest.com
+	frontdoor.nest.com
+	czfe89.front01.iad01.production.nest.com
+	czfe84.front01.iad01.production.nest.com
+	weave-logsink.nest.com
+	czfe53.front01.iad01.production.nest.com
+	czfe71.front01.iad01.production.nest.com
+	czfe58.front01.iad01.production.nest.com
+	czfe95.front01.iad01.production.nest.com
+	czfe79.front01.iad01.production.nest.com
+	czfe50.front01.iad01.production.nest.com
+	czfe67.front01.iad01.production.nest.com
+	czfe22.front01.iad01.production.nest.com
+	czfe03.front01.iad01.production.nest.com
+	czfe06.front01.iad01.production.nest.com
+	czfe70.front01.iad01.production.nest.com
+	czfe36.front01.iad01.production.nest.com
+	czfe116.front01.iad01.production.nest.com
+	czfe91.front01.iad01.production.nest.com
+	czfe32.front01.iad01.production.nest.com
+	czfe17.front01.iad01.production.nest.com
+	czfe11.front01.iad01.production.nest.com
+	czfe48.front01.iad01.production.nest.com
+	czfe56.front01.iad01.production.nest.com
+	czfe49.front01.iad01.production.nest.com
+	czfe21.front01.iad01.production.nest.com
+	czfe60.front01.iad01.production.nest.com
+	czfe30.front01.iad01.production.nest.com
+	czfe42.front01.iad01.production.nest.com
+	czfe93.front01.iad01.production.nest.com
+	czfe104.front01.iad01.production.nest.com
+	czfe73.front01.iad01.production.nest.com
+	czfe41.front01.iad01.production.nest.com
+	czfe108.front01.iad01.production.nest.com
+	czfe105.front01.iad01.production.nest.com
+	czfe100.front01.iad01.production.nest.com
+	czfe04.front01.iad01.production.nest.com
+	czfe14.front01.iad01.production.nest.com
+	czfe94.front01.iad01.production.nest.com
+	czfe33.front01.iad01.production.nest.com
+	czfe113.front01.iad01.production.nest.com
 ******************** MUD profiling completed *****************
-testing NetatmoCameraMud
+testing {'name': 'NetatmoCameraMud', 'id': 73007}
 ******************** MUD profiling result ********************
 Device type:             Camera
-Classification score:    1.27768092074548
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    0.4927153801750612
+Name:                    Netatmo.Camera
 Mud file ACLs:
-Security contract Camera.NetatmoCamera:
-        Rule Camera.NetatmoCamera_lan:
-                Device:     Camera.NetatmoCamera
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53'}
-        Rule Camera.NetatmoCamera_net:
-                Device:     Camera.NetatmoCamera
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['4500', '443', '500', '80', '123']
-                Requires:   ['4500', '443', '500', '80', '123']
+Security contract Netatmo.Camera:
+	Rule Netatmo.Camera.lan:
+		Device:     Netatmo.Camera
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53'}
+	Rule Netatmo.Camera.net:
+		Device:     Netatmo.Camera
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['4500', '80', '123', '500', '443']
+		Requires:   ['4500', '80', '123', '500', '443']
 
 Contact domains:
-
-        v4.netatmo.net
-        vpn.netatmo.net
-        v9.netatmo.net
-        v2.netatmo.net
-        v8.netatmo.net
-        3.android.pool.ntp.org
-        v3.netatmo.net
-        v7.netatmo.net
-        apicom.netatmo.net
-        2.android.pool.ntp.org
-        v5.netatmo.net
-        clients3.google.com
+	
+	v9.netatmo.net
+	2.android.pool.ntp.org
+	apicom.netatmo.net
+	clients3.google.com
+	v2.netatmo.net
+	v8.netatmo.net
+	v7.netatmo.net
+	3.android.pool.ntp.org
+	vpn.netatmo.net
+	v5.netatmo.net
+	v3.netatmo.net
+	v4.netatmo.net
 ******************** MUD profiling completed *****************
-testing NetatmoWeatherStationMud
+testing {'name': 'NetatmoWeatherStationMud', 'id': 50048}
 ******************** MUD profiling result ********************
-Device type:             HouseEnvironmentMonitor
-Classification score:    0.3220664584288071
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Device type:             ElectricControl
+Classification score:    0.043759930344333654
+Name:                    Netatmo.PersonalWeatherStations
 Mud file ACLs:
-Security contract HouseEnvironmentMonitor.NetatmoWeatherStation:
-        Rule HouseEnvironmentMonitor.NetatmoWeatherStation_lan:
-                Device:     HouseEnvironmentMonitor.NetatmoWeatherStation
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53'}
-        Rule HouseEnvironmentMonitor.NetatmoWeatherStation_net:
-                Device:     HouseEnvironmentMonitor.NetatmoWeatherStation
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['25050']
-                Requires:   ['25050']
+Security contract Netatmo.PersonalWeatherStations:
+	Rule Netatmo.PersonalWeatherStations.lan:
+		Device:     Netatmo.PersonalWeatherStations
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53'}
+	Rule Netatmo.PersonalWeatherStations.net:
+		Device:     Netatmo.PersonalWeatherStations
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['25050']
+		Requires:   ['25050']
 
 Contact domains:
-
-        netcom.netatmo.net
+	
+	netcom.netatmo.net
 ******************** MUD profiling completed *****************
-testing pixstarphotoframeMud
+testing {'name': 'pixstarphotoframeMud', 'id': 49218}
 ******************** MUD profiling result ********************
-Device type:             Camera
-Classification score:    0.04608963686108863
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Device type:             No_classification
+Classification score:    0.0
+Name:                    Pix-Star.WiFiFrame
 Mud file ACLs:
-Security contract Camera.pixstarphotoframe:
-        Rule Camera.pixstarphotoframe_lan:
-                Device:     Camera.pixstarphotoframe
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '137', '53', '138'}
-        Rule Camera.pixstarphotoframe_net:
-                Device:     Camera.pixstarphotoframe
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['80', '443']
-                Requires:   ['80', '443']
+Security contract Pix-Star.WiFiFrame:
+	Rule Pix-Star.WiFiFrame.lan:
+		Device:     Pix-Star.WiFiFrame
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '137', '53', '138'}
+	Rule Pix-Star.WiFiFrame.net:
+		Device:     Pix-Star.WiFiFrame
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['80', '443']
+		Requires:   ['80', '443']
 
 Contact domains:
-
-        api.pix-star.com
-        iptime.pix-star.com
+	iptime.pix-star.com
+	
+	api.pix-star.com
 ******************** MUD profiling completed *****************
-testing ringdoorbellMud
+testing {'name': 'ringdoorbellMud', 'id': 51268}
 ******************** MUD profiling result ********************
 Device type:             Doorbell
-Classification score:    4.638145268120623
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    2.6947015146743745
+Name:                    Ring.Doorbell
 Mud file ACLs:
-Security contract Doorbell.ringdoorbell:
-        Rule Doorbell.ringdoorbell_lan:
-                Device:     Doorbell.ringdoorbell
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53'}
-        Rule Doorbell.ringdoorbell_net:
-                Device:     Doorbell.ringdoorbell
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['9998', '80', '443', '123']
-                Requires:   ['9998', '80', '443', '123']
+Security contract Ring.Doorbell:
+	Rule Ring.Doorbell.lan:
+		Device:     Ring.Doorbell
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53'}
+	Rule Ring.Doorbell.net:
+		Device:     Ring.Doorbell
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['80', '9998', '443', '123']
+		Requires:   ['80', '9998', '443', '123']
 
 Contact domains:
-
-        wu.ring.com
-        2.pool.ntp.org
-        fw.ring.com
-        rss-dpd-service.ring.com
+	
+	2.pool.ntp.org
+	rss-dpd-service.ring.com
+	wu.ring.com
+	fw.ring.com
 ******************** MUD profiling completed *****************
-testing samsungsmartcamMud
+testing {'name': 'samsungsmartcamMud', 'id': 8109}
 ******************** MUD profiling result ********************
 Device type:             Camera
 Classification score:    0.2242987591158439
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Name:                    Samsung.IPCamera
 Mud file ACLs:
-Security contract Camera.samsungsmartcam:
-        Rule Camera.samsungsmartcam_lan:
-                Device:     Camera.samsungsmartcam
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '1900', '5353', '53'}
-        Rule Camera.samsungsmartcam_net:
-                Device:     Camera.samsungsmartcam
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['443', '5222', '123']
-                Requires:   ['443', '5222', '123']
+Security contract Samsung.IPCamera:
+	Rule Samsung.IPCamera.lan:
+		Device:     Samsung.IPCamera
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'1900', '67', '53', '5353'}
+	Rule Samsung.IPCamera.net:
+		Device:     Samsung.IPCamera
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['123', '443', '5222']
+		Requires:   ['123', '443', '5222']
 
 Contact domains:
-
-        pool.ntp.org
-        europe.pool.ntp.org
-        xmpp.samsungsmartcam.com
-        asia.pool.ntp.org
-        media.samsungsmartcam.com
+	
+	xmpp.samsungsmartcam.com
+	media.samsungsmartcam.com
+	europe.pool.ntp.org
+	pool.ntp.org
+	asia.pool.ntp.org
 ******************** MUD profiling completed *****************
-testing SmartThingsMud
+testing {'name': 'SmartThingsMud', 'id': 15909}
 ******************** MUD profiling result ********************
-Device type:             HouseEnvironmentMonitor
-Classification score:    0.04339411105811653
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Device type:             ElectricControl
+Classification score:    0.049990942734743325
+Name:                    Samsung.SmartThings
 Mud file ACLs:
-Security contract HouseEnvironmentMonitor.SmartThings:
-        Rule HouseEnvironmentMonitor.SmartThings_lan:
-                Device:     HouseEnvironmentMonitor.SmartThings
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53', '1900'}
-        Rule HouseEnvironmentMonitor.SmartThings_net:
-                Device:     HouseEnvironmentMonitor.SmartThings
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['443', '123']
-                Requires:   ['443', '123']
+Security contract Samsung.SmartThings:
+	Rule Samsung.SmartThings.lan:
+		Device:     Samsung.SmartThings
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53', '1900'}
+	Rule Samsung.SmartThings.net:
+		Device:     Samsung.SmartThings
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['443', '123']
+		Requires:   ['443', '123']
 
 Contact domains:
-
-        DC.connect.smartthings.com
-        pool.ntp.org
-        dc-na02-useast1.connect.smartthings.com
+	
+	dc-na02-useast1.connect.smartthings.com
+	DC.connect.smartthings.com
+	pool.ntp.org
 ******************** MUD profiling completed *****************
-testing tplinkcameraMud
+testing {'name': 'tplinkcameraMud', 'id': 15673}
 ******************** MUD profiling result ********************
 Device type:             Camera
-Classification score:    1.3481803674789685
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    0.4269803387745217
+Name:                    TP-Link.IPCamera
 Mud file ACLs:
-Security contract Camera.tplinkcamera:
-        Rule Camera.tplinkcamera_lan:
-                Device:     Camera.tplinkcamera
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '5353', '53'}
-        Rule Camera.tplinkcamera_net:
-                Device:     Camera.tplinkcamera
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['80', '443', '3478', '123']
-                Requires:   ['80', '3478', '443', '123']
+Security contract TP-Link.IPCamera:
+	Rule TP-Link.IPCamera.lan:
+		Device:     TP-Link.IPCamera
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53', '5353'}
+	Rule TP-Link.IPCamera.net:
+		Device:     TP-Link.IPCamera
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['80', '443', '3478', '123']
+		Requires:   ['80', '443', '3478', '123']
 
 Contact domains:
-
-        aps1-relay.tplinkcloud.com
-        0.pool.ntp.org
-        devs.tplinkcloud.com
-        ipcserv.tplinkcloud.com
-        sg-stun.tplinkcloud.com
-        ipc.tplinkcloud.com
+	
+	ipc.tplinkcloud.com
+	devs.tplinkcloud.com
+	aps1-relay.tplinkcloud.com
+	ipcserv.tplinkcloud.com
+	0.pool.ntp.org
+	sg-stun.tplinkcloud.com
 ******************** MUD profiling completed *****************
-testing tplinkplugMud
+testing {'name': 'tplinkplugMud', 'id': 43324}
 ******************** MUD profiling result ********************
 Device type:             ElectricControl
-Classification score:    2.6924351275562364
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    3.0123723758744037
+Name:                    TP-Link.HS100
 Mud file ACLs:
-Security contract ElectricControl.tplinkplug:
-        Rule ElectricControl.tplinkplug_lan:
-                Device:     ElectricControl.tplinkplug
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53'}
-        Rule ElectricControl.tplinkplug_net:
-                Device:     ElectricControl.tplinkplug
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['50443', '123']
-                Requires:   ['50443', '123']
+Security contract TP-Link.HS100:
+	Rule TP-Link.HS100.lan:
+		Device:     TP-Link.HS100
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53'}
+	Rule TP-Link.HS100.net:
+		Device:     TP-Link.HS100
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['50443', '123']
+		Requires:   ['50443', '123']
 
 Contact domains:
-
-        0.cn.pool.ntp.org
-        time-b.nist.gov
-        ca.pool.ntp.org
-        us.pool.ntp.org
-        de.pool.ntp.org
-        ru.pool.ntp.org
-        devs.tplinkcloud.com
-        s1b.time.edu.cn
-        fr.pool.ntp.org
-        uk.pool.ntp.org
-        1.asia.pool.ntp.org
+	
+	de.pool.ntp.org
+	fr.pool.ntp.org
+	ca.pool.ntp.org
+	ru.pool.ntp.org
+	0.cn.pool.ntp.org
+	1.asia.pool.ntp.org
+	devs.tplinkcloud.com
+	uk.pool.ntp.org
+	us.pool.ntp.org
+	s1b.time.edu.cn
+	time-b.nist.gov
 ******************** MUD profiling completed *****************
-testing tribyspeakerMud
+testing {'name': 'tribyspeakerMud', 'id': 49362}
 ******************** MUD profiling result ********************
 Device type:             Speaker
-Classification score:    0.47740010012534717
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    0.25776495275297967
+Name:                    Invoxia.SmartPortableSpeaker
 Mud file ACLs:
-Security contract Speaker.tribyspeaker:
-        Rule Speaker.tribyspeaker_lan:
-                Device:     Speaker.tribyspeaker
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53', '5353'}
-        Rule Speaker.tribyspeaker_net:
-                Device:     Speaker.tribyspeaker
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['8090', '443', '5228', '80', '10002', '123']
-                Requires:   ['8090', '443', '5228', '80', '10002', '123', '10003']
+Security contract Invoxia.SmartPortableSpeaker:
+	Rule Invoxia.SmartPortableSpeaker.lan:
+		Device:     Invoxia.SmartPortableSpeaker
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53', '5353'}
+	Rule Invoxia.SmartPortableSpeaker.net:
+		Device:     Invoxia.SmartPortableSpeaker
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['80', '5228', '8090', '123', '10002', '443']
+		Requires:   ['80', '5228', '10003', '8090', '123', '10002', '443']
 
 Contact domains:
-
-        0.invoxia.pool.ntp.org
-        18393.live.streamtheworld.com
-        2.invoxia.pool.ntp.org
-        esdk-ffl.spotify.com
-        3.invoxia.pool.ntp.org
-        whatismyip.akamai.com
-        streaming.novaentertainment.com.au
-        ws.invoxia.io
-        crossbar.invoxia.io
-        15373.live.streamtheworld.com
-        1129153316.airable.io
-        developer.invoxia.com
-        playerservices.streamtheworld.com
-        sip.aws.invoxia.io
+	
+	18393.live.streamtheworld.com
+	streaming.novaentertainment.com.au
+	developer.invoxia.com
+	2.invoxia.pool.ntp.org
+	1129153316.airable.io
+	crossbar.invoxia.io
+	0.invoxia.pool.ntp.org
+	ws.invoxia.io
+	15373.live.streamtheworld.com
+	whatismyip.akamai.com
+	esdk-ffl.spotify.com
+	playerservices.streamtheworld.com
+	3.invoxia.pool.ntp.org
+	sip.aws.invoxia.io
 ******************** MUD profiling completed *****************
-testing wemomotionMud
+testing {'name': 'wemomotionMud', 'id': 33694}
 ******************** MUD profiling result ********************
 Device type:             MotionSensor
-Classification score:    1.01161040963116
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    1.0664386613928905
+Name:                    Belkin.WeMo
 Mud file ACLs:
-Security contract MotionSensor.wemomotion:
-        Rule MotionSensor.wemomotion_lan:
-                Device:     MotionSensor.wemomotion
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53', '123'}
-                Requires:   {'67', '1900', '123', '53'}
-        Rule MotionSensor.wemomotion_net:
-                Device:     MotionSensor.wemomotion
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['8443', '3478', '8899']
-                Requires:   ['8443', '3478', '8899']
+Security contract Belkin.WeMo:
+	Rule Belkin.WeMo.lan:
+		Device:     Belkin.WeMo
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53', '123'}
+		Requires:   {'1900', '67', '53', '123'}
+	Rule Belkin.WeMo.net:
+		Device:     Belkin.WeMo
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['3478', '8443', '8899']
+		Requires:   ['3478', '8443', '8899']
 
 Contact domains:
-
-        xbcs.net
-        tunnel.xbcs.net
-        devices.xbcs.net
+	
+	tunnel.xbcs.net
+	xbcs.net
+	devices.xbcs.net
 ******************** MUD profiling completed *****************
-testing wemoswitchMud
+testing {'name': 'wemoswitchMud', 'id': 33876}
 ******************** MUD profiling result ********************
-Device type:             ElectricControl
-Classification score:    0.5921666357914017
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Device type:             Light
+Classification score:    0.062460381270922516
+Name:                    Belkin.SmartHome
 Mud file ACLs:
-Security contract ElectricControl.wemoswitch:
-        Rule ElectricControl.wemoswitch_lan:
-                Device:     ElectricControl.wemoswitch
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53', '3478', '123'}
-                Requires:   {'67', '1900', '53', '3478', '123'}
-        Rule ElectricControl.wemoswitch_net:
-                Device:     ElectricControl.wemoswitch
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['8443', '3475']
-                Requires:   ['8443', '3475']
+Security contract Belkin.SmartHome:
+	Rule Belkin.SmartHome.lan:
+		Device:     Belkin.SmartHome
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53', '3478', '123'}
+		Requires:   {'3478', '67', '53', '1900', '123'}
+	Rule Belkin.SmartHome.net:
+		Device:     Belkin.SmartHome
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['3475', '8443']
+		Requires:   ['3475', '8443']
 
 Contact domains:
-
-        api.xbcs.net
-        nat.xbcs.net
+	
+	nat.xbcs.net
+	api.xbcs.net
 ******************** MUD profiling completed *****************
-testing withingsbabymonitorMud
+testing {'name': 'withingsbabymonitorMud', 'id': 49153}
 ******************** MUD profiling result ********************
 Device type:             HealthMonitor
-Classification score:    1.6118138118504266
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    1.7197764078247677
+Name:                    Withings.SBM
 Mud file ACLs:
-Security contract HealthMonitor.withingsbabymonitor:
-        Rule HealthMonitor.withingsbabymonitor_lan:
-                Device:     HealthMonitor.withingsbabymonitor
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53', '5353'}
-        Rule HealthMonitor.withingsbabymonitor_net:
-                Device:     HealthMonitor.withingsbabymonitor
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['1935', '80']
-                Requires:   ['1935', '80']
+Security contract Withings.SBM:
+	Rule Withings.SBM.lan:
+		Device:     Withings.SBM
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53', '5353'}
+	Rule Withings.SBM.net:
+		Device:     Withings.SBM
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['80', '1935']
+		Requires:   ['80', '1935']
 
 Contact domains:
-
-        fr-eqx-fwd-06.withings.com
-        babyws.withings.net
-        fr-on-fwd-03.withings.net
-        fr-ovh-fwd-03.withings.net
-        us-iweb-fwd-01-lxc-04.withings.net
-        fr-on-vm-02-lxc-05.withings.net
-        fr-on-vm-02-lxc-03.withings.net
+	
+	fr-on-vm-02-lxc-03.withings.net
+	fr-ovh-fwd-03.withings.net
+	fr-on-fwd-03.withings.net
+	fr-on-vm-02-lxc-05.withings.net
+	fr-eqx-fwd-06.withings.com
+	us-iweb-fwd-01-lxc-04.withings.net
+	babyws.withings.net
 ******************** MUD profiling completed *****************
-testing withingscardioMud
+testing {'name': 'withingscardioMud', 'id': 33908}
 ******************** MUD profiling result ********************
 Device type:             HealthMonitor
-Classification score:    7.439944085044042
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    2.897540785843228
+Name:                    Nokia.-WithingsIoT
 Mud file ACLs:
-Security contract HealthMonitor.withingscardio:
-        Rule HealthMonitor.withingscardio_lan:
-                Device:     HealthMonitor.withingscardio
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53'}
-        Rule HealthMonitor.withingscardio_net:
-                Device:     HealthMonitor.withingscardio
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['443']
-                Requires:   ['443']
+Security contract Nokia.-WithingsIoT:
+	Rule Nokia.-WithingsIoT.lan:
+		Device:     Nokia.-WithingsIoT
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53'}
+	Rule Nokia.-WithingsIoT.net:
+		Device:     Nokia.-WithingsIoT
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['443']
+		Requires:   ['443']
 
 Contact domains:
-
-        wbs04-ws.withings.net
+	
+	wbs04-ws.withings.net
 ******************** MUD profiling completed *****************
-testing withingssleepsensorMud
+testing {'name': 'withingssleepsensorMud', 'id': 42476}
 ******************** MUD profiling result ********************
 Device type:             HealthMonitor
-Classification score:    7.195721202175473
-Name:                    AndroidOS.AndroidOS
-Fingerprint score:       52
+Classification score:    4.124728069729606
+Name:                    Withings.AURA
 Mud file ACLs:
-Security contract HealthMonitor.withingssleepsensor:
-        Rule HealthMonitor.withingssleepsensor_lan:
-                Device:     HealthMonitor.withingssleepsensor
-                Domain:     LAN
-                Shares:     *
-                Provides:   {'67', '53'}
-                Requires:   {'67', '53', '5353'}
-        Rule HealthMonitor.withingssleepsensor_net:
-                Device:     HealthMonitor.withingssleepsensor
-                Domain:     Internet
-                Shares:     *
-                Provides:   ['80', '443']
-                Requires:   ['80', '443']
+Security contract Withings.AURA:
+	Rule Withings.AURA.lan:
+		Device:     Withings.AURA
+		Domain:     LAN
+		Shares:     *
+		Provides:   {'67', '53'}
+		Requires:   {'67', '53', '5353'}
+	Rule Withings.AURA.net:
+		Device:     Withings.AURA
+		Domain:     Internet
+		Shares:     *
+		Provides:   ['80', '443']
+		Requires:   ['80', '443']
 
 Contact domains:
-
-        scalews.withings.net
+	
+	scalews.withings.net
 ******************** MUD profiling completed *****************

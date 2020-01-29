@@ -45,12 +45,14 @@ class SniffResult:
     dhcp_fingerprint = []
     dhcp_vendor = ""
     mac = ""
+    device_id = 0
 
-    def __init__(self, mud_url: str, dhcp_fingerprint: list, dhcp_vendor: str, mac: str):
+    def __init__(self, mud_url: str, dhcp_fingerprint: list, dhcp_vendor: str, mac: str, device_id: int = 0):
         SniffResult.mud_url = mud_url
         SniffResult.dhcp_fingerprint = dhcp_fingerprint
         SniffResult.dhcp_vendor = dhcp_vendor
         SniffResult.mac = mac
+        SniffResult.device_id = device_id
 
 
 if __name__ == "__main__":

@@ -195,12 +195,12 @@ class MUDUtilities:
         provides_lan = set.difference(acl_profile.provides_lan, provides_all)
         requires_lan = set.difference(acl_profile.uses_lan, requires_all)
         if (len(provides_lan) > 0 or len(requires_lan) > 0):
-            rules.append(SxcRule(acl_profile.device+'_lan', acl_profile.device, 'LAN', '*', provides_lan, requires_lan))
+            rules.append(SxcRule(acl_profile.device+'.lan', acl_profile.device, 'LAN', '*', provides_lan, requires_lan))
         
         # Handle internet
         provides_net = MUDUtilities.split_service_list(set.difference(acl_profile.provides_net, provides_all))
         requires_net = MUDUtilities.split_service_list(set.difference(acl_profile.uses_net, requires_all))
         if (len(provides_net) > 0 or len(requires_net) > 0):
-            rules.append(SxcRule(acl_profile.device+'_net', acl_profile.device, 'Internet', '*', provides_net, requires_net))
+            rules.append(SxcRule(acl_profile.device+'.net', acl_profile.device, 'Internet', '*', provides_net, requires_net))
 
         return SxcContract(acl_profile.device, rules)

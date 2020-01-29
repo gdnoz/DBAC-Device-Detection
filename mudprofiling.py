@@ -7,7 +7,7 @@ class MUDProfiler:
 
     sniff_result = None
 
-    def __init__(self, sniff_result):
+    def __init__(self, sniff_result=None):
         self.sniff_result = sniff_result
 
     def run(self):
@@ -35,16 +35,19 @@ class MUDProfiler:
         print("Device type:             " + classification_result.predicted_class)
         print("Classification score:    " + str(classification_result.score))
 
-        fingerprint_result = FingerbankApi.interrogate(self.sniff_result.dhcp_fingerprint,self.sniff_result.dhcp_vendor,self.sniff_result.mac)
+        if self.sniff_result.device_id > 0:
+            fingerprint_result = FingerbankApi.get_device_from_id(self.sniff_result.device_id)
+            deviceid = (fingerprint_result.device_manufacturer + '.' + fingerprint_result.device_name).replace(" ", "")
+        else:
+            #fingerprint_result = FingerbankApi.interrogate(self.sniff_result.dhcp_fingerprint,self.sniff_result.dhcp_vendor,self.sniff_result.mac)
+            deviceid = ("UNKNOWN.UNKNOWN")
 
-        deviceid = (fingerprint_result.device_name + '.' + fingerprint_result.device_name).replace(" ", "")
         print("Name:                    " + deviceid)
-        print("Fingerprint score:       " + str(fingerprint_result.score))
+        #print("Fingerprint score:       " + str(fingerprint_result.score))
 
         acl_list = MUDUtilities.get_acl_list_json(MUDUtilities.extract_acls_from_mud_contents(mud_file_from_web))
         print("Mud file ACLs:")
 
-        deviceid = classification_result.predicted_class + '.' + MUDUtilities.get_systeminfo_from_mud_file(mud_file_from_web)
         acl_profile = mud_classification.generate_acl_profile(deviceid, acl_list)
         sxc_contract = MUDUtilities.generate_contract_from_acl_profile(acl_profile)
         print(sxc_contract)

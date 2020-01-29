@@ -18,7 +18,7 @@ class FingerbankApi:
     """
 
     interrogate_endpoint = "https://api.fingerbank.org/api/v2/combinations/interrogate"
-    device_endpoint = "https://api.fingerbank.org/api/v2/test_devices"
+    device_endpoint = "https://api.fingerbank.org/api/v2/devices"
     api_key = "173eaf0e9527bbd5f55e717a5e6b4cfe6bde02a7"
 
     @staticmethod
@@ -28,7 +28,10 @@ class FingerbankApi:
 
     @staticmethod
     def get_device_from_id(id: int):
-        return FingerbankApi._get(endpoint=FingerbankApi.device_endpoint,id=id)
+        result = FingerbankApi._get(endpoint=FingerbankApi.device_endpoint+'/'+str(id))
+        manufacturer_name = result['name'].split(' ')[0]
+        device_name = " ".join(result['name'].split(' ')[1:])
+        return FingerbankApiResult(manufacturer_name,device_name,0)
 
     @staticmethod
     def _get(endpoint:str, **kwargs):
